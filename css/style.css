@@ -1,3 +1,4 @@
+
 *{
     font-size: 62.5%; /*Font Size = 10px*/
     text-decoration: none; /*Remove Underline from hyperlinks*/
@@ -17,7 +18,7 @@ html{
 
 
 .landing, .services{
-    background-color: black;
+    background-color: red;
     color: white;
 }
 
@@ -26,8 +27,13 @@ html{
 }
 
 .services--heading{
+<<<<<<< HEAD
     font-size: 7.5rem;
     text-align: center;
     font-weight: 900;
     padding: 5rem;
 }
+=======
+    font-size: 5rem;
+}
+>>>>>>> f150ab3bfc5ab293d52238a4d635ddd4ba92b3dd
