@@ -7,156 +7,217 @@
 }
 
 html{
-  font-size: 62.5%;
+    font-size: 62.5%;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
 
-.landing, .corridor{
-    height: 100vh;
-    width: 100vw;
-}
-
+/*Landing Starts*/
 
 .landing{
-    background-color: black;
-    color: white;
-}
-
-.corridor{
-    background-color: white;
-}
-
-.services{
-  background-color: #eee;
   height: 100vh;
   width: 100vw;
-  text-align:center;
-  padding-top: 8rem;
+  background-color: black;
+  color: white;
 }
-.services-heading{
-    font-size: 80px;
-    color: black;
+
+/*Landing Ends*/
+
+/*Corridor Starts*/
+.corridor{
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  padding: 5rem;
+  padding-top: 7rem;
+}
+
+
+.corridor--heading{
+  font-size: 4rem;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  padding: 0px 3rem 3rem 3rem;
+}
+
+.corridor--subheading{
+  font-size: 2.5rem;
+  padding: 0px 3rem 8rem 3rem;
+}
+
+.corridor--bold{
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.corridor--link{
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+/*Corridor Ends*/
+
+/*Services Starts*/
+.services{
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
+    text-align:center;
+    color: white;
+    padding: 5rem;
+    padding-top: 1rem;
+}
+.services--heading{
+    font-size: 8rem;
+    color: white;
     font-family: 'Raleway', sans-serif;
-    font-weight: 250;
     padding: 3rem;
 }
-.row{
-  padding: 1rem;
-  max-width: 114rem;
+
+.services--bold{
+  font-weight: 900; 
+  font-size: 8rem;
+}
+
+.services--divider{
+  margin-bottom: 1rem;
+}
+.services--data-box{
+  padding: 2.5rem;
+  margin-bottom: 10px;
+  transition: all .5s;
+
+}
+.services--data-box--icon{
+  float: left;
+  height: 10rem;
+}
+
+.services--data-box--text{
+  font-size: 1.8rem;
   margin: 0 auto;
-  margin-top: 3rem;
-  background-color: #eee;
-  margin-bottom:0px;
-}
-.row:not(:first-child){
-  margin-top: 0px;
-  padding-top: 0px;
-}
-.row:last-child{
-  margin-bottom: 15rem;
+  text-align: center;
+  padding-top: 1.5rem;
 }
 
-
-.row::after{
-    content:"";
-    display:table;
-    clear: both;
+.services--data-box:hover{
+  background-color: white;
+  color: black;
 }
-.col-1-of-3{
-  width: calc((100% )/3 - 32px);
-  font-size: 1rem;
-  float:left;
-}
-.box{
 
-  font-size:1rem;
-  padding:3rem;
-  padding-bottom: 1.5rem;
-  margin-left: 10rem;
-  position: relative;
-	display: table;
+.services--data-box--icon--notes{
+  background-image: url("../img/icons/notes-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.box-text{
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
-	padding: 3px ;
-  font-size: 1.3rem;
-  color: #777777;
+.services--data-box:hover .services--data-box--icon--notes{
+  background-image: url("../img/icons/notes.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.notes{
-  padding-right: 0.5rem;
-  font-size:6rem;
-  display: table-cell;
-  color: #777777;
-  vertical-align: middle;
-}
-.books{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-	vertical-align: middle;
+.services--data-box--icon--books{
+  background-image: url("../img/icons/books-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.slides{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-	vertical-align: middle;
+.services--data-box:hover .services--data-box--icon--books{
+  background-image: url("../img/icons/books.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services--data-box--icon--slides{
+  background-image: url("../img/icons/slides-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.tut{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-	vertical-align: middle;
+.services--data-box:hover .services--data-box--icon--slides{
+  background-image: url("../img/icons/slides.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services--data-box--icon--tut{
+  background-image: url("../img/icons/tut-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.tut-sol{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-	vertical-align: middle;
+.services--data-box:hover .services--data-box--icon--tut{
+  background-image: url("../img/icons/tut.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services--data-box--icon--soln{
+  background-image: url("../img/icons/soln-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.ques-papers{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-	vertical-align: middle;
+.services--data-box:hover .services--data-box--icon--soln{
+  background-image: url("../img/icons/soln.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services--data-box--icon--exam{
+  background-image: url("../img/icons/exam-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.calc{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-	vertical-align: middle;
+.services--data-box:hover .services--data-box--icon--exam{
+  background-image: url("../img/icons/exam.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services--data-box--icon--calculator{
+  background-image: url("../img/icons/calculator-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.wifi{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-	vertical-align: middle;
+.services--data-box:hover .services--data-box--icon--calculator{
+  background-image: url("../img/icons/calculator.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services--data-box--icon--wifi{
+  background-image: url("../img/icons/wifi-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
 }
-.announcement{
-  padding-right: 0.5rem;
-  font-size:6rem;
-	display: table-cell;
-  color: #777777;
-  vertical-align: middle;
+.services--data-box:hover .services--data-box--icon--wifi{
+  background-image: url("../img/icons/wifi.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services--data-box--icon--calendar{
+  background-image: url("../img/icons/calendar-inverse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s;
 
+}
+.services--data-box:hover .services--data-box--icon--calendar{
+  background-image: url("../img/icons/calendar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-/*GRID SYSTEM*/
+/*Services Ends*/
+
+/*Grid System*/
 .row {
 }
 
