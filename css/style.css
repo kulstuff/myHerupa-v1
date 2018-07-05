@@ -3,20 +3,22 @@
     text-decoration: none; /*Remove Underline from hyperlinks*/
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 html{
+  font-size: 62.5%;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
 
-.landing, .corridor, .services{
+.landing, .corridor{
     height: 100vh;
     width: 100vw;
 }
 
 
-.landing, .services{
+.landing{
     background-color: black;
     color: white;
 }
@@ -25,13 +27,133 @@ html{
     background-color: white;
 }
 
-.services--heading{
-    font-size: 7.5rem;
-    text-align: center;
-    font-weight: 900;
-    padding: 5rem;
+.services{
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+  text-align:center;
+  padding-top: 8rem;
+}
+.services-heading{
+    font-size: 80px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 250;
+    padding: 3rem;
+}
+.row{
+  padding: 1rem;
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background-color: #eee;
+  margin-bottom:0px;
+}
+.row:not(:first-child){
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.row:last-child{
+  margin-bottom: 15rem;
 }
 
+
+.row::after{
+    content:"";
+    display:table;
+    clear: both;
+}
+.col-1-of-3{
+  width: calc((100% )/3 - 32px);
+  font-size: 1rem;
+  float:left;
+}
+.box{
+
+  font-size:1rem;
+  padding:3rem;
+  padding-bottom: 1.5rem;
+  margin-left: 10rem;
+  position: relative;
+	display: table;
+
+}
+.box-text{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+	padding: 3px ;
+  font-size: 1.3rem;
+  color: #777777;
+}
+.notes{
+  padding-right: 0.5rem;
+  font-size:6rem;
+  display: table-cell;
+  color: #777777;
+  vertical-align: middle;
+}
+.books{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+	vertical-align: middle;
+
+}
+.slides{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+	vertical-align: middle;
+
+}
+.tut{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+	vertical-align: middle;
+
+}
+.tut-sol{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+	vertical-align: middle;
+
+}
+.ques-papers{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+	vertical-align: middle;
+
+}
+.calc{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+	vertical-align: middle;
+
+}
+.wifi{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+	vertical-align: middle;
+
+}
+.announcement{
+  padding-right: 0.5rem;
+  font-size:6rem;
+	display: table-cell;
+  color: #777777;
+  vertical-align: middle;
 
 
 /*GRID SYSTEM*/
