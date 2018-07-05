@@ -2,7 +2,7 @@
 
 ==Top Secret Stuff==
 
-Font Used = 'Raleway' Link  = <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+Font Used = 'Raleway' Link  = "https://fonts.googleapis.com/css?family=Raleway" 
 
 Font Size = 62.5% (10px)
 
