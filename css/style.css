@@ -35,11 +35,15 @@ html{
   padding-top: 8rem;
 }
 .services-heading{
-    font-size: 80px;
-    color: black;
+    font-size: 8rem;
+    color: white;
     font-family: 'Raleway', sans-serif;
-    font-weight: 250;
     padding: 3rem;
+}
+
+.bold{
+  font-weight: 900; /*Bold the font*/
+  font-size: 8rem;
 }
 .row{
   padding: 1rem;
