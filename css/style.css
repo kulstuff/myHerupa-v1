@@ -1,14 +1,25 @@
 *{
-    padding: 0;
-    margin: 0;
+    font-size: 62.5%; /*Font Size = 10px*/
+    text-decoration: none; /*Remove Underline from hyperlinks*/
+    padding: 0px;
+    margin: 0px;
 }
 
-body{
-    box-sizing: border-box;
+html{
+    overflow-x: hidden;
 }
 
-.content{
-    background-color: red;
+.landing, .corridor, .services{
     height: 100vh;
     width: 100vw;
 }
+
+
+.landing, .services{
+    background-color: black;
+}
+
+.corridor{
+    background-color: white;
+}
+
