@@ -7,32 +7,63 @@
 }
 
 html{
-  font-size: 62.5%;
+    font-size: 62.5%;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
 
-.landing, .corridor{
-    height: 100vh;
-    width: 100vw;
-}
-
+/*Landing Starts*/
 
 .landing{
-    background-color: black;
-    color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
 }
 
+/*Landing Ends*/
+
+/*Corridor Starts*/
 .corridor{
-    background-color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  padding: 5rem;
+  padding-top: 7rem;
 }
 
+
+.corridor--heading{
+  font-size: 4rem;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  padding: 0px 3rem 3rem 3rem;
+}
+
+.corridor--subheading{
+  font-size: 2.5rem;
+  padding: 0px 3rem 8rem 3rem;
+}
+
+.corridor--bold{
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.corridor--link{
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+/*Corridor Ends*/
+
+/*Services Starts*/
 .services{
     background-color:black;
     height: 100vh;
     width: 100vw;
     text-align:center;
-    padding-top: 5rem;
     color: white;
     padding: 5rem;
     padding-top: 1rem;
@@ -44,8 +75,8 @@ html{
     padding: 3rem;
 }
 
-.bold{
-  font-weight: 900; /*Bold the font*/
+.services--bold{
+  font-weight: 900; 
   font-size: 8rem;
 }
 
@@ -183,7 +214,10 @@ html{
   background-repeat: no-repeat;
   background-position: center;
 }
-/*GRID SYSTEM*/
+
+/*Services Ends*/
+
+/*Grid System*/
 .row {
 }
 
