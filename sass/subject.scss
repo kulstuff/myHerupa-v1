@@ -1,0 +1,202 @@
+//Variables
+$color-math1 : #E94B3C;
+$color-math2 : #6F9FD8;
+$color-phy : #79C753;
+$color-electronics : #c47fad;
+$color-electrical : #944743;
+$color-env : #6B5B95;
+$color-mech : #ed9302;
+$color-draw1 : #2E4A62;
+$color-draw2 : #4f1a5f;
+$color-com : #bc243c;
+$color-cs1 : #005960;
+$color-cs2: #D2691E;
+$color-chem : #4F84C4;
+
+//Mixin
+@mixin color($color) {
+
+    &-heading-number{
+        color: $color;
+    }
+    &-menu{
+        background-color: $color;
+    }
+    
+    &-btn-site{
+        background-color: darken($color,5%);
+        width: 100%;
+    }
+    
+    &-btn-syllabus{
+        background-color: lighten($color,5%);
+        width: 33.33%;
+    }
+    
+    &-btn-books{
+        background-color:  lighten($color,10%);
+        width: 33.33%;
+    }
+    
+    &-btn-notes{
+        background-color: lighten($color,5%);
+        width: 33.33%;
+    }
+    
+    &-btn-tut{
+        background-color: $color;
+        width: 50%;
+    }
+    
+    &-btn-tut-sol{
+        background-color: $color;
+        width: 50%;
+    }
+    &-btn-ppr{
+        background-color: darken($color,10%);
+        width: 100%;
+    }
+    
+    &-btn-site:hover,
+    &-btn-syllabus:hover,
+    &-btn-books:hover,
+    &-btn-notes:hover,
+    &-btn-tut:hover,
+    &-btn-tut-sol:hover,
+    &-btn-ppr:hover{
+        background-color: black;
+        color : $color;
+    }
+
+}
+//Main Page
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #eee;
+    animation: fadeIn 2s ;
+}
+
+.subject__{
+&menu {
+    width: 8rem;
+    float: left;
+    padding: 1rem;
+    margin: 4rem 2rem 2rem 4rem;
+    transition: all .5s;
+    border-radius: 50%;
+
+    &:hover {
+        transform: scale(1.2);
+        border-radius: 50%;
+        background-color: #eee;
+    }
+}
+
+&heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 8rem;
+    padding: 3rem;
+}
+
+&quote {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    padding: 4rem 3rem 7rem 3rem;
+    opacity: 0.1;
+    text-align: center;
+    transition: all 1s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+
+&btn {
+    text-align: center;
+    padding: 2rem;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    color: white;
+    transition: all 1s;
+}
+
+/* Mathematics 1 */
+&math1{
+    @include color($color-math1);
+}
+
+/* Mathematics 2 */
+&math2{
+    @include color($color-math2);
+}
+
+/* Applied Physics */
+&phy{
+    @include color($color-phy);
+}
+
+/* Applied Chemistry */
+&chem{
+    @include color($color-chem);
+}
+
+/* Professional Communication */
+&com{
+    @include color($color-com);
+}
+
+/* Computer Science 1 */
+&cs1{
+    @include color($color-cs1);
+}
+
+/* Computer Science 2 */
+&cs2{
+    @include color($color-cs2);
+}
+
+/* Engineering & Drawing 1 */
+&draw1{
+    @include color($color-draw1);
+}
+
+/* Engineering & Drawing 2 */
+&draw2{
+    @include color($color-draw2);
+}
+
+/* Electrical */
+&electrical{
+    @include color($color-electrical);
+}
+
+/* Electronics */
+&electronics{
+    @include color($color-electronics);
+}
+
+/* Environment */
+&env{
+    @include color($color-env);
+}
+
+/* Mechanics */
+&mech{
+    @include color($color-mech);
+}
+
+}
