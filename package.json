@@ -1,0 +1,11 @@
+{
+  "name": "herupa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/subject.scss css/subject.css -w"
+  },
+  "author": "KulStuff",
+  "license": "ISC"
+}

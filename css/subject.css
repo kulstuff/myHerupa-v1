@@ -1,0 +1,424 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  user-select: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #eee;
+  animation: fadeIn 2s; }
+
+.subject__ {
+  /* Mathematics 1 */
+  /* Mathematics 2 */
+  /* Applied Physics */
+  /* Applied Chemistry */
+  /* Professional Communication */
+  /* Computer Science 1 */
+  /* Computer Science 2 */
+  /* Engineering & Drawing 1 */
+  /* Engineering & Drawing 2 */
+  /* Electrical */
+  /* Electronics */
+  /* Environment */
+  /* Mechanics */ }
+  .subject__menu {
+    width: 8rem;
+    float: left;
+    padding: 1rem;
+    margin: 4rem 2rem 2rem 4rem;
+    transition: all .5s;
+    border-radius: 50%; }
+    .subject__menu:hover {
+      transform: scale(1.2);
+      border-radius: 50%;
+      background-color: #eee; }
+  .subject__heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 8rem;
+    padding: 3rem; }
+  .subject__quote {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    padding: 4rem 3rem 7rem 3rem;
+    opacity: 0.1;
+    text-align: center;
+    transition: all 1s; }
+    .subject__quote:hover {
+      opacity: 0.6; }
+  .subject__btn {
+    text-align: center;
+    padding: 2rem;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    color: white;
+    transition: all 1s; }
+  .subject__math1-heading-number {
+    color: #E94B3C; }
+  .subject__math1-menu {
+    background-color: #E94B3C; }
+  .subject__math1-btn-site {
+    background-color: #e63625;
+    width: 100%; }
+  .subject__math1-btn-syllabus {
+    background-color: #ec6053;
+    width: 33.33%; }
+  .subject__math1-btn-books {
+    background-color: #ee756a;
+    width: 33.33%; }
+  .subject__math1-btn-notes {
+    background-color: #ec6053;
+    width: 33.33%; }
+  .subject__math1-btn-tut {
+    background-color: #E94B3C;
+    width: 50%; }
+  .subject__math1-btn-tut-sol {
+    background-color: #E94B3C;
+    width: 50%; }
+  .subject__math1-btn-ppr {
+    background-color: #d92919;
+    width: 100%; }
+  .subject__math1-btn-site:hover, .subject__math1-btn-syllabus:hover, .subject__math1-btn-books:hover, .subject__math1-btn-notes:hover, .subject__math1-btn-tut:hover, .subject__math1-btn-tut-sol:hover, .subject__math1-btn-ppr:hover {
+    background-color: black;
+    color: #E94B3C; }
+  .subject__math2-heading-number {
+    color: #6F9FD8; }
+  .subject__math2-menu {
+    background-color: #6F9FD8; }
+  .subject__math2-btn-site {
+    background-color: #5b92d3;
+    width: 100%; }
+  .subject__math2-btn-syllabus {
+    background-color: #83acdd;
+    width: 33.33%; }
+  .subject__math2-btn-books {
+    background-color: #97bae3;
+    width: 33.33%; }
+  .subject__math2-btn-notes {
+    background-color: #83acdd;
+    width: 33.33%; }
+  .subject__math2-btn-tut {
+    background-color: #6F9FD8;
+    width: 50%; }
+  .subject__math2-btn-tut-sol {
+    background-color: #6F9FD8;
+    width: 50%; }
+  .subject__math2-btn-ppr {
+    background-color: #4784cd;
+    width: 100%; }
+  .subject__math2-btn-site:hover, .subject__math2-btn-syllabus:hover, .subject__math2-btn-books:hover, .subject__math2-btn-notes:hover, .subject__math2-btn-tut:hover, .subject__math2-btn-tut-sol:hover, .subject__math2-btn-ppr:hover {
+    background-color: black;
+    color: #6F9FD8; }
+  .subject__phy-heading-number {
+    color: #79C753; }
+  .subject__phy-menu {
+    background-color: #79C753; }
+  .subject__phy-btn-site {
+    background-color: #6ac140;
+    width: 100%; }
+  .subject__phy-btn-syllabus {
+    background-color: #88cd66;
+    width: 33.33%; }
+  .subject__phy-btn-books {
+    background-color: #97d479;
+    width: 33.33%; }
+  .subject__phy-btn-notes {
+    background-color: #88cd66;
+    width: 33.33%; }
+  .subject__phy-btn-tut {
+    background-color: #79C753;
+    width: 50%; }
+  .subject__phy-btn-tut-sol {
+    background-color: #79C753;
+    width: 50%; }
+  .subject__phy-btn-ppr {
+    background-color: #5fae39;
+    width: 100%; }
+  .subject__phy-btn-site:hover, .subject__phy-btn-syllabus:hover, .subject__phy-btn-books:hover, .subject__phy-btn-notes:hover, .subject__phy-btn-tut:hover, .subject__phy-btn-tut-sol:hover, .subject__phy-btn-ppr:hover {
+    background-color: black;
+    color: #79C753; }
+  .subject__chem-heading-number {
+    color: #4F84C4; }
+  .subject__chem-menu {
+    background-color: #4F84C4; }
+  .subject__chem-btn-site {
+    background-color: #3f77bb;
+    width: 100%; }
+  .subject__chem-btn-syllabus {
+    background-color: #6291ca;
+    width: 33.33%; }
+  .subject__chem-btn-books {
+    background-color: #759fd1;
+    width: 33.33%; }
+  .subject__chem-btn-notes {
+    background-color: #6291ca;
+    width: 33.33%; }
+  .subject__chem-btn-tut {
+    background-color: #4F84C4;
+    width: 50%; }
+  .subject__chem-btn-tut-sol {
+    background-color: #4F84C4;
+    width: 50%; }
+  .subject__chem-btn-ppr {
+    background-color: #386ba8;
+    width: 100%; }
+  .subject__chem-btn-site:hover, .subject__chem-btn-syllabus:hover, .subject__chem-btn-books:hover, .subject__chem-btn-notes:hover, .subject__chem-btn-tut:hover, .subject__chem-btn-tut-sol:hover, .subject__chem-btn-ppr:hover {
+    background-color: black;
+    color: #4F84C4; }
+  .subject__com-heading-number {
+    color: #bc243c; }
+  .subject__com-menu {
+    background-color: #bc243c; }
+  .subject__com-btn-site {
+    background-color: #a72035;
+    width: 100%; }
+  .subject__com-btn-syllabus {
+    background-color: #d12843;
+    width: 33.33%; }
+  .subject__com-btn-books {
+    background-color: #d93a53;
+    width: 33.33%; }
+  .subject__com-btn-notes {
+    background-color: #d12843;
+    width: 33.33%; }
+  .subject__com-btn-tut {
+    background-color: #bc243c;
+    width: 50%; }
+  .subject__com-btn-tut-sol {
+    background-color: #bc243c;
+    width: 50%; }
+  .subject__com-btn-ppr {
+    background-color: #911c2e;
+    width: 100%; }
+  .subject__com-btn-site:hover, .subject__com-btn-syllabus:hover, .subject__com-btn-books:hover, .subject__com-btn-notes:hover, .subject__com-btn-tut:hover, .subject__com-btn-tut-sol:hover, .subject__com-btn-ppr:hover {
+    background-color: black;
+    color: #bc243c; }
+  .subject__cs1-heading-number {
+    color: #005960; }
+  .subject__cs1-menu {
+    background-color: #005960; }
+  .subject__cs1-btn-site {
+    background-color: #004147;
+    width: 100%; }
+  .subject__cs1-btn-syllabus {
+    background-color: #00717a;
+    width: 33.33%; }
+  .subject__cs1-btn-books {
+    background-color: #008893;
+    width: 33.33%; }
+  .subject__cs1-btn-notes {
+    background-color: #00717a;
+    width: 33.33%; }
+  .subject__cs1-btn-tut {
+    background-color: #005960;
+    width: 50%; }
+  .subject__cs1-btn-tut-sol {
+    background-color: #005960;
+    width: 50%; }
+  .subject__cs1-btn-ppr {
+    background-color: #002a2d;
+    width: 100%; }
+  .subject__cs1-btn-site:hover, .subject__cs1-btn-syllabus:hover, .subject__cs1-btn-books:hover, .subject__cs1-btn-notes:hover, .subject__cs1-btn-tut:hover, .subject__cs1-btn-tut-sol:hover, .subject__cs1-btn-ppr:hover {
+    background-color: black;
+    color: #005960; }
+  .subject__cs2-heading-number {
+    color: #D2691E; }
+  .subject__cs2-menu {
+    background-color: #D2691E; }
+  .subject__cs2-btn-site {
+    background-color: #bc5e1b;
+    width: 100%; }
+  .subject__cs2-btn-syllabus {
+    background-color: #e07529;
+    width: 33.33%; }
+  .subject__cs2-btn-books {
+    background-color: #e4843f;
+    width: 33.33%; }
+  .subject__cs2-btn-notes {
+    background-color: #e07529;
+    width: 33.33%; }
+  .subject__cs2-btn-tut {
+    background-color: #D2691E;
+    width: 50%; }
+  .subject__cs2-btn-tut-sol {
+    background-color: #D2691E;
+    width: 50%; }
+  .subject__cs2-btn-ppr {
+    background-color: #a55318;
+    width: 100%; }
+  .subject__cs2-btn-site:hover, .subject__cs2-btn-syllabus:hover, .subject__cs2-btn-books:hover, .subject__cs2-btn-notes:hover, .subject__cs2-btn-tut:hover, .subject__cs2-btn-tut-sol:hover, .subject__cs2-btn-ppr:hover {
+    background-color: black;
+    color: #D2691E; }
+  .subject__draw1-heading-number {
+    color: #2E4A62; }
+  .subject__draw1-menu {
+    background-color: #2E4A62; }
+  .subject__draw1-btn-site {
+    background-color: #263d51;
+    width: 100%; }
+  .subject__draw1-btn-syllabus {
+    background-color: #365773;
+    width: 33.33%; }
+  .subject__draw1-btn-books {
+    background-color: #3e6485;
+    width: 33.33%; }
+  .subject__draw1-btn-notes {
+    background-color: #365773;
+    width: 33.33%; }
+  .subject__draw1-btn-tut {
+    background-color: #2E4A62;
+    width: 50%; }
+  .subject__draw1-btn-tut-sol {
+    background-color: #2E4A62;
+    width: 50%; }
+  .subject__draw1-btn-ppr {
+    background-color: #1e303f;
+    width: 100%; }
+  .subject__draw1-btn-site:hover, .subject__draw1-btn-syllabus:hover, .subject__draw1-btn-books:hover, .subject__draw1-btn-notes:hover, .subject__draw1-btn-tut:hover, .subject__draw1-btn-tut-sol:hover, .subject__draw1-btn-ppr:hover {
+    background-color: black;
+    color: #2E4A62; }
+  .subject__draw2-heading-number {
+    color: #4f1a5f; }
+  .subject__draw2-menu {
+    background-color: #4f1a5f; }
+  .subject__draw2-btn-site {
+    background-color: #3e154b;
+    width: 100%; }
+  .subject__draw2-btn-syllabus {
+    background-color: #601f73;
+    width: 33.33%; }
+  .subject__draw2-btn-books {
+    background-color: #702587;
+    width: 33.33%; }
+  .subject__draw2-btn-notes {
+    background-color: #601f73;
+    width: 33.33%; }
+  .subject__draw2-btn-tut {
+    background-color: #4f1a5f;
+    width: 50%; }
+  .subject__draw2-btn-tut-sol {
+    background-color: #4f1a5f;
+    width: 50%; }
+  .subject__draw2-btn-ppr {
+    background-color: #2e0f37;
+    width: 100%; }
+  .subject__draw2-btn-site:hover, .subject__draw2-btn-syllabus:hover, .subject__draw2-btn-books:hover, .subject__draw2-btn-notes:hover, .subject__draw2-btn-tut:hover, .subject__draw2-btn-tut-sol:hover, .subject__draw2-btn-ppr:hover {
+    background-color: black;
+    color: #4f1a5f; }
+  .subject__electrical-heading-number {
+    color: #944743; }
+  .subject__electrical-menu {
+    background-color: #944743; }
+  .subject__electrical-btn-site {
+    background-color: #823f3b;
+    width: 100%; }
+  .subject__electrical-btn-syllabus {
+    background-color: #a64f4b;
+    width: 33.33%; }
+  .subject__electrical-btn-books {
+    background-color: #b35c57;
+    width: 33.33%; }
+  .subject__electrical-btn-notes {
+    background-color: #a64f4b;
+    width: 33.33%; }
+  .subject__electrical-btn-tut {
+    background-color: #944743;
+    width: 50%; }
+  .subject__electrical-btn-tut-sol {
+    background-color: #944743;
+    width: 50%; }
+  .subject__electrical-btn-ppr {
+    background-color: #713633;
+    width: 100%; }
+  .subject__electrical-btn-site:hover, .subject__electrical-btn-syllabus:hover, .subject__electrical-btn-books:hover, .subject__electrical-btn-notes:hover, .subject__electrical-btn-tut:hover, .subject__electrical-btn-tut-sol:hover, .subject__electrical-btn-ppr:hover {
+    background-color: black;
+    color: #944743; }
+  .subject__electronics-heading-number {
+    color: #c47fad; }
+  .subject__electronics-menu {
+    background-color: #c47fad; }
+  .subject__electronics-btn-site {
+    background-color: #bc6ea2;
+    width: 100%; }
+  .subject__electronics-btn-syllabus {
+    background-color: #cc90b8;
+    width: 33.33%; }
+  .subject__electronics-btn-books {
+    background-color: #d4a2c3;
+    width: 33.33%; }
+  .subject__electronics-btn-notes {
+    background-color: #cc90b8;
+    width: 33.33%; }
+  .subject__electronics-btn-tut {
+    background-color: #c47fad;
+    width: 50%; }
+  .subject__electronics-btn-tut-sol {
+    background-color: #c47fad;
+    width: 50%; }
+  .subject__electronics-btn-ppr {
+    background-color: #b45c97;
+    width: 100%; }
+  .subject__electronics-btn-site:hover, .subject__electronics-btn-syllabus:hover, .subject__electronics-btn-books:hover, .subject__electronics-btn-notes:hover, .subject__electronics-btn-tut:hover, .subject__electronics-btn-tut-sol:hover, .subject__electronics-btn-ppr:hover {
+    background-color: black;
+    color: #c47fad; }
+  .subject__env-heading-number {
+    color: #6B5B95; }
+  .subject__env-menu {
+    background-color: #6B5B95; }
+  .subject__env-btn-site {
+    background-color: #605185;
+    width: 100%; }
+  .subject__env-btn-syllabus {
+    background-color: #7867a2;
+    width: 33.33%; }
+  .subject__env-btn-books {
+    background-color: #8677ac;
+    width: 33.33%; }
+  .subject__env-btn-notes {
+    background-color: #7867a2;
+    width: 33.33%; }
+  .subject__env-btn-tut {
+    background-color: #6B5B95;
+    width: 50%; }
+  .subject__env-btn-tut-sol {
+    background-color: #6B5B95;
+    width: 50%; }
+  .subject__env-btn-ppr {
+    background-color: #544875;
+    width: 100%; }
+  .subject__env-btn-site:hover, .subject__env-btn-syllabus:hover, .subject__env-btn-books:hover, .subject__env-btn-notes:hover, .subject__env-btn-tut:hover, .subject__env-btn-tut-sol:hover, .subject__env-btn-ppr:hover {
+    background-color: black;
+    color: #6B5B95; }
+  .subject__mech-heading-number {
+    color: #ed9302; }
+  .subject__mech-menu {
+    background-color: #ed9302; }
+  .subject__mech-btn-site {
+    background-color: #d48302;
+    width: 100%; }
+  .subject__mech-btn-syllabus {
+    background-color: #fda00c;
+    width: 33.33%; }
+  .subject__mech-btn-books {
+    background-color: #fdaa25;
+    width: 33.33%; }
+  .subject__mech-btn-notes {
+    background-color: #fda00c;
+    width: 33.33%; }
+  .subject__mech-btn-tut {
+    background-color: #ed9302;
+    width: 50%; }
+  .subject__mech-btn-tut-sol {
+    background-color: #ed9302;
+    width: 50%; }
+  .subject__mech-btn-ppr {
+    background-color: #ba7402;
+    width: 100%; }
+  .subject__mech-btn-site:hover, .subject__mech-btn-syllabus:hover, .subject__mech-btn-books:hover, .subject__mech-btn-notes:hover, .subject__mech-btn-tut:hover, .subject__mech-btn-tut-sol:hover, .subject__mech-btn-ppr:hover {
+    background-color: black;
+    color: #ed9302; }
