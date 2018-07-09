@@ -274,44 +274,9 @@ html{
     line-height: 7rem;
 }
 
-.landing--btn--handles {
-    height: 100px;
-    width: 40px;
-    position: absolute;
-    top: 80%;
-    left: 92.5%;
-}
-
-.landing--btn--handles > .instagram {
-    height: 50px;
-}
-
-.landing--btn--handles > .fb {
-    margin-top: 5px;
-    margin-left: 10px;
-    height: 50px;
-}
 /*Landing Ends*/
 
-/*Scrollerkit Starts*/
-#--scrollerkit {
-    height: 40vh;
-    width: 2vw;
-    background-color: yellow;  /*For Testing*/
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 95vw;
-}
 
-#--scrollerkit > a.p1btn {
-    height: 10px;
-    width: 10px;
-    background-color: #1b0570;
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-}
-/*Scrollerkit Ends*/
 /*Landing Ends*/
 
 /*Corridor Starts*/
