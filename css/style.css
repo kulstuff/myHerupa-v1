@@ -288,6 +288,10 @@ html {
     font-size: 10rem; }
   .landing__subheading {
     font-size: 3rem; }
+  .about-us__subheading {
+    font-size: 2rem; }
+  .services__heading {
+    font-size: 5rem; }
   .services__box-heading {
     font-size: 80%; } }
 

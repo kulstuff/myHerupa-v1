@@ -24,7 +24,7 @@ html{
 .remove-border-right{
     border-right: none !important;
 }
-
+//Class to hide content from mobile screens
 .hide-phone{
     @media screen and (max-width: 600px){
         visibility: hidden;
@@ -399,7 +399,16 @@ html{
                 font-size: 3rem;
             }
         }
+
+        .about-us{
+            &__subheading{
+                font-size: 2rem;
+            }
+        }
         .services{
+            &__heading{
+                font-size: 5rem;
+            }
             &__box-heading{
                 font-size: 80%;
             }
