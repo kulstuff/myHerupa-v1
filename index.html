@@ -12,134 +12,126 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="landing">
-        <div class="landing--heading--primary">
-            <span class="h">H</span>
-            <span class="e">e</span>
-            <span class="r">r</span>
-            <span class="u">u</span>
-            <span class="p">p</span>
-            <span class="a">a</span>
-            <span class="full-stop">.</span>
+    <section class="landing">
+      <div class="landing__heading">
+        <span class="landing__heading-h">H</span><span class="landing__heading-e">e</span><span class="landing__heading-r">r</span><span class="landing__heading-u">u</span><span class="landing__heading-p">p</span><span class="landing__heading-a">a</span><span class="landing__heading-full-stop">.</span>
+      </div>
+      <div class="landing__subheading">For all your academic needs.</div>
+      <div class="landing__btn">
+        <a href="#" class="col col-md-6 col-sm-12 col-lg-6 landing__btn--first-year">
+          <div class="landing__btn--first-year--text">First Year</div>
+        </a>
+        <a href="#" class="col col-md-6 col-sm-12 col-lg-6 landing__btn--second-year">
+          <div class="landing__btn--second-year--text">Second Year</div>
+        </a>
+    </div> 
+    </section>
+    <section class="about-us">
+        <div class="about-us__heading">
+          What is <span class="bold">Herupa</span> ?
+          <hr>
         </div>
-        <div class="landing--heading--complementary">For all your academic needs</div>
-        <div class="landing--btnstrip">
-            <a href="#" class="landing--btn landing--btn--oney">
-              <span class="landing--btn--f">F</span><span class="landing--btn--ir">ir</span><span class="landing--btn--sty">st Y</span><span class="landing--btn--e">e</span><span class="landing--btn--ar">ar</span>
-            </a>
-            <a href="#" class="landing--btn landing--btn--twoy">
-              <span class="landing--tybtn--se">Se</span><span class="landing--tybtn--con">con</span><span class="landing--tybtn--dy">d Y</span><span class="landing--tybtn--e">e</span><span class="landing--tybtn--ar">ar</span>
-            </a>
-        </div>
-    
-        <div class="scrollerkit" id="--scrollerkit">
-            <img src="" alt="" class="dashes">
-            <a href="#landing" class="p1btn"></a>
-            <a href="#corridor" class="p2btn"></a>
-            <a href="#services" class="p3btn"></a>
-            <img src="" alt="" class="dashes">
-        </div>
-    </div>
-    <div class="corridor">
-        <div class="corridor--heading">
-            What is <span class="corridor--bold">Herupa</span> ?
-            <hr>
-        </div>
-        <div class="corridor--subheading">
+        <div class="about-us__subheading">
             Herupa is a website set-up for all of us who need academic assistance in the college.
             We are here with everything you'll need through the semester.
         </div>
-        <div class="corridor--heading">
-            Who wrote all the <span class="corridor--bold">code</span> ?
+        <div class="about-us__heading">
+            Who wrote all the <span class="bold">code</span> ?
             <hr>
         </div>
-        <div class="corridor--subheading">
-            Be honest, does it even matter ?
+        <div class="about-us__subheading">
+          Want to thank us ? Be honest, you don't want to.
         </div>
-        <div class="corridor--heading">
-            Have any <span class="corridor--bold">suggestion</span> for us ?
+        <div class="about-us__heading">
+            Have any <span class="bold">suggestion</span> for us ?
             <hr>
         </div>
-        <div class="corridor--subheading">
-            Want us to add something ? Want to thank us ? Want to contribute to the source material?
-            Contact us <a href="" class="corridor--link">here</a>.
+        <div class="about-us__subheading">
+            Want us to add something ? Want to contribute to the source material?
+            Contact us <a href="" class="about-us__link">here</a>.
         </div>
-    </div>
+    </section>
     <section class="services">
-      <div class="services-heading">
-        Our<span style="font-weight:700; font-size:80px;">Services</span>
+      <div class="services__heading">
+        Our<span class="bold">Services</span>
       </div>
 
 
       <div class="row">
-       <div class="col-1-of-3">
-         <div class="box box-notes">
-         <i class="notes icon-basic-notebook"></i><p class="box-text">We provide some of the best notes covering mainly all the topics in the course.</p>
+       <div class="col col-xs-4 col-md-4 col-lg-4">
+         <div class="services__box">
+            <i class="icon-basic-notebook"></i>
+            <p class="services__box-text">We provide concise and hand-written notes covering most of the topics in any course in pdf format.</p>
+           <h4 class="services__box-heading">Notes</h4>
+        </div>
        </div>
-     </div>
-       <div class="col-1-of-3">
-         <div class="box box-books">
-           <i class="books icon-basic-book"></i><p class="box-text">You can get pdf to most of the books here.</p>
+       
+       <div class="col col-xs-4 col-md-4 col-lg-4">
+        <div class="services__box">
+            <i class="icon-basic-book"></i>
+           <p class="services__box-text">You can get the pdf versions to most of the books you will need throught out your semester.</p>
+           <h4 class="services__box-heading">Books</h4>
+       </div>
+      </div>
+      <div class="col col-xs-4 col-md-4 col-lg-4">
+        <div class="services__box remove-border-right">
+           <i class="icon-basic-webpage-txt"></i>
+           <p class="services__box-text">You get the most of the slides available for every subject throughout the semester.</p>
+           <h4 class="services__box-heading">Slides</h4>           
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col col-xs-4 col-md-4 col-lg-4">
+          <div class="services__box">
+             <i class="icon-basic-todo"></i>
+             <p class="services__box-text">All the tutorial sheets uploaded by teachers or scanned by us are available subject-wise for you.</p>
+            <h4 class="services__box-heading">Tutorial<br>Sheets</h4>
+         </div>
+        </div>
+        
+        <div class="col col-xs-4 col-md-4 col-lg-4">
+         <div class="services__box">
+             <i class="icon-basic-todolist-pencil"></i>
+            <p class="services__box-text">We have also provid neat, hand-written solutions for majority of the tutorial sheets uploaded for your help.</p>
+            <h4 class="services__box-heading">Tutorial<br>Solutions</h4>
+        </div>
+       </div>
+       <div class="col col-xs-4 col-md-4 col-lg-4">
+         <div class="services__box remove-border-right">
+            <i class="icon-basic-sheet-multiple"></i>
+            <p class="services__box-text">We also have previous exam papers from last two years of each subject including auxiliary exams.</p>
+            <h4 class="services__box-heading">Previous<br>Paper</h4>           
          </div>
        </div>
-       <div class="col-1-of-3">
-         <div class="box box-slides">
-           <i class="slides icon-basic-webpage-txt"></i><p class="box-text">You will get latest slides here which get updated regularly.</p>
+       </div>
+       <div class="row">
+        <div class="col col-xs-4 col-md-4 col-lg-4">
+          <div class="services__box remove-border-bottom">
+             <i class="icon-basic-calculator"></i>
+             <p class="services__box-text">You can easily calculate your cgpa using our CGPA calculator. Just enter your grades we generate your CGPA.</p>
+            <h4 class="services__box-heading">CGPA<br>Calculator</h4>
+         </div>
+        </div>
+        
+        <div class="col col-xs-4 col-md-4 col-lg-4">
+         <div class="services__box remove-border-bottom">
+             <i class="icon-basic-rss"></i>
+            <p class="services__box-text">You can access all the networks with our WiFi password's list. There is also a pdf available for download.</p>
+            <h4 class="services__box-heading">WiFi<br>Passwords</h4>
+        </div>
+       </div>
+       <div class="col col-xs-4 col-md-4 col-lg-4">
+         <div class="services__box remove-border-bottom remove-border-right">
+            <i class="icon-basic-calendar"></i>
+            <p class="services__box-text">We will keep you updated with all announcements from Thapar Institute of Engineering and Technology.</p>
+            <h4 class="services__box-heading">News &<br>Announcement</h4>           
          </div>
        </div>
-     </div>
-     <div class="row ">
-       <div class="col-1-of-3">
-         <div class="box box-tut">
-         <i class="tut icon-basic-todo"></i><p class="box-text">All the tutorial sheets are uploaded subject-wise.</p>
        </div>
-     </div>
-       <div class="col-1-of-3">
-         <div class="box box-tut-sol">
-           <i class="tut-sol icon-basic-todolist-pencil"></i><p class="box-text">We have provided solutions for majority of tutorial sheets.</p>
-         </div>
-       </div>
-       <div class="col-1-of-3">
-         <div class="box box-ques">
-           <i class="ques-papers icon-basic-sheet-multiple"></i><p class="box-text">We also have exam papers from last two years.</p>
-         </div>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-1-of-3">
-         <div class="box box-calc">
-         <i class="calc icon-basic-calculator"></i><p class="box-text">You can easily calculate your cgpa using our cg calculator.</p>
-       </div>
-     </div>
-       <div class="col-1-of-3">
-         <div class="box box-wifi">
-           <i class="wifi icon-basic-rss"></i><p class="box-text">You can access all the networks with our password's list </p>
-         </div>
-       </div>
-       <div class="col-1-of-3">
-         <div class="box box-announcement">
-           <i class="announcement icon-basic-calendar"></i><p class="box-text">We will keep you updated with all announcements from thapar.</p>
-         </div>
-       </div>
-     </div>
+      
    </section>
-   <section>
-     <div style="font-size: 3rem;">
-     This is just for testing. will be removed later.<br>
-      <a href="pages/subjects--first-year/maths1.html">Mathematics 1</a>
-      <a href="pages/subjects--first-year/maths2.html">Mathematics 2</a>
-      <a href="pages/subjects--first-year/phy.html">Applied Physics</a>
-      <a href="pages/subjects--first-year/electronics.html">Electronics</a>
-      <a href="pages/subjects--first-year/electrical.html">Electrical</a>
-      <a href="pages/subjects--first-year/mech.html">Mechanics</a>
-      <a href="pages/subjects--first-year/env.html">Environment</a>
-      <a href="pages/subjects--first-year/draw1.html">Engineering and Drawing 1</a>
-      <a href="pages/subjects--first-year/draw2.html">Engineering and Drawing 2</a>
-      <a href="pages/subjects--first-year/com.html">Professional Communication</a>
-      <a href="pages/subjects--first-year/cs1.html">Computer Science 1</a>
-      <a href="pages/subjects--first-year/cs2.html">Computer Science 2</a>
-      <a href="pages/subjects--first-year/chem.html">Appplied Chemistry</a>
-  </div>
-   </section>
+
+   
 </body>
 </html>
