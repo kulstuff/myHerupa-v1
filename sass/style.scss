@@ -25,6 +25,12 @@ html{
     border-right: none !important;
 }
 
+.hide-phone{
+    @media screen and (max-width: 600px){
+        visibility: hidden;
+        position: absolute;
+    }
+}
 //Landing
 .landing{
     height: 100vh;
@@ -385,6 +391,14 @@ html{
     }
     
     @media screen and (max-width: 505px) {
+        .landing{
+            &__heading{
+                font-size: 10rem;
+            }
+            &__subheading{
+                font-size: 3rem;
+            }
+        }
         .services{
             &__box-heading{
                 font-size: 80%;

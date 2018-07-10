@@ -22,6 +22,11 @@ html {
 .remove-border-right {
   border-right: none !important; }
 
+@media screen and (max-width: 600px) {
+  .hide-phone {
+    visibility: hidden;
+    position: absolute; } }
+
 .landing {
   height: 100vh;
   width: 100%;
@@ -279,6 +284,10 @@ html {
     width: 8.332%; } }
 
 @media screen and (max-width: 505px) {
+  .landing__heading {
+    font-size: 10rem; }
+  .landing__subheading {
+    font-size: 3rem; }
   .services__box-heading {
     font-size: 80%; } }
 
