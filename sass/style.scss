@@ -8,6 +8,7 @@
 }
 
 html{
+    min-height: 100vh;
     font-family: 'Raleway',sans-serif;
 }
 
@@ -31,6 +32,7 @@ html{
         position: absolute;
     }
 }
+
 //Landing
 .landing{
     height: 100vh;
@@ -40,8 +42,17 @@ html{
     background-position: 0 17vh;
     text-align: center;
     color: black;
-
-
+    position: relative;
+    &__tri{
+        clip-path: polygon(50% 60%, 0% 110%, 100% 110%);
+        background-color: white;
+        width: 15rem;
+        height: 10rem;
+        position: absolute;
+        bottom: -.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     &__heading{
         font-size: 15rem;
         font-family: 'Raleway', sans-serif;
@@ -165,10 +176,11 @@ html{
 //About-Us
 .about-us{
     height: 100vh;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 1.7rem;
     padding: 2rem;
+    position: relative;
 
     &__heading{
         font-size: 6rem;
@@ -181,6 +193,16 @@ html{
     &__link{
         color: yellow;
         font-size: inherit;
+    }
+    &__tri{
+        clip-path: polygon(50% 60%, 0% 110%, 100% 110%);
+        background-color: #eee;
+        width: 15rem;
+        height: 10rem;
+        position: absolute;
+        bottom: -.5rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 //About-Us Ends
@@ -391,6 +413,9 @@ html{
     }
     
     @media screen and (max-width: 505px) {
+        *{
+            width: 100%;
+        }
         .landing{
             &__heading{
                 font-size: 10rem;
