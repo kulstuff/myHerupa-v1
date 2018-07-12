@@ -1,0 +1,31 @@
+//Turn text bold
+.bold{   
+    color: inherit;
+    font-size: inherit;
+    font-weight: 900;
+}
+//Turn text thin
+.thin{
+    color: inherit;
+    font-size: inherit;
+    font-weight: 100;
+}
+
+//Remove Bottom Border
+.remove-border-bottom{
+    border-bottom: none !important;
+}
+
+//Remove right border
+.remove-border-right{
+    border-right: none !important;
+}
+
+//Class to hide content from mobile screens
+.hide-phone{
+    @media screen and (max-width: 600px){
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
