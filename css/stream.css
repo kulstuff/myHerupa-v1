@@ -46,6 +46,7 @@ html {
   padding-left: 3rem;
   padding-bottom: 5rem;
   padding-top: 5rem;
+  margin-top: 5rem;
 
 }
 
@@ -79,14 +80,14 @@ html {
       color: #79C753;
       background-color: #f5f5f5; }
   .subject-btn__4 {
-    background-color: #c47fad; }
+    background-color: #2E4A62; }
     .subject-btn__4:hover {
-      color: #c47fad;
+      color: #2E4A62;
       background-color: #f5f5f5; }
   .subject-btn__5 {
-    background-color: #944743; }
+    background-color: #bc243c; }
     .subject-btn__5:hover {
-      color: #944743;
+      color: #bc243c;
       background-color: #f5f5f5; }
 
       .subject-btn__6 {
@@ -95,14 +96,14 @@ html {
           color: #ed9302;
           background-color: #f5f5f5; }
       .subject-btn__7 {
-        background-color: #6B5B95; }
+        background-color: #005960; }
         .subject-btn__7:hover {
-          color: #6B5B95;
+          color: #005960;
           background-color: #f5f5f5; }
       .subject-btn__8 {
-        background-color: #2E4A62; }
+        background-color: #c47fad; }
         .subject-btn__8:hover {
-          color: #2E4A62;}
+          color: #c47fad;}
 
 .col {
   float: left;
