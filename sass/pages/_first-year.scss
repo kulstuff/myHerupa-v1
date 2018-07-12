@@ -1,0 +1,63 @@
+.first-year{
+    height: 100vh;
+    width: 100%;
+    background-color:#F5F5F5;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.btn__subject{
+    &--chem{
+        @include color-year-btn($color-chem);
+    }
+
+    &--com{
+        @include color-year-btn($color-com);
+    }
+
+    &--cs1{
+        @include color-year-btn($color-cs1);
+    }
+
+    &--cs2{
+        @include color-year-btn($color-cs2);
+    }
+
+    &--draw1{
+        @include color-year-btn($color-draw1);
+    }
+
+    &--draw2{
+        @include color-year-btn($color-draw2);
+    }
+
+    &--electrical{
+        @include color-year-btn($color-electrical);
+    }
+
+    &--electronics{
+        @include color-year-btn($color-electronics);
+
+       
+    }
+
+    &--env{
+        @include color-year-btn($color-env);
+    }
+
+    &--math1{
+        @include color-year-btn($color-math1);  
+    }
+
+    &--math2{
+        @include color-year-btn($color-math2);
+    }
+
+    &--mech{
+        @include color-year-btn($color-mech);
+    }
+
+    &--phy{
+        @include color-year-btn($color-phy);
+    }
+}

@@ -1,0 +1,129 @@
+.btn{
+    width: 100%;
+    padding: 1.7rem;
+    font-size: 3rem;
+    height: 100%;
+    background-color: $color-black;
+    color: $color-white;
+    transition: all .5s;
+    text-align: center;
+
+    &__first-year,
+    &__second-year{
+            background-color: $color-white;                      
+            &:hover{
+                background-color: rgba(white, 0.7);
+            }
+
+            &--text{
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: inherit;
+
+                &:hover{
+                    color: white;
+                    font-weight: 900;
+                }
+            }
+        @media screen and (max-width:600px){
+            font-size: 2.7rem;
+        }
+        @media screen and (max-width:450px){
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width:350px){
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        @media screen and (min-width:1400px){
+            font-size: 4rem;
+        }
+
+        @media screen and (min-width:2560px){
+            font-size:6rem;
+        }
+        @media screen and (min-width:3840px){
+            font-size:9rem;
+        }
+
+        
+        }
+        
+    &__first-year{
+        @media screen and (max-width:900px){
+            margin-bottom: 2rem;
+        }
+
+        &--text{
+        background-image: linear-gradient(to right
+            ,#5172FE 10%,#5990FD, #7ACAFE 40%,#CE93FF,#A452D2,#9645FA);         
+        }
+    }
+
+    &__second-year--text{
+        background-image: linear-gradient(to right,
+            #FF463B,#FE5D38,#FB9D34 30%,#FFC338,#FCFC3D);
+        }
+
+    
+&__subject,
+&__stream{
+    @media screen and (max-width:600px){
+        font-size: 2.7rem;
+    }
+    @media screen and (max-width:450px){
+        font-size: 2.5rem;
+    }
+    @media screen and (max-width:350px){
+        font-size: 2rem;
+    }
+    @media screen and (min-width:1400px){
+        font-size: 4rem;
+        padding: 3rem;
+    }
+
+    @media screen and (min-width:2560px){
+        font-size:6rem;
+        padding: 3.5rem;
+    }
+    @media screen and (min-width:3840px){
+        font-size:9rem;
+        padding: 4rem;
+    }
+}
+&__more{
+    text-align: center;
+    background-color: $color-gray-dark;
+    padding: 3rem;
+    margin-bottom: 1rem;
+    color: $color-black;
+        padding: 1.5rem 0;
+        transition: all .3s;
+    &:hover{
+        background-color: rgba($color-gray-light,0.5);
+        box-shadow: 0rem 0rem 6rem rgba($color-black,0.2);
+    }
+
+    @media screen and (max-width:600px){
+        
+    }
+    @media screen and (max-width:450px){
+        padding: .9rem;
+        
+    }
+    @media screen and (max-width:350px){
+        padding: .7rem;
+
+    }
+    @media screen and (min-width:1400px){
+        margin-top: 2rem;
+    }
+
+    @media screen and (min-width:2560px){
+        margin-top: 4rem;
+    }
+    @media screen and (min-width:3840px){
+        margin-top: 6rem;
+    }
+}
+}
