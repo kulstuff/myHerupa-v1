@@ -45,8 +45,9 @@ html {
   text-decoration: underline ;
   padding-left: 3rem;
   padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-top: 25rem;
   margin-top: 5rem;
+
 
 }
 
@@ -62,7 +63,7 @@ html {
   text-align: center;
 }
 .subject-btn:last-child{
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
   .subject-btn__1 {
     background-color: #E94B3C; }
@@ -111,6 +112,12 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
+  .semester-3{
+    font-size:4rem;
+  }
+  .semester-4{
+    font-size:4rem;
+  }
   .col-md-12 {
     width: 100%; }
   .col-md-11 {
@@ -137,6 +144,12 @@ html {
     width: 8.332%; } }
 
 @media screen and (max-width: 900px) {
+  .semester-3{
+    font-size:2.5rem;
+  }
+  .semester-4{
+    font-size:2.5rem;
+  }
   .stream__heading {
     font-size: 7rem; }
   .stream__subheading {
@@ -170,6 +183,12 @@ html {
     width: 8.332%; } }
 
 @media screen and (max-width: 600px) {
+  .semester-3{
+    font-size:2rem;
+  }
+  .semester-4{
+    font-size:2rem;
+  }
   .stream__heading {
     font-size: 3rem; }
   .stream__subheading {
