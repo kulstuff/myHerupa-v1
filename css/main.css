@@ -150,12 +150,12 @@ html {
       letter-spacing: 0; } }
   @media screen and (max-width: 450px) {
     .subject-heading {
-      font-size: 4rem;
+      font-size: 3.15rem;
       padding: 1.3rem 0; } }
   @media screen and (max-width: 350px) {
     .subject-heading {
-      font-size: 3.75rem;
-      padding: 1.5rem 0; } }
+      font-size: 3rem;
+      padding: 1.5rem 0rem; } }
   @media screen and (min-width: 1400px) {
     .subject-heading {
       font-size: 12.5rem;
@@ -186,21 +186,21 @@ html {
   @media screen and (max-width: 450px) {
     .quote {
       font-size: 2.33333rem;
-      padding: 5rem; } }
+      padding: 4rem; } }
   @media screen and (max-width: 350px) {
     .quote {
       font-size: 2.1875rem; } }
   @media screen and (min-width: 1400px) {
     .quote {
       padding: 8rem;
-      font-size: 7.1rem; } }
+      font-size: 5.325rem; } }
   @media screen and (min-width: 2560px) {
     .quote {
-      padding: 11rem;
-      font-size: 9.02694rem; } }
+      padding: 7rem;
+      font-size: 8.02394rem; } }
   @media screen and (min-width: 3840px) {
     .quote {
-      padding: 25rem;
+      padding: 20rem;
       font-size: 12.76013rem; } }
 
 .more-stuff__heading {
@@ -321,6 +321,11 @@ html {
 
 @media screen and (max-width: 600px) {
   .hide-phone {
+    visibility: hidden;
+    position: absolute; } }
+
+@media screen and (min-width: 601px) {
+  .hide-desktop {
     visibility: hidden;
     position: absolute; } }
 
@@ -503,6 +508,7 @@ html {
     background-color: #f5f5f5 !important; }
 
 body {
+  height: 100%;
   background-color: #eee; }
 
 .menu__subject--chem {
