@@ -157,12 +157,12 @@
 
     }
     @media screen and (max-width:450px){
-        font-size: 4rem;
+        font-size: 3.15rem;
         padding: 1.3rem 0;
     }
     @media screen and (max-width:350px){
-        font-size: 3.75rem;
-        padding: 1.5rem 0;
+        font-size: 3rem;
+        padding: 1.5rem 0rem;
     }
     @media screen and (min-width:1400px){
         font-size: 12.5rem;
@@ -197,22 +197,22 @@
     }
     @media screen and (max-width:450px){
         font-size: ((4*3.5)/6)*1rem;
-        padding: 5rem ;
+        padding: 4rem ;
     }
     @media screen and (max-width:350px){
         font-size: ((3.75*3.5)/6)*1rem;
     }
     @media screen and (min-width:1400px){
         padding: 8rem;
-        font-size: ((12*3.55)/6)*1rem;
+        font-size: ((12*3.55)/8)*1rem;
     }
     @media screen and (min-width:2560px){
-        padding: 11rem;
-        font-size: ((20.633*3.5)/8)*1rem;  
+        padding: 7rem;
+        font-size: ((20.633*3.5)/9)*1rem;  
 
     }
     @media screen and (min-width:3840px){
-        padding: 25rem;
+        padding: 20rem;
         font-size:((29.166*3.5)/8)*1rem;
     }
 }
