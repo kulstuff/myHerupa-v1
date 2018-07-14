@@ -12,7 +12,7 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <section class="landing">
+    <section class="landing scr__panel">
       <div class="landing__heading">
         <span class="landing__heading-h">H</span><span class="landing__heading-e">e</span><span class="landing__heading-r">r</span><span class="landing__heading-u">u</span><span class="landing__heading-p">p</span><span class="landing__heading-a">a</span><span class="landing__heading-full-stop">.</span>
       </div>
@@ -24,11 +24,11 @@
         <a href="#" class="col col-md-6 col-sm-12 col-lg-6 landing__btn--second-year">
           <div class="landing__btn--second-year--text">Second Year</div>
         </a>
-    </div> 
+    </div>
     <div class="landing__tri">
     </div>
     </section>
-    <section class="about-us">
+    <section class="about-us scr__panel">
         <div class="about-us__heading">
           What is <span class="bold">Herupa</span> ?
           <hr>
@@ -55,7 +55,7 @@
     <div class="about-us__tri">
 
     </section>
-    <section class="services">
+    <section class="services scr__panel">
       <div class="services__heading">
         Our<span class="bold">Services</span>
       </div>
@@ -69,7 +69,7 @@
            <h4 class="services__box-heading">Notes</h4>
         </div>
        </div>
-       
+
        <div class="col col-xs-4 col-md-4 col-lg-4">
         <div class="services__box">
             <i class="icon-basic-book"></i>
@@ -81,7 +81,7 @@
         <div class="services__box remove-border-right">
            <i class="icon-basic-webpage-txt"></i>
            <p class="services__box-text">You get the most of the slides available for every subject throughout the semester.</p>
-           <h4 class="services__box-heading">Slides</h4>           
+           <h4 class="services__box-heading">Slides</h4>
         </div>
       </div>
       </div>
@@ -93,7 +93,7 @@
             <h4 class="services__box-heading">Tutorial<br>Sheets</h4>
          </div>
         </div>
-        
+
         <div class="col col-xs-4 col-md-4 col-lg-4">
          <div class="services__box">
              <i class="icon-basic-todolist-pencil"></i>
@@ -105,7 +105,7 @@
          <div class="services__box remove-border-right">
             <i class="icon-basic-sheet-multiple"></i>
             <p class="services__box-text">We also have previous exam papers from last two years of each subject including auxiliary exams.</p>
-            <h4 class="services__box-heading">Previous<br>Paper</h4>           
+            <h4 class="services__box-heading">Previous<br>Paper</h4>
          </div>
        </div>
        </div>
@@ -117,7 +117,7 @@
             <h4 class="services__box-heading">CGPA<br>Calculator</h4>
          </div>
         </div>
-        
+
         <div class="col col-xs-4 col-md-4 col-lg-4">
          <div class="services__box remove-border-bottom">
              <i class="icon-basic-rss"></i>
@@ -129,13 +129,23 @@
          <div class="services__box remove-border-bottom remove-border-right">
             <i class="icon-basic-calendar"></i>
             <p class="services__box-text">We will keep you updated with all announcements from Thapar Institute of Engineering and Technology.</p>
-            <h4 class="services__box-heading">News &<br>Announcement</h4>           
+            <h4 class="services__box-heading">News &<br>Announcement</h4>
          </div>
        </div>
        </div>
-      
-   </section>
 
-   
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
+    <script src="js/Scrollify-master/jquery.scrollify.js"></script>
+    <script>
+        $(function() {
+            $.scrollify({
+                section : ".scr__panel",
+            });
+        });
+    </script>
+
+
 </body>
 </html>
