@@ -13,19 +13,19 @@ body {
   animation: fadeIn 2s; }
 
 .subject__ {
-  /* Mathematics 1 */
-  /* Mathematics 2 */
-  /* Applied Physics */
-  /* Applied Chemistry */
-  /* Professional Communication */
-  /* Computer Science 1 */
-  /* Computer Science 2 */
-  /* Engineering & Drawing 1 */
-  /* Engineering & Drawing 2 */
-  /* Electrical */
-  /* Electronics */
-  /* Environment */
-  /* Mechanics */ }
+  /* 1.Mathematics 1 */
+  /* 2.Mathematics 2 */
+  /* 3.Applied Physics */
+  /* 4.Applied Chemistry */
+  /* 5.Professional Communication */
+  /* 6.Computer Science 1 */
+  /* 7.Computer Science 2 */
+  /* 8.Engineering & Drawing 1 */
+  /* 9.Engineering & Drawing 2 */
+  /* 10.Electrical */
+  /* 11.Electronics */
+  /* 12.Environment */
+  /* 13.Mechanics */ }
   .subject__menu {
     width: 8rem;
     float: left;
@@ -58,367 +58,367 @@ body {
     font-size: 3rem;
     color: white;
     transition: all 0.7s; }
-  .subject__math1-heading-number {
+  .subject__1-heading-number {
     color: #E94B3C; }
-  .subject__math1-menu {
+  .subject__1-menu {
     background-color: #E94B3C; }
-  .subject__math1-btn-site {
+  .subject__1-btn-site {
     background-color: #e63625;
     width: 100%; }
-  .subject__math1-btn-syllabus {
+  .subject__1-btn-syllabus {
     background-color: #ec6053;
     width: 33.33%; }
-  .subject__math1-btn-books {
+  .subject__1-btn-books {
     background-color: #ee756a;
     width: 33.33%; }
-  .subject__math1-btn-notes {
+  .subject__1-btn-notes {
     background-color: #ec6053;
     width: 33.33%; }
-  .subject__math1-btn-tut {
+  .subject__1-btn-tut {
     background-color: #E94B3C;
     width: 50%; }
-  .subject__math1-btn-tut-sol {
+  .subject__1-btn-tut-sol {
     background-color: #E94B3C;
     width: 50%; }
-  .subject__math1-btn-ppr {
+  .subject__1-btn-ppr {
     background-color: #d92919;
     width: 100%; }
-  .subject__math1-btn-site:hover, .subject__math1-btn-syllabus:hover, .subject__math1-btn-books:hover, .subject__math1-btn-notes:hover, .subject__math1-btn-tut:hover, .subject__math1-btn-tut-sol:hover, .subject__math1-btn-ppr:hover {
+  .subject__1-btn-site:hover, .subject__1-btn-syllabus:hover, .subject__1-btn-books:hover, .subject__1-btn-notes:hover, .subject__1-btn-tut:hover, .subject__1-btn-tut-sol:hover, .subject__1-btn-ppr:hover {
     background-color: black;
     color: #E94B3C; }
-  .subject__math2-heading-number {
+  .subject__2-heading-number {
     color: #6F9FD8; }
-  .subject__math2-menu {
+  .subject__2-menu {
     background-color: #6F9FD8; }
-  .subject__math2-btn-site {
+  .subject__2-btn-site {
     background-color: #5b92d3;
     width: 100%; }
-  .subject__math2-btn-syllabus {
+  .subject__2-btn-syllabus {
     background-color: #83acdd;
     width: 33.33%; }
-  .subject__math2-btn-books {
+  .subject__2-btn-books {
     background-color: #97bae3;
     width: 33.33%; }
-  .subject__math2-btn-notes {
+  .subject__2-btn-notes {
     background-color: #83acdd;
     width: 33.33%; }
-  .subject__math2-btn-tut {
+  .subject__2-btn-tut {
     background-color: #6F9FD8;
     width: 50%; }
-  .subject__math2-btn-tut-sol {
+  .subject__2-btn-tut-sol {
     background-color: #6F9FD8;
     width: 50%; }
-  .subject__math2-btn-ppr {
+  .subject__2-btn-ppr {
     background-color: #4784cd;
     width: 100%; }
-  .subject__math2-btn-site:hover, .subject__math2-btn-syllabus:hover, .subject__math2-btn-books:hover, .subject__math2-btn-notes:hover, .subject__math2-btn-tut:hover, .subject__math2-btn-tut-sol:hover, .subject__math2-btn-ppr:hover {
+  .subject__2-btn-site:hover, .subject__2-btn-syllabus:hover, .subject__2-btn-books:hover, .subject__2-btn-notes:hover, .subject__2-btn-tut:hover, .subject__2-btn-tut-sol:hover, .subject__2-btn-ppr:hover {
     background-color: black;
     color: #6F9FD8; }
-  .subject__phy-heading-number {
+  .subject__3-heading-number {
     color: #79C753; }
-  .subject__phy-menu {
+  .subject__3-menu {
     background-color: #79C753; }
-  .subject__phy-btn-site {
+  .subject__3-btn-site {
     background-color: #6ac140;
     width: 100%; }
-  .subject__phy-btn-syllabus {
+  .subject__3-btn-syllabus {
     background-color: #88cd66;
     width: 33.33%; }
-  .subject__phy-btn-books {
+  .subject__3-btn-books {
     background-color: #97d479;
     width: 33.33%; }
-  .subject__phy-btn-notes {
+  .subject__3-btn-notes {
     background-color: #88cd66;
     width: 33.33%; }
-  .subject__phy-btn-tut {
+  .subject__3-btn-tut {
     background-color: #79C753;
     width: 50%; }
-  .subject__phy-btn-tut-sol {
+  .subject__3-btn-tut-sol {
     background-color: #79C753;
     width: 50%; }
-  .subject__phy-btn-ppr {
+  .subject__3-btn-ppr {
     background-color: #5fae39;
     width: 100%; }
-  .subject__phy-btn-site:hover, .subject__phy-btn-syllabus:hover, .subject__phy-btn-books:hover, .subject__phy-btn-notes:hover, .subject__phy-btn-tut:hover, .subject__phy-btn-tut-sol:hover, .subject__phy-btn-ppr:hover {
+  .subject__3-btn-site:hover, .subject__3-btn-syllabus:hover, .subject__3-btn-books:hover, .subject__3-btn-notes:hover, .subject__3-btn-tut:hover, .subject__3-btn-tut-sol:hover, .subject__3-btn-ppr:hover {
     background-color: black;
     color: #79C753; }
-  .subject__chem-heading-number {
+  .subject__4-heading-number {
     color: #4F84C4; }
-  .subject__chem-menu {
+  .subject__4-menu {
     background-color: #4F84C4; }
-  .subject__chem-btn-site {
+  .subject__4-btn-site {
     background-color: #3f77bb;
     width: 100%; }
-  .subject__chem-btn-syllabus {
+  .subject__4-btn-syllabus {
     background-color: #6291ca;
     width: 33.33%; }
-  .subject__chem-btn-books {
+  .subject__4-btn-books {
     background-color: #759fd1;
     width: 33.33%; }
-  .subject__chem-btn-notes {
+  .subject__4-btn-notes {
     background-color: #6291ca;
     width: 33.33%; }
-  .subject__chem-btn-tut {
+  .subject__4-btn-tut {
     background-color: #4F84C4;
     width: 50%; }
-  .subject__chem-btn-tut-sol {
+  .subject__4-btn-tut-sol {
     background-color: #4F84C4;
     width: 50%; }
-  .subject__chem-btn-ppr {
+  .subject__4-btn-ppr {
     background-color: #386ba8;
     width: 100%; }
-  .subject__chem-btn-site:hover, .subject__chem-btn-syllabus:hover, .subject__chem-btn-books:hover, .subject__chem-btn-notes:hover, .subject__chem-btn-tut:hover, .subject__chem-btn-tut-sol:hover, .subject__chem-btn-ppr:hover {
+  .subject__4-btn-site:hover, .subject__4-btn-syllabus:hover, .subject__4-btn-books:hover, .subject__4-btn-notes:hover, .subject__4-btn-tut:hover, .subject__4-btn-tut-sol:hover, .subject__4-btn-ppr:hover {
     background-color: black;
     color: #4F84C4; }
-  .subject__com-heading-number {
+  .subject__5-heading-number {
     color: #bc243c; }
-  .subject__com-menu {
+  .subject__5-menu {
     background-color: #bc243c; }
-  .subject__com-btn-site {
+  .subject__5-btn-site {
     background-color: #a72035;
     width: 100%; }
-  .subject__com-btn-syllabus {
+  .subject__5-btn-syllabus {
     background-color: #d12843;
     width: 33.33%; }
-  .subject__com-btn-books {
+  .subject__5-btn-books {
     background-color: #d93a53;
     width: 33.33%; }
-  .subject__com-btn-notes {
+  .subject__5-btn-notes {
     background-color: #d12843;
     width: 33.33%; }
-  .subject__com-btn-tut {
+  .subject__5-btn-tut {
     background-color: #bc243c;
     width: 50%; }
-  .subject__com-btn-tut-sol {
+  .subject__5-btn-tut-sol {
     background-color: #bc243c;
     width: 50%; }
-  .subject__com-btn-ppr {
+  .subject__5-btn-ppr {
     background-color: #911c2e;
     width: 100%; }
-  .subject__com-btn-site:hover, .subject__com-btn-syllabus:hover, .subject__com-btn-books:hover, .subject__com-btn-notes:hover, .subject__com-btn-tut:hover, .subject__com-btn-tut-sol:hover, .subject__com-btn-ppr:hover {
+  .subject__5-btn-site:hover, .subject__5-btn-syllabus:hover, .subject__5-btn-books:hover, .subject__5-btn-notes:hover, .subject__5-btn-tut:hover, .subject__5-btn-tut-sol:hover, .subject__5-btn-ppr:hover {
     background-color: black;
     color: #bc243c; }
-  .subject__cs1-heading-number {
+  .subject__6-heading-number {
     color: #005960; }
-  .subject__cs1-menu {
+  .subject__6-menu {
     background-color: #005960; }
-  .subject__cs1-btn-site {
+  .subject__6-btn-site {
     background-color: #004147;
     width: 100%; }
-  .subject__cs1-btn-syllabus {
+  .subject__6-btn-syllabus {
     background-color: #00717a;
     width: 33.33%; }
-  .subject__cs1-btn-books {
+  .subject__6-btn-books {
     background-color: #008893;
     width: 33.33%; }
-  .subject__cs1-btn-notes {
+  .subject__6-btn-notes {
     background-color: #00717a;
     width: 33.33%; }
-  .subject__cs1-btn-tut {
+  .subject__6-btn-tut {
     background-color: #005960;
     width: 50%; }
-  .subject__cs1-btn-tut-sol {
+  .subject__6-btn-tut-sol {
     background-color: #005960;
     width: 50%; }
-  .subject__cs1-btn-ppr {
+  .subject__6-btn-ppr {
     background-color: #002a2d;
     width: 100%; }
-  .subject__cs1-btn-site:hover, .subject__cs1-btn-syllabus:hover, .subject__cs1-btn-books:hover, .subject__cs1-btn-notes:hover, .subject__cs1-btn-tut:hover, .subject__cs1-btn-tut-sol:hover, .subject__cs1-btn-ppr:hover {
+  .subject__6-btn-site:hover, .subject__6-btn-syllabus:hover, .subject__6-btn-books:hover, .subject__6-btn-notes:hover, .subject__6-btn-tut:hover, .subject__6-btn-tut-sol:hover, .subject__6-btn-ppr:hover {
     background-color: black;
     color: #005960; }
-  .subject__cs2-heading-number {
+  .subject__7-heading-number {
     color: #D2691E; }
-  .subject__cs2-menu {
+  .subject__7-menu {
     background-color: #D2691E; }
-  .subject__cs2-btn-site {
+  .subject__7-btn-site {
     background-color: #bc5e1b;
     width: 100%; }
-  .subject__cs2-btn-syllabus {
+  .subject__7-btn-syllabus {
     background-color: #e07529;
     width: 33.33%; }
-  .subject__cs2-btn-books {
+  .subject__7-btn-books {
     background-color: #e4843f;
     width: 33.33%; }
-  .subject__cs2-btn-notes {
+  .subject__7-btn-notes {
     background-color: #e07529;
     width: 33.33%; }
-  .subject__cs2-btn-tut {
+  .subject__7-btn-tut {
     background-color: #D2691E;
     width: 50%; }
-  .subject__cs2-btn-tut-sol {
+  .subject__7-btn-tut-sol {
     background-color: #D2691E;
     width: 50%; }
-  .subject__cs2-btn-ppr {
+  .subject__7-btn-ppr {
     background-color: #a55318;
     width: 100%; }
-  .subject__cs2-btn-site:hover, .subject__cs2-btn-syllabus:hover, .subject__cs2-btn-books:hover, .subject__cs2-btn-notes:hover, .subject__cs2-btn-tut:hover, .subject__cs2-btn-tut-sol:hover, .subject__cs2-btn-ppr:hover {
+  .subject__7-btn-site:hover, .subject__7-btn-syllabus:hover, .subject__7-btn-books:hover, .subject__7-btn-notes:hover, .subject__7-btn-tut:hover, .subject__7-btn-tut-sol:hover, .subject__7-btn-ppr:hover {
     background-color: black;
     color: #D2691E; }
-  .subject__draw1-heading-number {
+  .subject__8-heading-number {
     color: #2E4A62; }
-  .subject__draw1-menu {
+  .subject__8-menu {
     background-color: #2E4A62; }
-  .subject__draw1-btn-site {
+  .subject__8-btn-site {
     background-color: #263d51;
     width: 100%; }
-  .subject__draw1-btn-syllabus {
+  .subject__8-btn-syllabus {
     background-color: #365773;
     width: 33.33%; }
-  .subject__draw1-btn-books {
+  .subject__8-btn-books {
     background-color: #3e6485;
     width: 33.33%; }
-  .subject__draw1-btn-notes {
+  .subject__8-btn-notes {
     background-color: #365773;
     width: 33.33%; }
-  .subject__draw1-btn-tut {
+  .subject__8-btn-tut {
     background-color: #2E4A62;
     width: 50%; }
-  .subject__draw1-btn-tut-sol {
+  .subject__8-btn-tut-sol {
     background-color: #2E4A62;
     width: 50%; }
-  .subject__draw1-btn-ppr {
+  .subject__8-btn-ppr {
     background-color: #1e303f;
     width: 100%; }
-  .subject__draw1-btn-site:hover, .subject__draw1-btn-syllabus:hover, .subject__draw1-btn-books:hover, .subject__draw1-btn-notes:hover, .subject__draw1-btn-tut:hover, .subject__draw1-btn-tut-sol:hover, .subject__draw1-btn-ppr:hover {
+  .subject__8-btn-site:hover, .subject__8-btn-syllabus:hover, .subject__8-btn-books:hover, .subject__8-btn-notes:hover, .subject__8-btn-tut:hover, .subject__8-btn-tut-sol:hover, .subject__8-btn-ppr:hover {
     background-color: black;
     color: #2E4A62; }
-  .subject__draw2-heading-number {
+  .subject__9-heading-number {
     color: #4f1a5f; }
-  .subject__draw2-menu {
+  .subject__9-menu {
     background-color: #4f1a5f; }
-  .subject__draw2-btn-site {
+  .subject__9-btn-site {
     background-color: #3e154b;
     width: 100%; }
-  .subject__draw2-btn-syllabus {
+  .subject__9-btn-syllabus {
     background-color: #601f73;
     width: 33.33%; }
-  .subject__draw2-btn-books {
+  .subject__9-btn-books {
     background-color: #702587;
     width: 33.33%; }
-  .subject__draw2-btn-notes {
+  .subject__9-btn-notes {
     background-color: #601f73;
     width: 33.33%; }
-  .subject__draw2-btn-tut {
+  .subject__9-btn-tut {
     background-color: #4f1a5f;
     width: 50%; }
-  .subject__draw2-btn-tut-sol {
+  .subject__9-btn-tut-sol {
     background-color: #4f1a5f;
     width: 50%; }
-  .subject__draw2-btn-ppr {
+  .subject__9-btn-ppr {
     background-color: #2e0f37;
     width: 100%; }
-  .subject__draw2-btn-site:hover, .subject__draw2-btn-syllabus:hover, .subject__draw2-btn-books:hover, .subject__draw2-btn-notes:hover, .subject__draw2-btn-tut:hover, .subject__draw2-btn-tut-sol:hover, .subject__draw2-btn-ppr:hover {
+  .subject__9-btn-site:hover, .subject__9-btn-syllabus:hover, .subject__9-btn-books:hover, .subject__9-btn-notes:hover, .subject__9-btn-tut:hover, .subject__9-btn-tut-sol:hover, .subject__9-btn-ppr:hover {
     background-color: black;
     color: #4f1a5f; }
-  .subject__electrical-heading-number {
+  .subject__10-heading-number {
     color: #944743; }
-  .subject__electrical-menu {
+  .subject__10-menu {
     background-color: #944743; }
-  .subject__electrical-btn-site {
+  .subject__10-btn-site {
     background-color: #823f3b;
     width: 100%; }
-  .subject__electrical-btn-syllabus {
+  .subject__10-btn-syllabus {
     background-color: #a64f4b;
     width: 33.33%; }
-  .subject__electrical-btn-books {
+  .subject__10-btn-books {
     background-color: #b35c57;
     width: 33.33%; }
-  .subject__electrical-btn-notes {
+  .subject__10-btn-notes {
     background-color: #a64f4b;
     width: 33.33%; }
-  .subject__electrical-btn-tut {
+  .subject__10-btn-tut {
     background-color: #944743;
     width: 50%; }
-  .subject__electrical-btn-tut-sol {
+  .subject__10-btn-tut-sol {
     background-color: #944743;
     width: 50%; }
-  .subject__electrical-btn-ppr {
+  .subject__10-btn-ppr {
     background-color: #713633;
     width: 100%; }
-  .subject__electrical-btn-site:hover, .subject__electrical-btn-syllabus:hover, .subject__electrical-btn-books:hover, .subject__electrical-btn-notes:hover, .subject__electrical-btn-tut:hover, .subject__electrical-btn-tut-sol:hover, .subject__electrical-btn-ppr:hover {
+  .subject__10-btn-site:hover, .subject__10-btn-syllabus:hover, .subject__10-btn-books:hover, .subject__10-btn-notes:hover, .subject__10-btn-tut:hover, .subject__10-btn-tut-sol:hover, .subject__10-btn-ppr:hover {
     background-color: black;
     color: #944743; }
-  .subject__electronics-heading-number {
+  .subject__11-heading-number {
     color: #c47fad; }
-  .subject__electronics-menu {
+  .subject__11-menu {
     background-color: #c47fad; }
-  .subject__electronics-btn-site {
+  .subject__11-btn-site {
     background-color: #bc6ea2;
     width: 100%; }
-  .subject__electronics-btn-syllabus {
+  .subject__11-btn-syllabus {
     background-color: #cc90b8;
     width: 33.33%; }
-  .subject__electronics-btn-books {
+  .subject__11-btn-books {
     background-color: #d4a2c3;
     width: 33.33%; }
-  .subject__electronics-btn-notes {
+  .subject__11-btn-notes {
     background-color: #cc90b8;
     width: 33.33%; }
-  .subject__electronics-btn-tut {
+  .subject__11-btn-tut {
     background-color: #c47fad;
     width: 50%; }
-  .subject__electronics-btn-tut-sol {
+  .subject__11-btn-tut-sol {
     background-color: #c47fad;
     width: 50%; }
-  .subject__electronics-btn-ppr {
+  .subject__11-btn-ppr {
     background-color: #b45c97;
     width: 100%; }
-  .subject__electronics-btn-site:hover, .subject__electronics-btn-syllabus:hover, .subject__electronics-btn-books:hover, .subject__electronics-btn-notes:hover, .subject__electronics-btn-tut:hover, .subject__electronics-btn-tut-sol:hover, .subject__electronics-btn-ppr:hover {
+  .subject__11-btn-site:hover, .subject__11-btn-syllabus:hover, .subject__11-btn-books:hover, .subject__11-btn-notes:hover, .subject__11-btn-tut:hover, .subject__11-btn-tut-sol:hover, .subject__11-btn-ppr:hover {
     background-color: black;
     color: #c47fad; }
-  .subject__env-heading-number {
+  .subject__12-heading-number {
     color: #6B5B95; }
-  .subject__env-menu {
+  .subject__12-menu {
     background-color: #6B5B95; }
-  .subject__env-btn-site {
+  .subject__12-btn-site {
     background-color: #605185;
     width: 100%; }
-  .subject__env-btn-syllabus {
+  .subject__12-btn-syllabus {
     background-color: #7867a2;
     width: 33.33%; }
-  .subject__env-btn-books {
+  .subject__12-btn-books {
     background-color: #8677ac;
     width: 33.33%; }
-  .subject__env-btn-notes {
+  .subject__12-btn-notes {
     background-color: #7867a2;
     width: 33.33%; }
-  .subject__env-btn-tut {
+  .subject__12-btn-tut {
     background-color: #6B5B95;
     width: 50%; }
-  .subject__env-btn-tut-sol {
+  .subject__12-btn-tut-sol {
     background-color: #6B5B95;
     width: 50%; }
-  .subject__env-btn-ppr {
+  .subject__12-btn-ppr {
     background-color: #544875;
     width: 100%; }
-  .subject__env-btn-site:hover, .subject__env-btn-syllabus:hover, .subject__env-btn-books:hover, .subject__env-btn-notes:hover, .subject__env-btn-tut:hover, .subject__env-btn-tut-sol:hover, .subject__env-btn-ppr:hover {
+  .subject__12-btn-site:hover, .subject__12-btn-syllabus:hover, .subject__12-btn-books:hover, .subject__12-btn-notes:hover, .subject__12-btn-tut:hover, .subject__12-btn-tut-sol:hover, .subject__12-btn-ppr:hover {
     background-color: black;
     color: #6B5B95; }
-  .subject__mech-heading-number {
+  .subject__13-heading-number {
     color: #ed9302; }
-  .subject__mech-menu {
+  .subject__13-menu {
     background-color: #ed9302; }
-  .subject__mech-btn-site {
+  .subject__13-btn-site {
     background-color: #d48302;
     width: 100%; }
-  .subject__mech-btn-syllabus {
+  .subject__13-btn-syllabus {
     background-color: #fda00c;
     width: 33.33%; }
-  .subject__mech-btn-books {
+  .subject__13-btn-books {
     background-color: #fdaa25;
     width: 33.33%; }
-  .subject__mech-btn-notes {
+  .subject__13-btn-notes {
     background-color: #fda00c;
     width: 33.33%; }
-  .subject__mech-btn-tut {
+  .subject__13-btn-tut {
     background-color: #ed9302;
     width: 50%; }
-  .subject__mech-btn-tut-sol {
+  .subject__13-btn-tut-sol {
     background-color: #ed9302;
     width: 50%; }
-  .subject__mech-btn-ppr {
+  .subject__13-btn-ppr {
     background-color: #ba7402;
     width: 100%; }
-  .subject__mech-btn-site:hover, .subject__mech-btn-syllabus:hover, .subject__mech-btn-books:hover, .subject__mech-btn-notes:hover, .subject__mech-btn-tut:hover, .subject__mech-btn-tut-sol:hover, .subject__mech-btn-ppr:hover {
+  .subject__13-btn-site:hover, .subject__13-btn-syllabus:hover, .subject__13-btn-books:hover, .subject__13-btn-notes:hover, .subject__13-btn-tut:hover, .subject__13-btn-tut-sol:hover, .subject__13-btn-ppr:hover {
     background-color: black;
     color: #ed9302; }
