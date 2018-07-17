@@ -52,69 +52,83 @@ html {
   color: white;
   transition: all 0.5s;
   float: left; }
-  .subject-btn__maths1 {
+  /*1.maths1
+    2.maths2
+    3.Physics
+    4.Electronics
+    5.electrical
+    6.Mechanics
+    7.Environment
+    8.draw-1
+    9.draw-2
+    10.Chemistry
+    11.cs-1
+    12.cs-2
+    13.prof Communication*/
+
+  .subject-btn__1 {
     background-color: #E94B3C; }
-    .subject-btn__maths1:hover {
+    .subject-btn__1:hover {
       color: #E94B3C;
       background-color: #f5f5f5; }
-  .subject-btn__maths2 {
+  .subject-btn__2 {
     background-color: #6F9FD8; }
-    .subject-btn__maths2:hover {
+    .subject-btn__2:hover {
       color: #6F9FD8;
       background-color: #f5f5f5; }
-  .subject-btn__phy {
+  .subject-btn__3 {
     background-color: #79C753; }
-    .subject-btn__phy:hover {
+    .subject-btn__3:hover {
       color: #79C753;
       background-color: #f5f5f5; }
-  .subject-btn__electronics {
+  .subject-btn__4 {
     background-color: #c47fad; }
-    .subject-btn__electronics:hover {
+    .subject-btn__4:hover {
       color: #c47fad;
       background-color: #f5f5f5; }
-  .subject-btn__electrical {
+  .subject-btn__5 {
     background-color: #944743; }
-    .subject-btn__electrical:hover {
+    .subject-btn__5:hover {
       color: #944743;
       background-color: #f5f5f5; }
-  .subject-btn__mech {
+  .subject-btn__6 {
     background-color: #ed9302; }
-    .subject-btn__mech:hover {
+    .subject-btn__6:hover {
       color: #ed9302;
       background-color: #f5f5f5; }
-  .subject-btn__env {
+  .subject-btn__7 {
     background-color: #6B5B95; }
-    .subject-btn__env:hover {
+    .subject-btn__7:hover {
       color: #6B5B95;
       background-color: #f5f5f5; }
-  .subject-btn__draw1 {
+  .subject-btn__8 {
     background-color: #2E4A62; }
-    .subject-btn__draw1:hover {
+    .subject-btn__8:hover {
       color: #2E4A62;
       background-color: #f5f5f5; }
-  .subject-btn__draw2 {
+  .subject-btn__9 {
     background-color: #4f1a5f; }
-    .subject-btn__draw2:hover {
+    .subject-btn__9:hover {
       color: #4f1a5f;
       background-color: #f5f5f5; }
-  .subject-btn__com {
+  .subject-btn__10 {
     background-color: #bc243c; }
-    .subject-btn__com:hover {
+    .subject-btn__10:hover {
       color: #bc243c;
       background-color: #f5f5f5; }
-  .subject-btn__cs1 {
+  .subject-btn__11 {
     background-color: #005960; }
-    .subject-btn__cs1:hover {
+    .subject-btn__11:hover {
       color: #005960;
       background-color: #f5f5f5; }
-  .subject-btn__cs2 {
+  .subject-btn__12 {
     background-color: #D2691E; }
-    .subject-btn__cs2:hover {
+    .subject-btn__12:hover {
       color: #D2691E;
       background-color: #f5f5f5; }
-  .subject-btn__chem {
+  .subject-btn__13 {
     background-color: #4F84C4; }
-    .subject-btn__chem:hover {
+    .subject-btn__13:hover {
       color: #4F84C4;
       background-color: #f5f5f5; }
 
