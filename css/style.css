@@ -11,7 +11,11 @@
 html {
   min-height: 100vh;
   font-family: 'Raleway',sans-serif; }
-
+a{
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
 .bold {
   color: inherit;
   font-size: inherit;
@@ -327,83 +331,81 @@ html {
       background-color: #eee !important; 
       height: 100%;
     }
-  section.gpa {
-      padding: 2rem;
-      max-height: 45rem;
-      overflow: hidden;
-      overflow-y: scroll;
-  }    
     .gpa__heading {
       text-align: center;
-      padding: 0rem;
-      font-size: 8rem; }
-    
-    .gpa__subheading {
-      font-size: 4rem;
-      text-align: center;
-      color: darkgray;
-      padding: 2rem; }
-    
-    .gpa__calculator {
-      margin: 3rem; }
-      .gpa__calculator--item {
-        padding: 1rem;
-        display: block;
-        text-align: center; }
-    
-    .gpa__select {
-      font-size: 2rem;
-      border: 0; }
-    
-    .gpa__select--item {
-      padding: .5rem; }
-    
-    .gpa__display {
-      text-align: center;
-      font-size: 3rem;
-      padding: .5rem; }
-    
-    .table__header {
-      font-size: 3rem;
-      text-align: center;
-      font-weight: 900; }
-    
-    .table__item {
-      font-size: 3rem;
-      text-align: center;
       padding: 1rem;
-      border: 0;
-      display: inline;
-      background-color: lightgray; }
+      font-size: 6rem; }
     
-    .calculator {
+    .gpa__choice {
       position: relative;
-      height: 80vh; }
+      background-color: yellow;
+      color: black;
+      padding: 2rem;
+      font-size: 4.5rem;
+      text-align: center; }
+      .gpa__choice--first, .gpa__choice--second {
+        padding: 0 10rem;
+        cursor: pointer; }
+        .gpa__choice--first:hover, .gpa__choice--second:hover {
+          color: red; }
+      .gpa__choice--first {
+        color: white; }
     
-    th {
-      font-size: 3.5rem;
-      font-family: inherit;
-      font-weight: 400; }
+    .gpa__calc--first, .gpa__calc--second {
+      padding-left: 20rem; }
     
-    td {
-      text-align: center;
-      font-size: 3rem;
-      padding: .5rem; }
+    .gpa__calc--second {
+      display: none; }
     
-    .delete {
-      display: none;
-      width: 50%; }
-    
-    .add {
-      width: 100%;
-      float: left; }
-    
-    .btn-collect {
+    .gpa__table--first, .gpa__table--second {
       text-align: center; }
     
-    button {
+    .gpa__table--first {
+      margin-top: 10%; }
+    
+    .gpa__table--head {
+      font-size: 4rem;
+      font-weight: 700;
+      border: .5px solid black; }
+    
+    .gpa__table--item {
+      width: 100%;
+      font-size: 3rem;
+      padding: .5rem;
+      border: 0; }
+      .gpa__table--item select {
+        text-align: center;
+        font-size: inherit; }
+    
+    .gpa__calculate {
+      font-size: 2rem;
+      background-color: black;
+      color: white;
+      font-weight: 100;
+      min-width: 128px;
       border: 0; }
     
+    .gpa__add-row--first, .gpa__add-row--second {
+      width: 100%;
+      font-size: 3rem; }
+    
+    .selected__tri {
+      clip-path: polygon(50% 60%, 0% 110%, 100% 110%);
+      background-color: #eee;
+      width: 7rem;
+      height: 5rem;
+      position: absolute;
+      bottom: 0rem;
+      left: 50%;
+      transform: translateX(-340%); }
+    
+    .gpa__stream {
+      font-size: 3rem;
+      border: 0;
+      padding: .5rem 2rem;
+      margin: 4rem;
+      margin-left: 18%; }
+
     .wifi__heading {
       font-size: 8rem;
       padding: 1rem; }
