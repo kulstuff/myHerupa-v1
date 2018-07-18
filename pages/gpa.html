@@ -1,0 +1,240 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GPA Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+<body>
+    <div class="gpa__heading">GPA Calculator</div>
+    <section class="calculator gpa" id="calculator">
+        <table style="width:100%;" id="table">
+            <tr>
+                <th>S.No.</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><select name="subject" id="subject" class="table__item col-lg-12 subject-1">
+                        <option value="0" disabled selected>Select Subject</option>
+                        <option value="0" disabled>First Year</option>
+                        <option value="4.5">&nbsp; Applied Chemistry</option>
+                        <option value="4.5">&nbsp; Applied Physics</option>
+                        <option value="4">&nbsp; Computer Science 1</option>
+                        <option value="4">&nbsp; Computer Science 2</option>
+                        <option value="4.5">&nbsp; Electrical</option>
+                        <option value="4.5">&nbsp; Electronics</option>
+                        <option value="4">&nbsp; Engineering Drawing 1</option>
+                        <option value="4">&nbsp; Engineering Drawing 2</option>
+                        <option value="3">&nbsp; Environment</option>
+                        <option value="3.5">&nbsp; Mathematics 1</option>
+                        <option value="3.5">&nbsp; Mathematics 2</option>
+                        <option value="2.5">&nbsp; Mechanics</option>
+                        <option value="3">&nbsp; Professional Communication</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="grade" id="gpa__grade" class="table__item col-lg-10 grade-1">
+                                <option class="gpa__select--default" value="0" disabled selected>Select Grade</option>
+                                <option class="gpa__select--item" value="10">A+</option>
+                                <option class="gpa__select--item" value="10">A</option>
+                                <option class="gpa__select--item" value="9">A-</option>
+                                <option class="gpa__select--item" value="8">B</option>
+                                <option class="gpa__select--item" value="7">B-</option>
+                                <option class="gpa__select--item" value="6">C</option>
+                                <option class="gpa__select--item" value="5">C-</option>
+                                <option class="gpa__select--item" value="0">F</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <select name="subject" id="subject" class="table__item col-lg-12 subject-2">
+                        <option value="0" disabled selected>Select Subject</option>
+                        <option value="0" disabled>First Year</option>
+                        <option value="4.5">Applied Chemistry</option>
+                        <option value="4.5">Applied Physics</option>
+                        <option value="4">Computer Science 1</option>
+                        <option value="4">Computer Science 2</option>
+                        <option value="4.5">Electrical</option>
+                        <option value="4.5">Electronics</option>
+                        <option value="4">Engineering Drawing 1</option>
+                        <option value="4">Engineering Drawing 2</option>
+                        <option value="3">Environment</option>
+                        <option value="3.5">Mathematics 1</option>
+                        <option value="3.5">Mathematics 2</option>
+                        <option value="2.5">Mechanics</option>
+                        <option value="3">Professional Communication</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="grade" id="gpa__grade" class="table__item col-lg-10 grade-2">
+                        <option class="gpa__select--default" value="0" disabled selected>Select Grade</option>
+                        <option class="gpa__select--item" value="10">A+</option>
+                        <option class="gpa__select--item" value="10">A</option>
+                        <option class="gpa__select--item" value="9">A-</option>
+                        <option class="gpa__select--item" value="8">B</option>
+                        <option class="gpa__select--item" value="7">B-</option>
+                        <option class="gpa__select--item" value="6">C</option>
+                        <option class="gpa__select--item" value="5">C-</option>
+                        <option class="gpa__select--item" value="0">F</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <select name="subject" id="subject" class="table__item col-lg-12 subject-3">
+                        <option value="0" disabled selected>Select Subject</option>
+                        <option value="0" disabled>First Year</option>
+                        <option value="4.5">Applied Chemistry</option>
+                        <option value="4.5">Applied Physics</option>
+                        <option value="4">Computer Science 1</option>
+                        <option value="4">Computer Science 2</option>
+                        <option value="4.5">Electrical</option>
+                        <option value="4.5">Electronics</option>
+                        <option value="4">Engineering Drawing 1</option>
+                        <option value="4">Engineering Drawing 2</option>
+                        <option value="3">Environment</option>
+                        <option value="3.5">Mathematics 1</option>
+                        <option value="3.5">Mathematics 2</option>
+                        <option value="2.5">Mechanics</option>
+                        <option value="3">Professional Communication</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="grade" id="gpa__grade" class="table__item col-lg-10 grade-3">
+                        <option class="gpa__select--default" value="0" disabled selected>Select Grade</option>
+                        <option class="gpa__select--item" value="10">A+</option>
+                        <option class="gpa__select--item" value="10">A</option>
+                        <option class="gpa__select--item" value="9">A-</option>
+                        <option class="gpa__select--item" value="8">B</option>
+                        <option class="gpa__select--item" value="7">B-</option>
+                        <option class="gpa__select--item" value="6">C</option>
+                        <option class="gpa__select--item" value="5">C-</option>
+                        <option class="gpa__select--item" value="0">F</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <select name="subject" id="subject" class="table__item col-lg-12 subject-4">
+                        <option value="0" disabled selected>Select Subject</option>
+                        <option value="0" disabled>First Year</option>
+                        <option value="4.5">Applied Chemistry</option>
+                        <option value="4.5">Applied Physics</option>
+                        <option value="4">Computer Science 1</option>
+                        <option value="4">Computer Science 2</option>
+                        <option value="4.5">Electrical</option>
+                        <option value="4.5">Electronics</option>
+                        <option value="4">Engineering Drawing 1</option>
+                        <option value="4">Engineering Drawing 2</option>
+                        <option value="3">Environment</option>
+                        <option value="3.5">Mathematics 1</option>
+                        <option value="3.5">Mathematics 2</option>
+                        <option value="2.5">Mechanics</option>
+                        <option value="3">Professional Communication</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="grade" id="gpa__grade" class="table__item col-lg-10 grade-4">
+                        <option class="gpa__select--default" value="0" disabled selected>Select Grade</option>
+                        <option class="gpa__select--item" value="10">A+</option>
+                        <option class="gpa__select--item" value="10">A</option>
+                        <option class="gpa__select--item" value="9">A-</option>
+                        <option class="gpa__select--item" value="8">B</option>
+                        <option class="gpa__select--item" value="7">B-</option>
+                        <option class="gpa__select--item" value="6">C</option>
+                        <option class="gpa__select--item" value="5">C-</option>
+                        <option class="gpa__select--item" value="0">F</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                    <td>
+                        <select name="subject" id="subject" class="table__item col-lg-12 subject-5">
+                            <option value="0" disabled selected>Select Subject</option>
+                            <option value="0" disabled>First Year</option>
+                            <option value="4.5">Applied Chemistry</option>
+                            <option value="4.5">Applied Physics</option>
+                            <option value="4">Computer Science 1</option>
+                            <option value="4">Computer Science 2</option>
+                            <option value="4.5">Electrical</option>
+                            <option value="4.5">Electronics</option>
+                            <option value="4">Engineering Drawing 1</option>
+                            <option value="4">Engineering Drawing 2</option>
+                            <option value="3">Environment</option>
+                            <option value="3.5">Mathematics 1</option>
+                            <option value="3.5">Mathematics 2</option>
+                            <option value="2.5">Mechanics</option>
+                            <option value="3">Professional Communication</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="grade" id="gpa__grade" class="table__item col-lg-10 grade-5">
+                            <option class="gpa__select--default" value="0" disabled selected>Select Grade</option>
+                            <option class="gpa__select--item" value="10">A+</option>
+                            <option class="gpa__select--item" value="10">A</option>
+                            <option class="gpa__select--item" value="9">A-</option>
+                            <option class="gpa__select--item" value="8">B</option>
+                            <option class="gpa__select--item" value="7">B-</option>
+                            <option class="gpa__select--item" value="6">C</option>
+                            <option class="gpa__select--item" value="5">C-</option>
+                            <option class="gpa__select--item" value="0">F</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <select name="subject" id="subject" class="table__item col-lg-12 subject-6">
+                            <option value="0" disabled selected>Select Subject</option>
+                            <option value="0" disabled>First Year</option>
+                            <option value="4.5">Applied Chemistry</option>
+                            <option value="4.5">Applied Physics</option>
+                            <option value="4">Computer Science 1</option>
+                            <option value="4">Computer Science 2</option>
+                            <option value="4.5">Electrical</option>
+                            <option value="4.5">Electronics</option>
+                            <option value="4">Engineering Drawing 1</option>
+                            <option value="4">Engineering Drawing 2</option>
+                            <option value="3">Environment</option>
+                            <option value="3.5">Mathematics 1</option>
+                            <option value="3.5">Mathematics 2</option>
+                            <option value="2.5">Mechanics</option>
+                            <option value="3">Professional Communication</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="grade" id="gpa__grade" class="table__item col-lg-10 grade-6">
+                            <option class="gpa__select--default" value="0" disabled selected>Select Grade</option>
+                            <option class="gpa__select--item" value="10">A+</option>
+                            <option class="gpa__select--item" value="10">A</option>
+                            <option class="gpa__select--item" value="9">A-</option>
+                            <option class="gpa__select--item" value="8">B</option>
+                            <option class="gpa__select--item" value="7">B-</option>
+                            <option class="gpa__select--item" value="6">C</option>
+                            <option class="gpa__select--item" value="5">C-</option>
+                            <option class="gpa__select--item" value="0">F</option>
+                        </select>
+                    </td>
+                </tr>
+        </table>
+    </section>
+    <div class=" gpabtn-collect">
+        <div class="gpa__display">Your GPA will be displayed here.</div>
+        <button class="btn add ">Add Subject</button>
+        <button class="delete btn">Delete Subject</button>
+        <button class="btn calculate">Calculate GPA</button>
+    </div>
+</body>
+</html>
