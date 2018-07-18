@@ -1,33 +1,35 @@
-
 var credits= [0,0,0,0,0,0,0,0,0,0,0,0,0];
 var grade=[0,0,0,0,0,0,0,0,0,0,0,0,0];
-var sno=7;
-var i=0;
 var credits_sum =0;
 var mulgrades_sum=0;
+
+//For table generation
+var sno__first=2;
+var sno__second=1;
+var rowspan=3;
+var margin_top=9;
+
+var i=0;
 
 var gpa;
 $(document).ready(function(){
 
-  /* NOt working :( get this up and running using functions
-  function hide(){
-        $(this).css('visibility','hidden');
-    }
-    function show(){
-        $(this).css('display','inline-block');
-    }
-    */
-    $(".add").click(function (){
-        var table = document.getElementById("table");
-        var row = table.insertRow(sno);
+    
+    $(".gpa__stream").on('change',function (){
+       var choice = this.value;
+       $("tr:not(#keep)").remove();
+    });
+
+    $(".gpa__add-row--second").click(function (){
+        var table = document.getElementById("gpa__table--second");
+        var row = table.insertRow(sno__second);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
-        cell1.innerHTML = sno;
-        sno++;
-        cell2.innerHTML = '<select name="subject" id="subject" class="table__item col col-lg-12 subject-'+(sno-1)+'">'
+        cell1.innerHTML = '<div class="gpa__table--item">'+sno__second+'</div>';
+        sno__second++;
+        cell2.innerHTML = '<select name="subject" id="subject" class="gpa__table--item col col-lg-12 subject-'+(sno__second-1)+'">'
                 + '<option value="0" disabled selected>Select Subject</option>'
-                + '<option value="0" disabled>First Year</option>'
                 + '<option value="4.5">Applied Chemistry</option>'
                 + '<option value="4.5">Applied Physics</option>'
                 + '<option value="4">Computer Science 1</option>'
@@ -42,8 +44,8 @@ $(document).ready(function(){
                 + '<option value="2.5">Mechanics</option>'
                 + '<option value="3">Professional Communication</option>'
                 + '</select>';
-        cell3.innerHTML = '<select name="grade" id="gpa__grade" class="table__item col-lg-10 grade-'+(sno-1)+'">'
-                + '<option class="gpa__select--default" value="0" disabled selected>Select Grade</option>'
+        cell3.innerHTML = '<select name="grade" id="gpa__grade" class="gpa__table--item col-lg-10 grade-'+(sno__second-1)+'">'
+                + '<option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>'
                 + '<option class="gpa__select--item" value="10">A+</option>'
                 + '<option class="gpa__select--item" value="10">A</option>'
                 + '<option class="gpa__select--item" value="9">A-</option>'
@@ -53,38 +55,71 @@ $(document).ready(function(){
                 + '<option class="gpa__select--item" value="5">C-</option>'
                 + '<option class="gpa__select--item" value="0">F</option>'
                 +'</select>'; 
-    if(sno>=6)
-{
-    $(".delete").css('display','inline-block');
-    $(".add").css('width','50%');
-    $(".delete").css('width','50%');
 
-}
-if(sno>13)
-    {
-        $(".add").css('display','none');
-        $(".delete").css('width','100%');
-    }
+            $(".gpa__calculate").attr('rowspan',rowspan);
+            rowspan++;
+            $(".gpa__table--second").css('margin-top',margin_top+'%');
+            margin_top--;
+        if(sno__second==8) //Remove button after adding 7 subjects
+            {
+                $(".td__add").css('display','none');
+            }
+
     });
 
-   $(".delete").click( function deleteRow() {
+    $(".gpa__add-row--first").click(function (){
+        var table = document.getElementById("gpa__table--first");
+        var row = table.insertRow(sno__first);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        cell1.innerHTML = '<div class="gpa__table--item">'+sno__first+'</div>';
+        sno__first++;
+        cell2.innerHTML = '<select name="subject" id="subject" class="gpa__table--item col col-lg-12 subject-'+(sno__first-1)+'">'
+                + '<option value="0" disabled selected>Select Subject</option>'
+                + '<option value="4.5">Applied Chemistry</option>'
+                + '<option value="4.5">Applied Physics</option>'
+                + '<option value="4">Computer Science 1</option>'
+                + '<option value="4">Computer Science 2</option>'
+                + '<option value="4.5">Electrical</option>'
+                + '<option value="4.5">Electronics</option>'
+                + '<option value="4">Engineering Drawing 1</option>'
+                + '<option value="4">Engineering Drawing 2</option>'
+                + '<option value="3">Environment</option>'
+                + '<option value="3.5">Mathematics 1</option>'
+                + '<option value="3.5">Mathematics 2</option>'
+                + '<option value="2.5">Mechanics</option>'
+                + '<option value="3">Professional Communication</option>'
+                + '</select>';
+        cell3.innerHTML = '<select name="grade" id="gpa__grade" class="gpa__table--item col-lg-10 grade-'+(sno__first-1)+'">'
+                + '<option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>'
+                + '<option class="gpa__select--item" value="10">A+</option>'
+                + '<option class="gpa__select--item" value="10">A</option>'
+                + '<option class="gpa__select--item" value="9">A-</option>'
+                + '<option class="gpa__select--item" value="8">B</option>'
+                + '<option class="gpa__select--item" value="7">B-</option>'
+                + '<option class="gpa__select--item" value="6">C</option>'
+                + '<option class="gpa__select--item" value="5">C-</option>'
+                + '<option class="gpa__select--item" value="0">F</option>'
+                +'</select>'; 
+
+            $(".gpa__calculate").attr('rowspan',rowspan);
+            rowspan++;
+            $(".gpa__table--first").css('margin-top',margin_top+'%');
+            margin_top--;
+        if(sno__first==8) //Remove button after adding 7 subjects
+            {
+                $(".td__add").css('display','none');
+            }
+
+    });
+
+   /*$(".delete").click( function deleteRow() {
         document.getElementById("table").deleteRow(sno-1);
         sno--;
-        if(sno==7)
-    {
-        $(".delete").css('display','none');
-    $(".add").css('width','100%');
-    }
-
-    if(sno==13)
-    {
-        $(".add").css('display','inline-block');
-        $(".add").css('width','50%');
-        $(".delete").css('width','50%');
     
-    }
-    });
-    $(".calculate").click(function (){
+    });*/
+    $(".gpa__calculate").click(function (){
 
         var credits_sum =0;
         var mulgrades_sum=0;
@@ -115,7 +150,24 @@ if(sno>13)
         }
 
         gpa = mulgrades_sum/credits_sum;
-        $(".gpa__display").html("Your GPA : " + gpa);
+        gpa = Math.round(gpa * 100) / 100
+        $(".gpa__calculate").html("Your GPA : <br>" + gpa);
+    });
+
+    $(".gpa__choice--first").click(function (){
+        $(this).css('color','white');
+        $(".gpa__choice--second").css('color','black');
+        $(".gpa__calc--first").css('display','block');
+        $(".gpa__calc--second").css('display','none');
+        $(".selected__tri").css('transform','translateX(-340%)');
+    });
+
+    $(".gpa__choice--second").click(function (){
+        $(this).css('color','white');
+        $(".gpa__choice--first").css('color','black');
+        $(".gpa__calc--second").css('display','block');
+        $(".gpa__calc--first").css('display','none');
+        $(".selected__tri").css('transform','translateX(200%)');
     });
 
     $(".btn__society").click(function (){
@@ -205,4 +257,7 @@ if(sno>13)
         $(".setup__choice--mobile").css('color','white');
 
     });
+    $(".gpa__table--plus").click(function (){
+
+    })
 });
