@@ -47,14 +47,13 @@ html {
     left: 50%;
     transform: translateX(-50%); }
   .landing__heading {
-    font-size: 15rem;
+    font-size: 18rem;
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 3.5rem;
-    padding-top: 14rem;
+    padding-top: 10rem;
     font-weight: 900;
     animation: fadeIn-bottom 0.55s ease-out; }
     .landing__heading-h {
-      transition: all .3s; }
+      transition: all .3s;}
     .landing__heading-h:hover {
       color: #E94B3C; }
     .landing__heading-e {
@@ -77,11 +76,12 @@ html {
       transition: all .3s; }
     .landing__heading-a:hover {
       color: #FAE03C; }
-    .landing__heading-full-stop {
+    .landing__heading-my {
       transition: all .3s;
-      color: #D2691E; }
-    .landing__heading-full-stop:hover {
-      color: white; }
+      color: #D2691E;
+    letter-spacing: 0;}
+    .landing__heading-my:hover {
+      color: black; }
   .landing__subheading {
     font-size: 5rem;
     font-family: 'Raleway', sans-serif;
