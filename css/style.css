@@ -323,12 +323,16 @@ html {
       transition: all .5s;
       text-align: center;
     }
+    .gray__body{
+      background-color: #eee !important; 
+      height: 100%;
+    }
   section.gpa {
       padding: 2rem;
       max-height: 45rem;
       overflow: hidden;
-      overflow-y: scroll; }
-    
+      overflow-y: scroll;
+  }    
     .gpa__heading {
       text-align: center;
       padding: 0rem;
