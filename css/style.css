@@ -149,7 +149,7 @@ a{
         .more-stuff__heading {
           font-size: 29.166rem;
           padding: 8rem; } }
-    
+
     .more-stuff__subheading {
       font-size: 3rem;
       font-family: 'Raleway', sans-serif;
@@ -213,7 +213,7 @@ a{
       @media screen and (min-width: 3840px) {
         .btn__more--title {
           font-size: 9rem; } }
-    
+
     .btn__more--data {
       font-size: 2rem; }
       @media screen and (max-width: 600px) {
@@ -257,11 +257,11 @@ a{
                 margin-top: 6rem; } }
 
     @media screen and (max-width:600px){
-        
+
     }
     @media screen and (max-width:450px){
         padding: .9rem;
-        
+
     }
     @media screen and (max-width:350px){
         padding: .7rem;
@@ -283,12 +283,12 @@ a{
       background-image: url("../img/landingBGInteractSegment.svg");
       background-size: cover;
       background-position: 0 60vh;
-      height: 100vh; 
+      height: 100vh;
     }
   .services__heading {
     text-align: center;
     font-size: 8rem;
-    padding: 3rem; 
+    padding: 3rem;
   }
   .services__box {
     float: left;
@@ -317,7 +317,7 @@ a{
     float: left;
     padding: 1rem;
     vertical-align: center; }
-    
+
     .btn{
       width: 100%;
       padding: 1.7rem;
@@ -328,46 +328,50 @@ a{
       text-align: center;
     }
     .gray__body{
-      background-color: #eee !important; 
+      background-color: #ffffff !important;
       height: 100%;
-    }
+      font-family: 'Bahnschrift SemiCondensed';    }
     .gpa__heading {
       text-align: center;
       padding: 1rem;
       font-size: 6rem; }
-    
+
     .gpa__choice {
       position: relative;
-      background-color: yellow;
+      background-color: #F6C342;
       color: black;
       padding: 2rem;
-      font-size: 4.5rem;
+      font-size: 5rem;
       text-align: center; }
       .gpa__choice--first, .gpa__choice--second {
-        padding: 0 10rem;
+        padding: 0 20rem;
         cursor: pointer; }
-        .gpa__choice--first:hover, .gpa__choice--second:hover {
-          color: red; }
-      .gpa__choice--first {
+        .gpa__choice--first {
+          color: white; }
+      .gpa__choice--first:visited, .gpa__choice--second:visited {
         color: white; }
-    
+
+
     .gpa__calc--first, .gpa__calc--second {
       padding-left: 20rem; }
-    
+
     .gpa__calc--second {
       display: none; }
-    
+
     .gpa__table--first, .gpa__table--second {
       text-align: center; }
-    
+
     .gpa__table--first {
-      margin-top: 10%; }
-    
+
+    margin:0 auto;
+    margin-top: 10%;
+    transform: translate(-12.5%);}
+
     .gpa__table--head {
-      font-size: 4rem;
-      font-weight: 700;
+      font-size: 3.5rem;
+      font-weight: 500;
       border: .5px solid black; }
-    
+
     .gpa__table--item {
       width: 100%;
       font-size: 3rem;
@@ -376,40 +380,45 @@ a{
       .gpa__table--item select {
         text-align: center;
         font-size: inherit; }
-    
+
     .gpa__calculate {
       font-size: 2rem;
-      background-color: black;
-      color: white;
-      font-weight: 100;
+      background-color: white;
+      color: black;
+      font-weight: 450;
       min-width: 128px;
       border: 0; }
-    
+
     .gpa__add-row--first, .gpa__add-row--second {
       width: 100%;
       font-size: 3rem; }
-    
+      .td__add:hover{
+        background-color: #eee;
+
+      }
+
     .selected__tri {
-      clip-path: polygon(50% 60%, 0% 110%, 100% 110%);
-      background-color: #eee;
-      width: 7rem;
-      height: 5rem;
+      clip-path: polygon(50% 50%, 0% 110%, 100% 110%);
+      background-color: white;
+      width: 6rem;
+      height: 3.5rem;
       position: absolute;
       bottom: 0rem;
       left: 50%;
-      transform: translateX(-340%); }
-    
+      transform: translateX(-500%); }
+
     .gpa__stream {
       font-size: 3rem;
       border: 0;
       padding: .5rem 2rem;
       margin: 4rem;
-      margin-left: 18%; }
+      margin-left: 18%;
+    background-color: #eee;}
 
     .wifi__heading {
       font-size: 8rem;
       padding: 1rem; }
-    
+
     .wifi__choice {
       background-color: black;
       color: white;
@@ -422,7 +431,7 @@ a{
       }
       .wifi__choice--password {
         color: red; }
-    
+
     .password {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
@@ -434,7 +443,7 @@ a{
         font-size: 2rem !important; }
       .password th {
         font-weight: 900; }
-    
+
     .setup {
       display: none;
       padding: 0rem 0; }
@@ -447,7 +456,7 @@ a{
         padding: 1rem; }
         .setup__choice--pc, .setup__choice--mobile, .setup__choice--info {
           padding: 2rem;
-          cursor: pointer; 
+          cursor: pointer;
           font-size: 2.5rem;
         }
           .setup__choice--pc:hover, .setup__choice--mobile:hover, .setup__choice--info:hover {
@@ -463,13 +472,13 @@ a{
         display: none; }
       .setup__info {
         display: none; }
-    
+
     table, th, td {
       user-select: auto;
       padding: .5rem;
       border: 2px solid gray;
       border-collapse: collapse; }
-    
+
       .news {
         text-align: center; }
         .news__heading {
@@ -494,7 +503,7 @@ a{
           .news__sort--list {
             text-align: left;}
           .news__sort--item {
-            padding: 2rem; 
+            padding: 2rem;
             font-size: 2rem  !important;}
             .news__sort--item:hover {
               background-color: white;
@@ -517,10 +526,10 @@ a{
                   font-size: 6.5rem;
                   text-align: right;
                   padding-right: 4rem; }
-              
+
               .btn__reset {
                 display: none; }
-                    
+
 /*Grid System with Media Query*/
 .col {
   float: left;
