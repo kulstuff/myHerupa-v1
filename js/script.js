@@ -5,10 +5,10 @@ var mulgrades_sum=0;
 
 //For table generation
 var sno__first=2;
-var sno__second=1;
+var sno__second=2;
 var rowspan=3;
 var margin_top=9;
-
+var choice;
 var i=0;
 
 var gpa;
@@ -16,35 +16,38 @@ $(document).ready(function(){
 
     
     $(".gpa__stream").on('change',function (){
-       var choice = this.value;
+       choice = this.value;
+       sno__second=2;
        $("tr:not(#keep)").remove();
     });
 
     $(".gpa__add-row--second").click(function (){
         var table = document.getElementById("gpa__table--second");
-        var row = table.insertRow(sno__second);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        var cell3 = row.insertCell(2);
-        cell1.innerHTML = '<div class="gpa__table--item">'+sno__second+'</div>';
+       var row = table.insertRow(sno__second);
+        var second__cell1 = row.insertCell(0);
+        var second__cell2 = row.insertCell(1);
+        var second__cell3 = row.insertCell(2);
+        var subjectSelected;
+        second__cell1.innerHTML = '<div class="gpa__table--item">'+sno__second+'</div>';
         sno__second++;
-        cell2.innerHTML = '<select name="subject" id="subject" class="gpa__table--item col col-lg-12 subject-'+(sno__second-1)+'">'
+        switch(choice) {
+            case 0 : 
+                alert("Hello");
+                break;
+
+            case 1 :
+                second__cell2.innerHTML = '<select name="subject" id="subject" class="gpa__table--item col col-lg-12 subject-'+(sno__second-1)+'">'
                 + '<option value="0" disabled selected>Select Subject</option>'
-                + '<option value="4.5">Applied Chemistry</option>'
-                + '<option value="4.5">Applied Physics</option>'
-                + '<option value="4">Computer Science 1</option>'
-                + '<option value="4">Computer Science 2</option>'
-                + '<option value="4.5">Electrical</option>'
-                + '<option value="4.5">Electronics</option>'
-                + '<option value="4">Engineering Drawing 1</option>'
-                + '<option value="4">Engineering Drawing 2</option>'
-                + '<option value="3">Environment</option>'
-                + '<option value="3.5">Mathematics 1</option>'
-                + '<option value="3.5">Mathematics 2</option>'
-                + '<option value="2.5">Mechanics</option>'
-                + '<option value="3">Professional Communication</option>'
+                + '<option value="4.5">Appd Chemistry</option>'
                 + '</select>';
-        cell3.innerHTML = '<select name="grade" id="gpa__grade" class="gpa__table--item col-lg-10 grade-'+(sno__second-1)+'">'
+                break;
+        }
+        alert($(".gpa__stream--second").value);
+        if(choice==0)
+            alert("Hello");
+        
+        second__cell2.innerHTML = subjectSelected;
+        second__cell3.innerHTML = '<select name="grade" id="gpa__grade" class="gpa__table--item col-lg-10 grade-'+(sno__first-1)+'">'
                 + '<option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>'
                 + '<option class="gpa__select--item" value="10">A+</option>'
                 + '<option class="gpa__select--item" value="10">A</option>'
@@ -55,7 +58,6 @@ $(document).ready(function(){
                 + '<option class="gpa__select--item" value="5">C-</option>'
                 + '<option class="gpa__select--item" value="0">F</option>'
                 +'</select>'; 
-
             $(".gpa__calculate").attr('rowspan',rowspan);
             rowspan++;
             $(".gpa__table--second").css('margin-top',margin_top+'%');
