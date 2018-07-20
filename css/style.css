@@ -120,10 +120,10 @@ a{
         background-image: url('../img/landingBGInteractSegment.svg');
         background-size: cover;
         background-position: 0 50vh;
-        @media screen and (max-width : 600px){
+       } @media screen and (max-width : 600px){
             background-position: 0 55vh;
         }
-    }
+    
     .more-stuff__heading {
       font-size: 8rem;
       padding: 2rem; }
@@ -330,7 +330,7 @@ a{
     .gray__body{
       background-color: #ffffff !important;
       height: 100%;
-      font-family: 'Bahnschrift SemiCondensed';    }
+      font-family: 'Raleway',sans-serif;    }
     .gpa__heading {
       text-align: center;
       padding: 1rem;
@@ -345,6 +345,7 @@ a{
       text-align: center; }
       .gpa__choice--first, .gpa__choice--second {
         padding: 0 20rem;
+        font-weight: 500;
         cursor: pointer; }
         .gpa__choice--first {
           color: white; }
@@ -352,21 +353,22 @@ a{
         color: white; }
 
 
-    .gpa__calc--first, .gpa__calc--second {
-      padding-left: 20rem; }
 
     .gpa__calc--second {
-      display: none; }
+      display: none; 
+      text-align: center;
 
+    }
     .gpa__table--first, .gpa__table--second {
-      text-align: center; }
+      text-align: center;}
+    
 
     .gpa__table--first {
-
-    margin:0 auto;
-    margin-top: 10%;
-    transform: translate(-12.5%);}
-
+    margin: 9% auto;
+  }
+    .gpa__table--second{
+      margin:0 auto;
+    }
     .gpa__table--head {
       font-size: 3.5rem;
       font-weight: 500;
@@ -381,22 +383,28 @@ a{
         text-align: center;
         font-size: inherit; }
 
-    .gpa__calculate {
+    .gpa__calculate--first,
+    .gpa__calculate--second {
       font-size: 2rem;
       background-color: white;
       color: black;
       font-weight: 450;
       min-width: 128px;
-      border: 0; }
-
+    }
     .gpa__add-row--first, .gpa__add-row--second {
       width: 100%;
       font-size: 3rem; }
-      .td__add:hover{
+      .td__bg--gray:hover{
         background-color: #eee;
 
       }
+      .gpa__add-row--second{
+        visibility: hidden;
+      }
 
+      .calc{
+        cursor: pointer;
+      }
     .selected__tri {
       clip-path: polygon(50% 50%, 0% 110%, 100% 110%);
       background-color: white;
@@ -405,15 +413,13 @@ a{
       position: absolute;
       bottom: 0rem;
       left: 50%;
-      transform: translateX(-500%); }
+      transform: translateX(-550%); }
 
     .gpa__stream {
       font-size: 3rem;
       border: 0;
-      padding: .5rem 2rem;
-      margin: 4rem;
-      margin-left: 18%;
-    background-color: #eee;}
+      margin: 5%;
+      background-color: #eee;}
 
     .wifi__heading {
       font-size: 8rem;

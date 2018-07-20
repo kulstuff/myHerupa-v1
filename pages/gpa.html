@@ -30,16 +30,16 @@
     </div>
     <section class="gpa__calc--first">
         <table id="gpa__table--first" class="gpa__table--first">
-            <tr>
+            <tr id="keep">
               <th class="gpa__table--head">S.No.</th>
               <th class="gpa__table--head">Subjects</th>
               <th class="gpa__table--head">Grade</th>
-              <th class="gpa__calculate" rowspan="2" class="calc"><a href="#">CALCULATE</a></th>
+              <th class="gpa__calculate--first" rowspan="2" class="calc"><a href="#">CALCULATE</a></th>
             </tr>
-            <tr>
+            <tr id="keep">
               <td> <div class="gpa__table--item">1</div> </td>
               <td>
-                <select name="subject" id="subject" class="gpa__table--item col-lg-12 subject-1">
+                <select name="subject" id="gpa__subject--first-1" class="gpa__table--item col-lg-12">
                     <option value="0" disabled selected>Select Subject</option>
                     <option value="0" disabled>First Year</option>
                     <option value="4.5"> Applied Chemistry</option>
@@ -49,7 +49,7 @@
                     <option value="4.5"> Electrical</option>
                     <option value="4.5"> Electronics</option>
                     <option value="4"> Engineering Drawing 1</option>
-                    <option value="4"> Engineering Drawing 2</option>
+                    <option value="5"> Engineering Drawing 2</option>
                     <option value="3"> Environment</option>
                     <option value="3.5"> Mathematics 1</option>
                     <option value="3.5"> Mathematics 2</option>
@@ -58,7 +58,7 @@
                 </select>
               </td>
               <td>
-                <select name="grade" id="gpa__grade" class="gpa__table--item col-lg-10 grade-1">
+                <select name="grade" id="gpa__grade--first-1" class="gpa__table--item col-lg-10">
                     <option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>
                     <option class="gpa__select--item" value="10">A+</option>
                     <option class="gpa__select--item" value="10">A</option>
@@ -71,14 +71,15 @@
                 </select>
               </td>
             </tr>
-            <tr>
-              <td colspan="4" class="td__add"><a href="#" class="gpa__add-row--first">+</a></td>
+            <tr id="keep" class="gpa__add-row--first">
+              <td colspan="4" class="td__add td__bg--gray"><a href="#" id="gpa__add-row--first" class="gpa__add-row--first">+</a></td>
             </tr>
           </table>
     </section>
 
     <section class="gpa__calc--second">
-        <select class="gpa__stream--second" id="gpa__stream">
+        <select class="gpa__stream" id="gpa__stream">
+            <option value="" selected disabled>Select Stream</option>
             <option value="0">Biotechology</option>
             <option value="1">Chemical</option>
             <option value="2">Civil</option>
@@ -96,17 +97,17 @@
               <th class="gpa__table--head">S.No.</th>
               <th class="gpa__table--head">Subjects</th>
               <th class="gpa__table--head">Grade</th>
-              <th class="gpa__calculate" rowspan="2" class="calc"><a href="#">CALCULATE</a></th>
+              <th class="gpa__calculate--second" rowspan="2" class="calc"><a href="#">CALCULATE</a></th>
             </tr>
             <tr id="keep">
               <td> <div class="gpa__table--item">1</div> </td>
               <td>
-                <select name="subject" id="subject" class="gpa__table--item col-lg-12 subject-1" style="min-width: 412px;">
+                <select name="subject" id="gpa__subject--second-1" class="gpa__table--item col-lg-12 subject-1" style="min-width: 63rem;">
                     <option value="0" disabled selected>Select Subject</option>
                 </select>
               </td>
               <td>
-                <select name="grade" id="gpa__grade" class="gpa__table--item col-lg-10 grade-1">
+                <select name="grade" id="gpa__grade--second-1" class="gpa__table--item col-lg-10">
                     <option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>
                     <option class="gpa__select--item" value="10">A+</option>
                     <option class="gpa__select--item" value="10">A</option>
@@ -119,8 +120,8 @@
                 </select>
               </td>
             </tr>
-            <tr id="keep">
-              <td colspan="4" class="td__add"><a href="#" class="gpa__add-row--second">+</a></td>
+            <tr id="keep" class="gpa__add-row--second" >
+              <td colspan="4" class="td__bg--gray"><a href="#" id="gpa__add-row--second" class="gpa__add-row--second">+</a></td>
             </tr>
           </table>
     </section>
