@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: /package.json/
+Disallow: /img/
+Disallow: /js
+Disallow: /css/
+Disallow: /pages/
+Sitemap: myherupa.com/sitemap.xml
