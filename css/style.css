@@ -6,7 +6,10 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  user-select: none; }
+  user-select: none;
+ 
+}
+
 
 html {
   min-height: 100vh;
@@ -29,8 +32,9 @@ a{
 
 @media screen and (max-width: 600px) {
   .hide-phone {
-    visibility: hidden;
-    position: absolute; } }
+    display: none;
+   } 
+  }
 
 .landing {
   height: 100vh;
@@ -41,15 +45,6 @@ a{
   text-align: center;
   color: black;
   position: relative; }
-  .landing__tri {
-    clip-path: polygon(50% 60%, 0% 110%, 100% 110%);
-    background-color: white;
-    width: 15rem;
-    height: 10rem;
-    position: absolute;
-    bottom: -.5rem;
-    left: 50%;
-    transform: translateX(-50%); }
   .landing__heading {
     font-size: 18rem;
     font-family: 'Raleway', sans-serif;
@@ -255,29 +250,6 @@ a{
             @media screen and (min-width: 3840px) {
               .btn__more {
                 margin-top: 6rem; } }
-
-    @media screen and (max-width:600px){
-
-    }
-    @media screen and (max-width:450px){
-        padding: .9rem;
-
-    }
-    @media screen and (max-width:350px){
-        padding: .7rem;
-
-    }
-    @media screen and (min-width:1400px){
-        margin-top: 2rem;
-    }
-
-    @media screen and (min-width:2560px){
-        margin-top: 4rem;
-    }
-    @media screen and (min-width:3840px){
-        margin-top: 6rem;
-    }
-
 
     .services{
       background-image: url("../img/landingBGInteractSegment.svg");
@@ -622,8 +594,12 @@ a{
     width: 8.332%; } }
 
 @media screen and (max-width: 600px) {
+  *{
+    font-size: 55%;
+  }
   .landing__heading {
-    letter-spacing: 1rem; }
+    letter-spacing: 1rem; 
+  }
   .landing__subheading {
     font-size: 3.5rem; }
   .landing__btn {
@@ -669,17 +645,32 @@ a{
 
 @media screen and (max-width: 505px) {
   * {
-    width: 100%; }
-  .landing__heading {
-    font-size: 10rem; }
-  .landing__subheading {
-    font-size: 3rem; }
-  .about-us__subheading {
-    font-size: 2rem; }
-  .services__heading {
-    font-size: 5rem; }
-  .services__box-heading {
-    font-size: 80%; } }
+    width: 100%; 
+  font-size: 50%;
+}
+@media screen and (max-width: 450px) {
+  .landing__heading{
+    font-size: 15rem;
+    letter-spacing: 0;
+  }
+}
+ 
+@media screen and (max-width: 320px) {
+  .landing__heading{
+    padding-top: 15rem;
+    font-size: 14rem;
+    letter-spacing: 0;
+  }
+  .landing__subheading{
+    font-size: 3rem;
+  }
+  .landing__btn--first-year{
+    margin-top: 3rem;
+  }
+  .landing__btn{
+    font-size: 3rem;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .row {
