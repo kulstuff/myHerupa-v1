@@ -189,41 +189,11 @@ a{
       box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.2) !important; }
     .btn__more--title {
       font-size: 3rem; }
-      @media screen and (max-width: 600px) {
-        .btn__more--title {
-          font-size: 2.7rem; } }
-      @media screen and (max-width: 450px) {
-        .btn__more--title {
-          font-size: 2.5rem;
-          padding: .5rem !important; } }
-      @media screen and (max-width: 360px) {
-        .btn__more--title {
-          font-size: 1.8rem; } }
-      @media screen and (min-width: 1400px) {
-        .btn__more--title {
-          font-size: 4rem; } }
-      @media screen and (min-width: 2560px) {
-        .btn__more--title {
-          font-size: 6rem; } }
-      @media screen and (min-width: 3840px) {
-        .btn__more--title {
-          font-size: 9rem; } }
+      
 
     .btn__more--data {
       font-size: 2rem; }
-      @media screen and (max-width: 600px) {
-        .btn__more--data {
-          font-size: 2rem; } }
-      @media screen and (min-width: 1400px) {
-        .btn__more--data {
-          font-size: 3rem;
-          padding: 1rem; } }
-      @media screen and (min-width: 2560px) {
-        .btn__more--data {
-          font-size: 4rem; } }
-      @media screen and (min-width: 3840px) {
-        .btn__more--data {
-          font-size: 5rem; } }
+     
           .btn__more {
             text-align: center;
             background-color: #ccc;
@@ -235,21 +205,7 @@ a{
             .btn__more:hover {
               background-color: rgba(238, 238, 238, 0.5);
               box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.2); }
-            @media screen and (max-width: 450px) {
-              .btn__more {
-                padding: .9rem; } }
-            @media screen and (max-width: 350px) {
-              .btn__more {
-                padding: .7rem; } }
-            @media screen and (min-width: 1400px) {
-              .btn__more {
-                margin-top: 2rem; } }
-            @media screen and (min-width: 2560px) {
-              .btn__more {
-                margin-top: 4rem; } }
-            @media screen and (min-width: 3840px) {
-              .btn__more {
-                margin-top: 6rem; } }
+           
 
     .services{
       background-image: url("../img/landingBGInteractSegment.svg");
@@ -552,12 +508,13 @@ a{
       margin-top: 11rem; }
       .landing__btn--first-year {
         margin-bottom: 1rem; }
-  .about-us {
+  .more-stuff{
+    background-position: 0 50vh;
+  }
+  .btn__more{
+    margin-top: 2rem;
     padding: 1rem;
-    padding-top: 2rem; }
-    .about-us__heading {
-      padding: 1rem;
-      font-size: 4rem; }
+  }
   .services__box-text {
     position: absolute;
     visibility: hidden; }
@@ -606,19 +563,23 @@ a{
     margin-top: 9rem; }
     .landing__btn--first-year {
       margin-bottom: 1rem; }
-  .about-us {
-    padding: 1rem;
-    padding-top: 2rem; }
-    .about-us__heading {
-      padding: .5rem;
-      font-size: 3.3rem; }
-    .about-us__subheading {
-      font-size: 2.7rem; }
-  .services__heading {
-    font-size: 6rem; }
-  .services__box i {
-    font-size: 5.5rem; }
-  .col-xs-12 {
+  .more-stuff{
+    background-position: 0 5vh;
+  }
+  .more-stuff__heading{
+    font-size: 8rem;
+  }
+  .more-stuff__subheading{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .btn__more{
+    background-color: #eee !important;
+  }
+  .btn__more--title{
+    font-size: 3.7rem;
+  }
+      .col-xs-12 {
     width: 100%; }
   .col-xs-11 {
     width: 91.662%; }
@@ -648,6 +609,11 @@ a{
     width: 100%; 
   font-size: 50%;
 }
+.more-stuff__subheading{
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+}
 @media screen and (max-width: 450px) {
   .landing__heading{
     font-size: 15rem;
@@ -668,6 +634,9 @@ a{
     margin-top: 3rem;
   }
   .landing__btn{
+    font-size: 3rem;
+  }
+  .btn__more--title{
     font-size: 3rem;
   }
 }
