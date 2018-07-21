@@ -5,4 +5,4 @@ Disallow: /img/
 Disallow: /js
 Disallow: /css/
 Disallow: /pages/
-Sitemap: myherupa.com/sitemap.xml
+Sitemap: http://myherupa.com/sitemap.xml
