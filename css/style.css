@@ -39,7 +39,7 @@ a{
 .landing {
   height: 100vh;
   width: 100%;
-  background-image: url("../img/landingBGInteractSegment.svg");
+  background-image: url("../img/bg.png");
   background-size: cover;
   background-position: 0 17vh;
   text-align: center;
@@ -112,7 +112,7 @@ a{
 
       .more-stuff{
         height: 100vh;
-        background-image: url('../img/landingBGInteractSegment.svg');
+        background-image: url('../img/bg.png');
         background-size: cover;
         background-position: 0 50vh;
        } @media screen and (max-width : 600px){
@@ -208,7 +208,7 @@ a{
            
 
     .services{
-      background-image: url("../img/landingBGInteractSegment.svg");
+      background-image: url("../img/bg.png");
       background-size: cover;
       background-position: 0 60vh;
       height: 100vh;
@@ -524,7 +524,15 @@ a{
     position: relative;
     top: -25%;
     width: 100%;
-    text-align: center; }
+    text-align: center; 
+  }
+  .gpa__heading{
+    font-size: 3rem;
+  }
+  .gpa__choice{
+    font-size: 2rem;
+    padding: 0;
+  }
   .col-sm-12 {
     width: 100%; }
   .col-sm-11 {
