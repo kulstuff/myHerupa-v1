@@ -52,12 +52,11 @@
           </a>
         </div>
       </section>
+
     <section class="services scr__panel hide-phone">
       <div class="services__heading">
         Our<span class="bold">Services</span>
       </div>
-
-
       <div class="row">
        <div class="col col-xs-4 col-md-4 col-lg-4">
          <div class="services__box">
@@ -133,8 +132,19 @@
 
     </section>
 
+    <!-- jQuery and Scrollify APIs -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
     <script src="js/Scrollify-master/jquery.scrollify.js"></script>
+
+    <!-- Fixes Mobo scr__panel for services -->
+    <script>
+      console.log("Loaded: " + window.innerWidth);
+      if (window.innerWidth < 800) {
+          $('.services').toggleClass('scr__panel');
+      }
+    </script>
+
+    <!-- Implements Scrollify -->
     <script>
         $(function() {
             $.scrollify({
@@ -142,16 +152,16 @@
             });
         });
     </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
-<script><meta name=”description” content=”Insert the text you want displayed here”>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-122580305-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
+    <script><meta name=”description” content=”Insert the text you want displayed here”>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122580305-1');
+    </script>
 
 </body>
 </html>
-

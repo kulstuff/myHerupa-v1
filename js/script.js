@@ -138,7 +138,7 @@ $(document).ready(function(){
                             "4.5|Numerical Analysis",
                             "8|Sensors and Signal Conditioning with Project",
                             "3.5|Techniques on Sigal and Systems"];
-        }   
+        }
 
         else if(s1.value == 7)
         {
@@ -204,7 +204,7 @@ $(document).ready(function(){
                             "4|Machine Design"];
         }
 
-        
+
         for(var option in subjects)
         {
             pair = subjects[option].split("|");
@@ -214,13 +214,13 @@ $(document).ready(function(){
             s2.options.add(newOption);
         }
     }
-   
+
     $(".gpa__stream").on('change',function (){
         $("tr:not(#keep)").remove();
         addSubjects(this.id,"gpa__subject--second-"+1);
         $(".gpa__add-row--second").css('visibility','visible');
         sno__second = 2;
-        
+
         second__rowspan=3;
     });
 
@@ -259,7 +259,7 @@ $(document).ready(function(){
                 + '<option class="gpa__select--item" value="6">C</option>'
                 + '<option class="gpa__select--item" value="5">C-</option>'
                 + '<option class="gpa__select--item" value="0">F</option>'
-                +'</select>'; 
+                +'</select>';
 
         $(".gpa__calculate--first").attr('rowspan',first__rowspan);
             first__rowspan++;
@@ -293,7 +293,7 @@ $(document).ready(function(){
                 + '<option class="gpa__select--item" value="6">C</option>'
                 + '<option class="gpa__select--item" value="5">C-</option>'
                 + '<option class="gpa__select--item" value="0">F</option>'
-                +'</select>'; 
+                +'</select>';
         $(".gpa__calculate--second").attr('rowspan',second__rowspan);
             second__rowspan++;
         if(sno__second==8) //Remove button after adding 7 subjects
@@ -308,7 +308,7 @@ $(document).ready(function(){
    /*$(".delete").click( function deleteRow() {
         document.getElementById("table").deleteRow(sno-1);
         sno--;
-    
+
     });*/
     $(".gpa__calculate--first").click(function (){
 
@@ -416,7 +416,7 @@ $(document).ready(function(){
         $("li:not(.btn__society)").css('color','white');
     });
     $(".btn__academic").click(function (){
-        
+
         $(".btn__academic").css('background-color','white');
         $(".btn__academic").css('color','black');
         $(".news__academic").css('display','block');
@@ -434,7 +434,7 @@ $(document).ready(function(){
         $("section:not(.news__other)").css('display','none');
         $("li:not(.btn__other)").css('background-color','black');
         $("li:not(.btn__other)").css('color','white');
-        
+
     });
     $(".btn__reset").click(function (){
         $("section").css('display','block');
