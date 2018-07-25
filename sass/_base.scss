@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.hide-phone{
+    @media screen and (max-width : 900px){
+        display: none;
+    }
+}

@@ -1,0 +1,80 @@
+@mixin makeFont($defaultSize) {
+    @media screen and (min-width:0px){
+        font-size: $defaultSize/5; 
+    }
+
+    @media screen and (min-width:200px){
+        font-size: $defaultSize * 0.2666667;
+    }
+
+    @media screen and (min-width:350px){
+        font-size: ($defaultSize*2)/5;
+    }
+
+    @media screen and (min-width:600px){
+        font-size: ($defaultSize*8)/15;
+    }
+
+    @media screen and (min-width:720px){
+        font-size: ($defaultSize*2)/3;
+    }
+
+    @media screen and (min-width:1024px){
+        font-size: ($defaultSize*13)/15;
+    }
+
+    @media screen and (min-width:1280px){
+        font-size: $defaultSize;
+    }
+
+    @media screen and (min-width:1920px){
+        font-size: ($defaultSize*18)/15;
+    }
+
+
+    @media screen and (min-width:2560px){
+        font-size: ($defaultSize*21)/15;
+    }
+
+
+    @media screen and (min-width:3840px){
+        font-size: ($defaultSize*25)/15;
+    }
+
+}
+
+.display1{
+    @include makeFont(12rem);
+    }
+
+
+.display2{
+    @include makeFont(10rem);
+}
+
+
+.display3{
+    @include makeFont(8rem);
+}
+
+
+.display4{
+    @include makeFont(6rem);
+}
+
+.display5{
+    @include makeFont(4rem);
+}
+
+.display6{
+    @include makeFont(3rem);
+}
+
+.display7{
+    @include makeFont(2rem);
+}
+
+.bg-gray{
+    background-color: #eee;
+    display: inline-block;
+}
