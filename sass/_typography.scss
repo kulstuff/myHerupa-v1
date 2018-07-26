@@ -73,6 +73,21 @@
 .display7{
     @include makeFont(2rem);
 }
+.display8{
+    @include makeFont(1.5rem);
+}
+.display9{
+    @include makeFont(1.25rem);
+}
+.display10{
+    @include makeFont(1rem);
+}
+.display11{
+    @include makeFont(.75rem);
+}
+.display12{
+    @include makeFont(.5rem);
+}
 
 .bg-gray{
     background-color: #eee;
