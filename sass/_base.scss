@@ -13,3 +13,23 @@
         display: none;
     }
 }
+
+.bold{
+    font-weight: 900;
+    font-size: inherit;
+    color: inherit;
+}
+
+.thin{
+    font-weight: 100;
+    font-size: inherit;
+    color: inherit;
+}
+
+.break-mobile{
+    display: none;
+
+    @media screen and (max-width:900px){
+        display: inline;
+    }
+}

@@ -7,6 +7,7 @@
 
     &__subtitle{
         padding: 2rem;
+        font-weight: 100;
     }
 
     &__btn-wrap{
@@ -38,7 +39,11 @@
     background-position: 0 50vh;       
     
     &__btn-wrap{
+        margin-top: 6rem;
+    }
 
+    &__subheading{
+        font-weight: 100;
     }
 
     @media screen and (max-width : 900px){

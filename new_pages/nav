@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Engineering Drawing 1</title>
-    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../../../css/subject.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="main.js"></script>
-</head>
-<body>
-        <nav id="nav" class="nav__8">
+ <nav id="nav" class="nav__4">
         <div id="nav__varGrid__collect">
             <div class="nav__varGrid__wrapper">
                 <a href="maths1.html" id="nav__subject-btn" class="subject-btn subject__1-btn-site">Mathematics 1</a>
@@ -32,7 +19,7 @@
             <img class="nav__varGrid__hover nav__varGrid__hoverDown" src="../../../img/icons/navHovD.png">
         </div>
         <div class="nav__carousel">Ads?</div>
-        <div class="nav__back nav__back__8"><span><</span> Back</div>
+        <div class="nav__back nav__back__4"><span><</span> Back</div>
         <div class="nav__fiddler">
             <div class="nav__fiddlerLeft">
                 <img class="nav__fiddlerLeft__img" src="../../../img/icons/calculator.png">
@@ -45,30 +32,4 @@
                 <div class="nav__fiddlerRight__text">Explore other feathures like WiFi passwords and Announcements</div>
             </div>
         </div>
-    </nav>
-
-    <img src="../../../img/menu.png" class="subject__menu subject__8-menu">
-    <h1 class="subject__heading">Engineering<span class="subject__8-heading-number">Drawing</span> 1</h1>
-    <h3 class="subject__quote">'Why don't we use pencils without tips ?<br>Because its pointless'</h3>
-<div>
-    <a href="#" class="subject__btn subject__8-btn-site">Course Site</a>
-    <a href="#" class="subject__btn subject__8-btn-syllabus">Syllabus</a>
-    <a href="https://drive.google.com/open?id=1jsBi8IgeC-SkkfHqnH-N1RUwGQ8iVmB5" class="subject__btn subject__8-btn-books">Books</a>
-    <a href="https://drive.google.com/open?id=1yxjWvXY9Bu1Drwd4IeADeLMomUuf6jD6" class="subject__btn subject__8-btn-notes">Notes and Slides</a>
-    <a href="https://drive.google.com/open?id=1P2ZHeDLSLHlTULzmZYD3E4M9BAYLKTZK" class="subject__btn subject__8-btn-tut">Tutorials</a>
-    <a href="https://drive.google.com/open?id=1XeSl8Fucj-ISJRRwxWnI8Y_ExSjgIZyI" class="subject__btn subject__8-btn-tut-sol">Tutorial Solutions</a>
-    <a href="https://drive.google.com/open?id=1qX6BtPqx6VJ0XdUPZ8SnTusBgTxKBZ37" class="subject__btn subject__8-btn-ppr">Previous Year Papers</a>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="../../../js/subjectsMenu.js"></script>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-   
-     gtag('config', 'UA-122580305-1');
-   </script>
-</body>
-</html>
+    </nav>na
