@@ -27,6 +27,15 @@
     .break-mobile {
       display: inline; } }
 
+.color-red {
+  color: red; }
+
+.color-green {
+  color: green; }
+
+.color-orange {
+  color: orange; }
+
 @media screen and (min-width: 0px) {
   .display1 {
     font-size: 2.4rem; } }
@@ -1134,6 +1143,17 @@ body {
       padding: 10rem; }
     .stream__btn-wrap {
       margin-top: 3rem; } }
+
+body {
+  background-color: #eee;
+  text-align: center;
+  padding-top: 6rem; }
+  @media screen and (min-width: 1920px) {
+    body {
+      padding-top: 12rem; } }
+
+.coming-up__text {
+  padding: 3rem; }
 
 /*Grid System with Media Query*/
 .col {

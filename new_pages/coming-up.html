@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>myHerupa</title>
+    <meta name="keyword" content="">
+    <meta name="description" content="The sole destination for all your academic queries and an extensive portfolio of all documents (incl Tutorials and Solutions) relevant to your journey at Thapar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="coming-up__text">
+    <h3 class="display5">Designing Site... <span class="display7 color-green">done</h6></h3>
+    <h3 class="display5">Collecting Resources... <span class="display7 color-orange">doing</h6></h3>
+    <h3 class="display5">Writing Code... <span class="display7 color-red">soon</h6></h3>
+    <h3 class="display5">Publishing... <span class="display7 color-red">soon</h6></h3>
+    </div>
+    <h2 class="display3 coming-up__text">In short, under development.</h2>
+    <h1 class="display2 coming-up__text">Please visit later.</h1>
+
+    <!-- jQuery and Scrollify APIs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
+    <script src="js/Scrollify-master/jquery.scrollify.js"></script>
+
+    <!-- Fixes Mobo scr__panel for services -->
+    <script>
+      console.log("Loaded: " + window.innerWidth);
+      if (window.innerWidth < 800) {
+          $('.services').toggleClass('scr__panel');
+      }
+    </script>
+
+    <!-- Implements Scrollify -->
+    <script>
+        $(function() {
+            $.scrollify({
+                section : ".scr__panel",
+            });
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122580305-1');
+    </script>
+
+</body>
+</html>
