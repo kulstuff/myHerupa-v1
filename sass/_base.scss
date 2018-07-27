@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.hide-phone{
+    @media screen and (max-width : 900px){
+        display: none;
+    }
+}
+
+.bold{
+    font-weight: 900;
+    font-size: inherit;
+    color: inherit;
+}
+
+.thin{
+    font-weight: 100;
+    font-size: inherit;
+    color: inherit;
+}
+
+.break-mobile{
+    display: none;
+
+    @media screen and (max-width:900px){
+        display: inline;
+    }
+}
+
+.color-red{
+    color: red;
+}
+
+.color-green{
+    color: green;
+}
+
+.color-orange{
+    color: orange;
+}
+
+.centre-text{
+    text-align: center;
+}

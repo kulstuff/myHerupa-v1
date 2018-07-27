@@ -1,0 +1,60 @@
+.landing{
+    padding-top: 12rem;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-position: 0 17vh;
+    text-align: center;
+
+    &__subtitle{
+        padding: 2rem;
+        font-weight: 100;
+    }
+
+    &__btn-wrap{
+        padding-top: 18rem;
+    }
+
+    @media screen and (max-width : 900px){
+        background-position: 0 40vh;
+        &__btn-wrap{
+            padding-top: 8rem;
+        }
+    }
+    @media screen and(min-width:1920px){
+        padding-top: 20rem;
+        &__subtitle{
+            padding: 3rem;
+        }
+        &__btn-wrap{
+            padding-top: 20rem;
+        }
+    }
+
+
+}
+
+.more-stuff{
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-position: 0 50vh;       
+    
+    &__btn-wrap{
+        margin-top: 6rem;
+    }
+
+    &__subheading{
+        font-weight: 100;
+    }
+
+    @media screen and (max-width : 900px){
+        background-position: 0 5vh;
+        &__btn-wrap{
+            padding-top: 8rem;
+        }
+        &__heading{
+            padding: 1rem;
+        }
+    }
+
+
+}

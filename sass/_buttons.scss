@@ -1,0 +1,234 @@
+@mixin setBgColorBtnSubject($color) {
+    background-color: $color;
+    &:hover{
+        color: $color;
+        background-color: #eee;
+    }
+}
+
+@mixin getStreamPage($color) {
+    &-site{
+        background-color: darken($color,5%);
+        &:hover{
+            color :  darken($color,5%) ;
+            background-color:  black;
+        }
+    }
+    &-syllabus{
+        background-color: lighten($color,5%);
+        &:hover{
+            color : lighten($color,5%);
+            background-color:  black;
+        }
+    }
+    &-books{
+        background-color: lighten($color,10%);
+        &:hover{
+            color : lighten($color,5%);
+            background-color:  black;
+        }
+    }
+    &-notes{
+        background-color: lighten($color,5%);
+        &:hover{
+            color : lighten($color,5%);
+            background-color:  black;
+        }
+    }
+    &-tut{
+        background-color: $color;
+        &:hover{
+            color : $color;
+            background-color:  black;
+        }
+    }
+    &-tut-soln{
+        background-color: $color;
+        &:hover{
+            color : $color;
+            background-color:  black;
+        }
+    }
+    &-ppr{
+        background-color: darken($color,10%);
+        &:hover{
+            color :  darken($color,10%);
+            background-color:  black;
+        }
+    }
+    
+    
+}
+.btn{
+    &__landing{
+        background-color: white;
+        padding: 1rem;
+        transition: all 0.5s ;
+
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.7);
+            color: white;
+        }
+        &--first-year--text, &--second-year--text {
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+            &--first-year--text {
+                background-image: linear-gradient(to right, #5172FE 10%, #5990FD, #7ACAFE 40%, #CE93FF, #A452D2, #9645FA); }
+            &--second-year--text {
+                background-image: linear-gradient(to right, #FF463B, #FE5D38, #FB9D34 30%, #FFC338, #FCFC3D); }
+    
+                
+                @media screen and(max-width:900px){
+                    margin-top: 2rem;
+                    background-color: #F9F7F6;
+                }
+
+    }
+
+    &__more{
+        background-color: rgba(225,225,225,0.8);
+        padding: 1rem;
+        text-align: center;
+        transition: all 0.3s;
+        &:hover{
+            background-color: rgba(225,225,225,0.4);
+        }
+
+    
+        @media screen and (min-width:200px){
+            min-height: auto;
+            margin-top: 1rem;
+        }
+    
+        @media screen and (min-width:600px){
+        }
+    
+        @media screen and (min-width:720px){
+        }
+    
+        @media screen and (min-width:1024px){
+        }
+    
+        @media screen and (min-width:1280px){
+            margin-top: 3rem;
+        }
+        @media screen and (min-width:1920px){
+            margin-top: 4rem;
+            padding: 2rem;
+        }
+    
+    
+        @media screen and (min-width:2560px){
+        }
+    
+    
+        @media screen and (min-width:3840px){
+        }
+    
+    }
+
+    &__stream{
+        color: white;
+        background-color: red;
+        padding: 2rem 0;
+        transition: all 0.3s;
+
+        &--red{
+            @include setBgColorBtnSubject($color-red);
+        }
+        &--red-dark{
+            @include setBgColorBtnSubject($color-red-dark);
+        }
+
+        &--blue-light{
+            @include setBgColorBtnSubject($color-blue-light);
+        }
+        &--blue{
+            @include setBgColorBtnSubject($color-blue);
+        }
+        &--blue-dark{
+            @include setBgColorBtnSubject($color-blue-dark);
+        }
+
+        &--green {
+            @include setBgColorBtnSubject($color-green);
+        }
+        &--green-dark {
+            @include setBgColorBtnSubject($color-green-dark);
+        }
+
+        &--pink {
+            @include setBgColorBtnSubject($color-pink);
+        }
+        &--pink-dark {
+            @include setBgColorBtnSubject($color-pink-dark);
+        }
+
+        &--yellow {
+            @include setBgColorBtnSubject($color-yellow);
+        }
+
+        &--violet{
+            @include setBgColorBtnSubject($color-violet);
+        }
+        &--violet-dark{
+            @include setBgColorBtnSubject($color-violet-dark);
+        }
+
+        &--orange{
+            @include setBgColorBtnSubject($color-orange);
+        }
+
+        @media screen and(max-width:600px){
+            font-size: 1.6rem;
+            padding: 1rem;
+        }
+
+        @media screen and(max-width:400px){
+            font-size: 1.3rem;
+            padding: .9rem;
+        }
+
+    }
+
+    &__subject--blue{
+        @include getStreamPage($color-blue);
+    }
+    &__subject--blue-dark{
+        @include getStreamPage($color-blue-dark);
+    }
+    &__subject--blue-light{
+        @include getStreamPage($color-blue-light);
+    }
+    &__subject--red{
+        @include getStreamPage($color-red);
+    }
+    &__subject--red-dark{
+        @include getStreamPage($color-red-dark);
+    }
+    &__subject--green{
+        @include getStreamPage($color-green);
+    }
+    &__subject--green-dark{
+        @include getStreamPage($color-green-dark);
+    }
+    &__subject--yellow{
+        @include getStreamPage($color-yellow);
+    }
+    &__subject--orange{
+        @include getStreamPage($color-orange);
+    }
+    &__subject--violet{
+        @include getStreamPage($color-violet);
+    }
+    &__subject--violet-dark{
+        @include getStreamPage($color-violet-dark);
+    }
+    &__subject--pink{
+        @include getStreamPage($color-pink);
+    }
+    &__subject--pink-dark{
+        @include getStreamPage($color-pink-dark);
+    }
+}
