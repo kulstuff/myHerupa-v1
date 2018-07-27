@@ -1,4 +1,5 @@
-body{
+
+.coming-up{
     background-color: #eee;
     text-align: center;
     padding-top: 6rem;
@@ -6,9 +7,6 @@ body{
     @media screen and (min-width : 1920px){
         padding-top: 12rem;
     }
-}
-
-.coming-up{
     &__text{
         padding: 3rem;
     }
