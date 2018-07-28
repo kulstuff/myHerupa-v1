@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.subject__menu').click(function(){
+    $('.stream__menu').click(function(){
         $('#nav').show(1000);
         setTimeout(function(){
             console.log("here");
