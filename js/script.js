@@ -9,7 +9,7 @@ var sno__second=2;
 var first__rowspan=3;
 var second__rowspan=3;
 
-var margin_top=8;
+var margin_top=39;
 var choice;
 var i=0;
 
@@ -220,7 +220,6 @@ $(document).ready(function(){
         addSubjects(this.id,"gpa__subject--second-"+1);
         $(".gpa__add-row--second").css('visibility','visible');
         sno__second = 2;
-
         second__rowspan=3;
     });
 
@@ -231,9 +230,9 @@ $(document).ready(function(){
         var first__cell1 = row.insertCell(0);
         var first__cell2 = row.insertCell(1);
         var first__cell3 = row.insertCell(2);
-        first__cell1.innerHTML = '<div class="gpa__table--item">'+sno__first+'</div>';
+        first__cell1.innerHTML = '<div class="display7">'+sno__first+'</div>';
         sno__first++;
-        first__cell2.innerHTML = '<select name="subject" id="gpa__subject--first-'+(sno__first-1)+'" class="gpa__table--item col col-lg-12">'
+        first__cell2.innerHTML = '<select name="subject" id="gpa__subject--first-'+(sno__first-1)+'" class="col col-lg-12 display7">'
                 + '<option value="0" disabled selected>Select Subject</option>'
                 + '<option value="4.5">Applied Chemistry</option>'
                 + '<option value="4.5">Applied Physics</option>'
@@ -249,7 +248,7 @@ $(document).ready(function(){
                 + '<option value="2.5">Mechanics</option>'
                 + '<option value="3">Professional Communication</option>'
                 + '</select>';
-        first__cell3.innerHTML = '<select name="grade" id="gpa__grade--first-'+(sno__first-1)+'" class="gpa__table--item col-lg-10">'
+        first__cell3.innerHTML = '<select name="grade" id="gpa__grade--first-'+(sno__first-1)+'" class="col-lg-10 display7">'
                 + '<option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>'
                 + '<option class="gpa__select--item" value="10">A+</option>'
                 + '<option class="gpa__select--item" value="10">A</option>'
@@ -263,7 +262,7 @@ $(document).ready(function(){
 
         $(".gpa__calculate--first").attr('rowspan',first__rowspan);
             first__rowspan++;
-        $(".gpa__table--first").css('margin-top',margin_top+'%');
+        $(".gpa__table--first").css('top',margin_top+'%');
             margin_top--;
         if(sno__first==8) //Remove button after adding 7 subjects
             {
@@ -279,20 +278,20 @@ $(document).ready(function(){
         var second__cell1 = row.insertCell(0);
         var second__cell2 = row.insertCell(1);
         var second__cell3 = row.insertCell(2);
-        second__cell1.innerHTML = '<div class="gpa__table--item">'+sno__second+'</div>';
+        second__cell1.innerHTML = '<div class="display7">'+sno__second+'</div>';
         sno__second++;
-        second__cell2.innerHTML = '<select name="subject" id="gpa__subject--second-'+(sno__second-1)+'" class="gpa__table--item col-lg-12" style="min-width: 412px;">    <option value="0" disabled selected>Select Subject</option></select>;';
+        second__cell2.innerHTML = '<select name="subject" id="gpa__subject--second-'+(sno__second-1)+'" class="display7 col-lg-12" style="min-width: 412px;">    <option value="0" class="display7" disabled selected>Select Subject</option></select>;';
         addSubjects("gpa__stream","gpa__subject--second-"+(sno__second-1));
-        second__cell3.innerHTML = '<select name="grade" id="gpa__grade--second-'+(sno__second-1)+'" class="gpa__table--item col-lg-10">'
-                + '<option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>'
-                + '<option class="gpa__select--item" value="10">A+</option>'
-                + '<option class="gpa__select--item" value="10">A</option>'
-                + '<option class="gpa__select--item" value="9">A-</option>'
-                + '<option class="gpa__select--item" value="8">B</option>'
-                + '<option class="gpa__select--item" value="7">B-</option>'
-                + '<option class="gpa__select--item" value="6">C</option>'
-                + '<option class="gpa__select--item" value="5">C-</option>'
-                + '<option class="gpa__select--item" value="0">F</option>'
+        second__cell3.innerHTML = '<select name="grade" id="gpa__grade--second-'+(sno__second-1)+'" class="col-lg-10 display7">'
+                + '<option class="display7" value="0" disabled selected>Grade &nbsp; &nbsp;</option>'
+                + '<option class="display7" value="10">A+</option>'
+                + '<option class="display7" value="10">A</option>'
+                + '<option class="display7" value="9">A-</option>'
+                + '<option class="display7" value="8">B</option>'
+                + '<option class="display7" value="7">B-</option>'
+                + '<option class="display7" value="6">C</option>'
+                + '<option class="display7" value="5">C-</option>'
+                + '<option class="display7" value="0">F</option>'
                 +'</select>';
         $(".gpa__calculate--second").attr('rowspan',second__rowspan);
             second__rowspan++;
@@ -382,28 +381,27 @@ $(document).ready(function(){
     });
 
     $(".gpa__choice--first").click(function (){
-        $(this).css('color','white');
-        $(".gpa__choice--second").css('color','black');
-        $(".gpa__calc--first").css('display','block');
-        $(".gpa__calc--second").css('display','none');
-        $(".selected__tri").css('transform','translateX(-550%)');
-        $("tr:not(#keep)").remove();
         sno__first=2;
         first__rowspan=3;
-        $(".gpa__table--first").css('margin-top','9%');
-        margin_top = 8;
+        $(".gpa__first-year").css('display','block');
+        $(".gpa__second-year").css('display','none');
+        $(this).css('color','black');
+        $(this).css('background-color','#eee');
+        $(".gpa__choice--second").css('color','white');
+        $(".gpa__choice--second").css('background-color','#F6C342');
+        $("tr:not(#keep)").remove();
+        $(".gpa__calculate--first").html("Calculate"); //Reset Button
         $(".gpa__calculate--second").html("Calculate"); //Reset Button
-        $(".td__add").css('visibility','visible');
     });
 
     $(".gpa__choice--second").click(function (){
-        $(this).css('color','white');
-        $(".gpa__choice--first").css('color','black');
-        $(".gpa__calc--second").css('display','block');
-        $(".gpa__calc--first").css('display','none');
-        $(".selected__tri").css('transform','translateX(400%)');
         $("tr:not(#keep)").remove();
-
+        $(".gpa__second-year").css('display','block');
+        $(".gpa__first-year").css('display','none');
+        $(this).css('color','black');
+        $(this).css('background-color','#eee');
+        $(".gpa__choice--first").css('color','white');
+        $(".gpa__choice--first").css('background-color','#F6C342');
     });
 
     $(".btn__society").click(function (){
