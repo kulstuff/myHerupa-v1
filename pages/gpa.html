@@ -7,125 +7,114 @@
     <title>GPA Calculator</title>
     <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 
 
 </head>
-<body class="gray__body">
-    <div class="gpa__heading">GPA CALCULATOR</div>
-    <div class="gpa__choice">
-        <span class="gpa__choice--first" >First Year</span>
-        <div class="selected__tri"></div>
-        <span class="gpa__choice--second">Second Year</span>
-    </div>
-    <section class="gpa__calc--first">
-        <table id="gpa__table--first" class="gpa__table--first">
-            <tr id="keep">
-              <th class="gpa__table--head">S.No.</th>
-              <th class="gpa__table--head">Subjects</th>
-              <th class="gpa__table--head">Grade</th>
-              <th class="gpa__calculate--first" rowspan="2" class="calc"><a href="#">CALCULATE</a></th>
-            </tr>
-            <tr id="keep">
-              <td> <div class="gpa__table--item">1</div> </td>
-              <td>
-                <select name="subject" id="gpa__subject--first-1" class="gpa__table--item col-lg-12">
-                    <option value="0" disabled selected>Select Subject</option>
-                    <option value="0" disabled>First Year</option>
-                    <option value="4.5"> Applied Chemistry</option>
-                    <option value="4.5"> Applied Physics</option>
-                    <option value="4"> Computer Science 1</option>
-                    <option value="4"> Computer Science 2</option>
-                    <option value="4.5"> Electrical</option>
-                    <option value="4.5"> Electronics</option>
-                    <option value="4"> Engineering Drawing 1</option>
-                    <option value="5"> Engineering Drawing 2</option>
-                    <option value="3"> Environment</option>
-                    <option value="3.5"> Mathematics 1</option>
-                    <option value="3.5"> Mathematics 2</option>
-                    <option value="2.5"> Mechanics</option>
-                    <option value="3"> Professional Communication</option>
-                </select>
-              </td>
-              <td>
-                <select name="grade" id="gpa__grade--first-1" class="gpa__table--item col-lg-10">
-                    <option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>
-                    <option class="gpa__select--item" value="10">A+</option>
-                    <option class="gpa__select--item" value="10">A</option>
-                    <option class="gpa__select--item" value="9">A-</option>
-                    <option class="gpa__select--item" value="8">B</option>
-                    <option class="gpa__select--item" value="7">B-</option>
-                    <option class="gpa__select--item" value="6">C</option>
-                    <option class="gpa__select--item" value="5">C-</option>
-                    <option class="gpa__select--item" value="0">F</option>
-                </select>
-              </td>
-            </tr>
-            <tr id="keep" class="gpa__add-row--first">
-              <td colspan="4" class="td__add td__bg--gray"><a href="#" id="gpa__add-row--first" class="gpa__add-row--first">+</a></td>
-            </tr>
-          </table>
-    </section>
-
-    <section class="gpa__calc--second">
-        <select class="gpa__stream" id="gpa__stream">
-            <option value="" selected disabled>Select Stream</option>
-            <option value="0">Biotechology</option>
-            <option value="1">Chemical</option>
-            <option value="2">Civil</option>
-            <option value="3">Computer Science</option>
-            <option value="4">Electronics & Communication</option>
-            <option value="5">Electronics & Computer Science</option>
-            <option value="6">Electronics & Instrumentation</option>
-            <option value="7">Electrical</option>
-            <option value="8">Mechanical</option>
-            <option value="9">Mechatronics</option>
-            <option value="10">Production</option>
-        </select>
-        <table id="gpa__table--second" class="gpa__table--second">
-            <tr id="keep">
-              <th class="gpa__table--head">S.No.</th>
-              <th class="gpa__table--head">Subjects</th>
-              <th class="gpa__table--head">Grade</th>
-              <th class="gpa__calculate--second" rowspan="2" class="calc"><a href="#">CALCULATE</a></th>
-            </tr>
-            <tr id="keep">
-              <td> <div class="gpa__table--item">1</div> </td>
-              <td>
-                <select name="subject" id="gpa__subject--second-1" class="gpa__table--item col-lg-12 subject-1" style="min-width: 63rem;">
-                    <option value="0" disabled selected>Select Subject</option>
-                </select>
-              </td>
-              <td>
-                <select name="grade" id="gpa__grade--second-1" class="gpa__table--item col-lg-10">
-                    <option class="gpa__select--default" value="0" disabled selected>Grade &nbsp; &nbsp;</option>
-                    <option class="gpa__select--item" value="10">A+</option>
-                    <option class="gpa__select--item" value="10">A</option>
-                    <option class="gpa__select--item" value="9">A-</option>
-                    <option class="gpa__select--item" value="8">B</option>
-                    <option class="gpa__select--item" value="7">B-</option>
-                    <option class="gpa__select--item" value="6">C</option>
-                    <option class="gpa__select--item" value="5">C-</option>
-                    <option class="gpa__select--item" value="0">F</option>
-                </select>
-              </td>
-            </tr>
-            <tr id="keep" class="gpa__add-row--second" >
-              <td colspan="4" class="td__bg--gray"><a href="#" id="gpa__add-row--second" class="gpa__add-row--second">+</a></td>
-            </tr>
-          </table>
-    </section>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122580305-1');
-</script>
-
+<body>
+  <h1 class="display3 centre-text thin">GPA CALCULATOR</h1>
+  <div class="gpa__choice clearfix">
+    <div class="gpa__choice--first display5 col col-lg-6 col-md-6 col-sm-6 col-xs-6 centre-text">First Year</div>
+    <div class="gpa__choice--second display5 col col-lg-6 col-md-6 col-sm-6 col-xs-6 centre-text">Second Year</div>
+  </div>
+  <div class="gpa__first-year clearfix">
+    <table id="gpa__table--first" class="gpa__table centre-text gpa__table--first">
+      <tr id="keep" class="gpa__table--head">
+        <th class="display6 thin">S.No.</th>
+        <th class="display6 thin">Subjects</th>
+        <th class="display6 thin">Grade</th>
+        <th class="gpa__calculate--first display6 thin" rowspan="2" class="calc"><a href="#">Calculate</a></th>
+      </tr>
+      <tr id="keep" class="">
+        <td> 
+          <div class="display7">1</div> 
+        </td>
+        <td>
+          <select name="subject" id="gpa__subject--first-1" class="col-lg-12 display7">
+              <option value="0" class="display7" disabled selected>Select Subject</option>
+              <option class="display7" value="4.5"> Applied Chemistry</option>
+              <option class="display7" value="4.5"> Applied Physics</option>
+              <option class="display7" value="4"> Computer Science 1</option>
+              <option class="display7" value="4"> Computer Science 2</option>
+              <option class="display7" value="4.5"> Electrical</option>
+              <option class="display7" value="4.5"> Electronics</option>
+              <option class="display7" value="4"> Engineering Drawing 1</option>
+              <option class="display7" value="5"> Engineering Drawing 2</option>
+              <option class="display7" value="3"> Environment</option>
+              <option class="display7" value="3.5"> Mathematics 1</option>
+              <option class="display7" value="3.5"> Mathematics 2</option>
+              <option class="display7" value="2.5"> Mechanics</option>
+              <option class="display7" value="3"> Professional Communication</option>
+          </select>
+        </td>
+        <td>
+          <select name="grade" id="gpa__grade--first-1" class="col-lg-10 display7">
+              <option class="gpa__select--default display7" value="0" disabled selected>Grade &nbsp; &nbsp;</option>
+              <option class="display7" value="10">A+</option>
+              <option class="display7" value="10">A</option>
+              <option class="display7" value="9">A-</option>
+              <option class="display7" value="8">B</option>
+              <option class="display7" value="7">B-</option>
+              <option class="display7" value="6">C</option>
+              <option class="display7" value="5">C-</option>
+              <option class="display7" value="0">F</option>
+          </select>
+        </td>
+      </tr>
+      <tr id="keep" class="gpa__add-row--first">
+        <td colspan="4" class="td__add centre-text"><a href="#" id="gpa__add-row--first" class="gpa__add-row--first display7">+</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="gpa__second-year clearfix centre-text">
+      <select class="gpa__stream display7" id="gpa__stream">
+          <option class="display7" value="" selected disabled>Select Stream</option>
+          <option class="display7" value="0">Biotechology</option>
+          <option class="display7" value="1">Chemical</option>
+          <option class="display7" value="2">Civil</option>
+          <option class="display7" value="3">Computer Science</option>
+          <option class="display7" value="4">Electronics & Communication</option>
+          <option class="display7" value="5">Electronics & Computer Science</option>
+          <option class="display7" value="6">Electronics & Instrumentation</option>
+          <option class="display7" value="7">Electrical</option>
+          <option class="display7" value="8">Mechanical</option>
+          <option class="display7" value="9">Mechatronics</option>
+          <option class="display7" value="10">Production</option>
+      </select>
+      <table id="gpa__table--second" class="gpa__table gpa__table--second centre-text">
+          <tr id="keep" class="gpa__table--head">
+            <th class="display6 thin ">S.No.</th>
+            <th class="display6 thin">Subjects</th>
+            <th class="display6 thin">Grade</th>
+            <th class="gpa__calculate--second display6 thin" rowspan="2" class="calc"><a href="#">Calculate</a></th>
+          </tr>
+          <tr id="keep">
+            <td> <div class="display7">1</div> </td>
+            <td>
+              <select name="subject" id="gpa__subject--second-1" class="col-lg-12 subject-1 display7">
+                  <option value="0" class="display7" disabled selected>Select Subject</option>
+              </select>
+            </td>
+            <td>
+              <select name="grade" id="gpa__grade--second-1" class="col-lg-10 display7">
+                  <option class="display7" value="0" disabled selected>Grade &nbsp; &nbsp;</option>
+                  <option class="display7" value="10">A+</option>
+                  <option class="display7" value="10">A</option>
+                  <option class="display7" value="9">A-</option>
+                  <option class="display7" value="8">B</option>
+                  <option class="display7" value="7">B-</option>
+                  <option class="display7" value="6">C</option>
+                  <option class="display7" value="5">C-</option>
+                  <option class="display7" value="0">F</option>
+              </select>
+            </td>
+          </tr>
+          <tr id="keep" class="gpa__add-row--second" >
+            <td colspan="4" class="td__bg--gray"><a href="#" id="gpa__add-row--second" class="display7 gpa__add-row--second">+</a></td>
+          </tr>
+        </table>
+  </div>
 </body>
 </html>

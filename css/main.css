@@ -39,6 +39,10 @@
 .centre-text {
   text-align: center; }
 
+.clearfix {
+  content: "";
+  clear: both; }
+
 @media screen and (min-width: 0px) {
   .display1 {
     font-size: 2.4rem; } }
@@ -1360,6 +1364,53 @@ body {
       padding-top: 12rem; } }
   .coming-up__text {
     padding: 3rem; }
+
+.gpa {
+  position: relative; }
+  .gpa__choice--first, .gpa__choice--second {
+    display: inline-block;
+    background-color: #F6C342;
+    color: white;
+    cursor: pointer;
+    padding: 1.5rem;
+    margin-top: 2rem; }
+    .gpa__choice--first:hover, .gpa__choice--second:hover {
+      background-color: #eee;
+      color: black; }
+  .gpa__choice--first {
+    color: black;
+    background-color: #eee; }
+  .gpa__first-year, .gpa__second-year {
+    background-color: #eee;
+    height: 65%; }
+  .gpa__second-year {
+    display: none; }
+  .gpa__table {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    border: 1px solid black;
+    border-collapse: collapse; }
+    .gpa__table--first {
+      top: 40%; }
+    .gpa__table--second {
+      top: 40%; }
+    .gpa__table select {
+      border: 0; }
+    .gpa__table th, .gpa__table td {
+      border: 1px solid black;
+      padding: .5rem; }
+  .gpa__calculate--first, .gpa__calculate--second {
+    cursor: pointer; }
+  .gpa__add-row--first, .gpa__add-row--second {
+    background-color: lightgray; }
+  .gpa__add-row--second {
+    visibility: hidden; }
+  .gpa__stream {
+    position: absolute;
+    top: 30%;
+    transform: translateX(-50%); }
 
 /*Grid System with Media Query*/
 .col {
