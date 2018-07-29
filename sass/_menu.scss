@@ -1,12 +1,16 @@
 
-nav {
+.nav {
   z-index: 1;
   position: absolute;
   top: 5vh;
   left: 0;
   display: none;
   height: 90vh;
-  width: 100vw; }
+  width: 100vw; 
+  &__blue-light{
+      background-image: linear-gradient(160deg,rgba(256,256,256,0.9) 20%,$color-blue-light);
+  }
+}
 
 .nav{
   font-family: 'Raleway', sans-serif;
@@ -132,7 +136,7 @@ nav {
     display: none;
     }
 }
-    #nav__varGrid__collect {
+#nav__varGrid__collect {
         display: none;
         z-index: 3;
         position: absolute;
@@ -143,13 +147,6 @@ nav {
         width: 27.5vw;
         -moz-box-shadow:    inset 0 0 10px #000000;
         -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow:         inset 0 0 10px #000000; }
-#nav__subject-btn {
-    text-align: center;
-    padding: 2rem;
-    float: left;
-    font-size: 3rem;
-    color: white;
-    transition: all 0.7s;
-    width: 27.5vw;
-    box-shadow: 0.5rem 0.5rem #777; }
+        box-shadow:         inset 0 0 10px #000000; 
+    }
+

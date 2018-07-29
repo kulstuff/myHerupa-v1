@@ -1,0 +1,69 @@
+.wifi {
+
+  &__choice {
+      margin: 2rem 0;
+    &--passwords,&--sophos {
+      background-color: $color-red;
+      color: white;
+      padding: 2rem 0;
+      &:hover{
+          background-color: black;
+          color: white;
+      }
+    }
+    &--passwords{
+        background-color: black;
+    }
+    &--mobile,&--info,&--pc{
+        background-color: black;
+        color: white;
+        padding: 1rem 0;
+        &:hover{
+            color: $color-blue;
+        }
+    }
+    &--mobile{
+        color: $color-blue;
+    }
+  }
+  &__sophos--choice{
+    display: none;
+  }
+  &__passwords{
+      position: relative;
+  }
+}
+
+.passwords-table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    border-collapse: collapse;
+    td,tr{
+        border: 1px solid black;
+    }
+    td{
+    font-family: 'Roboto', sans-serif;
+    padding: .3rem 1rem;
+    }
+}
+
+
+.sophos{
+    padding: 10rem 0;
+    margin: 0 10%;
+
+    &__title{
+        padding-bottom: 2rem ;
+    }
+    &__content{
+        padding: 1rem;
+    }
+    &__pc{
+        display: none;
+    }
+    &__info{
+        display: none;
+    }
+}
