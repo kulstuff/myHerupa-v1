@@ -46,6 +46,9 @@
     color: orange;
 }
 
+.color-white{
+    color:white;
+}
 .centre-text{
     text-align: center;
 }
@@ -53,4 +56,10 @@
 .clearfix{
     content: "";
     clear: both;
+}
+
+.code{
+    font-family: 'Roboto', sans-serif;
+    font-size: inherit;
+    color: inherit;
 }
