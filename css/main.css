@@ -36,12 +36,20 @@
 .color-orange {
   color: orange; }
 
+.color-white {
+  color: white; }
+
 .centre-text {
   text-align: center; }
 
 .clearfix {
   content: "";
   clear: both; }
+
+.code {
+  font-family: 'Roboto', sans-serif;
+  font-size: inherit;
+  color: inherit; }
 
 @media screen and (min-width: 0px) {
   .display1 {
@@ -1246,6 +1254,7 @@ body {
       padding-top: 6rem; } }
 
 .stream {
+  position: relative;
   padding-top: 3rem;
   height: 100vh;
   background-color: #f5f5f5; }
@@ -1412,6 +1421,58 @@ body {
     top: 30%;
     transform: translateX(-50%); }
 
+.wifi__choice {
+  margin: 2rem 0; }
+  .wifi__choice--passwords, .wifi__choice--sophos {
+    background-color: #E94B3C;
+    color: white;
+    padding: 2rem 0; }
+    .wifi__choice--passwords:hover, .wifi__choice--sophos:hover {
+      background-color: black;
+      color: white; }
+  .wifi__choice--passwords {
+    background-color: black; }
+  .wifi__choice--mobile, .wifi__choice--info, .wifi__choice--pc {
+    background-color: black;
+    color: white;
+    padding: 1rem 0; }
+    .wifi__choice--mobile:hover, .wifi__choice--info:hover, .wifi__choice--pc:hover {
+      color: #4F84C4; }
+  .wifi__choice--mobile {
+    color: #4F84C4; }
+
+.wifi__sophos--choice {
+  display: none; }
+
+.wifi__passwords {
+  position: relative; }
+
+.passwords-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  border-collapse: collapse; }
+  .passwords-table td, .passwords-table tr {
+    border: 1px solid black; }
+  .passwords-table td {
+    font-family: 'Roboto', sans-serif;
+    padding: .3rem 1rem; }
+
+.sophos {
+  padding: 10rem 0;
+  margin: 0 10%; }
+  .sophos__title {
+    padding-bottom: 2rem; }
+  .sophos__content {
+    padding: 1rem; }
+  .sophos__mobile {
+    display: none; }
+  .sophos__pc {
+    display: none; }
+  .sophos__info {
+    display: none; }
+
 /*Grid System with Media Query*/
 .col {
   float: left; }
@@ -1539,7 +1600,7 @@ body {
   background: #777; }
 
 /*Scrollbar Styling Ends*/
-nav {
+.nav {
   z-index: 1;
   position: absolute;
   top: 5vh;
@@ -1547,6 +1608,8 @@ nav {
   display: none;
   height: 90vh;
   width: 100vw; }
+  .nav__blue-light {
+    background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.9) 20%, #6F9FD8); }
 
 .nav {
   font-family: 'Raleway', sans-serif;
@@ -1669,6 +1732,7 @@ nav {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000; }
+
 
 #nav__subject-btn {
   text-align: center;
