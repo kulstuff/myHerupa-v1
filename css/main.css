@@ -1466,6 +1466,8 @@ body {
     padding-bottom: 2rem; }
   .sophos__content {
     padding: 1rem; }
+  .sophos__mobile {
+    display: none; }
   .sophos__pc {
     display: none; }
   .sophos__info {
