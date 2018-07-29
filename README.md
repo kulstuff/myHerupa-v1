@@ -1,7 +1,7 @@
 # ninjaproject
 
 Font Used = 'Raleway' Link  = "https://fonts.googleapis.com/css?family=Raleway" 
-
+Font Used = 'Roboto' Link = "https://font.google.com/css/css?family=Roboto"
 Font Size = 62.5% (10px)
 
 Naming convention for classes : base-class base-class__component<br>
