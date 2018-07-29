@@ -1733,17 +1733,6 @@ body {
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000; }
 
-
-#nav__subject-btn {
-  text-align: center;
-  padding: 2rem;
-  float: left;
-  font-size: 3rem;
-  color: white;
-  transition: all 0.7s;
-  width: 27.5vw;
-  box-shadow: 0.5rem 0.5rem #777; }
-
 .popup {
   height: 100vh;
   width: 100%;
@@ -1781,12 +1770,9 @@ body {
     position: absolute;
     left: 92%; }
   .popup__selector {
-    width: 32rem;
+    width: 90%;
     margin: 1.5rem;
     padding: 0.5rem; }
-    @media screen and (max-width: 600px) {
-      .popup__selector {
-        width: 90%; } }
     .popup__selector-yr {
       margin-top: 4rem; }
 

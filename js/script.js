@@ -18,7 +18,66 @@ var pair;
 var newOption;
 $(document).ready(function(){
 
+    function addBatch(s1,s2){
+      var s1 = document.getElementById(s1);
+      var s2 = document.getElementById(s2);
 
+      s2.innerHTML = "";
+
+        subbatch = [s1.value+"1|"+s1.value+"1",
+                    s1.value+"2|"+s1.value+"2",
+                    s1.value+"3|"+s1.value+"3",
+                    s1.value+"4|"+s1.value+"4",
+                    s1.value+"5|"+s1.value+"5"];
+
+      for(var option in subbatch)
+      {
+        pair = subbatch[option].split("|");
+        newOption = document.createElement("option");
+        newOption.value = pair[0];
+        newOption.innerHTML = pair[1];
+        s2.options.add(newOption);
+      }
+    }
+    function addYear(s1,s2){
+      var s1 = document.getElementById(s1);
+      var s2 = document.getElementById(s2);
+
+      s2.innerHTML = "";
+
+      if(s1.value == "first-yr")
+      {
+        batch = ["A|A",
+                  "B|B",
+                  "C|C",
+                  "D|D",
+                  "E|E",
+                  "F|F",
+                  "G|G",
+                  "H|H",
+                  "I|I",
+                  "J|J",
+                  "K|K",
+                  "L|L",
+                  "M|M",
+                  "N|N",
+                  "O|O",
+                  "P|P",
+                  "Q|Q",
+                  "R|R",
+                  "S|S",
+                  "T|T"
+                ];
+            }
+      for(var option in batch)
+      {
+        pair = batch[option].split("|");
+        newOption = document.createElement("option");
+        newOption.value = pair[0];
+        newOption.innerHTML = pair[1];
+        s2.options.add(newOption);
+      }
+    }
     function addSubjects(s1,s2){
         var s1 = document.getElementById(s1);
         var s2 = document.getElementById(s2);
@@ -216,14 +275,7 @@ $(document).ready(function(){
             s2.options.add(newOption);
         }
 
-        for(var option in batch)
-        {
-          pair = subjects[option].split("|");
-          newOption = document.createElement("option");
-          newOption.value = pair[0];
-          newOption.innerHTML = pair[1];
-          s2.options.add(newOption);
-        }
+
     }
 
     $(".gpa__stream").on('change',function (){
@@ -234,7 +286,12 @@ $(document).ready(function(){
         second__rowspan=3;
     });
 
-
+    $(".popup__selector-batch").on('change', function (){
+      addBatch("popup__selector-batch","popup__selector-subbatch");
+    });
+    $(".popup__selector-yr").on('change', function (){
+      addYear("popup__selector-yr","popup__selector-batch");
+    });
 
     $("#gpa__add-row--first").click(function (){
         var table = document.getElementById("gpa__table--first");

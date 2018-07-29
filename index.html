@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/icon-font.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
     <section class="landing scr__panel">
@@ -57,43 +56,21 @@
             <div class="popup-content">
                 <a href="#more-stuff">
                 <p class="popup__close">&times;</p></a>
-                <p class="popup-content__heading">Enter your details-</p>
+                <p class="popup-content__heading bold centre-text">Enter your details</p>
                    <form>
-                     <select class="display7 popup__selector popup__selector-yr">
+                     <select class="display7 popup__selector popup__selector-yr" id="popup__selector-yr">
                        <option value="selector">Select your year</option>
                        <option value="first-yr">1st year</option>
                        <option value="second-yr">2nd year</option>
 
                      </select>
 
-                     <select class="display7 popup__selector popup__selector-batch">
+                     <select class="display7 popup__selector popup__selector-batch " id="popup__selector-batch">
                        <option value="selector">Select your batch</option>
-                       <option value="A">A</option>
-                       <option value="B">B</option>
-                       <option value="C">C</option>
-                       <option value="D">D</option>
-                       <option value="E">E</option>
-                       <option value="F">F</option>
-                       <option value="G">G</option>
-                       <option value="H">H</option>
-                       <option value="I">I</option>
-                       <option value="J">J</option>
-                       <option value="K">K</option>
-                       <option value="L">L</option>
-                       <option value="M">M</option>
-                       <option value="N">N</option>
-                       <option value="O">O</option>
-                       <option value="P">P</option>
 
                      </select>
                      <select class="display7 popup__selector popup__selector-subbatch" id="popup__selector-subbatch">
                        <option value="selector">Select your sub-batch</option>
-                       <option value="D1">D1</option>
-                       <option value="D2">D2</option>
-                       <option value="D3">D3</option>
-                       <option value="D4">D4</option>
-                       <option value="D5">D5</option>
-
                      </select>
                   </form>
                   <div class=" display5 btn-submit">
@@ -111,6 +88,7 @@
     <!-- jQuery and Scrollify APIs -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
     <script src="js/Scrollify-master/jquery.scrollify.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- Fixes Mobo scr__panel for services -->
     <script>
