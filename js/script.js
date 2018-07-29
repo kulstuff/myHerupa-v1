@@ -18,6 +18,7 @@ var pair;
 var newOption;
 $(document).ready(function(){
 
+
     function addSubjects(s1,s2){
         var s1 = document.getElementById(s1);
         var s2 = document.getElementById(s2);
@@ -205,6 +206,7 @@ $(document).ready(function(){
         }
 
 
+
         for(var option in subjects)
         {
             pair = subjects[option].split("|");
@@ -212,6 +214,15 @@ $(document).ready(function(){
             newOption.value = pair[0];
             newOption.innerHTML = pair[1];
             s2.options.add(newOption);
+        }
+
+        for(var option in batch)
+        {
+          pair = subjects[option].split("|");
+          newOption = document.createElement("option");
+          newOption.value = pair[0];
+          newOption.innerHTML = pair[1];
+          s2.options.add(newOption);
         }
     }
 
@@ -222,6 +233,7 @@ $(document).ready(function(){
         sno__second = 2;
         second__rowspan=3;
     });
+
 
 
     $("#gpa__add-row--first").click(function (){
