@@ -39,6 +39,9 @@
 .color-white {
   color: white; }
 
+.color-gray {
+  color: #ccc; }
+
 .centre-text {
   text-align: center; }
 
@@ -1198,6 +1201,16 @@
     color: #713633;
     background-color: black; }
 
+.card {
+  background-color: red; }
+  .card__holder {
+    padding: 0rem 3rem; }
+  .card__logo {
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 50%; }
+
 .landing {
   padding-top: 12rem;
   background-image: url("../img/bg.png");
@@ -1761,6 +1774,9 @@ body {
     @media screen and (max-width: 600px) {
       .popup-content {
         width: 75%; } }
+    @media screen and (max-width: 1280px) {
+      .popup-content {
+        width: 50%; } }
     .popup-content__heading {
       margin-top: 2rem;
       font-size: 3rem;
@@ -1773,8 +1789,8 @@ body {
     width: 90%;
     margin: 1.5rem;
     padding: 0.5rem; }
-    .popup__selector-yr {
-      margin-top: 4rem; }
+  .popup-yr {
+    margin-top: 4rem; }
 
 .btn-submit {
   text-align: center;
