@@ -28,7 +28,9 @@
   padding: 1rem;
 @media screen and (max-width:600px){
   width:75%;
-
+}
+@media screen and (max-width:1280px){
+  width: 50%;
 }
   &__heading{
     margin-top: 2rem;
@@ -43,13 +45,10 @@
   left: 92%;
 }
 &__selector{
-  width:32rem;
+  width:90%;
   margin: 1.5rem;
   padding: 0.5rem;
-  @media screen and (max-width:600px){
-    width:90%;
-
-  }
+}
 
  &-yr{
    margin-top:4rem;
@@ -70,6 +69,6 @@
    border-radius: 300px;
    @media screen and (max-width:600px){
      width:90%;
-    
+
    }
 }
