@@ -452,55 +452,55 @@ $(document).ready(function(){
         $("li:not(.btn__reset)").css('color','white');
         $(this).css('display','none');
     });
-    $(".wifi__choice--password").click(function (){
-        $(".password").css('display','block');
-        $(".setup__mobile").css('display','none');
-        $(".setup__info").css('display','none');
-        $(".setup__pc").css('display','none');
-        $(".setup").css('display','none');
-        $(this).css('color','red');
-        $(".wifi__choice--setup").css('color','white');
+    $(".wifi__choice--passwords").click(function (){
+        $(".wifi__passwords").css('display','block');
+        $(".wifi__sophos--choice").css('display','none');
+        $(".sophos").css('display','none');
+        $(this).css('color','white');
+        $(this).css('background-color','black');
+        $(".wifi__choice--sophos").css('color','white');
+        $(".wifi__choice--sophos").css('background-color','#E94B3C');
     });
 
-    $(".wifi__choice--setup").click(function (){
-        $(".setup").css('display','block');
-        $(".password").css('display','none');
-        $(this).css('color','red');
-        $(".wifi__choice--password").css('color','white');
-        $(".setup__pc").css('display','block');
-        $(".setup__mobile").css('display','none');
-        $(".setup__info").css('display','none');
-        $(".setup__choice--pc").css('color','yellow');
-        $(".setup__choice--mobile").css('color','white');
-        $(".setup__choice--info").css('color','white');
+    $(".wifi__choice--sophos").click(function (){
+        $(".sophos").css('display','block');
+        $(".wifi__passwords").css('display','none');
+        $(this).css('background-color','black');
+        $(".wifi__choice--passwords").css('background-color','#E94B3C');
+        $(".wifi__sophos--choice").css('display','block');
+        $(".sophos__pc").css('display','none');
+        $(".sophos__info").css('display','none');
+        $(".wifi__choice-mobile").css('color','#185ABD');
+        $(".wifi__choice--pc").css('color','white');
+        $(".wifi__choice--info").css('color','white');
     });
 
-    $(".setup__choice--pc").click(function (){
-        $(".setup__pc").css('display','block');
-        $(".setup__mobile").css('display','none');
-        $(".setup__info").css('display','none');
-        $(this).css('color','yellow');
-        $(".setup__choice--mobile").css('color','white');
-        $(".setup__choice--info").css('color','white');
+    $(".wifi__choice--pc").click(function (){
+        $(".sophos__pc").css('display','block');
+        $(".sophos__mobile").css('display','none');
+        $(".sophos__info").css('display','none');
+        $(this).css('color','#185ABD');
+        $(".wifi__choice--mobile").css('color','white');
+        $(".wifi__choice--info").css('color','white');
 
     });
 
-    $(".setup__choice--mobile").click(function (){
-        $(".setup__mobile").css('display','block');
-        $(".setup__pc").css('display','none');
-        $(".setup__info").css('display','none');
-        $(this).css('color','yellow');
-        $(".setup__choice--pc").css('color','white');
-        $(".setup__choice--info").css('color','white');
+    $(".wifi__choice--mobile").click(function (){
+        $(".sophos__mobile").css('display','block');
+        $(".sophos__pc").css('display','none');
+        $(".sophos__info").css('display','none');
+        $(this).css('color','#185ABD');
+        $(".wifi__choice--pc").css('color','white');
+        $(".wifi__choice--info").css('color','white');
 
     });
-    $(".setup__choice--info").click(function (){
-        $(".setup__info").css('display','block');
-        $(".setup__pc").css('display','none');
-        $(".setup__mobile").css('display','none');
-        $(this).css('color','yellow');
-        $(".setup__choice--pc").css('color','white');
-        $(".setup__choice--mobile").css('color','white');
+    $(".wifi__choice--info").click(function (){
+        $(".sophos__info").css('display','block');
+        $(".sophos__pc").css('display','none');
+        $(".sophos__mobile").css('display','none');
+        $(this).css('color','#185ABD');
+        $(".wifi__choice--pc").css('color','white');
+        $(".wifi__choice--mobile").css('color','white');
 
     });
     $(".gpa__table--plus").click(function (){
