@@ -1,0 +1,14 @@
+.card{
+    background-color: red;
+    
+
+    &__holder{
+        padding: 0rem 3rem;
+    }
+    &__logo{
+        width: 10rem;
+        height: 10rem;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
