@@ -18,7 +18,18 @@ var pair;
 var newOption;
 $(document).ready(function(){
 
+    function addBatch(s1,s2){
+      var s1 = document.getElementById(s1);
+      var s2 = document.getElementById(s2);
 
+      s2.innerHTML = "";
+      alert("Hello");
+      console.log(s1.value);
+      if(s1.value == "A")
+      {
+        alert("Hello");
+      }
+    }
     function addSubjects(s1,s2){
         var s1 = document.getElementById(s1);
         var s2 = document.getElementById(s2);
@@ -234,7 +245,10 @@ $(document).ready(function(){
         second__rowspan=3;
     });
 
-
+    $(".popup__selector-batch").on('change', function (){
+      addBatch("#popup__selector=batch","popup__selector-subbatch");
+      alert("Hello");
+    })
 
     $("#gpa__add-row--first").click(function (){
         var table = document.getElementById("gpa__table--first");
