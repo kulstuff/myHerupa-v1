@@ -36,6 +36,7 @@ $(document).ready(function(){
     });
 
     $('.nav__fiddlerRight').mouseenter(function() {
+
         $('.nav__fiddlerLeft__text').fadeOut().hide();
         $('.nav__fiddlerLeft__head').fadeOut().hide();
         $('.nav__fiddlerLeft').animate({
@@ -80,7 +81,9 @@ $(document).ready(function(){
         }, function() {
             amount = '';
     });
+
     $(".nav__back").click(function(){
         $("#nav").toggle();
     });
+
 });
