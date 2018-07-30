@@ -1213,7 +1213,7 @@
 
 .landing {
   padding-top: 12rem;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: 0 17vh;
   text-align: center; }
@@ -1236,7 +1236,7 @@
         padding-top: 20rem; } }
 
 .more-stuff {
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: 0 50vh; }
   .more-stuff__btn-wrap {
