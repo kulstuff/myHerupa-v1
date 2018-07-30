@@ -64,11 +64,7 @@ $(document).ready(function(){
                   "M|M",
                   "N|N",
                   "O|O",
-                  "P|P",
-                  "Q|Q",
-                  "R|R",
-                  "S|S",
-                  "T|T"
+                  "P|P"
                 ];
             }
       for(var option in batch)
