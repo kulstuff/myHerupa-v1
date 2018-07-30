@@ -16,6 +16,7 @@
   font-size: inherit;
   color: inherit; }
 
+
 .thin {
   font-weight: 100;
   font-size: inherit;
@@ -1621,12 +1622,35 @@ body {
   display: none;
   height: 90vh;
   width: 100vw; }
-  .nav__blue-light {
-    background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.9) 20%, #6F9FD8); }
+  .nav--red {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(230, 36, 25, 1) 40.0001%, rgba(230, 36, 25, 1) 100%);
+  .nav--red-dark {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(188, 36, 60, 1) 40.0001%, rgba(188, 36, 60, 1) 100%);
+  .nav--blue-light {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(111, 159, 216, 1) 40.0001%, rgba(111, 159, 216, 1) 100%);
+  .nav--blue {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(79, 132, 196, 1) 40.0001%, rgba(79, 132, 196, 1) 100%);
+  .nav--blue-dark {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(46, 74, 98, 1) 40.0001%, rgba(46, 74, 98, 1) 100%);
+  .nav--green {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(121, 199, 83, 1) 40.0001%, rgba(121, 199, 83, 1) 100%);
+  .nav--green-dark {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(0, 89, 96, 1) 40.0001%, rgba(0, 89, 96, 1) 100%);
+  .nav--pink {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(196, 127, 173, 1) 40.0001%, rgba(196, 127, 173, 1) 100%);
+  .nav--pink-dark {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(148, 71, 67, 1) 40.0001%, rgba(148, 71, 67, 1) 100%);
+  .nav--yellow {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(237, 147, 2, 1) 40.0001%, rgba(237, 147, 2, 1) 100%);
+  .nav--violet {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(107, 91, 149, 1) 40.0001%, rgba(107, 91, 149, 1) 100%);
+  .nav--violet-dark {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(79, 26, 95, 1) 40.0001%, rgba(79, 26, 95, 1) 100%);
+  .nav--orange {
+    background-image: linear-gradient( 135deg, rgba(247, 247, 247, 0.15) 40%, rgba(247, 247, 247, 0.35) 100%), linear-gradient(135deg, rgba(248, 248, 248, 0.95) 0%, rgba(248, 248, 248, 0.95) 40%, rgba(210, 105, 30, 1) 40.0001%, rgba(210, 105, 30, 1) 100%);
 
 .nav {
-  font-family: 'Raleway', sans-serif;
-  /* border: 1px solid white; */ }
+  font-family: 'Raleway', sans-serif; }
   .nav__carousel {
     /* display: inline-block; */
     margin-left: 40vw;
