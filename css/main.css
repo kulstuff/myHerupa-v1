@@ -11,6 +11,10 @@
   .hide-phone {
     display: none; } }
 
+@media screen and (min-width: 600px) {
+  .hide-desktop {
+    display: none; } }
+
 .bold {
   font-weight: 900;
   font-size: inherit;
