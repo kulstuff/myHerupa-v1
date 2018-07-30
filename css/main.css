@@ -1761,6 +1761,9 @@ body {
     @media screen and (max-width: 600px) {
       .popup-content {
         width: 75%; } }
+    @media screen and (max-width: 1280px) {
+      .popup-content {
+        width: 50%; } }
     .popup-content__heading {
       margin-top: 2rem;
       font-size: 3rem;
@@ -1778,7 +1781,7 @@ body {
 
 .btn-submit {
   text-align: center;
-  margin-top: 3rem; }
+  margin-top: 2rem; }
 
 .submit {
   text-align: center;
@@ -1791,3 +1794,17 @@ body {
   @media screen and (max-width: 600px) {
     .submit {
       width: 90%; } }
+
+.text {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  color: grey; }
+
+.new-stuff {
+  width: 100vw;
+  height: 4rem;
+  background-color: #FF951F;
+  position: absolute;
+  text-align: center; }
