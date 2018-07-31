@@ -1,0 +1,21 @@
+.navdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  height: 2.75rem;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.instructions {
+  position: absolute;
+  left: 50%;
+  top: 88.5%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+  transform: translate3d(-50%, 0, 0);
+  letter-spacing: 0.25rem;
+  color: white;
+  font-size: 2.5rem;
+}
