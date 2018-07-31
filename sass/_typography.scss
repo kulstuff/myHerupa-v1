@@ -1,18 +1,18 @@
 @mixin makeFont($defaultSize) {
     @media screen and (min-width:0px){
-        font-size: $defaultSize/5; 
+        font-size: ($defaultSize*3)/15; 
     }
 
     @media screen and (min-width:200px){
-        font-size: $defaultSize * 0.2666667;
+        font-size: ($defaultSize * 4)/15;
     }
 
     @media screen and (min-width:350px){
-        font-size: ($defaultSize*2)/5;
+        font-size: ($defaultSize*9)/15;
     }
 
     @media screen and (min-width:600px){
-        font-size: ($defaultSize*8)/15;
+        font-size: ($defaultSize*9)/15;
     }
 
     @media screen and (min-width:720px){

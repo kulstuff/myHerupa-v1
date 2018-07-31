@@ -9,6 +9,10 @@
 
 
 
+@media screen and (min-width: 600px) {
+  .hide-desktop {
+    display: none; } }
+
 .bold {
   font-weight: 900;
   font-size: inherit;
@@ -63,11 +67,11 @@
 
 @media screen and (min-width: 350px) {
   .display1 {
-    font-size: 4.8rem; } }
+    font-size: 7.2rem; } }
 
 @media screen and (min-width: 600px) {
   .display1 {
-    font-size: 6.4rem; } }
+    font-size: 7.2rem; } }
 
 @media screen and (min-width: 720px) {
   .display1 {
@@ -103,11 +107,11 @@
 
 @media screen and (min-width: 350px) {
   .display2 {
-    font-size: 4rem; } }
+    font-size: 6rem; } }
 
 @media screen and (min-width: 600px) {
   .display2 {
-    font-size: 5.33333rem; } }
+    font-size: 6rem; } }
 
 @media screen and (min-width: 720px) {
   .display2 {
@@ -143,11 +147,11 @@
 
 @media screen and (min-width: 350px) {
   .display3 {
-    font-size: 3.2rem; } }
+    font-size: 4.8rem; } }
 
 @media screen and (min-width: 600px) {
   .display3 {
-    font-size: 4.26667rem; } }
+    font-size: 4.8rem; } }
 
 @media screen and (min-width: 720px) {
   .display3 {
@@ -183,11 +187,11 @@
 
 @media screen and (min-width: 350px) {
   .display4 {
-    font-size: 2.4rem; } }
+    font-size: 3.6rem; } }
 
 @media screen and (min-width: 600px) {
   .display4 {
-    font-size: 3.2rem; } }
+    font-size: 3.6rem; } }
 
 @media screen and (min-width: 720px) {
   .display4 {
@@ -223,11 +227,11 @@
 
 @media screen and (min-width: 350px) {
   .display5 {
-    font-size: 1.6rem; } }
+    font-size: 2.4rem; } }
 
 @media screen and (min-width: 600px) {
   .display5 {
-    font-size: 2.13333rem; } }
+    font-size: 2.4rem; } }
 
 @media screen and (min-width: 720px) {
   .display5 {
@@ -263,11 +267,11 @@
 
 @media screen and (min-width: 350px) {
   .display6 {
-    font-size: 1.2rem; } }
+    font-size: 1.8rem; } }
 
 @media screen and (min-width: 600px) {
   .display6 {
-    font-size: 1.6rem; } }
+    font-size: 1.8rem; } }
 
 @media screen and (min-width: 720px) {
   .display6 {
@@ -303,11 +307,11 @@
 
 @media screen and (min-width: 350px) {
   .display7 {
-    font-size: 0.8rem; } }
+    font-size: 1.2rem; } }
 
 @media screen and (min-width: 600px) {
   .display7 {
-    font-size: 1.06667rem; } }
+    font-size: 1.2rem; } }
 
 @media screen and (min-width: 720px) {
   .display7 {
@@ -343,11 +347,11 @@
 
 @media screen and (min-width: 350px) {
   .display8 {
-    font-size: 0.6rem; } }
+    font-size: 0.9rem; } }
 
 @media screen and (min-width: 600px) {
   .display8 {
-    font-size: 0.8rem; } }
+    font-size: 0.9rem; } }
 
 @media screen and (min-width: 720px) {
   .display8 {
@@ -383,11 +387,11 @@
 
 @media screen and (min-width: 350px) {
   .display9 {
-    font-size: 0.5rem; } }
+    font-size: 0.75rem; } }
 
 @media screen and (min-width: 600px) {
   .display9 {
-    font-size: 0.66667rem; } }
+    font-size: 0.75rem; } }
 
 @media screen and (min-width: 720px) {
   .display9 {
@@ -423,11 +427,11 @@
 
 @media screen and (min-width: 350px) {
   .display10 {
-    font-size: 0.4rem; } }
+    font-size: 0.6rem; } }
 
 @media screen and (min-width: 600px) {
   .display10 {
-    font-size: 0.53333rem; } }
+    font-size: 0.6rem; } }
 
 @media screen and (min-width: 720px) {
   .display10 {
@@ -463,11 +467,11 @@
 
 @media screen and (min-width: 350px) {
   .display11 {
-    font-size: 0.3rem; } }
+    font-size: 0.45rem; } }
 
 @media screen and (min-width: 600px) {
   .display11 {
-    font-size: 0.4rem; } }
+    font-size: 0.45rem; } }
 
 @media screen and (min-width: 720px) {
   .display11 {
@@ -503,11 +507,11 @@
 
 @media screen and (min-width: 350px) {
   .display12 {
-    font-size: 0.2rem; } }
+    font-size: 0.3rem; } }
 
 @media screen and (min-width: 600px) {
   .display12 {
-    font-size: 0.26667rem; } }
+    font-size: 0.3rem; } }
 
 @media screen and (min-width: 720px) {
   .display12 {
@@ -569,10 +573,10 @@
       margin-top: 1rem; } }
   @media screen and (min-width: 1280px) {
     .btn__more {
-      margin-top: 3rem; } }
+      margin-top: 2rem; } }
   @media screen and (min-width: 1920px) {
     .btn__more {
-      margin-top: 4rem;
+      margin-top: 3rem;
       padding: 2rem; } }
 
 .btn__stream {
@@ -1210,9 +1214,75 @@
     background-color: white;
     border-radius: 50%; }
 
+.popup {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(42, 36, 36, 0.8);
+  transition: all .3s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup-content {
+    width: 50%;
+    background-color: #eee;
+    box-shadow: 0 2rem 3rem rgba(1, 1, 1, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 1rem; }
+    @media screen and (max-width: 1280px) {
+      .popup-content {
+        width: 50%; } }
+    @media screen and (max-width: 600px) {
+      .popup-content {
+        width: 85%; } }
+    .popup-content__heading {
+      margin-top: 2rem; }
+  .popup__close {
+    font-size: 3.5rem;
+    position: absolute;
+    left: 92%; }
+  .popup__selector {
+    width: 90%;
+    margin: 1.5rem;
+    padding: 0.5rem; }
+  .popup-yr {
+    margin-top: 4rem; }
+
+.btn-submit {
+  text-align: center;
+  padding: 3rem; }
+
+.submit {
+  text-align: center;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #4cc963, rgba(21, 189, 48, 0.84));
+  color: white;
+  border-radius: 300px; }
+  @media screen and (max-width: 600px) {
+    .submit {
+      width: 90%; } }
+
+.time-table__help {
+  padding: 3rem; }
+
+.card__collect {
+  padding: 3rem; }
+
+.card__body {
+  position: relative;
+  min-height: 500px; }
+
+.card__image {
+  width: 90%;
+  margin: 1rem; }
+
 .landing {
   padding-top: 12rem;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: 0 17vh;
   text-align: center; }
@@ -1235,7 +1305,7 @@
         padding-top: 20rem; } }
 
 .more-stuff {
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: 0 50vh; }
   .more-stuff__btn-wrap {
@@ -1249,6 +1319,9 @@
         padding-top: 8rem; }
       .more-stuff__heading {
         padding: 1rem; } }
+  @media screen and (max-width: 600px) {
+    .more-stuff__btn-wrap {
+      padding-top: 0rem; } }
 
 body {
   background-color: #f5f5f5; }
@@ -1722,6 +1795,20 @@ body {
     border: 2px solid white;
     border-radius: 4rem;
     display: none; }
+
+
+#nav__varGrid__collect {
+  display: none;
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+  top: 5vh;
+  left: 5vw;
+  height: 80vh;
+  width: 27.5vw;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000; }
 
 
 

@@ -14,6 +14,11 @@
     }
 }
 
+.hide-desktop{
+    @media screen and (min-width : 600px){
+        display: none;
+    }
+}
 .bold{
     font-weight: 900;
     font-size: inherit;
