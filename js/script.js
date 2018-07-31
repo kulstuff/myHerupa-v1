@@ -1,3 +1,106 @@
+//  Calender script
+// var batch
+
+var batch;
+var classSheetMap = new Map();
+    classSheetMap.set('A1','C');
+    classSheetMap.set('A2','E');
+    classSheetMap.set('A3','G');
+    classSheetMap.set('A4','I');
+    classSheetMap.set('A5','K');
+    classSheetMap.set('B1','M');
+    classSheetMap.set('B2','O');
+    classSheetMap.set('B3','Q');
+    classSheetMap.set('B4','S');
+    classSheetMap.set('B5','U');
+    classSheetMap.set('C1','W');
+    classSheetMap.set('C2','Y');
+    classSheetMap.set('C3','AA');
+    classSheetMap.set('C4','AC');
+    classSheetMap.set('C5','AE');
+    classSheetMap.set('D1','AG');
+    classSheetMap.set('D2','AI');
+    classSheetMap.set('D3','AK');
+    classSheetMap.set('D4','AM');
+    classSheetMap.set('D5','AO');
+    classSheetMap.set('E1','AQ');
+    classSheetMap.set('E2','AS');
+    classSheetMap.set('E3','AU');
+    classSheetMap.set('E4','AW');
+    classSheetMap.set('E5','AY');
+    classSheetMap.set('F1','BA');
+    classSheetMap.set('F2','BC');
+    classSheetMap.set('F3','BE');
+    classSheetMap.set('F4','BG');
+    classSheetMap.set('F5','BI');
+    classSheetMap.set('G1','BK');
+    classSheetMap.set('G2','BM');
+    classSheetMap.set('G3','BO');
+    classSheetMap.set('G4','BQ');
+    classSheetMap.set('G5','BS');
+    classSheetMap.set('H1','BU');
+    classSheetMap.set('H2','BW');
+    classSheetMap.set('H3','BY');
+    classSheetMap.set('H4','CA');
+    classSheetMap.set('H5','CC');
+    classSheetMap.set('I1','CK');
+    classSheetMap.set('I2','CM');
+    classSheetMap.set('I3','CO');
+    classSheetMap.set('I4','CQ');
+    classSheetMap.set('I5','CS');
+    classSheetMap.set('J1','CU');
+    classSheetMap.set('J2','CW');
+    classSheetMap.set('J3','CY');
+    classSheetMap.set('J4','DA');
+    classSheetMap.set('J5','DC');
+    classSheetMap.set('K1','DE');
+    classSheetMap.set('K2','DG');
+    classSheetMap.set('K3','DI');
+    classSheetMap.set('K4','DK');
+    classSheetMap.set('K5','DM');
+    classSheetMap.set('L1','DO');
+    classSheetMap.set('L2','DQ');
+    classSheetMap.set('L3','DS');
+    classSheetMap.set('L4','DU');
+    classSheetMap.set('L5','DW');
+    classSheetMap.set('M1','DY');
+    classSheetMap.set('M2','EA');
+    classSheetMap.set('M3','EC');
+    classSheetMap.set('M4','EE');
+    classSheetMap.set('M5','EG');
+    classSheetMap.set('N1','EI');
+    classSheetMap.set('N2','EK');
+    classSheetMap.set('N3','EM');
+    classSheetMap.set('N4','EO');
+    classSheetMap.set('N5','EQ');
+    classSheetMap.set('O1','ES');
+    classSheetMap.set('O2','EU');
+    classSheetMap.set('O3','EW');
+    classSheetMap.set('O4','EY');
+    classSheetMap.set('O5','FA');
+    classSheetMap.set('P1','FC');
+    classSheetMap.set('P2','FE');
+    classSheetMap.set('P3','FG');
+    classSheetMap.set('P4','FI');
+    classSheetMap.set('P5','FK');
+// console.log(batch);
+
+$('#popup__selector-subbatch').change(function () {
+  batch = $('#popup__selector-subbatch option:selected');
+  console.log(batch.text());
+  console.log(classSheetMap.get(batch.text()));
+});
+
+// var columnTable =
+
+// $('.submit').click(function () {
+//   if (batch == undefined) {
+//     alert("Please Enter Your Details First");
+//   }
+//   else makeClaender(batch);
+// });
+
+
 var credits= [0,0,0,0,0,0,0,0,0,0,0,0,0];
 var grade=[0,0,0,0,0,0,0,0,0,0,0,0,0];
 var credits_sum =0;
