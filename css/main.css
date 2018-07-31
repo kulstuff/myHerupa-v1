@@ -68,11 +68,11 @@
 
 @media screen and (min-width: 350px) {
   .display1 {
-    font-size: 4.8rem; } }
+    font-size: 7.2rem; } }
 
 @media screen and (min-width: 600px) {
   .display1 {
-    font-size: 6.4rem; } }
+    font-size: 7.2rem; } }
 
 @media screen and (min-width: 720px) {
   .display1 {
@@ -108,11 +108,11 @@
 
 @media screen and (min-width: 350px) {
   .display2 {
-    font-size: 4rem; } }
+    font-size: 6rem; } }
 
 @media screen and (min-width: 600px) {
   .display2 {
-    font-size: 5.33333rem; } }
+    font-size: 6rem; } }
 
 @media screen and (min-width: 720px) {
   .display2 {
@@ -148,11 +148,11 @@
 
 @media screen and (min-width: 350px) {
   .display3 {
-    font-size: 3.2rem; } }
+    font-size: 4.8rem; } }
 
 @media screen and (min-width: 600px) {
   .display3 {
-    font-size: 4.26667rem; } }
+    font-size: 4.8rem; } }
 
 @media screen and (min-width: 720px) {
   .display3 {
@@ -188,11 +188,11 @@
 
 @media screen and (min-width: 350px) {
   .display4 {
-    font-size: 2.4rem; } }
+    font-size: 3.6rem; } }
 
 @media screen and (min-width: 600px) {
   .display4 {
-    font-size: 3.2rem; } }
+    font-size: 3.6rem; } }
 
 @media screen and (min-width: 720px) {
   .display4 {
@@ -228,11 +228,11 @@
 
 @media screen and (min-width: 350px) {
   .display5 {
-    font-size: 1.6rem; } }
+    font-size: 2.4rem; } }
 
 @media screen and (min-width: 600px) {
   .display5 {
-    font-size: 2.13333rem; } }
+    font-size: 2.4rem; } }
 
 @media screen and (min-width: 720px) {
   .display5 {
@@ -268,11 +268,11 @@
 
 @media screen and (min-width: 350px) {
   .display6 {
-    font-size: 1.2rem; } }
+    font-size: 1.8rem; } }
 
 @media screen and (min-width: 600px) {
   .display6 {
-    font-size: 1.6rem; } }
+    font-size: 1.8rem; } }
 
 @media screen and (min-width: 720px) {
   .display6 {
@@ -308,11 +308,11 @@
 
 @media screen and (min-width: 350px) {
   .display7 {
-    font-size: 0.8rem; } }
+    font-size: 1.2rem; } }
 
 @media screen and (min-width: 600px) {
   .display7 {
-    font-size: 1.06667rem; } }
+    font-size: 1.2rem; } }
 
 @media screen and (min-width: 720px) {
   .display7 {
@@ -348,11 +348,11 @@
 
 @media screen and (min-width: 350px) {
   .display8 {
-    font-size: 0.6rem; } }
+    font-size: 0.9rem; } }
 
 @media screen and (min-width: 600px) {
   .display8 {
-    font-size: 0.8rem; } }
+    font-size: 0.9rem; } }
 
 @media screen and (min-width: 720px) {
   .display8 {
@@ -388,11 +388,11 @@
 
 @media screen and (min-width: 350px) {
   .display9 {
-    font-size: 0.5rem; } }
+    font-size: 0.75rem; } }
 
 @media screen and (min-width: 600px) {
   .display9 {
-    font-size: 0.66667rem; } }
+    font-size: 0.75rem; } }
 
 @media screen and (min-width: 720px) {
   .display9 {
@@ -428,11 +428,11 @@
 
 @media screen and (min-width: 350px) {
   .display10 {
-    font-size: 0.4rem; } }
+    font-size: 0.6rem; } }
 
 @media screen and (min-width: 600px) {
   .display10 {
-    font-size: 0.53333rem; } }
+    font-size: 0.6rem; } }
 
 @media screen and (min-width: 720px) {
   .display10 {
@@ -468,11 +468,11 @@
 
 @media screen and (min-width: 350px) {
   .display11 {
-    font-size: 0.3rem; } }
+    font-size: 0.45rem; } }
 
 @media screen and (min-width: 600px) {
   .display11 {
-    font-size: 0.4rem; } }
+    font-size: 0.45rem; } }
 
 @media screen and (min-width: 720px) {
   .display11 {
@@ -508,11 +508,11 @@
 
 @media screen and (min-width: 350px) {
   .display12 {
-    font-size: 0.2rem; } }
+    font-size: 0.3rem; } }
 
 @media screen and (min-width: 600px) {
   .display12 {
-    font-size: 0.26667rem; } }
+    font-size: 0.3rem; } }
 
 @media screen and (min-width: 720px) {
   .display12 {
@@ -574,10 +574,10 @@
       margin-top: 1rem; } }
   @media screen and (min-width: 1280px) {
     .btn__more {
-      margin-top: 3rem; } }
+      margin-top: 2rem; } }
   @media screen and (min-width: 1920px) {
     .btn__more {
-      margin-top: 4rem;
+      margin-top: 3rem;
       padding: 2rem; } }
 
 .btn__stream {
@@ -1320,6 +1320,9 @@
         padding-top: 8rem; }
       .more-stuff__heading {
         padding: 1rem; } }
+  @media screen and (max-width: 600px) {
+    .more-stuff__btn-wrap {
+      padding-top: 0rem; } }
 
 body {
   background-color: #f5f5f5; }
