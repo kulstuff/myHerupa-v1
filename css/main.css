@@ -58,6 +58,10 @@
   font-size: inherit;
   color: inherit; }
 
+.contact-us {
+  background-color: black;
+  padding: .5rem; }
+
 @media screen and (min-width: 0px) {
   .display1 {
     font-size: 2.4rem; } }
