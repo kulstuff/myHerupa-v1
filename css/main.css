@@ -1285,6 +1285,37 @@
   width: 90%;
   margin: 1rem; }
 
+.instructions {
+  font-size: 12rem;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 97vh;
+  left: auto; }
+
+.navdown {
+  width: 5rem; }
+
+.video {
+  background-color: #FF951F;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgba(1, 1, 1, 0.2); }
+  .video-text {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: #eee; }
+    .video-text__link {
+      font-size: 2.5rem;
+      font-family: 'Raleway', sans-serif;
+      color: #eee;
+      text-decoration: underline; }
+  @media screen and (max-width: 600px) {
+    .video {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 2560px) {
+    .video {
+      font-size: 3.5rem; } }
+
 .landing {
   padding-top: 12rem;
   background-image: url("../img/bg.jpg");

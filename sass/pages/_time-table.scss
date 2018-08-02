@@ -3,7 +3,7 @@
     width:100%;
     background-color: rgba(42, 36, 36, 0.8);
     transition: all .3s;
-    
+
 
   &:target{
     opacity:1;
@@ -102,3 +102,29 @@
   .navdown{
     width:5rem;
   }
+
+.video{
+  background-color:#FF951F;
+  text-align:center;
+  padding:1rem;
+  box-shadow:0 0 0.5rem rgba(1, 1, 1, 0.2);
+
+  &-text{
+    font-size:2.5rem;
+    font-family: 'Raleway', sans-serif;
+    color:#eee;
+
+  &__link{
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    color:#eee;
+    text-decoration:underline;
+  }
+}
+@media screen and (max-width: 600px){
+  font-size:1.5rem;
+}
+@media screen and (min-width: 2560px){
+  font-size: 3.5rem;
+}
+}
