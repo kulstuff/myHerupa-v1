@@ -1,7 +1,7 @@
 {
   "name": "herupa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Font Used = 'Raleway' Link  = \"https://fonts.googleapis.com/css?family=Raleway\"  Font Used = 'Roboto' Link = \"https://font.google.com/css/css?family=Roboto\" Font Size = 62.5% (10px)",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/main.css -w"
@@ -10,5 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.9.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhawal27/ninjaproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhawal27/ninjaproject/issues"
+  },
+  "homepage": "https://github.com/dhawal27/ninjaproject#readme"
 }
