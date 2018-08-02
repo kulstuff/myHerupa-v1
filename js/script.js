@@ -569,7 +569,7 @@ $(document).ready(function(){
         if(v1.value == "A1")
              window.open("https://calendar.google.com/calendar?cid=dmw1MW9kaXQ0NmRnNjNrYzQxdjh1bTI5a29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "A2")
-            window.open("https://calendar.google.com/calendar?cid=dmw1MW9kaXQ0NmRnNjNrYzQxdjh1bTI5a29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+            window.open("https://calendar.google.com/calendar?cid=ZGlyOXZoNzI5bmsybHBkZ2RrZGM2ZDM3bWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "A3")
             window.open("https://calendar.google.com/calendar?cid=MzVtNDltbnZsZjJsa29kYzFiazZuYTJzb2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "A4")
@@ -579,9 +579,9 @@ $(document).ready(function(){
         else if(v1.value == "B1")
             window.open("https://calendar.google.com/calendar?cid=ZXUxcm1yaWthcG1idjZvbTR0dHQ0bnE0Y2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "B2")
-            window.open("https://calendar.google.com/calendar?cid=ZXUxcm1yaWthcG1idjZvbTR0dHQ0bnE0Y2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+            window.open("https://calendar.google.com/calendar?cid=MHFxdGduZHM3MjFycGpycXZqNWlpMnZ0aXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "B3")
-            window.open("https://calendar.google.com/calendar?cid=ZXUxcm1yaWthcG1idjZvbTR0dHQ0bnE0Y2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+            window.open("https://calendar.google.com/calendar?cid=MzljbmVtaXRldWUwN2ZzdHVtbDRsdGc2MmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "B4")
             window.open("https://calendar.google.com/calendar?cid=a2YzZHUzYzZuMWlmaHI2MWtqM3ZrbzVkOGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "B5")
