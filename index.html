@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style media="screen">
+      .landing__arrow{
+        width:5rem;
+        margin-top:0.3rem;
+        animation: vibrate;
+        animation-duration:0.25s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function:ease-in;
+        }
+      .landing__arrow:hover{
+        animation-play-state: paused;
+
+
+
+
+      }
+        @keyframes vibrate {
+
+        from{transform: translateY(0.8rem);}
+        to{transform: translateY(1.4rem);}
+      }
+    </style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>myHerupa</title>
@@ -26,6 +49,11 @@
           <div class="btn__landing--second-year--text">Second Year</div>
         </a>
     </div>
+      <a onclick="scrollifyClick()">
+            <img src="img/icons/arrow2.gif" class="landing__arrow" alt="">
+      </a>
+
+
     </section>
     <section class="more-stuff scr__panel" id="more-stuff">
         <h3 class="display2 more-stuff__heading">More Stuff</h3>
@@ -78,6 +106,9 @@
 
     <!-- Implements Scrollify -->
     <script>
+        function scrollifyClick () {
+          $.scrollify.next();
+        }
         $(function() {
             $.scrollify({
                 section : ".scr__panel",
