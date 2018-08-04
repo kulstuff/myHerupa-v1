@@ -1468,7 +1468,9 @@ body {
     .stream__menu {
       width: 4.5rem;
       margin: .5rem 1.5rem 4rem 1rem;
-      padding: .5rem; } }
+      padding: .5rem; }
+    .stream-heading {
+      font-size: 4rem; } }
   @media screen and (max-width: 450px) {
     .stream__menu {
       width: 3rem;
