@@ -18,6 +18,28 @@ var pair;
 var newOption;
 
 var getValue;
+
+var societies_dept_id=1;
+var society_dept_no=1;
+
+var society;
+
+//colors : 
+var color;
+var color_red = "#E94B3C";
+var color_red_dark = "#bc243c"; //Branch = ECE, Subject = ProfComm
+var color_blue_light = "#6F9FD8"; //Branch = BioTech, Subject = Applied Chemistry
+var color_blue = "#4F84C4" ; // Subject = Maths2
+var color_blue_dark = "#2E4A62";  //Branch = Civil, 
+var color_green = "#79C753";  //Branch = Chemical, Subject = Applied Physics
+var color_green_dark = "#005960"; // 
+var color_pink = "#c47fad";  // Subject = Electronics
+var color_pink_dark = "#944743";  // Subject = Electrical
+var color_yellow= "#ed9302"; // Branch = E&I,
+var color_violet = "#6B5B95"; // 
+var color_violet_dark = "#4f1a5f"; // 
+var color_orange = "#D2691E"; //Branch : COE
+
 $(document).ready(function(){
 
     function addBatch(s1,s2){
@@ -740,5 +762,622 @@ $(document).ready(function(){
             $("#popup__selector-subbatch").css("border","1 px solid gray");
             }
         }
+    });
+
+    
+    $(".societies__menu--item-about").click(function (){
+        if(society=="msc")
+        {
+            color = "#E94B3C";
+        }
+        else if(society=="mudra")
+        {
+            color = "#c47fad";
+        }
+        else if(society=="econ")
+        {
+            color = color_blue_light;
+        }
+        else if(society=="litsoc")
+        {
+            color = "#79C753";
+        }
+        else if(society=="faps")
+        {
+            color=color_yellow;
+        }
+        else if(society=="nox")
+        {
+            color=color_pink_dark;
+        }
+        else if(society=="ccs")
+        {
+            color= color_blue;
+        }
+        else if(society=="pratigya")
+        {
+            color = color_green_dark;
+        }
+        else if(society=="tumun")
+        {
+            color = color_red_dark;
+        }
+        else if(society=="saic")
+        {
+            color = color_violet_dark;
+        }
+        else if(society=="iet")
+        {
+            color = color_orange;
+        }
+        else if(society=="owasp")
+        {
+            color = color_blue_dark;
+        }
+        else if(society=="toastmasters")
+        {
+            color = color_violet;
+        }
+        $(this).css('background-color','#f5f5f5');
+        $(this).css('color','black');
+        $(".societies__menu--item-events").css('background-color',color);
+        $(".societies__menu--item-events").css('color','#f5f5f5');
+        $(".societies__menu--item-team").css('background-color',color);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__events").css('display','none');
+        $(".societies__team").css('display','none');
+        $(".societies__about").css('display','block');
+
+    });
+    $(".societies__menu--item-events").click(function (){
+        if(society=="msc")
+        {
+            color = "#E94B3C";
+        }
+        else if(society=="mudra")
+        {
+            color = "#c47fad";
+        }
+        else if(society=="econ")
+        {
+            color = color_blue_light;
+        }
+        else if(society=="litsoc")
+        {
+            color = "#79C753";
+        }
+        else if(society=="faps")
+        {
+            color=color_yellow;
+        }
+        else if(society=="nox")
+        {
+            color=color_pink_dark;
+        }
+        else if(society=="ccs")
+        {
+            color= color_blue;
+        }
+        else if(society=="pratigya")
+        {
+            color = color_green_dark;
+        }
+        else if(society=="tumun")
+        {
+            color = color_red_dark;
+        }
+        else if(society=="saic")
+        {
+            color = color_violet_dark;
+        }
+        else if(society=="iet")
+        {
+            color = color_orange;
+        }
+        else if(society=="owasp")
+        {
+            color = color_blue_dark;
+        }
+        else if(society=="toastmasters")
+        {
+            color = color_violet;
+        }
+        $(this).css('background-color','#f5f5f5');
+        $(this).css('color','black');
+        $(".societies__menu--item-about").css('background-color',color);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__menu--item-team").css('background-color',color);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__team").css('display','none');
+        $(".societies__events").css('display','block');
+    });
+    $(".societies__menu--item-team").click(function (){
+        if(society=="msc")
+        {
+            color = "#E94B3C";
+        }
+        else if(society=="mudra")
+        {
+            color = "#c47fad";
+        }
+        else if(society=="econ")
+        {
+            color = color_blue_light;
+        }
+        else if(society=="litsoc")
+        {
+            color = "#79C753";
+        }
+        else if(society=="faps")
+        {
+            color=color_yellow;
+        }
+        else if(society=="nox")
+        {
+            color=color_pink_dark;
+        }
+        else if(society=="ccs")
+        {
+            color= color_blue;
+        }
+        else if(society=="pratigya")
+        {
+            color = color_green_dark;
+        }
+        else if(society=="tumun")
+        {
+            color = color_red_dark;
+        }
+        else if(society=="saic")
+        {
+            color = color_violet_dark;
+        }
+        else if(society=="iet")
+        {
+            color = color_orange;
+        }
+        else if(society=="owasp")
+        {
+            color = color_blue_dark;
+        }
+        else if(society=="toastmasters")
+        {
+            color = color_violet;
+        }
+        console.log(society);
+        
+        console.log(color);
+        
+            $(this).css('background-color','#f5f5f5');
+            $(this).css('color','black');
+            $(".societies__menu--item-events").css('background-color',color);
+            $(".societies__menu--item-events").css('color','#f5f5f5');
+            $(".societies__menu--item-about").css('background-color',color);
+            $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','none');
+        $(".societies__team").css('display','block');
+    });
+    $(".societies__right-arrow--msc").click( function (){
+        $("#societies__dept--msc-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--msc-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--msc").click( function (){
+        $("#societies__dept--msc-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--msc-"+societies_dept_id).css('display','block');
+        $("#societies__dept--msc-"+societies_dept_id).fadeIn();
+    });
+    $(".societies__right-arrow--mudra").click( function (){
+        $("#societies__dept--mudra-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--mudra-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--mudra").click( function (){
+        $("#societies__dept--mudra-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--mudra-"+societies_dept_id).css('display','block');
+        $("#societies__dept--mudra-"+societies_dept_id).fadeIn();
+    });
+    $(".societies__right-arrow--litsoc").click( function (){
+        $("#societies__dept--litsoc-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--litsoc-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--litsoc").click( function (){
+        $("#societies__dept--litsoc-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--litsoc-"+societies_dept_id).css('display','block');
+        $("#societies__dept--litsoc-"+societies_dept_id).fadeIn();
+    });
+    $(".societies__right-arrow--faps").click( function (){
+        $("#societies__dept--faps-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--faps-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--faps").click( function (){
+        $("#societies__dept--faps-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--faps-"+societies_dept_id).css('display','block');
+        $("#societies__dept--faps-"+societies_dept_id).fadeIn();
+    });  
+    $(".societies__right-arrow--ccs").click( function (){
+        $("#societies__dept--ccs-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--ccs-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--ccs").click( function (){
+        $("#societies__dept--ccs-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--ccs-"+societies_dept_id).css('display','block');
+        $("#societies__dept--ccs-"+societies_dept_id).fadeIn();
+    });  
+    $(".societies__right-arrow--pratigya").click( function (){
+        $("#societies__dept--pratigya-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--pratigya-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--pratigya").click( function (){
+        $("#societies__dept--pratigya-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--pratigya-"+societies_dept_id).css('display','block');
+        $("#societies__dept--pratigya-"+societies_dept_id).fadeIn();
+    });  
+    $(".societies__right-arrow--tumun").click( function (){
+        $("#societies__dept--tumun-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--tumun-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--tumun").click( function (){
+        $("#societies__dept--tumun-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--tumun-"+societies_dept_id).css('display','block');
+        $("#societies__dept--tumun-"+societies_dept_id).fadeIn();
+    });  
+    $(".societies__right-arrow--econ").click( function (){
+        $("#societies__dept--econ-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--econ-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--econ").click( function (){
+        $("#societies__dept--econ-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--econ-"+societies_dept_id).css('display','block');
+        $("#societies__dept--econ-"+societies_dept_id).fadeIn();
+    });  
+    $(".societies__right-arrow--saic").click( function (){
+        $("#societies__dept--saic-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--saic-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--saic").click( function (){
+        $("#societies__dept--saic-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--saic-"+societies_dept_id).css('display','block');
+        $("#societies__dept--saic-"+societies_dept_id).fadeIn();
+    });  
+    $(".societies__right-arrow--iet").click( function (){
+        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--iet").click( function (){
+        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
+        $("#societies__dept--iet-"+societies_dept_id).fadeIn();
+    });  
+    $(".societies__right-arrow--iet").click( function (){
+        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--iet").click( function (){
+        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
+        $("#societies__dept--iet-"+societies_dept_id).fadeIn();
+    });
+    $(".societies__right-arrow--nox").click( function (){
+        $("#societies__dept--nox-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--nox-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--nox").click( function (){
+        $("#societies__dept--nox-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--nox-"+societies_dept_id).css('display','block');
+        $("#societies__dept--nox-"+societies_dept_id).fadeIn();
+    });
+    $(".societies__right-arrow--owasp").click( function (){
+        $("#societies__dept--owasp-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--owasp-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--owasp").click( function (){
+        $("#societies__dept--owasp-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--owasp-"+societies_dept_id).css('display','block');
+        $("#societies__dept--owasp-"+societies_dept_id).fadeIn();
+    });
+    $(".societies__right-arrow--toastmasters").click( function (){
+        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','none');
+        societies_dept_id++;
+        if(societies_dept_id==(society_dept_no+1))
+            societies_dept_id=1;
+        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','block');
+    });
+    $(".societies__left-arrow--toastmasters").click( function (){
+        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','none');
+        societies_dept_id--;
+        if(societies_dept_id==0)
+          societies_dept_id=society_dept_no;
+        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','block');
+        $("#societies__dept--toastmasters-"+societies_dept_id).fadeIn();
+    });
+    $(".card__btn--msc").click(function (){
+        society_dept_no = 4;
+        societies_dept_id = 1;
+        society="msc";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__msc").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_red);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_red);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--mudra").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="mudra";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__mudra").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_pink);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_pink);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--litsoc").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="litsoc";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__litsoc").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_green);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_green);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--faps").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="faps";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__faps").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_yellow);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_yellow);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--ccs").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="ccs";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__ccs").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_blue);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_blue);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--nox").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="nox";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__nox").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_pink_dark);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_pink_dark);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--pratigya").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="pratigya";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__pratigya").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_green_dark);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_green_dark);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--tumun").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="tumun";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__tumun").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_red_dark);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_red_dark);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--econ").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="econ";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__econ").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_blue_light);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_blue_light);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--saic").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="saic";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__saic").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_violet_dark);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_violet_dark);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--iet").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="iet";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__iet").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_orange);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_orange);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--owasp").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="owasp";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__owasp").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_blue_dark);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_blue_dark);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".card__btn--toastmasters").click(function (){
+        society_dept_no = 3;
+        societies_dept_id = 1;
+        society="toastmasters";
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $("#societies__toastmasters").css('display','block');
+        $(".societies__menu--item-events").css('background-color','#f5f5f5');
+        $(".societies__menu--item-events").css('color','black');
+        $(".societies__menu--item-team").css('background-color',color_violet);
+        $(".societies__menu--item-team").css('color','#f5f5f5');
+        $(".societies__menu--item-about").css('background-color',color_violet);
+        $(".societies__menu--item-about").css('color','#f5f5f5');
+        $(".societies__about").css('display','none');
+        $(".societies__events").css('display','block');
+        $(".societies__team").css('display','none');
+    });
+    $(".societies__pop-up--close").click(function() {
+        $(".societies__pop-up").css('display','none');
     });
 });
