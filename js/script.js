@@ -16,89 +16,131 @@ var i=0;
 var gpa;
 var pair;
 var newOption;
+var isSecondYear;
 
 var getValue;
-
-var societies_dept_id=1;
-var society_dept_no=1;
-
-var society;
-
-//colors : 
-var color;
-var color_red = "#E94B3C";
-var color_red_dark = "#bc243c"; //Branch = ECE, Subject = ProfComm
-var color_blue_light = "#6F9FD8"; //Branch = BioTech, Subject = Applied Chemistry
-var color_blue = "#4F84C4" ; // Subject = Maths2
-var color_blue_dark = "#2E4A62";  //Branch = Civil, 
-var color_green = "#79C753";  //Branch = Chemical, Subject = Applied Physics
-var color_green_dark = "#005960"; // 
-var color_pink = "#c47fad";  // Subject = Electronics
-var color_pink_dark = "#944743";  // Subject = Electrical
-var color_yellow= "#ed9302"; // Branch = E&I,
-var color_violet = "#6B5B95"; // 
-var color_violet_dark = "#4f1a5f"; // 
-var color_orange = "#D2691E"; //Branch : COE
-
 $(document).ready(function(){
 
-    function addBatch(s1,s2){
-      var s1 = document.getElementById(s1);
-      var s2 = document.getElementById(s2);
+  function addBatch(s1,s2){
+    var s1 = document.getElementById(s1);
+    var s2 = document.getElementById(s2);
 
-      s2.innerHTML = "";
+    s2.innerHTML = "";
+    if (s1.value == 'COE') {
+      addSubOptions(28);
+    }
+    else if(s1.value == 'ECE' || s1.value == 'ENC') {
+      addSubOptions(8)
+    }
+    else if(s1.value == 'CHE') {
+      addSubOptions(1);
+    }
+    else if(s1.value == 'EIC') {
+      addSubOptions(3);
+    }
+    else if(s1.value == 'BTD') {
+      addSubOptions(3,2);
+    }
+    else if(s1.value == 'CIE') {
+      addSubOptions(4);
+    }
+    else if(s1.value == 'MEE') {
+      addSubOptions(12);
+    }
+    else if(s1.value == 'ELE') {
+      addSubOptions(6);
+    }
+    else if(s1.value == 'CHE') {
+      addSubOptions(1);
+    }
+    else if(s1.value == 'MTX' || s1.value == 'MTP') {
+      addSubOptions(2);
+    }
+    else {
+      addSubOptions(5); //First Year and Default For:
+    }
 
-        subbatch = [s1.value+"1|"+s1.value+"1",
-                    s1.value+"2|"+s1.value+"2",
-                    s1.value+"3|"+s1.value+"3",
-                    s1.value+"4|"+s1.value+"4",
-                    s1.value+"5|"+s1.value+"5"];
-
-      for(var option in subbatch)
-      {
-        pair = subbatch[option].split("|");
-        newOption = document.createElement("option");
-        newOption.value = pair[0];
-        newOption.innerHTML = pair[1];
-        s2.options.add(newOption);
+    function addSubOptions (num, exep){
+      var subbatches = [];
+        for ( var i = 1; i <= num ; i++ ){
+          subbatches.push(s1.value + i + '|' + s1.value + i );
+        }
+      if (exep == 2) {
+        for(var option in subbatches) {
+          pair = subbatches[option].split("|");
+          newOption = document.createElement("option");
+          newOption.value = '' + exep + pair[0];
+          newOption.innerHTML = pair[1];
+          s2.options.add(newOption);
+        }
+      }
+      else {
+        for(var option in subbatches) {
+          pair = subbatches[option].split("|");
+          newOption = document.createElement("option");
+          newOption.value = pair[0];
+          newOption.innerHTML = pair[1];
+          s2.options.add(newOption);
+        }
       }
     }
-    function addYear(s1,s2){
+  }
+
+  function addYear(s1,s2){
       var s1 = document.getElementById(s1);
       var s2 = document.getElementById(s2);
 
-      s2.innerHTML = "";
+      if(s1.value == "second-yr"){
+          s2.innerHTML = "";
+          stream = ['COE|Computer (COE)',
+                    'ECE|Electronics and Communication (ECE)',
+                    'CHE|Chemical (CHE)',
+                    'CIE|Civil (CIE)',
+                    'MEE|Mechanical (MEE)',
+                    'ELE|Electrical (ELE)',
+                    'BTD|Biotechnology (BTD)',
+                    'EIC|Electronics and Instrumentation (EIC)',
+                    'ENC|Electronics and Computer (ENC)',
+                    'MPE|Mechanical Production (MPE)',
+                    'MTX|Mechatronics (MTX)'];
+          for (var option in stream) {
+            pair = stream[option].split('|')
+            newOption = document.createElement("option");
+            newOption.value = pair[0];
+            newOption.innerHTML = pair[1];
+            s2.options.add(newOption);
+          }
+      }
 
-      if(s1.value == "first-yr")
-      {
+      if(s1.value == "first-yr") {
+        s2.innerHTML = "";
         batch = ["A|A",
-                  "B|B",
-                  "C|C",
-                  "D|D",
-                  "E|E",
-                  "F|F",
-                  "G|G",
-                  "H|H",
-                  "I|I",
-                  "J|J",
-                  "K|K",
-                  "L|L",
-                  "M|M",
-                  "N|N",
-                  "O|O",
-                  "P|P"
-                ];
-            }
-      for(var option in batch)
-      {
-        pair = batch[option].split("|");
-        newOption = document.createElement("option");
-        newOption.value = pair[0];
-        newOption.innerHTML = pair[1];
-        s2.options.add(newOption);
+                 "B|B",
+                 "C|C",
+                 "D|D",
+                 "E|E",
+                 "F|F",
+                 "G|G",
+                 "H|H",
+                 "I|I",
+                 "J|J",
+                 "K|K",
+                 "L|L",
+                 "M|M",
+                 "N|N",
+                 "O|O",
+                 "P|P"];
+          for(var option in batch) {
+            pair = batch[option].split("|");
+            newOption = document.createElement("option");
+            newOption.value = pair[0];
+            newOption.innerHTML = pair[1];
+            s2.options.add(newOption);
+          }
       }
-      addBatch("popup__selector-batch","popup__selector-subbatch");
+        addBatch("popup__selector-batch","popup__selector-subbatch");
     }
+
     function addSubjects(s1,s2){
         var s1 = document.getElementById(s1);
         var s2 = document.getElementById(s2);
@@ -584,10 +626,10 @@ $(document).ready(function(){
     });
     $(".gpa__table--plus").click(function (){
     });
+
     $(".submit").click(function (){
         var v1 = document.getElementById("popup__selector-subbatch");
-        
-
+        // Replace this by sheets maintained online
         if(v1.value == "A1")
              window.open("https://calendar.google.com/calendar?cid=dmw1MW9kaXQ0NmRnNjNrYzQxdjh1bTI5a29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "A2")
@@ -754,6 +796,162 @@ $(document).ready(function(){
             window.open("https://calendar.google.com/calendar?cid=dmE2Zm9tZmpyajQzNWU4ZnFza2lzbjBqcWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "BTD3")
             window.open("https://calendar.google.com/calendar?cid=b250MXBvN3NqbWdyN2huYWpjc3U0ZWVnZDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+
+        else if(v1.value == "COE1")
+            window.open("https://calendar.google.com/calendar?cid=aDcycHVrdm85c3JhNmEyMmtraWxlM2MzMGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE2")
+            window.open("https://calendar.google.com/calendar?cid=OHEwaHZhNjMwazR2dXNycmlyamZyOXQ0MjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE3")
+            window.open("https://calendar.google.com/calendar?cid=Y3E0NWR1bTZsNGg3YWFpMWE5dTg1cGRlamtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE4")
+            window.open("https://calendar.google.com/calendar?cid=cnZyMWlvOGQ4a2hocm80MzM3Nm9oajJqdjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE5")
+            window.open("https://calendar.google.com/calendar?cid=aXVpNzhuZGo5bXF2YnJoZWQyZjF0cjZiZ3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE6")
+            window.open("https://calendar.google.com/calendar?cid=MTdjYjFncm8wNWY3M3EyaGs4NW5wbGtpaDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE7")
+            window.open("https://calendar.google.com/calendar?cid=NHFoYmttbGVjZnZmYWNoNTZoOHZicG43Y2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE8")
+            window.open("https://calendar.google.com/calendar?cid=dHZxOGptcTZ2bG5xN21rNGV2bnFkMmpta2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE9")
+            window.open("https://calendar.google.com/calendar?cid=bzM0NXVoYnRpdThyOWpsZnBuOW9tbnA5NThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE10")
+            window.open("https://calendar.google.com/calendar?cid=OTNyN2docjZja2xoMGJpb2trZGF0aXY2bjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE11")
+            window.open("https://calendar.google.com/calendar?cid=bzlzaGQ4cGRkc3BmYmNmbGNiYm5xcTM5NmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE12")
+            window.open("https://calendar.google.com/calendar?cid=ZG5wb2cyamhkcWoybmZjczlrNmZhcjE1bXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE13")
+            window.open("https://calendar.google.com/calendar?cid=NHNjdG9vMG91cjE5YzZpZDk1dDA2bzYwc2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE14")
+            window.open("https://calendar.google.com/calendar?cid=MGJ0NzVnbGxwbmJmOWVodWVpdW83czZxYXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE15")
+            window.open("https://calendar.google.com/calendar?cid=aml1N3IzMTJrMDVtdDVldmd2MTVqNmdqZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE16")
+            window.open("https://calendar.google.com/calendar?cid=NWVuZDR1MnBnOG9qNWRnZWNxMmppZ3ZscjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE17")
+            window.open("https://calendar.google.com/calendar?cid=OGRtdGFzcmNhbDZib2t0ajdrdjQ1ZWY3ZGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE18")
+            window.open("https://calendar.google.com/calendar?cid=bnZubWtyYnE1OHN2OTNucHNndTNyMTVmcDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE19")
+            window.open("https://calendar.google.com/calendar?cid=OTl0cXA0dHA5YWlnYzhraGlkMTlyNGRqNDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE20")
+            window.open("https://calendar.google.com/calendar?cid=dGcwYzcyYjBjcW03Ym9udDRycnM2c3JhYmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE21")
+            window.open("https://calendar.google.com/calendar?cid=MXA3bmI0dGJlbXE1aGh1aG1tazVvMDAwbXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE22")
+            window.open("https://calendar.google.com/calendar?cid=cGt1NmQ1Y3Y3NTE0bGRhMHRvMDI5ZTZrNzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE23")
+            window.open("https://calendar.google.com/calendar?cid=MWVocTg4NXRuNGxtOHJmcWl1cXYyOGk1NGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE24")
+            window.open("https://calendar.google.com/calendar?cid=cDBmajllczVzb285OTl0MWdmYXJxMWgzcWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE25")
+            window.open("https://calendar.google.com/calendar?cid=ZmNsYnY3N3NsM3U4bGczMWQ1NTNjYWdranNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE26")
+            window.open("https://calendar.google.com/calendar?cid=YWoydjNjbzE5OHB0YXZnZXZiN2QxdWVzZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE27")
+            window.open("https://calendar.google.com/calendar?cid=MmdrYnZya29lZjN0NTljbnB2ZjdrdW5ib29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "COE28")
+            window.open("https://calendar.google.com/calendar?cid=YWoydjNjbzE5OHB0YXZnZXZiN2QxdWVzZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE1")
+            window.open("https://calendar.google.com/calendar/b/2?cid=djludThiaG41OHJrcnZxZTJsYWxsZTdxZnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE2")
+            window.open("https://calendar.google.com/calendar/b/2?cid=NWQxMmUyZXJjdjRxbGx2aDcxdm9lcWoxNWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE3")
+            window.open("https://calendar.google.com/calendar/b/2?cid=aWp1aWdoNmE0NjMxbDFuOGRvaGZscWR1cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE4")
+            window.open("https://calendar.google.com/calendar/b/2?cid=ZGI5djk4OTJydG4yY3A2Mmc3YmVxMTRwczRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE5")
+            window.open("https://calendar.google.com/calendar/b/2?cid=ZGdmZjVkN25xNmY3OGJxbTkzdnN2bTMwdmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE6")
+            window.open("https://calendar.google.com/calendar/b/2?cid=c2JnM2Zuamk5Y25jZ3RwZHI5ZGtxODdvZW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE7")
+            window.open("https://calendar.google.com/calendar/b/2?cid=MDFkNGoyZ3Flcm5mcmZrbmdncHYxbzNiM29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ECE8")
+            window.open("https://calendar.google.com/calendar/b/2?cid=Njh0dXUyaW1yOWp0N205MzNnOTZqaDE0cGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC1")
+            window.open("https://calendar.google.com/calendar/b/1?cid=bzF1bmo2bThvM3AycXY4azJsbDZvaWdhaHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC2")
+            window.open("https://calendar.google.com/calendar/b/1?cid=dDU3YnM1ZDFjNG9uOGJ2N2tidnFvanRiNmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC3")
+            window.open("https://calendar.google.com/calendar/b/1?cid=MWlydWRlMHV0OWo1OTM4MnNpMHAyc3FmdjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC4")
+            window.open("https://calendar.google.com/calendar/b/1?cid=MXVkZmlycmJtY3AzbjQ0ZzBtbHVjdTVnMW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC5")
+            window.open("https://calendar.google.com/calendar/b/1?cid=cjllNDdybzcyNnNicnJmZGNtZmEzNmdxOHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC6")
+            window.open("https://calendar.google.com/calendar/b/2?cid=MGgydGI4dTN1NXA0dnVidDhpM3ZncmNpdTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC7")
+            window.open("https://calendar.google.com/calendar/b/2?cid=dGJxYnVvM3VtYTBxM2gxNjQ1dmNjNmQ4cGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ENC8")
+            window.open("https://calendar.google.com/calendar/b/2?cid=N2s0czRvZHZwZGJrOXFoNTA0bWVjdXNtMDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "CHE")
+            window.open("https://calendar.google.com/calendar/b/2?cid=OTUzMWI0NGhxaDBidDhoMDRzdWpnMnRuNnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "CIE1")
+            window.open("https://calendar.google.com/calendar/b/2?cid=am50dThjdG43aTc0ajQ0ZDNibjBma2g5azRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "CIE2")
+            window.open("https://calendar.google.com/calendar/b/2?cid=NXJoNWRuNjFtcjBldWhuZG5yZGcxNzI4bGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "CIE3")
+            window.open("https://calendar.google.com/calendar/b/2?cid=ajZiMXA0MzgybGMzcnNlbGUyOG9lbWtqaWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "CIE4")
+            window.open("https://calendar.google.com/calendar/b/2?cid=Z3RtdDdzdjFzYjg1ZGZvcG0zbWxoMjB1N29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "EIC1")
+            window.open("https://calendar.google.com/calendar/b/2?cid=Nmplbmg0bWJhOXZubW5samZsZGduMHJodG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "EIC2")
+            window.open("https://calendar.google.com/calendar/b/2?cid=N3VmMHJuZG5wZjZlYmNscjNzMzk4c2w3OHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "EIC3")
+            window.open("https://calendar.google.com/calendar/b/2?cid=MHMybW9ob251ZnVhYnRobm4yMDE3djB2MjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ELE1")
+            window.open("https://calendar.google.com/calendar/b/1?cid=YnAzbDEyMXVmY201cXNwdDY0ZzFjNGFwZHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ELE2")
+            window.open("https://calendar.google.com/calendar/b/1?cid=cWdrbzZrZDQwMWticXZicGUwMHM1dGIzZjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ELE3")
+            window.open("https://calendar.google.com/calendar/b/1?cid=bnFsNzRyMmFtZ2o0YWJ1Z3BpYms0cmlmNjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ELE4")
+            window.open("https://calendar.google.com/calendar/b/1?cid=cG9xMTRwOGVzMGxvbjhlZ3NmZ2gzam83OWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ELE5")
+            window.open("https://calendar.google.com/calendar/b/1?cid=bXFrbmpxMWQyanVlMTJnc2c1aWwxdXJxdHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "ELE6")
+            window.open("https://calendar.google.com/calendar/b/1?cid=aWdoM2NwMzRtbmYwYmI1MDc4bGZlcGowdW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE1")
+            window.open("https://calendar.google.com/calendar/b/1?cid=aGt2dHF2cWhsN2U5YjFjYzVvanVxbmpnb2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE2")
+            window.open("https://calendar.google.com/calendar/b/1?cid=dWNyb2QycHRsMHBmb3V0b2d2czFtdmc4dWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE3")
+            window.open("https://calendar.google.com/calendar/b/1?cid=cW0xZWduaXRsbG8xZ3VwY2IzMDVhNGY0ZDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE4")
+            window.open("https://calendar.google.com/calendar/b/1?cid=bjJyODZ0aGpma3Y0cjQ4c3FtaWRhZGFvc3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE5")
+            window.open("https://calendar.google.com/calendar/b/1?cid=NDg0NGRvMGlqMmZoc2llMGd2aTAyN280cmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE6")
+            window.open("https://calendar.google.com/calendar/b/1?cid=ZWtmdjRxN3NuZDRwYzYzdDUzdXNjYWdkN3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE7")
+            window.open("https://calendar.google.com/calendar/b/1?cid=ZDBnY2djM2o3NmsyZjB2OHMzZzlqM2lzcGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE8")
+            window.open("https://calendar.google.com/calendar/b/1?cid=N3FpcjgxcTkxZ2I0bjNqNG1ibm5wMm92dmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE9")
+            window.open("https://calendar.google.com/calendar/b/1?cid=ZnRtMTMyODM5OWZ0b2g1N2c5MnBjbjFqYjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE10")
+            window.open("https://calendar.google.com/calendar/b/1?cid=M2Y0b2JrZTZ0cHE3bmk0MTZiNDRnYzFrbGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE11")
+            window.open("https://calendar.google.com/calendar/b/1?cid=cTRyMmNtNWo1aG1lMmphMmo4ZGJxb2ljbHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MEE12")
+            window.open("https://calendar.google.com/calendar/b/1?cid=Zm1nYTI1OG1hbDh2NWg1ZnVzdGpjbGF0ODhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MPE1")
+            window.open("https://calendar.google.com/calendar/b/1?cid=dWZlZms1c203YWc0M3Fta2lxNzhjbmdyaWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MPE2")
+            window.open("https://calendar.google.com/calendar/b/1?cid=a2JsdGk1MDZ0MWN2aTE4MTZ2OWtqNXNtaHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MTX1")
+            window.open("https://calendar.google.com/calendar/b/1?cid=amozOXRwNHI0bm80aThycmY3bDlxNGRtajRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "MTX2")
+            window.open("https://calendar.google.com/calendar/b/1?cid=YWxlb25vZWZ0ZWoxaDJsZnByaTRyNDBrc2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "2BTD1")
+            window.open("https://calendar.google.com/calendar/b/1?cid=dm1yN20ycm12YTMyMXNpM2xnZTZxdmtudTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "2BTD2")
+            window.open("https://calendar.google.com/calendar/b/1?cid=N25qYTVwcTEwcWM4aXE2M3JzZzE0dTk1NDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+        else if(v1.value == "2BTD3")
+            window.open("https://calendar.google.com/calendar/b/1?cid=dWFianF1cXY3aWtlZ2hqMjVnaXJ1dWRucTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+
         else
         {
             if(v1.value == "selector")
@@ -762,622 +960,5 @@ $(document).ready(function(){
             $("#popup__selector-subbatch").css("border","1 px solid gray");
             }
         }
-    });
-
-    
-    $(".societies__menu--item-about").click(function (){
-        if(society=="msc")
-        {
-            color = "#E94B3C";
-        }
-        else if(society=="mudra")
-        {
-            color = "#c47fad";
-        }
-        else if(society=="econ")
-        {
-            color = color_blue_light;
-        }
-        else if(society=="litsoc")
-        {
-            color = "#79C753";
-        }
-        else if(society=="faps")
-        {
-            color=color_yellow;
-        }
-        else if(society=="nox")
-        {
-            color=color_pink_dark;
-        }
-        else if(society=="ccs")
-        {
-            color= color_blue;
-        }
-        else if(society=="pratigya")
-        {
-            color = color_green_dark;
-        }
-        else if(society=="tumun")
-        {
-            color = color_red_dark;
-        }
-        else if(society=="saic")
-        {
-            color = color_violet_dark;
-        }
-        else if(society=="iet")
-        {
-            color = color_orange;
-        }
-        else if(society=="owasp")
-        {
-            color = color_blue_dark;
-        }
-        else if(society=="toastmasters")
-        {
-            color = color_violet;
-        }
-        $(this).css('background-color','#f5f5f5');
-        $(this).css('color','black');
-        $(".societies__menu--item-events").css('background-color',color);
-        $(".societies__menu--item-events").css('color','#f5f5f5');
-        $(".societies__menu--item-team").css('background-color',color);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__events").css('display','none');
-        $(".societies__team").css('display','none');
-        $(".societies__about").css('display','block');
-
-    });
-    $(".societies__menu--item-events").click(function (){
-        if(society=="msc")
-        {
-            color = "#E94B3C";
-        }
-        else if(society=="mudra")
-        {
-            color = "#c47fad";
-        }
-        else if(society=="econ")
-        {
-            color = color_blue_light;
-        }
-        else if(society=="litsoc")
-        {
-            color = "#79C753";
-        }
-        else if(society=="faps")
-        {
-            color=color_yellow;
-        }
-        else if(society=="nox")
-        {
-            color=color_pink_dark;
-        }
-        else if(society=="ccs")
-        {
-            color= color_blue;
-        }
-        else if(society=="pratigya")
-        {
-            color = color_green_dark;
-        }
-        else if(society=="tumun")
-        {
-            color = color_red_dark;
-        }
-        else if(society=="saic")
-        {
-            color = color_violet_dark;
-        }
-        else if(society=="iet")
-        {
-            color = color_orange;
-        }
-        else if(society=="owasp")
-        {
-            color = color_blue_dark;
-        }
-        else if(society=="toastmasters")
-        {
-            color = color_violet;
-        }
-        $(this).css('background-color','#f5f5f5');
-        $(this).css('color','black');
-        $(".societies__menu--item-about").css('background-color',color);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__menu--item-team").css('background-color',color);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__team").css('display','none');
-        $(".societies__events").css('display','block');
-    });
-    $(".societies__menu--item-team").click(function (){
-        if(society=="msc")
-        {
-            color = "#E94B3C";
-        }
-        else if(society=="mudra")
-        {
-            color = "#c47fad";
-        }
-        else if(society=="econ")
-        {
-            color = color_blue_light;
-        }
-        else if(society=="litsoc")
-        {
-            color = "#79C753";
-        }
-        else if(society=="faps")
-        {
-            color=color_yellow;
-        }
-        else if(society=="nox")
-        {
-            color=color_pink_dark;
-        }
-        else if(society=="ccs")
-        {
-            color= color_blue;
-        }
-        else if(society=="pratigya")
-        {
-            color = color_green_dark;
-        }
-        else if(society=="tumun")
-        {
-            color = color_red_dark;
-        }
-        else if(society=="saic")
-        {
-            color = color_violet_dark;
-        }
-        else if(society=="iet")
-        {
-            color = color_orange;
-        }
-        else if(society=="owasp")
-        {
-            color = color_blue_dark;
-        }
-        else if(society=="toastmasters")
-        {
-            color = color_violet;
-        }
-        console.log(society);
-        
-        console.log(color);
-        
-            $(this).css('background-color','#f5f5f5');
-            $(this).css('color','black');
-            $(".societies__menu--item-events").css('background-color',color);
-            $(".societies__menu--item-events").css('color','#f5f5f5');
-            $(".societies__menu--item-about").css('background-color',color);
-            $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','none');
-        $(".societies__team").css('display','block');
-    });
-    $(".societies__right-arrow--msc").click( function (){
-        $("#societies__dept--msc-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--msc-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--msc").click( function (){
-        $("#societies__dept--msc-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--msc-"+societies_dept_id).css('display','block');
-        $("#societies__dept--msc-"+societies_dept_id).fadeIn();
-    });
-    $(".societies__right-arrow--mudra").click( function (){
-        $("#societies__dept--mudra-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--mudra-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--mudra").click( function (){
-        $("#societies__dept--mudra-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--mudra-"+societies_dept_id).css('display','block');
-        $("#societies__dept--mudra-"+societies_dept_id).fadeIn();
-    });
-    $(".societies__right-arrow--litsoc").click( function (){
-        $("#societies__dept--litsoc-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--litsoc-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--litsoc").click( function (){
-        $("#societies__dept--litsoc-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--litsoc-"+societies_dept_id).css('display','block');
-        $("#societies__dept--litsoc-"+societies_dept_id).fadeIn();
-    });
-    $(".societies__right-arrow--faps").click( function (){
-        $("#societies__dept--faps-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--faps-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--faps").click( function (){
-        $("#societies__dept--faps-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--faps-"+societies_dept_id).css('display','block');
-        $("#societies__dept--faps-"+societies_dept_id).fadeIn();
-    });  
-    $(".societies__right-arrow--ccs").click( function (){
-        $("#societies__dept--ccs-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--ccs-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--ccs").click( function (){
-        $("#societies__dept--ccs-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--ccs-"+societies_dept_id).css('display','block');
-        $("#societies__dept--ccs-"+societies_dept_id).fadeIn();
-    });  
-    $(".societies__right-arrow--pratigya").click( function (){
-        $("#societies__dept--pratigya-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--pratigya-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--pratigya").click( function (){
-        $("#societies__dept--pratigya-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--pratigya-"+societies_dept_id).css('display','block');
-        $("#societies__dept--pratigya-"+societies_dept_id).fadeIn();
-    });  
-    $(".societies__right-arrow--tumun").click( function (){
-        $("#societies__dept--tumun-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--tumun-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--tumun").click( function (){
-        $("#societies__dept--tumun-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--tumun-"+societies_dept_id).css('display','block');
-        $("#societies__dept--tumun-"+societies_dept_id).fadeIn();
-    });  
-    $(".societies__right-arrow--econ").click( function (){
-        $("#societies__dept--econ-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--econ-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--econ").click( function (){
-        $("#societies__dept--econ-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--econ-"+societies_dept_id).css('display','block');
-        $("#societies__dept--econ-"+societies_dept_id).fadeIn();
-    });  
-    $(".societies__right-arrow--saic").click( function (){
-        $("#societies__dept--saic-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--saic-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--saic").click( function (){
-        $("#societies__dept--saic-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--saic-"+societies_dept_id).css('display','block');
-        $("#societies__dept--saic-"+societies_dept_id).fadeIn();
-    });  
-    $(".societies__right-arrow--iet").click( function (){
-        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--iet").click( function (){
-        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
-        $("#societies__dept--iet-"+societies_dept_id).fadeIn();
-    });  
-    $(".societies__right-arrow--iet").click( function (){
-        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--iet").click( function (){
-        $("#societies__dept--iet-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--iet-"+societies_dept_id).css('display','block');
-        $("#societies__dept--iet-"+societies_dept_id).fadeIn();
-    });
-    $(".societies__right-arrow--nox").click( function (){
-        $("#societies__dept--nox-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--nox-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--nox").click( function (){
-        $("#societies__dept--nox-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--nox-"+societies_dept_id).css('display','block');
-        $("#societies__dept--nox-"+societies_dept_id).fadeIn();
-    });
-    $(".societies__right-arrow--owasp").click( function (){
-        $("#societies__dept--owasp-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--owasp-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--owasp").click( function (){
-        $("#societies__dept--owasp-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--owasp-"+societies_dept_id).css('display','block');
-        $("#societies__dept--owasp-"+societies_dept_id).fadeIn();
-    });
-    $(".societies__right-arrow--toastmasters").click( function (){
-        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','none');
-        societies_dept_id++;
-        if(societies_dept_id==(society_dept_no+1))
-            societies_dept_id=1;
-        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','block');
-    });
-    $(".societies__left-arrow--toastmasters").click( function (){
-        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','none');
-        societies_dept_id--;
-        if(societies_dept_id==0)
-          societies_dept_id=society_dept_no;
-        $("#societies__dept--toastmasters-"+societies_dept_id).css('display','block');
-        $("#societies__dept--toastmasters-"+societies_dept_id).fadeIn();
-    });
-    $(".card__btn--msc").click(function (){
-        society_dept_no = 4;
-        societies_dept_id = 1;
-        society="msc";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__msc").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_red);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_red);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--mudra").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="mudra";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__mudra").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_pink);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_pink);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--litsoc").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="litsoc";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__litsoc").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_green);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_green);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--faps").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="faps";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__faps").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_yellow);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_yellow);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--ccs").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="ccs";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__ccs").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_blue);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_blue);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--nox").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="nox";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__nox").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_pink_dark);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_pink_dark);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--pratigya").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="pratigya";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__pratigya").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_green_dark);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_green_dark);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--tumun").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="tumun";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__tumun").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_red_dark);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_red_dark);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--econ").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="econ";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__econ").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_blue_light);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_blue_light);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--saic").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="saic";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__saic").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_violet_dark);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_violet_dark);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--iet").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="iet";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__iet").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_orange);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_orange);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--owasp").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="owasp";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__owasp").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_blue_dark);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_blue_dark);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".card__btn--toastmasters").click(function (){
-        society_dept_no = 3;
-        societies_dept_id = 1;
-        society="toastmasters";
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $("#societies__toastmasters").css('display','block');
-        $(".societies__menu--item-events").css('background-color','#f5f5f5');
-        $(".societies__menu--item-events").css('color','black');
-        $(".societies__menu--item-team").css('background-color',color_violet);
-        $(".societies__menu--item-team").css('color','#f5f5f5');
-        $(".societies__menu--item-about").css('background-color',color_violet);
-        $(".societies__menu--item-about").css('color','#f5f5f5');
-        $(".societies__about").css('display','none');
-        $(".societies__events").css('display','block');
-        $(".societies__team").css('display','none');
-    });
-    $(".societies__pop-up--close").click(function() {
-        $(".societies__pop-up").css('display','none');
     });
 });

@@ -9,37 +9,34 @@
     <link rel="stylesheet" href="../css/timet.css">
 </head>
 <body>
-  <div class="video"  ><p class="video-text" >We also made an easy to follow video. <a href="https://youtu.be/-1VMtcz0-YQ" class="video-text__link" target="_blank" >Check it here </a></p></div>
+  <div class="video" style="background-color:#FF951F; text-align:center;padding:1rem; box-shadow:0 0 0.5rem rgba(1, 1, 1, 0.2); " ><p class="video-text" style="font-size:2.5rem; font-family: 'Raleway', sans-serif; color:#eee;">We also made an easy to follow video. <a href="https://youtu.be/-1VMtcz0-YQ" target="_blank" style="color:#eee;font-size:2.5rem;text-decoration:underline">Check it here </a></p></div>
 
     <section class="popup" id="popup">
         <div class="popup-content">
             <a href="#more-stuff">
             <p class="popup-content__heading bold centre-text display5">Enter your details</p>
-               <form>
+               <form id = "submit-timeTable">
                  <select class="display7 popup__selector popup__selector-yr" id="popup__selector-yr">
                    <option value="selector">Select your year</option>
                    <option value="first-yr">1st year</option>
-                   <!--<option value="second-yr">2nd year</option>-->
-
+                   <option value="second-yr">2nd year</option>
                  </select>
-
                  <select class="display7 popup__selector popup__selector-batch " id="popup__selector-batch">
                    <option value="selector">Select your batch</option>
-
                  </select>
                  <select class="display7 popup__selector popup__selector-subbatch" id="popup__selector-subbatch">
                    <option value="selector">Select your sub-batch</option>
                  </select>
-              </form>
+                </form>
               <div class=" display5 btn-submit">
                 <a href="#" class="submit">
                     Submit
                 </a>
               </div>
-              <h4 class="display7 thin centre-text color-red">Second year will be up soon.</h4>
+              <!-- <h4 class="display7 thin centre-text color-red">Second year will be up soon.</h4> -->
           </div>
           <a href="#help">
-            <div class="instructions">
+            <div class="instructions display6">
                Instructions
               <img class="navdown" src="../img/icons/navHovD.png">
             </div>
