@@ -76,55 +76,55 @@
 
     &__color-blue-light{
         color: $color-blue-light;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-blue{
         color: $color-blue;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-blue-dark{
         color: $color-blue-dark;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-red{
         color: $color-red;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-red-dark{
         color: $color-red-dark;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-green{
         color: $color-green;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-green-dark{
         color: $color-green-dark;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-yellow{
         color: $color-yellow;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-orange{
         color: $color-orange;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-violet{
         color: $color-violet;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-violet-dark{
         color: $color-violet-dark;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-pink{
         color: $color-pink;
-        font-size: inherit; 
+        font-size: inherit;
     }
     &__color-pink-dark{
         color: $color-pink-dark;
-        font-size: inherit; 
+        font-size: inherit;
     }
 
 
@@ -133,6 +133,9 @@
             width : 4.5rem;
             margin: .5rem 1.5rem 4rem 1rem;
             padding: .5rem;
+        }
+        &-heading{
+          font-size: 4rem;
         }
     }
     @media screen and (max-width : 450px){

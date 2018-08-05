@@ -1556,6 +1556,27 @@
 .navdown {
   width: 5rem; }
 
+.video {
+  background-color: #FF951F;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgba(1, 1, 1, 0.2); }
+  .video-text {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: #eee; }
+    .video-text__link {
+      font-size: 2.5rem;
+      font-family: 'Raleway', sans-serif;
+      color: #eee;
+      text-decoration: underline; }
+  @media screen and (max-width: 600px) {
+    .video {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 2560px) {
+    .video {
+      font-size: 3.5rem; } }
+
 .landing {
   padding-top: 12rem;
   background-image: url("../img/bg.jpg");
@@ -1708,7 +1729,9 @@ body {
     .stream__menu {
       width: 4.5rem;
       margin: .5rem 1.5rem 4rem 1rem;
-      padding: .5rem; } }
+      padding: .5rem; }
+    .stream-heading {
+      font-size: 4rem; } }
   @media screen and (max-width: 450px) {
     .stream__menu {
       width: 3rem;
