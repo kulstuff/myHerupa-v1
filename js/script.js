@@ -852,7 +852,7 @@ $(document).ready(function(){
         else if(v1.value == "COE27")
             window.open("https://calendar.google.com/calendar?cid=MmdrYnZya29lZjN0NTljbnB2ZjdrdW5ib29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "COE28")
-            window.open("https://calendar.google.com/calendar?cid=YWoydjNjbzE5OHB0YXZnZXZiN2QxdWVzZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
+            window.open("https://calendar.google.com/calendar?cid=MGJlYWVpMmFjNWEzaW5vMzk3Y2Z2MHM3N2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "ECE1")
             window.open("https://calendar.google.com/calendar/b/2?cid=djludThiaG41OHJrcnZxZTJsYWxsZTdxZnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ");
         else if(v1.value == "ECE2")
