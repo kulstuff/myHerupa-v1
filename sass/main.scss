@@ -2,12 +2,13 @@
 
 @import "base";
 
+@import "animations";
 
 @import "typography";
 @import "buttons";
 @import "card";
-@import "pages/time-table";
 
+@import "pages/time-table";
 @import "pages/index";
 @import "pages/year";
 @import "pages/stream";

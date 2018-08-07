@@ -2,31 +2,28 @@
 
   &__choice {
       margin: 2rem 0;
-    &--passwords,&--sophos {
+    &--passwords,&--sophos,&--connectu {
       background-color: $color-red;
       color: white;
       padding: 2rem 0;
-      &:hover{
-          background-color: black;
-          color: white;
-      }
     }
     &--passwords{
         background-color: black;
     }
-    &--mobile,&--info,&--pc{
+    &--mobile,&--info,&--pc,&--devices,&--features{
         background-color: black;
         color: white;
         padding: 1rem 0;
-        &:hover{
-            color: $color-blue;
-        }
     }
     &--mobile{
         color: $color-blue;
     }
+    &--devices{
+      color: $color-blue;
+    }
+
   }
-  &__sophos--choice{
+  &__sophos--choice,&__connectu--choice{
     display: none;
   }
   &__passwords{
@@ -69,4 +66,19 @@
     &__info{
         display: none;
     }
+}
+    .connectu{
+        padding: 10rem 0;
+        margin: 0 10%;
+
+        &__title{
+            padding-bottom: 2rem ;
+        }
+
+        &__content{
+            padding: 1rem;
+        }
+        &__devices,&__features{
+          display: none;
+        }
 }
