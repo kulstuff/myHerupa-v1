@@ -1716,25 +1716,22 @@ body {
 
 .wifi__choice {
   margin: 2rem 0; }
-  .wifi__choice--passwords, .wifi__choice--sophos {
+  .wifi__choice--passwords, .wifi__choice--sophos, .wifi__choice--connectu {
     background-color: #E94B3C;
     color: white;
     padding: 2rem 0; }
-    .wifi__choice--passwords:hover, .wifi__choice--sophos:hover {
-      background-color: black;
-      color: white; }
   .wifi__choice--passwords {
     background-color: black; }
-  .wifi__choice--mobile, .wifi__choice--info, .wifi__choice--pc {
+  .wifi__choice--mobile, .wifi__choice--info, .wifi__choice--pc, .wifi__choice--devices, .wifi__choice--features {
     background-color: black;
     color: white;
     padding: 1rem 0; }
-    .wifi__choice--mobile:hover, .wifi__choice--info:hover, .wifi__choice--pc:hover {
-      color: #4F84C4; }
   .wifi__choice--mobile {
     color: #4F84C4; }
+  .wifi__choice--devices {
+    color: #4F84C4; }
 
-.wifi__sophos--choice {
+.wifi__sophos--choice, .wifi__connectu--choice {
   display: none; }
 
 .wifi__passwords {
@@ -1766,6 +1763,20 @@ body {
   .sophos__info {
     display: none; }
 
+
+.connectu {
+  padding: 10rem 0;
+  margin: 0 10%; }
+  .connectu__title {
+    padding-bottom: 2rem; }
+  .connectu__content {
+    padding: 1rem; }
+  .connectu__devices, .connectu__features {
+    display: none; }
+
+.societies__header {
+  padding: 1rem;
+  border-bottom: 2px solid black; }
 .socities__nav {
   position: fixed;
   width: 100%;
