@@ -56,8 +56,8 @@
             background-color:  black;
         }
     }
-    
-    
+
+
 }
 .btn{
     &__landing{
@@ -77,15 +77,14 @@
                 background-image: linear-gradient(to right, #5172FE 10%, #5990FD, #7ACAFE 40%, #CE93FF, #A452D2, #9645FA); }
             &--second-year--text {
                 background-image: linear-gradient(to right, #FF463B, #FE5D38, #FB9D34 30%, #FFC338, #FCFC3D); }
-    
-                
+
+
                 @media screen and(max-width:900px){
                     margin-top: 2rem;
                     background-color: #F9F7F6;
                 }
 
     }
-
     &__more{
         background-color: rgba(225,225,225,0.8);
         padding: 1rem;
@@ -95,21 +94,21 @@
             background-color: rgba(225,225,225,0.4);
         }
 
-    
+
         @media screen and (min-width:200px){
             min-height: auto;
             margin-top: 1rem;
         }
-    
+
         @media screen and (min-width:600px){
         }
-    
+
         @media screen and (min-width:720px){
         }
-    
+
         @media screen and (min-width:1024px){
         }
-    
+
         @media screen and (min-width:1280px){
             margin-top: 2rem;
         }
@@ -117,15 +116,15 @@
             margin-top: 3rem;
             padding: 2rem;
         }
-    
-    
+
+
         @media screen and (min-width:2560px){
         }
-    
-    
+
+
         @media screen and (min-width:3840px){
         }
-    
+
     }
 
     &__stream{
@@ -230,5 +229,10 @@
     }
     &__subject--pink-dark{
         @include getStreamPage($color-pink-dark);
+    }
+
+    &-invert{
+      background-color: #eee !important;
+      color: black !important;
     }
 }
