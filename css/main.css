@@ -1763,7 +1763,6 @@ body {
   .sophos__info {
     display: none; }
 
-
 .connectu {
   padding: 10rem 0;
   margin: 0 10%; }
@@ -1774,9 +1773,6 @@ body {
   .connectu__devices, .connectu__features {
     display: none; }
 
-.societies__header {
-  padding: 1rem;
-  border-bottom: 2px solid black; }
 .socities__nav {
   position: fixed;
   width: 100%;
