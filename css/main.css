@@ -1269,6 +1269,10 @@
     color: #713633;
     background-color: black; }
 
+.btn-invert {
+  background-color: #eee !important;
+  color: black !important; }
+
 .card {
   background-color: #F5F5F5;
   position: relative;
