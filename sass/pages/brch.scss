@@ -196,7 +196,10 @@
       }
       &__textmetric__mobo {
         text-align: center;
-        font-size: 1.05rem;
+        font-size: 1.25rem;
+        &__alert{
+          font-size: 1rem;
+        }
       }
       &__texting {
         font-family: 'Roboto', sans-serif;
@@ -204,6 +207,7 @@
         text-align: center;
         font-size: 3.05rem !important;
         &__mobo{
+          line-height: 1.5rem;
           text-align: center;
           font-family: 'Roboto', sans-serif;
           font-size: 1.75rem;
