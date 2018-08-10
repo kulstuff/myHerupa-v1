@@ -2169,13 +2169,16 @@ body {
         height: 35vh; } }
     .brch__adwords__panel1__textmetric__mobo {
       text-align: center;
-      font-size: 1.05rem; }
+      font-size: 1.25rem; }
+      .brch__adwords__panel1__textmetric__mobo__alert {
+        font-size: 1rem; }
     .brch__adwords__panel1__texting {
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
       text-align: center;
       font-size: 3.05rem !important; }
       .brch__adwords__panel1__texting__mobo {
+        line-height: 1.5rem;
         text-align: center;
         font-family: 'Roboto', sans-serif;
         font-size: 1.75rem; }
