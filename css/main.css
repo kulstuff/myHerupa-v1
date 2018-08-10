@@ -2149,7 +2149,7 @@ body {
       .brch__adwords__panel__mobo {
         display: block;
         position: absolute;
-        top: 36vh;
+        top: 32vh;
         left: 50%;
         transform: translateX(-50%);
         background-color: rgba(245, 245, 245, 0.75);
@@ -2195,7 +2195,7 @@ body {
     height: 55vh; }
     @media screen and (min-width: 200px) {
       .brch__adwords__panel2 {
-        top: 69vh;
+        top: 61vh;
         height: 25vh; } }
     @media screen and (min-width: 900px) {
       .brch__adwords__panel2 {
