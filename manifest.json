@@ -1,0 +1,52 @@
+{
+  "name": "myHerupa",
+  "short_name": "myHerupa",
+  "icons":[
+    {
+      "src":"/img/myherupa-48x48.png",
+      "type":"image/png",
+      "sizes":"48x48"
+    },
+    {
+      "src":"/img/myherupa-96x96.png",
+      "type":"image/png",
+      "sizes":"96x96"
+    },
+    {
+      "src":"/img/myherupa-144x144.png",
+      "type":"image/png",
+      "sizes":"144x144"
+    },
+    {
+      "src":"/img/myherupa-192x192.png",
+      "type":"image/png",
+      "sizes":"192x192"
+    },
+    {
+      "src":"/img/myherupa-256x256.png",
+      "type":"image/png",
+      "sizes":"256x256"
+    },
+    {
+      "src":"/img/myherupa-384x384.png",
+      "type":"image/png",
+      "sizes":"384x384"
+    },
+    {
+      "src":"/img/myherupa-512x512.png",
+      "type":"image/png",
+      "sizes":"512x512"
+    }
+
+
+  ],
+  "start_url": "/index.html",
+  "scope":".",
+  "display":"fullscreen",
+  "orientation":"portrait-primary",
+  "background_color":"#fff",
+  "description":"The sole destination for all your academic queries and an extensive portfolio of all documents (incl Tutorials and Solutions) relevant to your journey at Thapar.",
+  "dir":"ltr",
+  "lang":"en-US"
+
+}

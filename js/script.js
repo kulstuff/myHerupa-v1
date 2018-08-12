@@ -19,6 +19,26 @@ var newOption;
 var isSecondYear;
 
 var getValue;
+
+//service-worker
+
+
+if (!window.Promise){
+  window.Promise= Promise;
+}
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker
+ .register('/sw.js')
+ .then(function(){
+   console.log('Service worker registered!');
+ })
+ .catch(function(err){
+  console.log(err);
+});
+}
+
+
 $(document).ready(function(){
 
   function addBatch(s1,s2){
