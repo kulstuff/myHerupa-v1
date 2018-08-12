@@ -4,8 +4,9 @@
   "icons":[
     {
       "src":"/img/myherupa-48x48.png",
-      "type":"image/png",
-      "sizes":"48x48"
+      "sizes":"48x48",
+      "type":"image/png"
+
     },
     {
       "src":"/img/myherupa-96x96.png",
