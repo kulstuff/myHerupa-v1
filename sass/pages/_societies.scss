@@ -141,16 +141,19 @@
         background-color: black;
         
         &--title{
-            color: white;
+            background-color: #f5f5f5;
+            color: black;
             padding: 3rem;
         }
         &--event, &--contact{
-            background-color: #f5f5f5;
-            color: black;
+            color: white;
             padding: 1rem;
         }
         &--about{
             color: white;
+
+            background-color: #f5f5f5;
+            color: black;
             padding: 2rem 3rem;
         }
         &--contact{

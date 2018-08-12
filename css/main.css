@@ -1915,14 +1915,16 @@ body {
       background-color: rgba(0, 0, 0, 0.67);
       z-index: 100; }
     .societies__modal--title {
-      color: white;
-      padding: 3rem; }
-    .societies__modal--event, .societies__modal--contact {
       background-color: #f5f5f5;
       color: black;
+      padding: 3rem; }
+    .societies__modal--event, .societies__modal--contact {
+      color: white;
       padding: 1rem; }
     .societies__modal--about {
       color: white;
+      background-color: #f5f5f5;
+      color: black;
       padding: 2rem 3rem; }
     .societies__modal--contact {
       position: absolute;
