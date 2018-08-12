@@ -4,12 +4,14 @@
   "description": "Font Used = 'Raleway' Link  = \"https://fonts.googleapis.com/css?family=Raleway\"  Font Used = 'Roboto' Link = \"https://font.google.com/css/css?family=Roboto\" Font Size = 62.5% (10px)",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "start": "http-server -c-1 -p 3000"
   },
   "author": "KulStuff",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.2"
+    "node-sass": "^4.9.2",
+    "http-server": "^0.10.0"
   },
   "dependencies": {},
   "repository": {

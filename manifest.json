@@ -1,0 +1,31 @@
+{
+  "name": "myHerupa",
+  "short_name": "myHerupa",
+  "icons":[
+    {
+      "src":"/img/myherupa-1280x1280.jpeg",
+      "type":"image/jpeg",
+      "sizes":"1280x1280"
+    },
+    {
+      "src":"/img/myherupa-512x512.jpeg",
+      "type":"image/jpeg",
+      "sizes":"512x512"
+    },
+    {
+      "src":"/img/myherupa-192x192.jpeg",
+      "type":"image/jpeg",
+      "sizes":"192x192"
+    }
+
+  ],
+  "start_url": "/index.html",
+  "scope":".",
+  "display":"fullscreen",
+  "orientation":"portrait-primary",
+  "background_color":"#fff",
+  "description":"The sole destination for all your academic queries and an extensive portfolio of all documents (incl Tutorials and Solutions) relevant to your journey at Thapar.",
+  "dir":"ltr",
+  "lang":"en-US"
+
+}
