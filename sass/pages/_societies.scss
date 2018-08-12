@@ -122,6 +122,11 @@
        }
     }
     &__modal{
+        &__close{
+            position: absolute;
+            top:0;
+            z-index: 200;
+        }
         @media screen and (max-width:600px){
             border: 2px solid black;
             top: 40%;
