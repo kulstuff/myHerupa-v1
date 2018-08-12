@@ -998,4 +998,8 @@ $(document).ready(function(){
             }
         }
     });
+$(".societies__cards--tumun").click(function (){
+   $(".societies__modal--bg").animate({opacity : "1"});
+   $(".societies__modal--bg").css("z-index","100");
+});
 });
