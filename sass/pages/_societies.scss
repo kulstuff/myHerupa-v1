@@ -1,4 +1,5 @@
 .societies{
+    position: relative;
     &__nav{
         position: fixed;
         width: 100%;
@@ -120,67 +121,49 @@
            border: 0;
        }
     }
-
     &__modal{
         &--bg{
-            height: 100%;
-            width: 100%;
             position: fixed;
-            z-index: 200;
-            background-color: rgba(black,0.8);
             top: 0;
             left: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(black,0.67);
+            z-index: 100;
         }
-
-        background-color: #f5f5f5;
         position: absolute;
-        height: 80vh;
-        width: 80vw;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border: 1.5rem solid $color-green;
-
-        &--heading{
-            position: absolute;
-            top:-2.8%;
+        width:80%;
+        left: 10%;
+        transform: translateY(-50%);
+        text-align: center;
+        border-radius:3px;
+        background-color: black;
+        
+        &--title{
+            color: white;
+            padding: 3rem;
+        }
+        &--event, &--contact{
             background-color: #f5f5f5;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 0 1rem;
-        }
-        &--recruit{
-            position: absolute;
-            bottom: -2.8%;
-            background-color: #f5f5f5;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 0 1rem;
-            text-transform: uppercase;
-        }
-        &--option-1,&--option-2{
-            position: absolute;
-            top: 8%;
-            transform: translateX(-50%);
-            background-color: $color-green;
-            text-align: center;
-            color:white;
-            width: 50%;
-            padding: .5rem;
-        }
-        &--option-1{
-            left: 25%;
-        }
-        &--option-2{
-            left: 75%;
+            color: black;
+            padding: 1rem;
         }
         &--about{
+            color: white;
+            padding: 2rem 3rem;
+        }
+        &--contact{
             position: absolute;
-            top: 15%;
-            padding: 5rem;
+            width: 50%;
+            bottom: 0;
+            @media screen and(max-width:600px){
+            position: initial;
+            width: 100%;
+            }
+
         }
     }
-
 }
 
 .card__height--small{
@@ -188,122 +171,124 @@
     overflow: hidden;
 }
 
-.card__height--med{
-    height: 35rem;
-    overflow: hidden;
+.row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 2px;
+  }
+
+.column {
+    float: left;
+      -ms-flex: 25%;
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 2px;
+      margin-bottom:4px;
+  }
+
+  .column img {
+
+      vertical-align: middle;
+
+  }
+
+p{
+font-size: 100%;
+color: white;
+display: inline-block;
+text-align-last:center;
+word-wrap: break-word;
+
 
 }
 
-.card__height--large{
-    height: 50rem;
-    overflow: hidden;
+.text{
+    width: 50%;
+    @media screen and(max-width:600px){
+        width: 100%;
+    }
+}
+
+.column div {
+position: relative;
+margin-top: 4px;
+overflow: hidden;
 
 }
 
-.gradient{
-    &__red{
-        background-image: linear-gradient($color-red,
-                                            $color-red-pallete-1,
-                                            $color-red-pallete-2,
-                                            $color-red-pallete-3,
-                                            $color-red-pallete-4,
-                                            $color-red-pallete-5);
-    }
-    &__red-dark{
-        background-image: linear-gradient($color-red-dark,
-                                            $color-red-dark-pallete-1,
-                                            $color-red-dark-pallete-2,
-                                            $color-red-dark-pallete-3,
-                                            $color-red-dark-pallete-4,
-                                            $color-red-dark-pallete-5);
-    }
 
-    &__blue-light{
-        background-image: linear-gradient($color-blue-light,
-                                            $color-blue-light-pallete-1,
-                                            $color-blue-light-pallete-2,
-                                            $color-blue-light-pallete-3,
-                                            $color-blue-light-pallete-4,
-                                            $color-blue-light-pallete-5);
+.societies__two::after{
+display: inline-block;
+position: absolute;
+content: '';
+color: white;
+left: 0;
+top: 0%;
+width:100%;
+height:100%;
+opacity: 0;
+background-color: rgba(0,0,0,0.6);
+z-index: 100;
+text-align: center;
+padding-top:25%;
+
+
+}.societies__three::after{
+display: inline-block;
+position: absolute;
+content: '';
+color: white;
+left: 0;
+top: 0;
+width:100%;
+height:100%;
+opacity: 0;
+background-color: rgba(0,0,0,0.6);
+z-index: 100;
+text-align: center;
+padding-top:25%;
+
+}
+.societies__four::after{
+display: inline-block;
+position: absolute;
+content: '';
+color: white;
+left: 0;
+top: 0;
+width:100%;
+height:100%;
+opacity: 0;
+background-color: rgba(0,0,0,0.6);
+z-index: 100;
+text-align: center;
+padding-top:25%;
+
+}
+.column div:hover::after{
+opacity:1;
+
+}
+
+#ex:hover img{
+transform: scale(1.2);
+transition : 0.3s;
+}
+.societies__four, .societies__three, .societies__two{
+    position: relative;
+    &:hover .societies__modal--img-text{
+        opacity: 1;
     }
-    &__blue{
-        background-image: linear-gradient($color-blue,
-                                            $color-blue-pallete-1,
-                                            $color-blue-pallete-2,
-                                            $color-blue-pallete-3,
-                                            $color-blue-pallete-4,
-                                            $color-blue-pallete-5);
-    }
-    &__blue-dark{
-        background-image: linear-gradient($color-blue-dark,
-                                            $color-blue-dark-pallete-1,
-                                            $color-blue-dark-pallete-2,
-                                            $color-blue-dark-pallete-3,
-                                            $color-blue-dark-pallete-4,
-                                            $color-blue-dark-pallete-5);
-    }
-    &__green{
-        background-image: linear-gradient($color-green,
-                                            $color-green-pallete-1,
-                                            $color-green-pallete-2,
-                                            $color-green-pallete-3,
-                                            $color-green-pallete-4,
-                                            $color-green-pallete-5);
-    }
-    &__green-dark{
-        background-image: linear-gradient($color-green-dark,
-                                            $color-green-dark-pallete-1,
-                                            $color-green-dark-pallete-2,
-                                            $color-green-dark-pallete-3,
-                                            $color-green-dark-pallete-4,
-                                            $color-green-dark-pallete-5);
-    }
-    &__pink{
-        background-image: linear-gradient($color-pink,
-                                            $color-pink-pallete-1,
-                                            $color-pink-pallete-2,
-                                            $color-pink-pallete-3,
-                                            $color-pink-pallete-4,
-                                            $color-pink-pallete-5);
-    }
-    &__pink-dark{
-        background-image: linear-gradient($color-pink-dark,
-                                            $color-pink-dark-pallete-1,
-                                            $color-pink-dark-pallete-2,
-                                            $color-pink-dark-pallete-3,
-                                            $color-pink-dark-pallete-4,
-                                            $color-pink-dark-pallete-5);
-    }
-    &__yellow{
-        background-image: linear-gradient($color-yellow,
-                                            $color-yellow-pallete-1,
-                                            $color-yellow-pallete-2,
-                                            $color-yellow-pallete-3,
-                                            $color-yellow-pallete-4,
-                                            $color-yellow-pallete-5);
-    }
-    &__violet{
-        background-image: linear-gradient($color-violet,
-                                            $color-violet-pallete-1,
-                                            $color-violet-pallete-2,
-                                            $color-violet-pallete-3,
-                                            $color-violet-pallete-4,
-                                            $color-violet-pallete-5);
-    }
-    &__violet-dark{
-        background-image: linear-gradient($color-violet-dark,
-                                            $color-violet-dark-pallete-1,
-                                            $color-violet-dark-pallete-2,
-                                            $color-violet-dark-pallete-3,
-                                            $color-violet-dark-pallete-4,
-                                            $color-violet-dark-pallete-5);
-    }
-    &__orange{
-        background-image: linear-gradient($color-orange,
-                                            $color-orange-pallete-1,
-                                            $color-orange-pallete-2,
-                                            $color-orange-pallete-3,
-                                            $color-orange-pallete-4,
-                                            $color-orange-pallete-5);
-    }
+}
+.societies__modal--img-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    padding: 1rem;
+    opacity: 0;
+    
 }
