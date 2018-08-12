@@ -11,7 +11,7 @@ var CACHE_DYNAMIC_NAME= 'dynamic-v2';
          '/index.html',
          'https://fonts.googleapis.com/css?family=Raleway',
          '/offline.html',
-
+         '/pages/coming-up.html',
          '/pages/first-year.html',
          '/pages/gpa.html',
          '/pages/second-year.html',
@@ -42,32 +42,10 @@ var CACHE_DYNAMIC_NAME= 'dynamic-v2';
          '/pages/subjects/first-year/maths2.html',
          '/pages/subjects/first-year/mech.html',
          '/pages/subjects/first-year/phy.html',
-         '/pages/subjects/second-year/biotech/bioanalyticaltech.html',
-         '/pages/subjects/second-year/biotech/biochemistry.html',
-         '/pages/subjects/second-year/biotech/biophysics.html',
-         '/pages/subjects/second-year/biotech/biosafety.html',
-         '/pages/subjects/second-year/biotech/foodscience.html',
-         '/pages/subjects/second-year/biotech/geneticengineering.html',
-         '/pages/subjects/second-year/biotech/immunotech.html',
-         '/pages/subjects/second-year/biotech/industrialbiotech.html',
-         '/pages/subjects/second-year/biotech/molecularbiology.html',
-         '/pages/subjects/second-year/biotech/unitoperations.html',
-         '/pages/subjects/second-year/chem/fluidmech.html',
-         '/pages/subjects/second-year/chem/heattransfer.html',
-         '/pages/subjects/second-year/chem/processindustries.html',
-         '/pages/subjects/second-year/chem/thermodynamics.html',
-
-
-
-
-
-
-
          '/css/main.css',
-         '/css/titet.css',
+         '/css/timet.css',
          '/img/icons/arrow.png',
          '/img/icons/navHovD.png',
-         '/img/Societies/adventure-club.jpg',
 
          '/js/script.js',
          '/js/Scrollify-master/jquery.scrollify.js',
@@ -81,7 +59,7 @@ self.addEventListener('activate',function(event){
   console.log('[Service Worker] Activating Service Worker ...',event);
   event.waitUntil(
     caches.keys()
-    .then(function(keylist){
+    .then(function(keyList){
       return Promise.all(keyList.map(function(key){
         if(key!==CACHE_STATIC_NAME && key!==CACHE_DYNAMIC_NAME){
           console.log('[Service Worker] Removing old cache.',key);
@@ -111,10 +89,13 @@ self.addEventListener('fetch',function(event){
           .catch(function(err){
               return caches.open(CACHE_STATIC_NAME)
                .then(function(cache){
-                 return cache.match('/offline.html');
-               });
+                if(event.request.headers.get('accept').includes('text/html')){
+                   return cache.match('/offline.html');
+               }
+              });
           });
       }
     })
   );
+
 });
