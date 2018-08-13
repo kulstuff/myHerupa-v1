@@ -998,18 +998,22 @@ $(document).ready(function(){
             }
         }
     });
+
 $(".societies__cards--tumun").click(function (){
-   $(".societies__modal--bg").animate({opacity : "1"});
-   $(".societies__modal--bg").css("z-index","100");
+   $(".societies__modal--tumun-bg").animate({opacity : "1"});
+   $(".societies__modal--tumun-bg").css("z-index","100");
 });
+$(".societies__cards--ccs").click(function (){
+    $(".societies__modal--ccs-bg").animate({opacity : "1"});
+    $(".societies__modal--ccs-bg").css("z-index","100");
+ });
 $("#parent").mouseup(function(e)
     {
         var subject = $("#child"); 
-
         if(e.target.id != subject.attr('id') && !subject.has(e.target).length)
         {
-            $(".societies__modal--bg").animate({opacity : "0"});
-            $(".societies__modal--bg").css("z-index","-100");
+            $(".societies__modal--ccs-bg").animate({opacity : "0"});
+            $(".societies__modal--ccs-bg").css("z-index","-100");
         }
     });
 
