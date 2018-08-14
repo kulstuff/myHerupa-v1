@@ -45,7 +45,7 @@
   ],
   "start_url": "/index.html",
   "scope":".",
-  "display":"standalone",
+  "display":"fullscreen",
   "orientation":"portrait-primary",
   "background_color":"#fff",
   "theme_color":"#fff",
