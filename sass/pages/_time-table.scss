@@ -78,6 +78,7 @@
   .card{
       &__collect{
           padding: 3rem;
+          max-width: 23.3vw !important;
       }
       &__body{
           position: relative;
