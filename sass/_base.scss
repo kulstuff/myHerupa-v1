@@ -19,6 +19,12 @@
         display: none;
     }
 }
+.hide-small-desktop{
+    display: none;
+    @media screen and (min-width : 1400px){
+        display: block;
+    }
+}
 .bold{
     font-weight: 900;
     font-size: inherit;
