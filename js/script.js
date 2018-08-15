@@ -1018,4 +1018,239 @@ $(document).ready(function(){
             }
         }
     });
+
+    $('.box-1_lower').mouseenter(function (){
+        $('.box-1_upper').animate({
+            height: '0'
+        },300);
+        $('.box-1_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-1').toggle(300);
+    });
+
+    $('.box-1_lower').mouseleave(function (){
+        $('.box-1_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-1_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-1').toggle(300);
+    });
+    $('.box-2_lower').mouseenter(function (){
+        $('.box-2_upper').animate({
+            height: '0'
+        },300);
+        $('.box-2_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-2').toggle(300);
+    });
+
+    $('.box-2_lower').mouseleave(function (){
+        $('.box-2_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-2_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-2').toggle(300);
+    });
+    $('.box-3_lower').mouseenter(function (){
+        $('.box-3_upper').animate({
+            height: '0'
+        },300);
+        $('.box-3_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-3').toggle(300);
+    });
+
+    $('.box-3_lower').mouseleave(function (){
+        $('.box-3_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-3_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-3').toggle(300);
+    });
+    $('.box-4_lower').mouseenter(function (){
+        $('.box-4_upper').animate({
+            height: '0'
+        },300);
+        $('.box-4_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-4').toggle(300);
+    });
+
+    $('.box-4_lower').mouseleave(function (){
+        $('.box-4_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-4_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-4').toggle(300);
+    });
+    $('.box-5_lower').mouseenter(function (){
+        $('.box-5_upper').animate({
+            height: '0'
+        },300);
+        $('.box-5_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-5').toggle(300);
+    });
+
+    $('.box-5_lower').mouseleave(function (){
+        $('.box-5_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-5_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-5').toggle(300);
+    });
+    $('.box-6_lower').mouseenter(function (){
+        $('.box-6_upper').animate({
+            height: '0'
+        },300);
+        $('.box-6_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-6').toggle(300);
+    });
+
+    $('.box-6_lower').mouseleave(function (){
+        $('.box-6_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-6_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-6').toggle(300);
+    });
+    $('.box-7_lower').mouseenter(function (){
+        $('.box-7_upper').animate({
+            height: '0'
+        },300);
+        $('.box-7_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-7').toggle(300);
+    });
+
+    $('.box-7_lower').mouseleave(function (){
+        $('.box-7_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-7_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-7').toggle(300);
+    });
+    $('.box-8_lower').mouseenter(function (){
+        $('.box-8_upper').animate({
+            height: '0'
+        },300);
+        $('.box-8_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-8').toggle(300);
+    });
+
+    $('.box-8_lower').mouseleave(function (){
+        $('.box-8_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-8_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-8').toggle(300);
+    });
+    $('.box-9_lower').mouseenter(function (){
+        $('.box-9_upper').animate({
+            height: '0'
+        },300);
+        $('.box-9_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-9').toggle(300);
+    });
+
+    $('.box-9_lower').mouseleave(function (){
+        $('.box-9_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-9_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-9').toggle(300);
+    });
+    $('.box-10_lower').mouseenter(function (){
+        $('.box-10_upper').animate({
+            height: '0'
+        },300);
+        $('.box-10_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-10').toggle(300);
+    });
+
+    $('.box-10_lower').mouseleave(function (){
+        $('.box-10_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-10_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-10').toggle(300);
+    });
+    $('.box-11_lower').mouseenter(function (){
+        $('.box-11_upper').animate({
+            height: '0'
+        },300);
+        $('.box-11_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-11').toggle(300);
+    });
+
+    $('.box-11_lower').mouseleave(function (){
+        $('.box-11_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-11_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-11').toggle(300);
+    });
+    $('.box-12_lower').mouseenter(function (){
+        $('.box-12_upper').animate({
+            height: '0'
+        },300);
+        $('.box-12_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-12').toggle(300);
+    });
+
+    $('.box-12_lower').mouseleave(function (){
+        $('.box-12_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-12_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-12').toggle(300);
+    });
+
+  // $('.category').mouseenter(function(){
+  //   $('.category').animate()
+  //        box-shadow: '1rem'
+  // },200);
+
 });
