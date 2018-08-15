@@ -2,13 +2,9 @@ body{
   background-color: #eee;
 }
 
-
-
-
 .sort-bar{
   position: fixed;
   top: 0;
-  height: 8.5rem;
   width: 100%;
   background-color: white;
   box-shadow: 0 0 1rem lightgray;
@@ -24,7 +20,7 @@ body{
 
 .category{
   width:8rem;
-  height: 100%;
+  // height: 100%;
   float: right;
   display:inline-block;
   margin: 0 2rem;
@@ -32,14 +28,11 @@ body{
   padding-top: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-&:first-child{
-  margin-right: 10rem;
-}
+// &:first-child{
+//   margin-right: 10rem;
+// }
   &-caption{
-    font-size:1.5rem;
-
-
-  }
+    font-size:1.5rem;  }
 
   &:hover{
     border-radius: 0.5rem;
@@ -61,6 +54,13 @@ body{
   grid-template-rows: 30rem 30rem 30rem 30rem;
   grid-template-columns: 38rem 38rem 38rem ;
 
+  @media screen and(max-width:600px){
+    margin-top: 10%;
+  grid-template-columns: 38rem  ;
+  grid-template-rows: repeat(11,30rem);
+  grid-row-gap:0rem; 
+  margin: 0;   
+  }
   grid-column-gap: 4rem;
   grid-row-gap:4rem;
 }
@@ -311,4 +311,36 @@ opacity: 0.85;}
 
 .seconds-1,.seconds-2,.seconds-3,.seconds-4,.seconds-5,.seconds-6,.seconds-7,.seconds-8,.seconds-9,.seconds-10,.seconds-11,.seconds-12{
   display: none;
+}
+::-webkit-scrollbar {
+  display: none;
+  }
+body{
+  @media screen and(max-width:600px){
+    position: relative;
+  }
+}
+.sort-bar_heading{
+  @media screen and(max-width:600px){
+    width:100%;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    background-color: #f5f5f5;
+    }
+}
+
+.bottom-bar{
+  @media screen and(max-width:600px){
+
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 900;
+    &__icon{
+      width: 20%;
+      margin: 0;
+      padding: .25rem;
+    }
+  }
 }
