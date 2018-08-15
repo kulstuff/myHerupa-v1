@@ -1,4 +1,5 @@
 .societies{
+    position: relative;
     &__nav{
         position: fixed;
         width: 100%;
@@ -104,6 +105,9 @@
         &--youthunited{
             background-image: linear-gradient(rgba(black,0.67),rgba(black,0.67)), url('../img/Societies/youthunited.jpg');
         }
+        &--contact-us{
+            background-color: rgba(black,1);
+        }
 
        &--content{
            position: absolute;
@@ -120,67 +124,32 @@
            border: 0;
        }
     }
-
     &__modal{
         &--bg{
-            height: 100%;
-            width: 100%;
             position: fixed;
-            z-index: 200;
-            background-color: rgba(black,0.8);
             top: 0;
             left: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(black,0.67);
+            z-index: -100;
+            opacity: 0;
         }
-
-        background-color: #f5f5f5;
+        outline: 1.5rem solid #f5f5f5;
+        outline-offset: 2rem;
         position: absolute;
-        height: 80vh;
-        width: 80vw;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border: 1.5rem solid $color-green;
-
-        &--heading{
-            position: absolute;
-            top:-2.8%;
-            background-color: #f5f5f5;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 0 1rem;
-        }
-        &--recruit{
-            position: absolute;
-            bottom: -2.8%;
-            background-color: #f5f5f5;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 0 1rem;
-            text-transform: uppercase;
-        }
-        &--option-1,&--option-2{
-            position: absolute;
-            top: 8%;
-            transform: translateX(-50%);
-            background-color: $color-green;
-            text-align: center;
-            color:white;
-            width: 50%;
-            padding: .5rem;
-        }
-        &--option-1{
-            left: 25%;
-        }
-        &--option-2{
-            left: 75%;
-        }
-        &--about{
-            position: absolute;
-            top: 15%;
-            padding: 5rem;
+        width:80vw;
+        height: 80vh;
+        left: 10%;
+        transform: translateY(-50%);
+        text-align: center;
+        border-radius:3px;
+        background-color: black;
+        @media screen and(max-width:600px){
+            outline-offset: 0;
         }
     }
-
 }
 
 .card__height--small{
@@ -188,122 +157,112 @@
     overflow: hidden;
 }
 
-.card__height--med{
-    height: 35rem;
-    overflow: hidden;
 
+.div1{
+    height: 100%;
+    &-logo{
+        background-color: #f5f5f5;
+        height: 25%;
+        background-image: url('../img/societies/CCS/one.png');
+        background-position: center;
+        background-size: cover;
+    }
+    &-pic{
+        position: relative;
+        height: 75%;
+        overflow: hidden;
+        &:hover &-img{
+            filter: brightness(25%);
+            transform: scale(1.15);
+        }
+        &:hover &-text{
+            opacity: 1;
+        }
+    
+        &-img{
+            background-image: url('../img/societies/CCS/two.jpg');
+            background-position: center;
+            position: absolute;
+            height: 100%;
+            transition: all .3s;
+        }
+        &-text{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: all .3s;
+        padding: 0 2.5rem;
+    }
 }
 
-.card__height--large{
-    height: 50rem;
-    overflow: hidden;
-
 }
-
-.gradient{
-    &__red{
-        background-image: linear-gradient($color-red,
-                                            $color-red-pallete-1,
-                                            $color-red-pallete-2,
-                                            $color-red-pallete-3,
-                                            $color-red-pallete-4,
-                                            $color-red-pallete-5);
+.div2{
+    height: 100%;
+    &-pic{
+        position: relative;
+        height: 50%;
+        overflow: hidden;
+        &:hover &-img-1{
+            filter: brightness(25%);
+            transform: scale(1.15);
+        }
+        &:hover &-img-2{
+            filter: brightness(25%);
+            transform: scale(1.15);
+        }
+        &:hover &-text{
+            opacity: 1;
+        }
+    
+        &-img-1,&-img-2{
+            background-image: url('../img/societies/CCS/three.jpg');
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            height: 100%;
+            transition: all .3s;
+        }
+        &-img-2{
+            background-image: url('../img/societies/CCS/four.jpg');
+        }
+        &-text{
+        position: absolute;
+        top: 50%;
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: all .3s;
+        padding: 0 5rem;
     }
-    &__red-dark{
-        background-image: linear-gradient($color-red-dark,
-                                            $color-red-dark-pallete-1,
-                                            $color-red-dark-pallete-2,
-                                            $color-red-dark-pallete-3,
-                                            $color-red-dark-pallete-4,
-                                            $color-red-dark-pallete-5);
+}
+}
+.div3{
+    height: 100%;
+    &-title,&-events,&-about,&-contact{
+        display: flex;
+        justify-content:center;
+        align-content:center;
+        flex-direction:column;
     }
-
-    &__blue-light{
-        background-image: linear-gradient($color-blue-light,
-                                            $color-blue-light-pallete-1,
-                                            $color-blue-light-pallete-2,
-                                            $color-blue-light-pallete-3,
-                                            $color-blue-light-pallete-4,
-                                            $color-blue-light-pallete-5);
+    &-title{
+        background-color: black;
+        color: #f5f5f5;
+        height: 15%;
     }
-    &__blue{
-        background-image: linear-gradient($color-blue,
-                                            $color-blue-pallete-1,
-                                            $color-blue-pallete-2,
-                                            $color-blue-pallete-3,
-                                            $color-blue-pallete-4,
-                                            $color-blue-pallete-5);
+    &-events{
+        background-color: #f5f5f5;
+        height: 20%;
+        border-top: .25rem solid black;
+        border-bottom: .25rem solid black;
     }
-    &__blue-dark{
-        background-image: linear-gradient($color-blue-dark,
-                                            $color-blue-dark-pallete-1,
-                                            $color-blue-dark-pallete-2,
-                                            $color-blue-dark-pallete-3,
-                                            $color-blue-dark-pallete-4,
-                                            $color-blue-dark-pallete-5);
+    &-about{
+        background-color: #f5f5f5;
+        height: 50%;
+        padding: 0 5rem;
     }
-    &__green{
-        background-image: linear-gradient($color-green,
-                                            $color-green-pallete-1,
-                                            $color-green-pallete-2,
-                                            $color-green-pallete-3,
-                                            $color-green-pallete-4,
-                                            $color-green-pallete-5);
-    }
-    &__green-dark{
-        background-image: linear-gradient($color-green-dark,
-                                            $color-green-dark-pallete-1,
-                                            $color-green-dark-pallete-2,
-                                            $color-green-dark-pallete-3,
-                                            $color-green-dark-pallete-4,
-                                            $color-green-dark-pallete-5);
-    }
-    &__pink{
-        background-image: linear-gradient($color-pink,
-                                            $color-pink-pallete-1,
-                                            $color-pink-pallete-2,
-                                            $color-pink-pallete-3,
-                                            $color-pink-pallete-4,
-                                            $color-pink-pallete-5);
-    }
-    &__pink-dark{
-        background-image: linear-gradient($color-pink-dark,
-                                            $color-pink-dark-pallete-1,
-                                            $color-pink-dark-pallete-2,
-                                            $color-pink-dark-pallete-3,
-                                            $color-pink-dark-pallete-4,
-                                            $color-pink-dark-pallete-5);
-    }
-    &__yellow{
-        background-image: linear-gradient($color-yellow,
-                                            $color-yellow-pallete-1,
-                                            $color-yellow-pallete-2,
-                                            $color-yellow-pallete-3,
-                                            $color-yellow-pallete-4,
-                                            $color-yellow-pallete-5);
-    }
-    &__violet{
-        background-image: linear-gradient($color-violet,
-                                            $color-violet-pallete-1,
-                                            $color-violet-pallete-2,
-                                            $color-violet-pallete-3,
-                                            $color-violet-pallete-4,
-                                            $color-violet-pallete-5);
-    }
-    &__violet-dark{
-        background-image: linear-gradient($color-violet-dark,
-                                            $color-violet-dark-pallete-1,
-                                            $color-violet-dark-pallete-2,
-                                            $color-violet-dark-pallete-3,
-                                            $color-violet-dark-pallete-4,
-                                            $color-violet-dark-pallete-5);
-    }
-    &__orange{
-        background-image: linear-gradient($color-orange,
-                                            $color-orange-pallete-1,
-                                            $color-orange-pallete-2,
-                                            $color-orange-pallete-3,
-                                            $color-orange-pallete-4,
-                                            $color-orange-pallete-5);
+    &-contact{
+        background-color: black;
+        height: 15%;
+        color: #f5f5f5;
     }
 }
