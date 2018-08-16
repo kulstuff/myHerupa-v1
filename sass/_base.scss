@@ -128,8 +128,17 @@
 }
 
 .contact-us{
-    background-color: black;
-    padding: .5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 3rem;
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.2);
+    }
+    @media screen and(max-width:600px){
+        padding: 5rem 1rem;
+    }
 }
 
 .down-arrow{
