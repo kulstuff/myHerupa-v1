@@ -78,6 +78,10 @@
   .card{
       &__collect{
           padding: 3rem;
+          @media screen and (min-width: 900px){
+            max-width: 23.3vw !important;
+            // max-width: none !important;
+          }
       }
       &__body{
           position: relative;

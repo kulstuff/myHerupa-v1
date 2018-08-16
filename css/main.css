@@ -1488,6 +1488,9 @@
 
 .card__collect {
   padding: 3rem; }
+  @media screen and (min-width: 900px) {
+    .card__collect {
+      max-width: 23.3vw !important; } }
 
 .card__body {
   position: relative;
