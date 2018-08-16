@@ -762,8 +762,8 @@
       padding: 1rem; } }
   @media screen and (max-width: 400px) {
     .btn__stream {
-      font-size: 1.3rem;
-      padding: .9rem; } }
+      font-size: 1.8rem;
+      padding: 1.1rem; } }
 
 .btn__subject--blue-site {
   background-color: #3f77bb; }
