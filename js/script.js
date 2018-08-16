@@ -1246,6 +1246,348 @@ $(document).ready(function(){
         },300);
         $('.seconds-12').toggle(300);
     });
+    $('.box-13_lower').mouseenter(function (){
+        $('.box-13_upper').animate({
+            height: '0'
+        },300);
+        $('.box-13_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-13').toggle(300);
+    });
+
+    $('.box-13_lower').mouseleave(function (){
+        $('.box-13_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-13_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-13').toggle(300);
+    });
+    $('.box-14_lower').mouseenter(function (){
+        $('.box-14_upper').animate({
+            height: '0'
+        },300);
+        $('.box-14_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-14').toggle(300);
+    });
+
+    $('.box-14_lower').mouseleave(function (){
+        $('.box-14_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-14_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-14').toggle(300);
+    });
+    $('.box-15_lower').mouseenter(function (){
+        $('.box-15_upper').animate({
+            height: '0'
+        },300);
+        $('.box-15_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-15').toggle(300);
+    });
+
+    $('.box-15_lower').mouseleave(function (){
+        $('.box-15_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-15_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-15').toggle(300);
+    });
+    $('.box-16_lower').mouseenter(function (){
+        $('.box-16_upper').animate({
+            height: '0'
+        },300);
+        $('.box-16_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-16').toggle(300);
+    });
+
+    $('.box-16_lower').mouseleave(function (){
+        $('.box-16_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-16_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-16').toggle(300);
+    });
+    $('.box-17_lower').mouseenter(function (){
+        $('.box-17_upper').animate({
+            height: '0'
+        },300);
+        $('.box-17_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-17').toggle(300);
+    });
+
+    $('.box-17_lower').mouseleave(function (){
+        $('.box-17_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-17_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-17').toggle(300);
+    });
+    $('.box-18_lower').mouseenter(function (){
+        $('.box-18_upper').animate({
+            height: '0'
+        },300);
+        $('.box-18_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-18').toggle(300);
+    });
+
+    $('.box-18_lower').mouseleave(function (){
+        $('.box-18_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-18_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-18').toggle(300);
+    });
+    $('.box-19_lower').mouseenter(function (){
+        $('.box-19_upper').animate({
+            height: '0'
+        },300);
+        $('.box-19_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-19').toggle(300);
+    });
+
+    $('.box-19_lower').mouseleave(function (){
+        $('.box-19_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-19_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-19').toggle(300);
+    });
+    $('.box-20_lower').mouseenter(function (){
+        $('.box-20_upper').animate({
+            height: '0'
+        },300);
+        $('.box-20_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-20').toggle(300);
+    });
+
+    $('.box-20_lower').mouseleave(function (){
+        $('.box-20_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-20_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-20').toggle(300);
+    });
+    $('.box-21_lower').mouseenter(function (){
+        $('.box-21_upper').animate({
+            height: '0'
+        },300);
+        $('.box-21_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-21').toggle(300);
+    });
+
+    $('.box-21_lower').mouseleave(function (){
+        $('.box-21_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-21_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-21').toggle(300);
+    });
+    $('.box-22_lower').mouseenter(function (){
+        $('.box-22_upper').animate({
+            height: '0'
+        },300);
+        $('.box-22_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-22').toggle(300);
+    });
+
+    $('.box-22_lower').mouseleave(function (){
+        $('.box-22_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-22_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-22').toggle(300);
+    });
+    $('.box-23_lower').mouseenter(function (){
+        $('.box-23_upper').animate({
+            height: '0'
+        },300);
+        $('.box-23_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-23').toggle(300);
+    });
+
+    $('.box-23_lower').mouseleave(function (){
+        $('.box-23_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-23_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-23').toggle(300);
+    });
+    $('.box-24_lower').mouseenter(function (){
+        $('.box-24_upper').animate({
+            height: '0'
+        },300);
+        $('.box-24_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-24').toggle(300);
+    });
+
+    $('.box-24_lower').mouseleave(function (){
+        $('.box-24_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-24_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-24').toggle(300);
+    });
+    $('.box-25_lower').mouseenter(function (){
+        $('.box-25_upper').animate({
+            height: '0'
+        },300);
+        $('.box-25_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-25').toggle(300);
+    });
+
+    $('.box-25_lower').mouseleave(function (){
+        $('.box-25_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-25_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-25').toggle(300);
+    });
+    $('.box-26_lower').mouseenter(function (){
+        $('.box-26_upper').animate({
+            height: '0'
+        },300);
+        $('.box-26_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-26').toggle(300);
+    });
+
+    $('.box-26_lower').mouseleave(function (){
+        $('.box-26_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-26_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-26').toggle(300);
+    });
+    $('.box-27_lower').mouseenter(function (){
+        $('.box-27_upper').animate({
+            height: '0'
+        },300);
+        $('.box-27_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-27').toggle(300);
+    });
+
+    $('.box-27_lower').mouseleave(function (){
+        $('.box-27_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-27_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-27').toggle(300);
+    });
+    $('.box-28_lower').mouseenter(function (){
+        $('.box-28_upper').animate({
+            height: '0'
+        },300);
+        $('.box-28_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-28').toggle(300);
+    });
+
+    $('.box-28_lower').mouseleave(function (){
+        $('.box-28_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-28_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-28').toggle(300);
+    });
+    $('.box-29_lower').mouseenter(function (){
+        $('.box-29_upper').animate({
+            height: '0'
+        },300);
+        $('.box-29_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-29').toggle(300);
+    });
+
+    $('.box-29_lower').mouseleave(function (){
+        $('.box-29_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-29_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-29').toggle(300);
+    });
+    $('.box-30_lower').mouseenter(function (){
+        $('.box-30_upper').animate({
+            height: '0'
+        },300);
+        $('.box-30_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-30').toggle(300);
+    });
+
+    $('.box-30_lower').mouseleave(function (){
+        $('.box-30_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-30_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-30').toggle(300);
+    });
 
   // $('.category').mouseenter(function(){
   //   $('.category').animate()
