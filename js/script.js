@@ -1588,6 +1588,63 @@ $(document).ready(function(){
         },300);
         $('.seconds-30').toggle(300);
     });
+    $('.box-31_lower').mouseenter(function (){
+        $('.box-31_upper').animate({
+            height: '0'
+        },300);
+        $('.box-31_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-31').toggle(300);
+    });
+
+    $('.box-31_lower').mouseleave(function (){
+        $('.box-31_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-31_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-31').toggle(300);
+    });
+    $('.box-32_lower').mouseenter(function (){
+        $('.box-32_upper').animate({
+            height: '0'
+        },300);
+        $('.box-32_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-32').toggle(300);
+    });
+
+    $('.box-32_lower').mouseleave(function (){
+        $('.box-32_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-32_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-32').toggle(300);
+    });
+    $('.box-33_lower').mouseenter(function (){
+        $('.box-33_upper').animate({
+            height: '0'
+        },300);
+        $('.box-33_lower').animate({
+            height: '100%'
+        },300);
+        $('.seconds-33').toggle(300);
+    });
+
+    $('.box-33_lower').mouseleave(function (){
+        $('.box-33_upper').animate({
+            height: '65%'
+        },300);
+        $('.box-33_lower').animate({
+            height: '35%'
+        },300);
+        $('.seconds-33').toggle(300);
+    });
 
   // $('.category').mouseenter(function(){
   //   $('.category').animate()

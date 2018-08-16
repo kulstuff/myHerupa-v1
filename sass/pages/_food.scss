@@ -28,9 +28,10 @@ body{
   padding-top: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-// &:first-child{
-//   margin-right: 10rem;
-// }
+ &:first-child{
+   @media screen and (min-width:1280px){
+  margin-right: 10rem;}
+ }
   &-caption{
     font-size:1.5rem;  }
 
@@ -529,7 +530,7 @@ background-color: white;
  padding: 0;
  width: 100%;
  height: 65%;
- background-image: url('../img/places/barista.jpg');
+ background-image: url('../img/places/manu-lassi.jpg');
  background-size: cover;
 opacity: 0.85}
 
@@ -545,7 +546,7 @@ background-color: white;
  padding: 0;
  width: 100%;
  height: 65%;
- background-image: url('../img/places/barista.jpg');
+ background-image: url('../img/places/hcburger.jpg');
  background-size: cover;
 opacity: 0.85}
 
@@ -561,7 +562,55 @@ background-color: white;
  padding: 0;
  width: 100%;
  height: 65%;
- background-image: url('../img/places/barista.jpg');
+ background-image: url('../img/places/noc.jpg');
+ background-size: cover;
+opacity: 0.85}
+
+&_lower{
+ padding: 1.3rem;
+border-top:3px solid #FBBD08;
+background-color: white;
+}
+}
+&-31{
+
+&_upper{
+ padding: 0;
+ width: 100%;
+ height: 65%;
+ background-image: url('../img/places/kokos.jpg');
+ background-size: cover;
+opacity: 0.85}
+
+&_lower{
+ padding: 1.3rem;
+border-top:3px solid #FBBD08;
+background-color: white;
+}
+}
+&-32{
+
+&_upper{
+ padding: 0;
+ width: 100%;
+ height: 65%;
+ background-image: url('../img/places/sagar-ratna.jpg');
+ background-size: cover;
+opacity: 0.85}
+
+&_lower{
+ padding: 1.3rem;
+border-top:3px solid #FBBD08;
+background-color: white;
+}
+}
+&-33{
+
+&_upper{
+ padding: 0;
+ width: 100%;
+ height: 65%;
+ background-image: url('../img/places/subway.jpg');
  background-size: cover;
 opacity: 0.85}
 
