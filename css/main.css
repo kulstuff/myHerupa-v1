@@ -3042,10 +3042,6 @@ body {
   display: none; }
 
 @media screen and (max-width: 600px) {
-  body {
-    position: relative; } }
-
-@media screen and (max-width: 600px) {
   .sort-bar_heading {
     width: 100%;
     padding: 0;

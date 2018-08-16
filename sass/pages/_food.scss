@@ -58,8 +58,8 @@ body{
     margin-top: 10%;
   grid-template-columns: 38rem  ;
   grid-template-rows: repeat(11,30rem);
-  grid-row-gap:0rem; 
-  margin: 0;   
+  grid-row-gap:0rem;
+  margin: 0;
   }
   grid-column-gap: 4rem;
   grid-row-gap:4rem;
@@ -315,11 +315,6 @@ opacity: 0.85;}
 ::-webkit-scrollbar {
   display: none;
   }
-body{
-  @media screen and(max-width:600px){
-    position: relative;
-  }
-}
 .sort-bar_heading{
   @media screen and(max-width:600px){
     width:100%;
