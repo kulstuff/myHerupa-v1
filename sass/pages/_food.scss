@@ -20,9 +20,8 @@ body{
 
 .category{
   width:8rem;
-  // height: 100%;
+  height: 100%;
   float: right;
-  display:inline-block;
   margin: 0 2rem;
   text-align: center;
   padding-top: 1rem;
@@ -49,6 +48,7 @@ body{
 .container{
   background-color: #eee;
   width:80vw;
+  height: 100%;
    margin: 12rem 3rem;
 @media screen and(min-width:1366px){
   margin: 12rem 8rem;
@@ -665,6 +665,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ background-position: center;
 opacity: 0.9}
 
 &_lower{

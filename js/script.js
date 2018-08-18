@@ -2519,23 +2519,28 @@ $(".societies__reset").click(function (){
 $(".category-meals").click(function (){
     $("section:not(.meals)").css('display','none');
     $(".meals").css('display','block');
+    $(".container").css('height','100%');
 });
 
-$(".category-cafe").click(function (){
-    $("section:not(.cafe)").css('display','none');
-    $(".cafe").css('display','block');
+$(".category-hangouts").click(function (){
+    $("section:not(.hangouts)").css('display','none');
+    $(".container").css('height','100%');
+    $(".hangouts").css('display','block');
 });
-$(".category-bar").click(function (){
-    $("section:not(.bar)").css('display','none');
-    $(".bar").css('display','block');
+$(".category-bars").click(function (){
+    $("section:not(.bars)").css('display','none');
+    $(".container").css('height','100%');
+    $(".bars").css('display','block');
 });
 $(".category-campus").click(function (){
     $("section:not(.campus)").css('display','none');
+    $(".container").css('height','100%');
     $(".campus").css('display','block');
 });
 
 $(".category-delivery").click(function (){
     $("section:not(.delivery)").css('display','none');
+    $(".container").css('height','100%');
     $(".delivery").css('display','block');
 });
 });
