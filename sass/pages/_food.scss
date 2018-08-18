@@ -64,7 +64,7 @@ body{
   grid-template-columns: 38rem 38rem 38rem ;
 
   @media screen and(max-width:600px){
-    margin-top: 10%;
+    top: 10vh;
   grid-template-columns: 38rem  ;
   grid-template-rows: repeat(48,30rem);
   grid-row-gap:0rem;
