@@ -1955,6 +1955,7 @@ $(".societies__cards--tumun").click(function (){
    $(".div3-contact-2").attr('display','flex');
    $(".div3-contact-2").html('Bharat Goel ‭: 9711240852‬');
    $(".societies__modal--bg").animate({opacity : "1"});
+          $(".dont-go").css('display','block');
    $(".societies__modal--bg").css("z-index","100");
 });
 $(".societies__cards--ccs").click(function (){
@@ -1977,6 +1978,7 @@ $(".societies__cards--ccs").click(function (){
     $(".div3-contact-link").html('FB/CCSTU');
     $(".div3-contact-link").attr('href','https://facebook.com/ccstu');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2001,6 +2003,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/ThaparAdventureClub');
     $(".div3-contact-link").attr('href','https://facebook.com/ThaparAdventureClub');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
  $(".societies__cards--econ").click(function (){
@@ -2024,6 +2027,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/econthapar');
     $(".div3-contact-link").attr('href','https://facebook.com/econthapar');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2048,6 +2052,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/TUEDCELL');
     $(".div3-contact-link").attr('href','https://facebook.com/tuedcell');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2072,6 +2077,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/TUENACTUS');
     $(".div3-contact-link").attr('href','https://facebook.com/TUEnactus');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2096,6 +2102,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/ThaparFAPS');
     $(".div3-contact-link").attr('href','https://facebook.com/ThaparFAPS');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2120,6 +2127,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/TUECECLUB');
     $(".div3-contact-link").attr('href','https://facebook.com/TUECECLUB');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
  $(".societies__cards--iste").click(function (){
@@ -2143,6 +2151,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/ISTE.Thapar');
     $(".div3-contact-link").attr('href','https://facebook.com/ISTE.Thapar');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2167,6 +2176,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/LitSoc.TU');
     $(".div3-contact-link").attr('href','https://facebook.com/LitSoc.TU');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2191,6 +2201,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/msctiet');
     $(".div3-contact-link").attr('href','https://facebook.com/msctiet');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2215,6 +2226,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/mudrasociety');
     $(".div3-contact-link").attr('href','https://facebook.com/mudrasociety');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 
@@ -2239,6 +2251,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/owasptsc');
     $(".div3-contact-link").attr('href','https://facebook.com/owasptsc');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
  $(".societies__cards--pratigya").click(function (){
@@ -2262,6 +2275,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/pratigyatiet');
     $(".div3-contact-link").attr('href','https://facebook.com/pratigyatiet');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
  $(".societies__cards--pws").click(function (){
@@ -2285,6 +2299,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/ParyavaranWelfareSociety');
     $(".div3-contact-link").attr('href','https://facebook.com/ParyavaranWelfareSociety');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
  $(".societies__cards--somie").click(function (){
@@ -2308,6 +2323,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/somiethapar');
     $(".div3-contact-link").attr('href','https://facebook.com/somiethapar');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
  $(".societies__cards--spic-macay").click(function (){
@@ -2331,6 +2347,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/Spicmacaytu');
     $(".div3-contact-link").attr('href','https://facebook.com/Spicmacaytu');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
  $(".societies__cards--spic-macay").click(function (){
@@ -2354,6 +2371,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/somiethapar');
     $(".div3-contact-link").attr('href','https://facebook.com/somiethapar');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 //  $(".societies__cards--tmc").click(function (){
@@ -2377,6 +2395,7 @@ $(".societies__cards--adv-club").click(function (){
 //     $(".div3-contact-link").html('FB/thaparmovieclub');
 //     $(".div3-contact-link").attr('href','https://facebook.com/thaparmovieclub');
 //     $(".societies__modal--bg").animate({opacity : "1"});
+    //    $(".dont-go").css('display','block');
 //     $(".societies__modal--bg").css("z-index","100");
 //  });
  $(".societies__cards--toastmasters").click(function (){
@@ -2400,6 +2419,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-contact-link").html('FB/ThaparToastmastersClub');
     $(".div3-contact-link").attr('href','https://facebook.com/ThaparToastmastersClub');
     $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
  });
 $("#parent").mouseup(function(e)
@@ -2411,5 +2431,116 @@ $("#parent").mouseup(function(e)
             $(".societies__modal--bg").css("z-index","-100");
         }
     });
+$(".societies__nav--sort-travel").click( function(){
+    
+    $("div:not(.travel)").css('display','none');
+    $(".travel").css('display','block');
+    $("h4:not(.societies__nav--sort-travel)").css('background-color','black');
+    $("h4:not(.societies__nav--sort-travel)").css('color','#f5f5f5');
+    $(".societies__nav--sort-travel").css('background-color','#f5f5f5');
+    $(".societies__nav--sort-travel").css('color','black');
+});
 
+$(".societies__nav--sort-technical").click( function(){
+    $(".technical").css('display','block');
+    
+    $("div:not(.technical)").css('display','none');
+    $("h4:not(.societies__nav--sort-technical)").css('background-color','black');
+    $("h4:not(.societies__nav--sort-technical)").css('color','#f5f5f5');
+    $(".societies__nav--sort-technical").css('background-color','#f5f5f5');
+    $(".societies__nav--sort-technical").css('color','black');
+});
+
+$(".societies__nav--sort-internship").click( function(){
+    
+    $("div:not(.internship)").css('display','none');
+    $(".internship").css('display','block');
+    $("h4:not(.societies__nav--sort-internship)").css('background-color','black');
+    $("h4:not(.societies__nav--sort-internship)").css('color','#f5f5f5');
+    $(".societies__nav--sort-internship").css('background-color','#f5f5f5');
+    $(".societies__nav--sort-internship").css('color','black');
+});
+
+$(".societies__nav--sort-social").click( function(){
+    
+    $("div:not(.social)").css('display','none');
+    $(".social").css('display','block');
+    $("h4:not(.societies__nav--sort-social)").css('background-color','black');
+    $("h4:not(.societies__nav--sort-social)").css('color','#f5f5f5');
+    $(".societies__nav--sort-social").css('background-color','#f5f5f5');
+    $(".societies__nav--sort-social").css('color','black');
+});
+
+$(".societies__nav--sort-cultural").click( function(){
+    
+    $("div:not(.cultural)").css('display','none');
+    $(".cultural").css('display','block');
+    $("h4:not(.societies__nav--sort-cultural)").css('background-color','black');
+    $("h4:not(.societies__nav--sort-cultural)").css('color','#f5f5f5');
+    $(".societies__nav--sort-cultural").css('background-color','#f5f5f5');
+    $(".societies__nav--sort-cultural").css('color','black');
+});
+
+$(".societies__nav--sort-elocution").click( function(){
+    
+    $("div:not(.elocution)").css('display','none');
+    $(".elocution").css('display','block');
+    $("h4:not(.societies__nav--sort-elocution)").css('background-color','black');
+    $("h4:not(.societies__nav--sort-elocution)").css('color','#f5f5f5');
+    $(".societies__nav--sort-elocution").css('background-color','#f5f5f5');
+    $(".societies__nav--sort-elocution").css('color','black');
+});
+
+var societies__flag=1;
+$(".societies__filter").click(function (){
+    if(societies__flag==0)
+    {
+        $(".societies__nav--filter").css('display','none');
+        $(".societies__reset").animate({opacity:"0"});
+        societies__flag=1;
+    }
+    else
+    {
+        $(".societies__nav--filter").css('display','block');
+        $(".societies__reset").animate({opacity:"1"});
+        societies__flag=0;
+    }
+});
+
+$(".societies__reset").click(function (){
+    $("div:not(.elocution)").css('display','block');
+    $(".elocution").css('display','block');
+    $("h4:not(.societies__nav--sort-elocution)").css('background-color','black');
+    $("h4:not(.societies__nav--sort-elocution)").css('color','#f5f5f5');
+    $(".societies__nav--sort-elocution").css('background-color','black');
+    $(".societies__nav--sort-elocution").css('color','#f5f5f5');
+});
+
+$(".category-meals").click(function (){
+    $("section:not(.meals)").css('display','none');
+    $(".meals").css('display','block');
+    $(".container").css('height','100%');
+});
+
+$(".category-hangouts").click(function (){
+    $("section:not(.hangouts)").css('display','none');
+    $(".container").css('height','100%');
+    $(".hangouts").css('display','block');
+});
+$(".category-bars").click(function (){
+    $("section:not(.bars)").css('display','none');
+    $(".container").css('height','100%');
+    $(".bars").css('display','block');
+});
+$(".category-campus").click(function (){
+    $("section:not(.campus)").css('display','none');
+    $(".container").css('height','100%');
+    $(".campus").css('display','block');
+});
+
+$(".category-delivery").click(function (){
+    $("section:not(.delivery)").css('display','none');
+    $(".container").css('height','100%');
+    $(".delivery").css('display','block');
+});
 });
