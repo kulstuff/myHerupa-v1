@@ -2894,7 +2894,7 @@ body {
       left: 10vw; } }
   @media screen and (max-width: 600px) {
     .container {
-      margin-top: 10%;
+      top: 10vh;
       grid-template-columns: 38rem;
       grid-template-rows: repeat(48, 30rem);
       grid-row-gap: 0rem;
