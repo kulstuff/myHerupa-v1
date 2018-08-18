@@ -2514,5 +2514,28 @@ $(".societies__reset").click(function (){
     $("h4:not(.societies__nav--sort-elocution)").css('color','#f5f5f5');
     $(".societies__nav--sort-elocution").css('background-color','black');
     $(".societies__nav--sort-elocution").css('color','#f5f5f5');
-})
+});
+
+$(".category-meals").click(function (){
+    $("section:not(.meals)").css('display','none');
+    $(".meals").css('display','block');
+});
+
+$(".category-cafe").click(function (){
+    $("section:not(.cafe)").css('display','none');
+    $(".cafe").css('display','block');
+});
+$(".category-bar").click(function (){
+    $("section:not(.bar)").css('display','none');
+    $(".bar").css('display','block');
+});
+$(".category-campus").click(function (){
+    $("section:not(.campus)").css('display','none');
+    $(".campus").css('display','block');
+});
+
+$(".category-delivery").click(function (){
+    $("section:not(.delivery)").css('display','none');
+    $(".delivery").css('display','block');
+});
 });
