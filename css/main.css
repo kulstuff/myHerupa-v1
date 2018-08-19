@@ -3523,6 +3523,10 @@ body {
   cursor: pointer;
   margin-top: 5.5rem;
   margin-right: 2rem; }
+  @media screen and (max-width: 600px) {
+    .button {
+      font-size: 1rem;
+      margin-top: 4.5rem; } }
 
 .menu {
   padding-top: 0.5rem;
