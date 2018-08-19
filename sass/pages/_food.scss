@@ -97,6 +97,11 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 .box{
+@media screen and (max-width: 600px){
+  &:last-child{
+    margin-bottom: 10vh;
+  }
+}
   // padding: 3rem;
   width: 24.5vw;
   font-size: 2rem;
