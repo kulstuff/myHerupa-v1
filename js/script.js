@@ -2432,7 +2432,7 @@ $("#parent").mouseup(function(e)
         }
     });
 $(".societies__nav--sort-travel").click( function(){
-    
+
     $("div:not(.travel)").css('display','none');
     $(".travel").css('display','block');
     $("h4:not(.societies__nav--sort-travel)").css('background-color','black');
@@ -2443,7 +2443,7 @@ $(".societies__nav--sort-travel").click( function(){
 
 $(".societies__nav--sort-technical").click( function(){
     $(".technical").css('display','block');
-    
+
     $("div:not(.technical)").css('display','none');
     $("h4:not(.societies__nav--sort-technical)").css('background-color','black');
     $("h4:not(.societies__nav--sort-technical)").css('color','#f5f5f5');
@@ -2452,7 +2452,7 @@ $(".societies__nav--sort-technical").click( function(){
 });
 
 $(".societies__nav--sort-internship").click( function(){
-    
+
     $("div:not(.internship)").css('display','none');
     $(".internship").css('display','block');
     $("h4:not(.societies__nav--sort-internship)").css('background-color','black');
@@ -2462,7 +2462,7 @@ $(".societies__nav--sort-internship").click( function(){
 });
 
 $(".societies__nav--sort-social").click( function(){
-    
+
     $("div:not(.social)").css('display','none');
     $(".social").css('display','block');
     $("h4:not(.societies__nav--sort-social)").css('background-color','black');
@@ -2472,7 +2472,7 @@ $(".societies__nav--sort-social").click( function(){
 });
 
 $(".societies__nav--sort-cultural").click( function(){
-    
+
     $("div:not(.cultural)").css('display','none');
     $(".cultural").css('display','block');
     $("h4:not(.societies__nav--sort-cultural)").css('background-color','black');
@@ -2482,7 +2482,7 @@ $(".societies__nav--sort-cultural").click( function(){
 });
 
 $(".societies__nav--sort-elocution").click( function(){
-    
+
     $("div:not(.elocution)").css('display','none');
     $(".elocution").css('display','block');
     $("h4:not(.societies__nav--sort-elocution)").css('background-color','black');
@@ -2520,27 +2520,42 @@ $(".category-meals").click(function (){
     $("section:not(.meals)").css('display','none');
     $(".meals").css('display','block');
     $(".container").css('height','100%');
+    $('html, body').animate({
+      scrollTop: $('.container').offset().top -1000
+    }, 1000);
 });
 
 $(".category-hangouts").click(function (){
     $("section:not(.hangouts)").css('display','none');
     $(".container").css('height','100%');
     $(".hangouts").css('display','block');
+    $('html, body').animate({
+      scrollTop: $('.container').offset().top -1000
+    }, 1000);
 });
 $(".category-bars").click(function (){
     $("section:not(.bars)").css('display','none');
     $(".container").css('height','100%');
     $(".bars").css('display','block');
+    $('html, body').animate({
+      scrollTop: $('.container').offset().top -1000
+    }, 1000);
 });
 $(".category-campus").click(function (){
     $("section:not(.campus)").css('display','none');
     $(".container").css('height','100%');
     $(".campus").css('display','block');
+    $('html, body').animate({
+      scrollTop: $('.container').offset().top -1000
+    }, 1000);
 });
 
 $(".category-delivery").click(function (){
     $("section:not(.delivery)").css('display','none');
     $(".container").css('height','100%');
     $(".delivery").css('display','block');
+    $('html, body').animate({
+      scrollTop: $('.container').offset().top -1000
+    }, 1000);
 });
 });
