@@ -2877,6 +2877,9 @@ body {
   .category:hover {
     border-radius: 0.5rem;
     box-shadow: 0 0 2rem #eee; }
+    @media screen and (max-width: 600px) {
+      .category:hover {
+        height: 100%; } }
 
 .container {
   background-color: #eee;
