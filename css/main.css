@@ -2886,9 +2886,9 @@ body {
   height: 100%;
   position: absolute;
   display: grid;
-  grid-template-rows: repeat(17, 50vh);
-  grid-template-columns: 27.5vw 27.5vw 27.5vw;
-  grid-column-gap: 3.85vw;
+  grid-template-rows: repeat(18, 38vh);
+  grid-template-columns: 24.5vw 24.5vw 24.5vw;
+  grid-column-gap: 5vw;
   grid-row-gap: 7vh;
   left: 50%;
   top: 18vh;
@@ -2922,7 +2922,7 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 .box {
-  width: 27.5vw;
+  width: 24.5vw;
   font-size: 2rem;
   font-family: sans-serif;
   color: black;
@@ -2939,7 +2939,7 @@ body {
     height: 65%;
     background-image: url("../img/places/kfc.png");
     background-size: cover;
-    background-position: center;
+    background-poSsition: center;
     opacity: 0.85; }
   .box-1_lower {
     padding: 1.3rem;
@@ -3128,6 +3128,7 @@ body {
     height: 65%;
     background-image: url("../img/places/elevate.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-17_lower {
     padding: 1.3rem;
@@ -3139,6 +3140,7 @@ body {
     height: 65%;
     background-image: url("../img/places/pifi.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-18_lower {
     padding: 1.3rem;
@@ -3150,6 +3152,7 @@ body {
     height: 65%;
     background-image: url("../img/places/jaggis-2.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-19_lower {
     padding: 1.3rem;
@@ -3161,6 +3164,7 @@ body {
     height: 65%;
     background-image: url("../img/places/the-yellow-chilli.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-20_lower {
     padding: 1.3rem;
@@ -3172,6 +3176,7 @@ body {
     height: 65%;
     background-image: url("../img/places/brewestate.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-21_lower {
     padding: 1.3rem;
@@ -3183,6 +3188,7 @@ body {
     height: 65%;
     background-image: url("../img/places/chawlas.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-22_lower {
     padding: 1.3rem;
@@ -3194,6 +3200,7 @@ body {
     height: 65%;
     background-image: url("../img/places/cafe-yorker.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-23_lower {
     padding: 1.3rem;
@@ -3205,6 +3212,7 @@ body {
     height: 65%;
     background-image: url("../img/places/goli.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-24_lower {
     padding: 1.3rem;
@@ -3215,7 +3223,8 @@ body {
     width: 100%;
     height: 65%;
     background-image: url("../img/places/mocha.jpg");
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .box-25_lower {
     padding: 1.3rem;
     border-top: 3px solid #FBBD08;
@@ -3226,6 +3235,7 @@ body {
     height: 65%;
     background-image: url("../img/places/spice-roof.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-26_lower {
     padding: 1.3rem;
@@ -3237,6 +3247,7 @@ body {
     height: 65%;
     background-image: url("../img/places/barista.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-27_lower {
     padding: 1.3rem;
@@ -3248,6 +3259,7 @@ body {
     height: 65%;
     background-image: url("../img/places/manu-lassi.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-28_lower {
     padding: 1.3rem;
@@ -3259,6 +3271,7 @@ body {
     height: 65%;
     background-image: url("../img/places/hcburger.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-29_lower {
     padding: 1.3rem;
@@ -3270,6 +3283,7 @@ body {
     height: 65%;
     background-image: url("../img/places/noc.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-30_lower {
     padding: 1.3rem;
@@ -3281,6 +3295,7 @@ body {
     height: 65%;
     background-image: url("../img/places/kokos.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-31_lower {
     padding: 1.3rem;
@@ -3292,6 +3307,7 @@ body {
     height: 65%;
     background-image: url("../img/places/sagar-ratna.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-32_lower {
     padding: 1.3rem;
@@ -3303,6 +3319,7 @@ body {
     height: 65%;
     background-image: url("../img/places/subway.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-33_lower {
     padding: 1.3rem;
@@ -3314,6 +3331,7 @@ body {
     height: 65%;
     background-image: url("../img/places/foodfactory.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-34_lower {
     padding: 1.3rem;
@@ -3325,6 +3343,7 @@ body {
     height: 65%;
     background-image: url("../img/places/cafe-route-64.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-35_lower {
     padding: 1.3rem;
@@ -3337,6 +3356,7 @@ body {
     background-image: url("../img/places/zafran.jpg");
     background-size: cover;
     background-position: center;
+    background-position: center;
     opacity: 0.9; }
   .box-36_lower {
     padding: 1.3rem;
@@ -3348,6 +3368,7 @@ body {
     height: 65%;
     background-image: url("../img/places/jujus.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-37_lower {
     padding: 1.3rem;
@@ -3357,8 +3378,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/wrapchik.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-38_lower {
     padding: 1.3rem;
@@ -3368,8 +3390,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/chill&grill.png");
     background-size: cover;
+    background-position: top;
     opacity: 0.9; }
   .box-39_lower {
     padding: 1.3rem;
@@ -3379,8 +3402,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/sips&bites.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-40_lower {
     padding: 1.3rem;
@@ -3390,8 +3414,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/honeycafe.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-41_lower {
     padding: 1.3rem;
@@ -3401,8 +3426,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/hotexpress.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-42_lower {
     padding: 1.3rem;
@@ -3412,8 +3438,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/pizzanation.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-43_lower {
     padding: 1.3rem;
@@ -3423,8 +3450,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/gblock.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-44_lower {
     padding: 1.3rem;
@@ -3434,8 +3462,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/momos.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-45_lower {
     padding: 1.3rem;
@@ -3445,8 +3474,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/paratha.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-46_lower {
     padding: 1.3rem;
@@ -3456,8 +3486,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/sodexo.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-47_lower {
     padding: 1.3rem;
@@ -3467,8 +3498,9 @@ body {
     padding: 0;
     width: 100%;
     height: 65%;
-    background-image: url("../img/places/zafran.jpg");
+    background-image: url("../img/places/shahirolls.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-48_lower {
     padding: 1.3rem;
