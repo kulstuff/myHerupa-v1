@@ -2930,6 +2930,9 @@ body {
   border-radius: 5px;
   height: 100%; }
   @media screen and (max-width: 600px) {
+    .box:last-child {
+      margin-bottom: 10vh; } }
+  @media screen and (max-width: 600px) {
     .box {
       width: 90vw;
       margin: 0; } }
