@@ -42,36 +42,34 @@ body{
 
 }
 
-
-
-
-
 .container{
-  background-color: #eee;
-  width:80vw;
-  height: 100%;
-   position: absolute;
-@media screen and(min-width:1366px){
-  // margin: 12rem 8rem;
-  left: 10vw;
-  top:18vh;
-}
-@media screen and(min-width : 1920px){
-  left: 10vw;
-}
-  display:grid;
-  grid-template-rows: repeat(17,30rem);
-  grid-template-columns: 38rem 38rem 38rem ;
+    background-color: #eee;
+    // width:80vw;
+    height: 100%;
+    // margin-top: 20vh;
+    // margin-left: 5vw;
+     position: absolute;
+     display:grid;
+     grid-template-rows: repeat(17,50vh);
+     grid-template-columns: 27.5vw 27.5vw 27.5vw ;
+     grid-column-gap: 3.85vw;
+     grid-row-gap: 7vh;
+     left: 50%;
+     top:18vh;
+     transform: translate3d(-50%, 0, 0);
 
-  @media screen and(max-width:600px){
-    top: 10vh;
-  grid-template-columns: 38rem  ;
-  grid-template-rows: repeat(48,30rem);
-  grid-row-gap:0rem;
-  margin: 0;
-  }
-  grid-column-gap: 4rem;
-  grid-row-gap:4rem;
+      @media screen and (max-width:600px){
+          top: 10vh;
+          // width: 90vw;
+          grid-template-columns: 90vw;
+          grid-template-rows: repeat(48,30rem);
+          grid-row-gap:0rem;
+          grid-column-gap: 0rem;
+          left: 50%;
+          transform: translate3d(-50%,0,0);
+          // margin: auto;
+          margin: 0;
+      }
 }
 
 .place_name{
@@ -93,12 +91,18 @@ body{
 }
 .box{
   // padding: 3rem;
+  width: 27.5vw;
   font-size: 2rem;
   font-family: sans-serif;
   color:black;
   background-color: white;
   border-radius: 5px;
   height: 100%;
+  @media screen and (max-width: 600px){
+      width: 90vw;
+      margin: 0;
+      // margin-left: 7rem;
+  }
 
 
   &-1{
@@ -109,6 +113,7 @@ body{
     height: 65%;
     background-image: url('../img/places/kfc.png');
     background-size: cover;
+    background-position: center;
   opacity:0.85;}
 
   &_lower{
@@ -125,6 +130,7 @@ body{
    height: 65%;
    background-image: url('../img/places/dominos.jpg');
    background-size: cover;
+   background-position: center;
  opacity:0.85;}
 
  &_lower{
@@ -141,6 +147,7 @@ body{
   height: 65%;
   background-image: url('../img/places/bbq.jpg');
   background-size: cover;
+  background-position: center;
   opacity:0.85;}
 
 &_lower{
@@ -157,6 +164,7 @@ body{
   height: 65%;
   background-image: url('../img/places/pizzanation.jpg');
   background-size: cover;
+  background-position: center;
 opacity: 0.85; }
 
 &_lower{
@@ -173,6 +181,7 @@ opacity: 0.85; }
   height: 65%;
   background-image: url('../img/places/mcd.jpg');
   background-size: cover;
+  background-position: center;
 opacity: 0.85;}
 
 &_lower{
@@ -189,6 +198,7 @@ opacity: 0.85;}
   height: 65%;
   background-image: url('../img/places/ccd.jpg');
   background-size: cover;
+  background-position: center;
 opacity: 0.85; }
 
 &_lower{
@@ -205,6 +215,7 @@ opacity: 0.85; }
   height: 65%;
   background-image: url('../img/places/boston-bites.jpg');
   background-size: cover;
+  background-position: center;
 opacity: 0.85;}
 
 &_lower{
@@ -221,6 +232,7 @@ opacity: 0.85;}
   height: 65%;
   background-image: url('../img/places/dumpling-hood.jpg');
   background-size: cover;
+  background-position: center;
  }
 
 &_lower{
@@ -237,6 +249,7 @@ opacity: 0.85;}
   height: 65%;
   background-image: url('../img/places/peddlers.jpg');
   background-size: cover;
+  background-position: center;
 opacity: 0.85;}
 
 &_lower{
@@ -253,6 +266,7 @@ opacity: 0.85;}
   height: 65%;
   background-image: url('../img/places/canadian-pizza.jpg');
   background-size: cover;
+  background-position: center;
  }
 
 &_lower{
@@ -269,6 +283,7 @@ opacity: 0.85;}
   height: 65%;
   background-image: url('../img/places/lassi.jpg');
   background-size: cover;
+  background-position: center;
 opacity: 0.90  }
 
 &_lower{
@@ -284,7 +299,9 @@ opacity: 0.90  }
   width: 100%;
   height: 65%;
   background-image: url('../img/places/bakery.jpg');
-  background-size: cover; }
+  background-size: cover;
+background-position: center;
+}
 
 &_lower{
   padding: 1.3rem;
@@ -300,6 +317,7 @@ opacity: 0.90  }
  height: 65%;
  background-image: url('../img/places/lazeez.jpg');
  background-size: cover;
+ background-position: center;
  opacity: 0.85}
 
 &_lower{
@@ -316,6 +334,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/moti-mahal.jpg');
  background-size: cover;
+ background-position: center;
  opacity:0.90}
 
 &_lower{
@@ -332,6 +351,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/yochina.jpg');
  background-size: cover;
+ background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -348,6 +368,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/gopals.jpg');
  background-size: cover;
+ background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -364,6 +385,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/elevate.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -380,6 +402,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/pifi.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -396,6 +419,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/jaggis-2.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -412,6 +436,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/the-yellow-chilli.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -428,6 +453,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/brewestate.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -444,6 +470,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/chawlas.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -460,6 +487,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/cafe-yorker.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -476,6 +504,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/goli.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -492,6 +521,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/mocha.jpg');
  background-size: cover;
+ // background-position: center;
 }
 
 &_lower{
@@ -508,6 +538,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/spice-roof.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85;}
 
 &_lower{
@@ -524,6 +555,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/barista.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -540,6 +572,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/manu-lassi.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -556,6 +589,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/hcburger.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -572,6 +606,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/noc.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -588,6 +623,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/kokos.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -604,6 +640,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/sagar-ratna.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -620,6 +657,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/subway.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -636,6 +674,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/foodfactory.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -652,6 +691,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/cafe-route-64.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.85}
 
 &_lower{
@@ -668,6 +708,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
  background-position: center;
 opacity: 0.9}
 
@@ -685,6 +726,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/jujus.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -701,6 +743,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -717,6 +760,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -733,6 +777,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -749,6 +794,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -765,6 +811,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -781,6 +828,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -797,6 +845,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -813,6 +862,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -829,6 +879,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -845,6 +896,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{
@@ -861,6 +913,7 @@ background-color: white;
  height: 65%;
  background-image: url('../img/places/zafran.jpg');
  background-size: cover;
+ // background-position: center;
 opacity: 0.9}
 
 &_lower{

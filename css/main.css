@@ -2877,27 +2877,25 @@ body {
 
 .container {
   background-color: #eee;
-  width: 80vw;
   height: 100%;
   position: absolute;
   display: grid;
-  grid-template-rows: repeat(17, 30rem);
-  grid-template-columns: 38rem 38rem 38rem;
-  grid-column-gap: 4rem;
-  grid-row-gap: 4rem; }
-  @media screen and (min-width: 1366px) {
-    .container {
-      left: 10vw;
-      top: 18vh; } }
-  @media screen and (min-width: 1920px) {
-    .container {
-      left: 10vw; } }
+  grid-template-rows: repeat(17, 50vh);
+  grid-template-columns: 27.5vw 27.5vw 27.5vw;
+  grid-column-gap: 3.85vw;
+  grid-row-gap: 7vh;
+  left: 50%;
+  top: 18vh;
+  transform: translate3d(-50%, 0, 0); }
   @media screen and (max-width: 600px) {
     .container {
       top: 10vh;
-      grid-template-columns: 38rem;
+      grid-template-columns: 90vw;
       grid-template-rows: repeat(48, 30rem);
       grid-row-gap: 0rem;
+      grid-column-gap: 0rem;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
       margin: 0; } }
 
 .place_name {
@@ -2918,18 +2916,24 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 .box {
+  width: 27.5vw;
   font-size: 2rem;
   font-family: sans-serif;
   color: black;
   background-color: white;
   border-radius: 5px;
   height: 100%; }
+  @media screen and (max-width: 600px) {
+    .box {
+      width: 90vw;
+      margin: 0; } }
   .box-1_upper {
     padding: 0;
     width: 100%;
     height: 65%;
     background-image: url("../img/places/kfc.png");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-1_lower {
     padding: 1.3rem;
@@ -2941,6 +2945,7 @@ body {
     height: 65%;
     background-image: url("../img/places/dominos.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-2_lower {
     padding: 1.3rem;
@@ -2952,6 +2957,7 @@ body {
     height: 65%;
     background-image: url("../img/places/bbq.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-3_lower {
     padding: 1.3rem;
@@ -2963,6 +2969,7 @@ body {
     height: 65%;
     background-image: url("../img/places/pizzanation.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-4_lower {
     padding: 1.3rem;
@@ -2974,6 +2981,7 @@ body {
     height: 65%;
     background-image: url("../img/places/mcd.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-5_lower {
     padding: 1.3rem;
@@ -2985,6 +2993,7 @@ body {
     height: 65%;
     background-image: url("../img/places/ccd.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-6_lower {
     padding: 1.3rem;
@@ -2996,6 +3005,7 @@ body {
     height: 65%;
     background-image: url("../img/places/boston-bites.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-7_lower {
     padding: 1.3rem;
@@ -3006,7 +3016,8 @@ body {
     width: 100%;
     height: 65%;
     background-image: url("../img/places/dumpling-hood.jpg");
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .box-8_lower {
     padding: 1.3rem;
     border-top: 3px solid #FBBD08;
@@ -3017,6 +3028,7 @@ body {
     height: 65%;
     background-image: url("../img/places/peddlers.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-9_lower {
     padding: 1.3rem;
@@ -3027,7 +3039,8 @@ body {
     width: 100%;
     height: 65%;
     background-image: url("../img/places/canadian-pizza.jpg");
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .box-10_lower {
     padding: 1.3rem;
     border-top: 3px solid #FBBD08;
@@ -3038,6 +3051,7 @@ body {
     height: 65%;
     background-image: url("../img/places/lassi.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.90; }
   .box-11_lower {
     padding: 1.3rem;
@@ -3048,7 +3062,8 @@ body {
     width: 100%;
     height: 65%;
     background-image: url("../img/places/bakery.jpg");
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .box-12_lower {
     padding: 1.3rem;
     border-top: 3px solid #FBBD08;
@@ -3059,6 +3074,7 @@ body {
     height: 65%;
     background-image: url("../img/places/lazeez.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-13_lower {
     padding: 1.3rem;
@@ -3070,6 +3086,7 @@ body {
     height: 65%;
     background-image: url("../img/places/moti-mahal.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.90; }
   .box-14_lower {
     padding: 1.3rem;
@@ -3081,6 +3098,7 @@ body {
     height: 65%;
     background-image: url("../img/places/yochina.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.9; }
   .box-15_lower {
     padding: 1.3rem;
@@ -3092,6 +3110,7 @@ body {
     height: 65%;
     background-image: url("../img/places/gopals.jpg");
     background-size: cover;
+    background-position: center;
     opacity: 0.85; }
   .box-16_lower {
     padding: 1.3rem;
@@ -3462,7 +3481,6 @@ body {
   border-radius: 1000px;
   cursor: pointer;
   margin-top: 5.5rem;
-  //Comment
   margin-right: 2rem; }
 
 .menu {
