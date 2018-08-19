@@ -33,7 +33,11 @@ body{
   margin-right: 10rem;}
  }
   &-caption{
-    font-size:1.5rem;  }
+    font-size:1.5rem;
+    @media screen and (max-width: 600px){
+        font-size: 1.25rem;
+    }
+  }
 
   &:hover{
     border-radius: 0.5rem;
@@ -974,11 +978,11 @@ background-color: white;
 
 .bottom-bar{
   @media screen and(max-width:600px){
-
     background-color: white;
     position: fixed;
-    bottom: 0;
-    z-index: 900;
+    height: 10.5vh;
+    top: 89.75vh;
+    z-index: 100;
     &__icon{
       width: 20%;
       margin: 0;
