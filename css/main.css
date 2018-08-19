@@ -3517,7 +3517,7 @@ body {
     background-color: white;
     position: fixed;
     height: 10.5vh;
-    top: 89.75vh;
+    bottom: 0;
     z-index: 100; }
     .bottom-bar__icon {
       width: 20%;
