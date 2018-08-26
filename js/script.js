@@ -2192,14 +2192,14 @@ $(".societies__cards--adv-club").click(function (){
    $(".div3-title").html('Microsoft Student Chapter');
     $(".div3-events-1").html('Odd Semester : MS Week');
     $(".div3-events-2").html('Even Semester : Inspirus');
-    $(".div3-events-3").html('Even Semester : Rumble');
-    $(".div3-events-4").html('');
+    $(".div3-events-3").html('28th August: Techmeet 18');
+    $(".div3-events-4").html('29-30th August: Recruitments');
     $(".div3-about").css('height','50%');
     $(".div3-about").html("Microsoft Student chapter was formed in lieu of providing students the appropriate platform for cultivating technical skills and a spirit of teamwork. The vision is to create a community of computer enthusiasts with a mindset of development. Interaction with each other and seniors play an important role in the growth of a students knowledge of a topic. Various constructive ideas are shared regarding the technical space. <span class='hide-small-desktop'>The society encourages sequential and systematic learning with a belief of staying updated with new technologies and therefore organises many workshops on current scenario computer related concepts.</span>");
     $(".div3-contact-1").html('Tanuj Vishnoi : 8437593296');
     $(".div3-contact-2").html('');
-    $(".div3-contact-link").html('FB/msctiet');
-    $(".div3-contact-link").attr('href','https://facebook.com/msctiet');
+    $(".div3-contact-link").html('https://www.msctiet.co.in/');
+    $(".div3-contact-link").attr('href','https://www.msctiet.co.in/');
     $(".societies__modal--bg").animate({opacity : "1"});
            $(".dont-go").css('display','block');
     $(".societies__modal--bg").css("z-index","100");
