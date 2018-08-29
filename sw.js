@@ -1,58 +1,8 @@
-var CACHE_STATIC_NAME= 'static-v4';
-var CACHE_DYNAMIC_NAME= 'dynamic-v4';
+var CACHE_STATIC_NAME= 'static-v5';
+var CACHE_DYNAMIC_NAME= 'dynamic-v5';
   self.addEventListener('install',function(event){
   console.log('[Service Worker] Installing Service Worker ...',event);
-  event.waitUntil(
-    caches.open(CACHE_STATIC_NAME)
-     .then(function(cache){
-       console.log('[Service Worker] Precaching App Shell');
-       cache.addAll([
-         // '/',
-         // '/index.html',
-         // 'https://fonts.googleapis.com/css?family=Raleway',
-         // '/offline.html',
-         // '/pages/coming-up.html',
-         // '/pages/first-year.html',
-         // '/pages/gpa.html',
-         // '/pages/second-year.html',
-         // '/pages/societies.html',
-         // '/pages/time-table.html',
-         // '/pages/wifi.html',
-         // '/pages/streams/biotech.html',
-         // '/pages/streams/chemical.html',
-         // '/pages/streams/civil.html',
-         // '/pages/streams/computer.html',
-         // '/pages/streams/ece.html',
-         // '/pages/streams/electrical.html',
-         // '/pages/streams/electronics.html',
-         // '/pages/streams/enc.html',
-         // '/pages/streams/mech.html',
-         // '/pages/streams/mechatronics.html',
-         // '/pages/streams/production.html',
-         // '/pages/subjects/first-year/chem.html',
-         // '/pages/subjects/first-year/com.html',
-         // '/pages/subjects/first-year/cs1.html',
-         // '/pages/subjects/first-year/cs2.html',
-         // '/pages/subjects/first-year/draw1.html',
-         // '/pages/subjects/first-year/draw2.html',
-         // '/pages/subjects/first-year/electrical.html',
-         // '/pages/subjects/first-year/electronics.html',
-         // '/pages/subjects/first-year/env.html',
-         // '/pages/subjects/first-year/maths1.html',
-         // '/pages/subjects/first-year/maths2.html',
-         // '/pages/subjects/first-year/mech.html',
-         // '/pages/subjects/first-year/phy.html',
-         // '/css/main.css',
-         // '/css/timet.css',
-         // '/img/icons/arrow.png',
-         // '/img/icons/navHovD.png',
-         //
-         // '/js/script.js',
-         // '/js/Scrollify-master/jquery.scrollify.js',
-         // '/js/subjectsMenu.js'
-       ]);
-     })
-   )
+
 });
 
 self.addEventListener('activate',function(event){
