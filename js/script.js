@@ -2558,4 +2558,5 @@ $(".category-delivery").click(function (){
       scrollTop: $('.container').offset().top -1000
     }, 1000);
 });
+
 });

@@ -665,13 +665,13 @@
     -webkit-background-clip: text;
     color: transparent; }
   .btn__landing--first-year--text {
-    background-image: linear-gradient(to right, #5172FE 10%, #5990FD, #7ACAFE 40%, #CE93FF, #A452D2, #9645FA); }
+    background-image: linear-gradient(to right, #5172fe 10%, #5990fd, #7acafe 40%, #ce93ff, #a452d2, #9645fa); }
   .btn__landing--second-year--text {
-    background-image: linear-gradient(to right, #FF463B, #FE5D38, #FB9D34 30%, #FFC338, #FCFC3D); }
+    background-image: linear-gradient(to right, #ff463b, #fe5d38, #fb9d34 30%, #ffc338, #fcfc3d); }
   @media screen and (max-width: 900px) {
     .btn__landing {
       margin-top: 2rem;
-      background-color: #F9F7F6; } }
+      background-color: #f9f7f6; } }
 
 .btn__more {
   background-color: rgba(225, 225, 225, 0.8);
@@ -741,6 +741,11 @@
     background-color: #944743; }
     .btn__stream--pink-dark:hover {
       color: #944743;
+      background-color: #eee; }
+  .btn__stream--pink-light {
+    background-color: #FF9991; }
+    .btn__stream--pink-light:hover {
+      color: #FF9991;
       background-color: #eee; }
   .btn__stream--yellow {
     background-color: #ed9302; }
@@ -1315,6 +1320,48 @@
   background-color: #713633; }
   .btn__subject--pink-dark-ppr:hover {
     color: #713633;
+    background-color: black; }
+
+.btn__subject--pink-light-site {
+  background-color: #ff8178; }
+  .btn__subject--pink-light-site:hover {
+    color: #ff8178;
+    background-color: black; }
+
+.btn__subject--pink-light-syllabus {
+  background-color: #ffb1ab; }
+  .btn__subject--pink-light-syllabus:hover {
+    color: #ffb1ab;
+    background-color: black; }
+
+.btn__subject--pink-light-books {
+  background-color: #ffc8c4; }
+  .btn__subject--pink-light-books:hover {
+    color: #ffb1ab;
+    background-color: black; }
+
+.btn__subject--pink-light-notes {
+  background-color: #ffb1ab; }
+  .btn__subject--pink-light-notes:hover {
+    color: #ffb1ab;
+    background-color: black; }
+
+.btn__subject--pink-light-tut {
+  background-color: #FF9991; }
+  .btn__subject--pink-light-tut:hover {
+    color: #FF9991;
+    background-color: black; }
+
+.btn__subject--pink-light-tut-soln {
+  background-color: #FF9991; }
+  .btn__subject--pink-light-tut-soln:hover {
+    color: #FF9991;
+    background-color: black; }
+
+.btn__subject--pink-light-ppr {
+  background-color: #ff6a5e; }
+  .btn__subject--pink-light-ppr:hover {
+    color: #ff6a5e;
     background-color: black; }
 
 .btn-invert {
