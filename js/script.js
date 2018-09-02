@@ -1946,7 +1946,7 @@ $(".societies__cards--tumun").click(function (){
    $(".div3-title").html('Thapar MUN Society');
    $(".div3-events").css('display','flex');
    $(".div3-about").css('height','50%');
-   $(".div3-events-1").html('30th August : Orietation : TAN Audi : 5:30 PM');
+   $(".div3-events-1").html('5th Semptember : Orietation : TAN Audi : 5:30 PM');
    $(".div3-events-2").html('6th - 7th October : Intra MUN : Thapar Campus : 5:30 PM');
    $(".div3-events-3").html('');
    $(".div3-events-4").html('');
