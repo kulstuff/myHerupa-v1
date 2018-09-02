@@ -1497,7 +1497,7 @@
     background-color: #eee;
     box-shadow: 0 2rem 3rem rgba(1, 1, 1, 0.2);
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
