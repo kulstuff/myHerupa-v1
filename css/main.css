@@ -1902,6 +1902,14 @@ body {
       background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/societies/visual-bulletin.jpg"); }
     .societies__cards--youthunited {
       background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/societies/youthunited.jpg"); }
+    .societies__cards--urja {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/societies/urja.png"); }
+    .societies__cards--saturnalia {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/societies/saturnalia.jpg"); }
+    .societies__cards--virsa {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/societies/virsa.jpg"); }
+    .societies__cards--spades {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url("../img/societies/spades.jpg"); }
     .societies__cards--contact-us {
       background-color: black; }
     .societies__cards--content {
@@ -1966,7 +1974,8 @@ body {
       background-image: url("../img/societies/CCS/two.jpg");
       background-position: center;
       height: 100%;
-      transition: all .3s; }
+      transition: all .3s;
+      background-size: cover; }
     .div1-pic-text {
       position: absolute;
       top: 50%;

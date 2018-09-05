@@ -105,6 +105,25 @@
         &--youthunited{
             background-image: linear-gradient(rgba(black,0.67),rgba(black,0.67)), url('../img/societies/youthunited.jpg');
         }
+        &--urja
+        {
+            background-image: linear-gradient(rgba(black,0.67),rgba(black,0.67)), url('../img/societies/urja.png');
+        }
+
+        &--saturnalia
+        {
+            background-image: linear-gradient(rgba(black,0.67),rgba(black,0.67)), url('../img/societies/saturnalia.jpg');
+        }
+
+        &--virsa
+        {
+            background-image: linear-gradient(rgba(black,0.67),rgba(black,0.67)), url('../img/societies/virsa.jpg');
+        }
+
+        &--spades
+        {
+            background-image: linear-gradient(rgba(black,0.67),rgba(black,0.67)), url('../img/societies/spades.jpg');
+        }
         &--contact-us{
             background-color: rgba(black,1);
         }
@@ -178,12 +197,13 @@
         &:hover &-text{
             opacity: 1;
         }
-    
+
         &-img{
             background-image: url('../img/societies/CCS/two.jpg');
             background-position: center;
             height: 100%;
             transition: all .3s;
+            background-size: cover;
         }
         &-text{
         position: absolute;
@@ -214,7 +234,7 @@
         &:hover &-text{
             opacity: 1;
         }
-    
+
         &-img-1,&-img-2{
             background-image: url('../img/societies/CCS/three.jpg');
             background-position: center;
