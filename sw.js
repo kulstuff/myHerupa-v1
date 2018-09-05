@@ -1,5 +1,5 @@
-var CACHE_STATIC_NAME= 'static-v6';
-var CACHE_DYNAMIC_NAME= 'dynamic-v6';
+var CACHE_STATIC_NAME= 'static-v7';
+var CACHE_DYNAMIC_NAME= 'dynamic-v7';
   self.addEventListener('install',function(event){
   console.log('[Service Worker] Installing Service Worker ...',event);
 
@@ -30,14 +30,6 @@ self.addEventListener('fetch',function(event){
       }else{
         return fetch(event.request);
 
-          .catch(function(err){
-              return caches.open(CACHE_STATIC_NAME)
-               .then(function(cache){
-                if(event.request.headers.get('accept').includes('text/html')){
-                   return cache.match('/offline.html');
-               }
-              });
-          });
       }
     })
   );
