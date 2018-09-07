@@ -37,7 +37,14 @@ if('serviceWorker' in navigator){
   console.log(err);
 });
 }
-
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.getRegistrations()
+  .then(function(registrations){
+    for(var i=0;i<registrations.length; i++){
+      registrations[i].unregister();
+    }
+  })
+}
 
 $(document).ready(function(){
 
