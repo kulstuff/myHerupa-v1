@@ -11,7 +11,7 @@
 .instructions {
   position: absolute;
   left: 50%;
-  top: 88.5%;
+  top: 70.5%;
   -webkit-filter: drop-shadow(5px 5px 5px #222 );
   filter: drop-shadow(5px 5px 5px #222);
   transform: translate3d(-50%, 0, 0);
