@@ -3,12 +3,6 @@
     width:100%;
     background-color: rgba(42, 36, 36, 0.8);
     transition: all .3s;
-    @media screen and (max-width: 600px){
-      height: 80vh;
-    }
-    @media screen and (min-width: 800px){
-      height: 90vh;
-    }
 
 
   &:target{
@@ -105,7 +99,7 @@
     font-size: 12rem;
     font-family: 'Raleway', sans-serif;
     position: absolute;
-    top:67vh;
+    top:97vh;
     left: auto;
   }
 
@@ -116,19 +110,10 @@
 .video{
   background-color:#FF951F;
   text-align:center;
-  padding:1rem;
-  // position: absolute;
+  position: absolute;
   width: 100%;
-  z-index: 0;
+  padding:1rem;
   box-shadow:0 0 0.5rem rgba(1, 1, 1, 0.2);
-
-  @media screen and (max-width: 600px){
-    height: 20vh;
-  }
-  @media screen and (min-width: 800px){
-    line-height: 7vh;
-    height: 10vh;
-  }
 
   &-text{
     font-size:2.5rem;
