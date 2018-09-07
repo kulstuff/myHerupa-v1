@@ -1489,6 +1489,12 @@
   width: 100%;
   background-color: rgba(42, 36, 36, 0.8);
   transition: all .3s; }
+  @media screen and (max-width: 600px) {
+    .popup {
+      height: 80vh; } }
+  @media screen and (min-width: 800px) {
+    .popup {
+      height: 90vh; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -1567,7 +1573,16 @@
   background-color: #FF951F;
   text-align: center;
   padding: 1rem;
+  width: 100%;
+  z-index: 0;
   box-shadow: 0 0 0.5rem rgba(1, 1, 1, 0.2); }
+  @media screen and (max-width: 600px) {
+    .video {
+      height: 20vh; } }
+  @media screen and (min-width: 800px) {
+    .video {
+      line-height: 7vh;
+      height: 10vh; } }
   .video-text {
     font-size: 2.5rem;
     font-family: 'Raleway', sans-serif;
