@@ -3,6 +3,12 @@
     width:100%;
     background-color: rgba(42, 36, 36, 0.8);
     transition: all .3s;
+    @media screen and (max-width: 600px){
+      height: 80vh;
+    }
+    @media screen and (min-width: 800px){
+      height: 90vh;
+    }
 
 
   &:target{
@@ -111,7 +117,18 @@
   background-color:#FF951F;
   text-align:center;
   padding:1rem;
+  // position: absolute;
+  width: 100%;
+  z-index: 0;
   box-shadow:0 0 0.5rem rgba(1, 1, 1, 0.2);
+
+  @media screen and (max-width: 600px){
+    height: 20vh;
+  }
+  @media screen and (min-width: 800px){
+    line-height: 7vh;
+    height: 10vh;
+  }
 
   &-text{
     font-size:2.5rem;
