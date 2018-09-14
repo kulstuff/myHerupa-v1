@@ -66,8 +66,7 @@ $(document).ready(function(){
         //Atomic Structure
         subjectAlias.set('Elements, Compounds and Mixtures','Elements, Compounds and Mixtures');
         subjectAlias.set('Class 10 Science - Chemistry - Physical & Chemical Changes','Physical & Chemical Changes');
-    
-    
+
     // Youtube API Setup Starts
     var key = 'AIzaSyDx4VTk6azBY48eGwkYkpLQXdPxmCLuLLg';
     var channelId = 'UCqH46ioeOAHPjveiJb3R0rg';
