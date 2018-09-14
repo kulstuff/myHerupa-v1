@@ -2530,13 +2530,16 @@ $(".societies__cards--adv-club").click(function (){
 
 $("#parent").mouseup(function(e)
     {
+        alert("Yo");
         var subject = $("#child");
         if(e.target.id != subject.attr('id') && !subject.has(e.target).length)
         {
             $(".societies__modal--bg").animate({opacity : "0"});
             $(".societies__modal--bg").css("z-index","-100");
+
         }
     });
+    
 $(".societies__nav--sort-travel").click( function(){
 
     $("div:not(.travel)").css('display','none');

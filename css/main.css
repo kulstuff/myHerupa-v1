@@ -3636,6 +3636,8 @@ body {
       margin: 0;
       padding: .25rem; } }
 
+.sArrow {
+  font-size: 5rem; }
 
 .vlec__frame {
   height: 100%;
@@ -3648,7 +3650,7 @@ body {
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.15); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .vlec__child {
   font-size: 19rem;
@@ -3662,7 +3664,6 @@ body {
 
 .vlec__heading {
   padding-left: 2.5rem; }
-
 
 .vlec--yellow {
   overflow-x: hidden;
@@ -3680,14 +3681,16 @@ body {
 
 .vlec__section {
   width: 100%;
+  white-space: nowrap;
   height: 100%;
   padding-bottom: 2rem;
   overflow-x: scroll;
   background-color: black;
   margin-top: 5vh;
   white-space: nowrap;
-  overflow: visible; }
+  z-index: 3; }
   .vlec__section__head {
+    overflow: visible;
     text-align: center;
     margin-left: 2.5vw;
     color: white; }
