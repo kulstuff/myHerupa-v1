@@ -1,6 +1,13 @@
-//Combine with the main script
+// //Combine with the main script
 $(document).ready(function(){
 
+    function getModal(key) {
+      $('#parent').fadeIn();
+      var embedFrame = document.createElement('iframe');
+      embedFrame.className = 'vlec__frame';
+      embedFrame.setAttribute('src', key);
+      $('#child').append(embedFrame);
+    }
 
     var subjects = new Map();
         subjects.set('AppChem' , 'Applied Chemistry');
@@ -67,6 +74,7 @@ $(document).ready(function(){
         subjectAlias.set('Elements, Compounds and Mixtures','Elements, Compounds and Mixtures');
         subjectAlias.set('Class 10 Science - Chemistry - Physical & Chemical Changes','Physical & Chemical Changes');
 
+
     // Youtube API Setup Starts
     var key = 'AIzaSyDx4VTk6azBY48eGwkYkpLQXdPxmCLuLLg';
     var channelId = 'UCqH46ioeOAHPjveiJb3R0rg';
@@ -123,7 +131,37 @@ $(document).ready(function(){
         newSection.className = 'vlec__section';
         newSection.append(textNodeWrapper);
         $('body').append(newSection);
+
+        var speed = 0;
+        var scroll = 0;
+        var container = $('.vlec__section');
+        var container_w = container.width();
+        var max_scroll = container[0].scrollWidth - container.outerWidth();
+
+        container.on('mousemove', function(e) {
+          console.log(2);
+          var mouse_x = e.pageX - container.offset().left;
+          var mouseperc = 100 * mouse_x / container_w;
+          speed = mouseperc - 50;
+        }).on ( 'mouseleave', function() {
+          speed = 0;
+        });
+
+        function updatescroll() {
+          if (speed !== 0) {
+            scroll += speed / 5;
+            if (scroll < 0) scroll = 0;
+            if (scroll > max_scroll) scroll = max_scroll;
+            $('.vlec__section').scrollLeft(scroll);
+          }
+          $("#speed").html('Speed: ' + speed);
+          $("#scroll").html('Scroll: ' + scroll);
+
+          window.requestAnimationFrame(updatescroll);
+        }
+        window.requestAnimationFrame(updatescroll);
         $('.vlec__section').css("background-color", 'black');
+
         var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
         var options = {
             part: 'snippet',
@@ -136,6 +174,7 @@ $(document).ready(function(){
             data.items.forEach(function(element, j = 1){
               console.log(element.snippet.title);
               var newElement = document.createElement('div');
+              newElement.onclick = 'getModal()';
               numString = 'vlec__section__grid__element__' + (i) + '__' + (j+1);
               newElement.className = 'vlec__section__grid__element ' + numString;
               var thumbnailURI = element.snippet.thumbnails.maxres.url;
@@ -147,8 +186,17 @@ $(document).ready(function(){
               //newElement.style.backgroundColor = 'rgb(79, 132, 196)';
               // newElement.style.backgroundSize = 'cover';
               // newElement.style.backgroundPosition = 'center';
+              console.log(679);
               newSection.append(newElement);
+
               j++;
+
+              $(newElement).click(function(){
+                var key = 'http://www.youtube.com/embed/videoseries?list=' + playlistId + '&index=' + (j);
+                getModal(key);
+                // http://www.youtube.com/embed/videoseries?list=PL9C5815B418D1508E&index=7
+              });
+
 
               $('.vlec__section__grid__element__1__1').mouseenter(function(){
                 $('.vlec__section__grid__element__1__1').css("margin-left", "5vw");
@@ -470,7 +518,6 @@ $(document).ready(function(){
 
 
 //2
-
 
               $('.vlec__section__grid__element__2__1').mouseenter(function(){
                 $('.vlec__section__grid__element__2__1').css("margin-left", "5vw");
@@ -3083,6 +3130,7 @@ $(document).ready(function(){
     var playlists = {
       'Applied Chemistry' : NULL
     }
+
 
     //Replace the following Data Structures with Maps
 
