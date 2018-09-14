@@ -20,7 +20,7 @@ $(document).ready(function(){
         subjects.set('ProfComm' , 'Professional Communication');
         subjects.set('CompOne' , 'Computer Programming 1');
         subjects.set('CompTwo' , 'Computer Programming 2');
-        subjects.set('DevBio' , 'DevelopmentBiology');
+        subjects.set('DevBio' , 'Development Biology');
         subjects.set('EngDraw' , 'Engineering Drawing');
         subjects.set('EngDes' , 'Engineering Design');
         subjects.set('EleEng' , 'Electrical Engineering');
@@ -124,7 +124,7 @@ $(document).ready(function(){
         textNode.innerHTML = ('' + colNode);
         textNode.style.color = bgCol;
         var textNodeWrapper = document.createElement('div');
-        textNodeWrapper.className = 'vlec__section__head';
+        textNodeWrapper.className = 'vlec__section__head display4';
         textNodeWrapper.innerHTML = whiteNode;
         textNodeWrapper.append(textNode);
         var newSection = document.createElement('div');
@@ -160,8 +160,8 @@ $(document).ready(function(){
           window.requestAnimationFrame(updatescroll);
         }
         window.requestAnimationFrame(updatescroll);
+        $('.vlec__section').css("background-color", 'black');
 
-        $('.vlec__section').css("background-color", '#eee');
         var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
         var options = {
             part: 'snippet',
@@ -179,7 +179,11 @@ $(document).ready(function(){
               newElement.className = 'vlec__section__grid__element ' + numString;
               var thumbnailURI = element.snippet.thumbnails.maxres.url;
               console.log(thumbnailURI);
-              // newElement.style.backgroundImage = 'linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(' + thumbnailURI + ')';
+              var newElementText = document.createElement('h1');
+              newElementText.innerHTML=  'Random text';
+              newElementText.className = 'videotitle display5';
+              newElement.append(newElementText);
+              //newElement.style.backgroundColor = 'rgb(79, 132, 196)';
               // newElement.style.backgroundSize = 'cover';
               // newElement.style.backgroundPosition = 'center';
               console.log(679);
