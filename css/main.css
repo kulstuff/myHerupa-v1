@@ -3624,6 +3624,32 @@ body {
       margin: 0;
       padding: .25rem; } }
 
+.sArrow {
+  font-size: 5rem; }
+
+.vlec__frame {
+  height: 100%;
+  width: 100%; }
+
+.vlec__parent {
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.vlec__child {
+  font-size: 19rem;
+  height: 75vh;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: whitesmoke; }
+
 .vlec--yellow {
   overflow-x: hidden;
   background-color: #eee; }
@@ -3639,14 +3665,15 @@ body {
   font-size: 8rem; }
 
 .vlec__section {
-  width: 500%;
+  width: 100%;
+  white-space: nowrap;
   height: 45vh;
   max-height: 45vh;
   overflow-x: scroll;
   background-color: red;
   background-color: #ed9302;
   margin-top: 25vh;
-  overflow: visible; }
+  z-index: 3; }
   .vlec__section__head {
     font-size: 12rem;
     margin-left: 2.5vw;
