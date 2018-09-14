@@ -190,7 +190,7 @@ $(document).ready(function(){
               j++;
 
               $(newElement).click(function(){
-                var key = 'http://www.youtube.com/embed/videoseries?list=' + playlistId + '&index=' + (j);
+                var key = 'https://www.youtube.com/embed/videoseries?list=' + playlistId + '&index=' + (j);
                 getModal(key);
                 // http://www.youtube.com/embed/videoseries?list=PL9C5815B418D1508E&index=7
               });
