@@ -1,12 +1,23 @@
 // //Combine with the main script
 $(document).ready(function(){
-
+  $("#vlec_parent").mouseup(function(e)
+  {
+      var subject = $("#vlec_child");
+      if(e.target.id != subject.attr('id') && !subject.has(e.target).length)
+      {
+          $(".vlec__child").css('display','none');
+          $(".vlec__parent").css('display','none');
+          
+      }
+  });
     function getModal(key) {
-      $('#parent').fadeIn();
+      $(".vlec__parent").css('display','block');
+      $(".vlec__child").css('display','block');
+      $('#vlec_parent').fadeIn();
       var embedFrame = document.createElement('iframe');
       embedFrame.className = 'vlec__frame';
       embedFrame.setAttribute('src', key);
-      $('#child').append(embedFrame);
+      $('#vlec_child').append(embedFrame);
     }
 
     var subjects = new Map();
