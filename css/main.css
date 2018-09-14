@@ -3636,6 +3636,9 @@ body {
       margin: 0;
       padding: .25rem; } }
 
+.vlec__heading {
+  padding-left: 2.5rem; }
+
 .vlec--yellow {
   overflow-x: hidden;
   background-color: #eee; }
@@ -3648,26 +3651,27 @@ body {
   background-color: rgba(255, 255, 255, 0.3); }
 
 .vlec__title {
-  font-size: 8rem; }
+  padding: 1rem; }
 
 .vlec__section {
-  width: 500%;
-  height: 45vh;
-  max-height: 45vh;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
   overflow-x: scroll;
-  background-color: red;
-  background-color: #ed9302;
-  margin-top: 25vh;
+  background-color: black;
+  margin-top: 5vh;
+  white-space: nowrap;
   overflow: visible; }
   .vlec__section__head {
-    font-size: 12rem;
+    text-align: center;
     margin-left: 2.5vw;
     color: white; }
     .vlec__section__head > span {
-      font-size: 11rem; }
+      font-size: inherit; }
   .vlec__section__grid__element {
-    font-size: 2rem;
+    display: inline-block;
     transition: 0.25s;
+    position: relative;
     text-align: center;
     display: inline-block;
     margin-top: 1.5vh;
@@ -3675,12 +3679,26 @@ body {
     height: 32vh;
     width: 27.5vw;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
-    border-radius: 2% 0% 0% 0% / 20% 0% 0% 0%;
-    border-radius: 0.75rem;
     background-color: whitesmoke; }
+    @media screen and (max-width: 1024px) {
+      .vlec__section__grid__element {
+        height: 20vh;
+        width: 50%; } }
+    @media screen and (max-width: 600px) {
+      .vlec__section__grid__element {
+        height: 45vw;
+        width: 85%; } }
     .vlec__section__grid__element > span {
       top: 50%;
       transform: translate3d(0, -50%, 0); }
+
+.videotitle {
+  width: 100%;
+  white-space: normal;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 /*Grid System with Media Query*/
 .col {

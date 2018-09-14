@@ -66,11 +66,7 @@ $(document).ready(function(){
         //Atomic Structure
         subjectAlias.set('Elements, Compounds and Mixtures','Elements, Compounds and Mixtures');
         subjectAlias.set('Class 10 Science - Chemistry - Physical & Chemical Changes','Physical & Chemical Changes');
-    //Mahematics 1
-      //Fuels
-      subjectAlias('The Chain Rule', 'Chain Rule')  ;
-      subjectAlias('Chain Rule Examples', 'Chain Rule Examples');
-      subjectAlias('Even More Chain Rule', 'Even More Chain Rule');
+
     // Youtube API Setup Starts
     var key = 'AIzaSyDx4VTk6azBY48eGwkYkpLQXdPxmCLuLLg';
     var channelId = 'UCqH46ioeOAHPjveiJb3R0rg';
@@ -120,14 +116,14 @@ $(document).ready(function(){
         textNode.innerHTML = ('' + colNode);
         textNode.style.color = bgCol;
         var textNodeWrapper = document.createElement('div');
-        textNodeWrapper.className = 'vlec__section__head';
+        textNodeWrapper.className = 'vlec__section__head display4';
         textNodeWrapper.innerHTML = whiteNode;
         textNodeWrapper.append(textNode);
         var newSection = document.createElement('div');
         newSection.className = 'vlec__section';
         newSection.append(textNodeWrapper);
         $('body').append(newSection);
-        $('.vlec__section').css("background-color", '#eee');
+        $('.vlec__section').css("background-color", 'black');
         var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
         var options = {
             part: 'snippet',
@@ -144,7 +140,11 @@ $(document).ready(function(){
               newElement.className = 'vlec__section__grid__element ' + numString;
               var thumbnailURI = element.snippet.thumbnails.maxres.url;
               console.log(thumbnailURI);
-              // newElement.style.backgroundImage = 'linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(' + thumbnailURI + ')';
+              var newElementText = document.createElement('h1');
+              newElementText.innerHTML=  'Random text';
+              newElementText.className = 'videotitle display5';
+              newElement.append(newElementText);
+              //newElement.style.backgroundColor = 'rgb(79, 132, 196)';
               // newElement.style.backgroundSize = 'cover';
               // newElement.style.backgroundPosition = 'center';
               newSection.append(newElement);
