@@ -2410,7 +2410,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div1-pic-img").css('background-image',"url('../img/societies/toastmasters/two.jpg')");
     $(".div1-pic-text").html('<hr style="margin:1rem;">Toast Tussle<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/toastmasters/three.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Taost Tussle<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Toast Tussle<hr style="margin:1rem;">');
     $(".div2-pic-img-2").css('background-image',"url('../img/societies/toastmasters/four.jpg')");
     $(".div2-pic-text-2").html('<hr style="margin:1rem;">Toast Talks<hr style="margin:1rem;">');
     $(".div3-title").html('Toastmasters TU');
@@ -2435,7 +2435,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div1-pic-img").css('background-image',"url('../img/societies/urja/2.jpg')");
     $(".div1-pic-text").html('<hr style="margin:1rem;">Football<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/urja/3.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Atheletics<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Badminton<hr style="margin:1rem;">');
     $(".div2-pic-img-2").css('background-image',"url('../img/societies/urja/4.jpg')");
     $(".div2-pic-text-2").html('<hr style="margin:1rem;">Sport Fest<hr style="margin:1rem;">');
     $(".div3-title").html('Urja');
@@ -2482,11 +2482,11 @@ $(".societies__cards--adv-club").click(function (){
  $(".societies__cards--spades").click(function (){
     $(".div1-logo").css('background-image',"url('../img/societies/spades/1.jpg')");
     $(".div1-pic-img").css('background-image',"url('../img/societies/spades/2.jpg')");
-    $(".div1-pic-text").html('<hr style="margin:1rem;">Toast Tussle<hr style="margin:1rem;">');
+    $(".div1-pic-text").html('<hr style="margin:1rem;">Basketball<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/spades/3.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Taost Tussle<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Badminton<hr style="margin:1rem;">');
     $(".div2-pic-img-2").css('background-image',"url('../img/societies/spades/4.jpg')");
-    $(".div2-pic-text-2").html('<hr style="margin:1rem;">Toast Talks<hr style="margin:1rem;">');
+    $(".div2-pic-text-2").html('<hr style="margin:1rem;">VolleyBall<hr style="margin:1rem;">');
     $(".div3-title").html('Spades TU');
     $(".div3-events").css('display','flex');
     $(".div3-events-1").html('Spades tournament');
@@ -2508,9 +2508,9 @@ $(".societies__cards--adv-club").click(function (){
     $(".div1-pic-img").css('background-image',"url('../img/societies/virsa/2.jpg')");
     $(".div1-pic-text").html('<hr style="margin:1rem;">Bhangra<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/virsa/3.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Taost Tussle<hr style="margin:1rem;">');
-    $(".div2-pic-img-2").css('background-image',"url('../img/societies/virsa/four.jpg')");
-    $(".div2-pic-text-2").html('<hr style="margin:1rem;">Toast Talks<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Ethnic Fashion<hr style="margin:1rem;">');
+    $(".div2-pic-img-2").css('background-image',"url('../img/societies/virsa/4.jpg')");
+    $(".div2-pic-text-2").html('<hr style="margin:1rem;">Musical Night<hr style="margin:1rem;">');
     $(".div3-title").html('Virsa TU');
    $(".div3-events").css('display','flex');
    $(".div3-events-1").html('Virsa event');
