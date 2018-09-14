@@ -71,7 +71,6 @@ $(document).ready(function(){
       subjectAlias('The Chain Rule', 'Chain Rule')  ;
       subjectAlias('Chain Rule Examples', 'Chain Rule Examples');
       subjectAlias('Even More Chain Rule', 'Even More Chain Rule');
-      subjectAlias('')
     // Youtube API Setup Starts
     var key = 'AIzaSyDx4VTk6azBY48eGwkYkpLQXdPxmCLuLLg';
     var channelId = 'UCqH46ioeOAHPjveiJb3R0rg';
