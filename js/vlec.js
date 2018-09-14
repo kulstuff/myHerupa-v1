@@ -13,7 +13,7 @@ $(document).ready(function(){
         subjects.set('ProfComm' , 'Professional Communication');
         subjects.set('CompOne' , 'Computer Programming 1');
         subjects.set('CompTwo' , 'Computer Programming 2');
-        subjects.set('DevBio' , 'DevelopmentBiology');
+        subjects.set('DevBio' , 'Development Biology');
         subjects.set('EngDraw' , 'Engineering Drawing');
         subjects.set('EngDes' , 'Engineering Design');
         subjects.set('EleEng' , 'Electrical Engineering');
@@ -66,7 +66,12 @@ $(document).ready(function(){
         //Atomic Structure
         subjectAlias.set('Elements, Compounds and Mixtures','Elements, Compounds and Mixtures');
         subjectAlias.set('Class 10 Science - Chemistry - Physical & Chemical Changes','Physical & Chemical Changes');
-
+    //Mahematics 1
+      //Fuels
+      subjectAlias('The Chain Rule', 'Chain Rule')  ;
+      subjectAlias('Chain Rule Examples', 'Chain Rule Examples');
+      subjectAlias('Even More Chain Rule', 'Even More Chain Rule');
+      subjectAlias('')
     // Youtube API Setup Starts
     var key = 'AIzaSyDx4VTk6azBY48eGwkYkpLQXdPxmCLuLLg';
     var channelId = 'UCqH46ioeOAHPjveiJb3R0rg';

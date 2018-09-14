@@ -2665,4 +2665,61 @@ $(".category-delivery").click(function (){
     }, 1000);
 });
 
+$(".playlist__video-1").mouseenter(function() {
+    $(".playlist__video-2").animate({
+        width : "10%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+
+$(".playlist__video-2").mouseenter(function() {
+    $(".playlist__video-1").animate({
+        width : "13.3%"
+    });
+    $(".playlist__video-3").animate({
+        width : "13.3%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+
+$(".playlist__video-3").mouseenter(function() {
+    $(".playlist__video-2").animate({
+        width : "13.3%"
+    });
+    $(".playlist__video-4").animate({
+        width : "13.3%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+$(".playlist__video-4").mouseenter(function() {
+    $(".playlist__video-5").animate({
+        width : "13.3%"
+    });
+    $(".playlist__video-6").animate({
+        width : "13.3%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+
+$(".playlist__video-6").mouseenter(function() {
+    $(".playlist__video-5").animate({
+        width : "10%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+$(".playlist__video").mouseleave(function() {
+    $("div").animate({
+        width : "16.66%"
+    });
+});
 });

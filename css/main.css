@@ -1586,6 +1586,18 @@
     .video {
       font-size: 3.5rem; } }
 
+.playlist {
+  text-align: center; }
+  .playlist__video {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem; }
+    .playlist__video-blue {
+      background-color: #4F84C4; }
+
 .landing {
   padding-top: 12rem;
   background-image: url("../img/bg.jpg");
