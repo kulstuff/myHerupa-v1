@@ -14,11 +14,7 @@ $(document).ready(function(){
       $(".vlec__parent").css('display','block');
       $(".vlec__child").css('display','block');
       $('#vlec_parent').fadeIn();
-      var embedFrame = document.createElement('iframe');
-      embedFrame.className = 'vlec__frame';
-      embedFrame.setAttribute('src', key);
-      $('#vlec_child').append(embedFrame);
-      embedFrame = document.getElementById('frame')
+      var embedFrame = document.getElementById('frame')
       embedFrame.setAttribute('src', key);
     }
 
