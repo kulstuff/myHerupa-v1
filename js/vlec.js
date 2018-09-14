@@ -2,11 +2,9 @@
 $(document).ready(function(){
 
     function getModal(key) {
-      $('#parent').fadeIn();
-      var embedFrame = document.createElement('iframe');
-      embedFrame.className = 'vlec__frame';
+      embedFrame = document.getElementById('frame')
       embedFrame.setAttribute('src', key);
-      $('#child').append(embedFrame);
+      $('#parent').fadeIn();
     }
 
     var subjects = new Map();
