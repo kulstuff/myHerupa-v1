@@ -5,6 +5,8 @@ $(document).ready(function(){
       var subject = $("#vlec_child");
       if(e.target.id != subject.attr('id') && !subject.has(e.target).length)
       {
+          var closeFrame = document.getElementById('frame');
+          closeFrame.setAttribute('src', '');
           $(".vlec__child").css('display','none');
           $(".vlec__parent").css('display','none');
 
