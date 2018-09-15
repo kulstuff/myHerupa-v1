@@ -3639,6 +3639,16 @@ body {
 .sArrow {
   font-size: 5rem; }
 
+#frame {
+  width: 100%;
+  height: 100%; }
+
+.vlec__hide {
+  visibility: hidden;
+  max-height: 0vh;
+  transform: scale(0);
+  background-color: red; }
+
 .vlec__frame {
   height: 100%;
   width: 100%; }
@@ -3663,7 +3673,17 @@ body {
   background-color: whitesmoke; }
 
 .vlec__heading {
-  padding-left: 2.5rem; }
+  position: absolute;
+  top: -10vh;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  padding-left: 2.5rem;
+  margin-top: 5vh; }
+  @media screen and (max-width: 400px) {
+    .vlec__heading {
+      position: unset;
+      left: 0;
+      transform: translate3d(0, 0, 0); } }
 
 .vlec--yellow {
   overflow-x: hidden;
@@ -3688,37 +3708,46 @@ body {
   background-color: black;
   margin-top: 5vh;
   white-space: nowrap;
+  overflow-y: hidden;
   z-index: 3; }
+  .vlec__section__heads {
+    width: 3vw;
+    max-width: 10vw; }
   .vlec__section__head {
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
     overflow: visible;
     text-align: center;
     margin-left: 2.5vw;
     color: white; }
     .vlec__section__head > span {
       font-size: inherit; }
-  .vlec__section__grid__element {
-    display: inline-block;
-    transition: 0.25s;
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    margin-top: 1.5vh;
-    margin-left: 2vw;
-    height: 32vh;
-    width: 27.5vw;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
-    background-color: whitesmoke; }
-    @media screen and (max-width: 1024px) {
-      .vlec__section__grid__element {
-        height: 20vh;
-        width: 50%; } }
-    @media screen and (max-width: 600px) {
-      .vlec__section__grid__element {
-        height: 45vw;
-        width: 85%; } }
-    .vlec__section__grid__element > span {
-      top: 50%;
-      transform: translate3d(0, -50%, 0); }
+  .vlec__section__grid {
+    height: 0; }
+    .vlec__section__grid__element {
+      display: inline-block;
+      transition: 0.25s;
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      margin-top: 8vh;
+      margin-left: 2vw;
+      height: 32vh;
+      width: 27.5vw;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+      background-color: whitesmoke; }
+      @media screen and (max-width: 1024px) {
+        .vlec__section__grid__element {
+          height: 20vh;
+          width: 50%; } }
+      @media screen and (max-width: 600px) {
+        .vlec__section__grid__element {
+          height: 45vw;
+          width: 85%; } }
+      .vlec__section__grid__element > span {
+        top: 50%;
+        transform: translate3d(0, -50%, 0); }
 
 .videotitle {
   width: 100%;

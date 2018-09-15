@@ -2530,7 +2530,7 @@ $(".societies__cards--adv-club").click(function (){
 
 $("#parent").mouseup(function(e)
     {
-        alert("Yo");
+        // alert("Yo");
         var subject = $("#child");
         if(e.target.id != subject.attr('id') && !subject.has(e.target).length)
         {

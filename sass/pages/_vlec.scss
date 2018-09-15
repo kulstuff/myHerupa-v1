@@ -8,6 +8,13 @@
 }
 
 .vlec {
+  &__hide{
+    // display: none;
+    visibility: hidden;
+    max-height: 0vh;
+    transform: scale(0);
+    background-color: red;
+  }
   &__frame {
     height: 100%;
     width: 100%;
@@ -24,6 +31,8 @@
   }
   &__child {
     font-size: 19rem;
+    // padding: 2vh;
+    // padding-right: 15vh;
     height: 75vh;
     width: 80vw;
     position: absolute;
@@ -39,7 +48,18 @@
   // }
 
   &__heading {
+    position: absolute;
+    top: -10vh;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
     padding-left: 2.5rem;
+    margin-top: 5vh;
+    @media screen and (max-width: 400px){
+      position: unset;
+      left: 0;
+      transform: translate3d(0, 0, 0);
+      // position: relative;
+    }
   }
   &--yellow {
     overflow-x: hidden;
@@ -61,7 +81,6 @@
   &__section {
     // display: none;
     width: 100%;
-
     white-space: nowrap;
 
     height: 100%;
@@ -74,8 +93,16 @@
     // box-shadow:inset 0px 0px 25px rgba(0,0,0,.5);
 
     // overflow: visible;
+    overflow-y: hidden;
     z-index: 3;
+    &__heads {
+      width: 3vw;
+      max-width: 10vw;
+    }
     &__head {
+      position: absolute;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
       overflow: visible;
       text-align: center;
       margin-left: 2.5vw;
@@ -102,6 +129,7 @@
     //   // }
     // }
     &__grid {
+      height: 0;
       // overflow-x: scroll;
       &__element {
         // line-height: 4rem;
@@ -112,7 +140,7 @@
         text-align: center;
         display: inline-block;
         // transform: translateY(-50%);
-        margin-top: 1.5vh;
+        margin-top: 8vh;
         margin-left: 2vw;
         height: 32vh;
         width: 27.5vw;
