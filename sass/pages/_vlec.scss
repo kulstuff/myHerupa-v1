@@ -54,10 +54,10 @@
     transform: translate3d(-50%, 0, 0);
     padding-left: 2.5rem;
     margin-top: 5vh;
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 700px){
       position: unset;
       left: 0;
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, -20%, 0);
       // position: relative;
     }
   }
@@ -79,6 +79,11 @@
     padding: 1rem;
   }
   &__section {
+    &:nth-child(2){
+      @media screen and (max-width: 700px){
+        margin-top: 2vh;
+      }
+    }
     // display: none;
     width: 100%;
     white-space: nowrap;
