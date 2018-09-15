@@ -3646,7 +3646,6 @@ body {
 .vlec__hide {
   visibility: hidden;
   max-height: 0vh;
-  transform: scale(0);
   background-color: red; }
 
 .vlec__frame {
