@@ -1603,7 +1603,8 @@
   background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: 0 17vh;
-  text-align: center; }
+  text-align: center;
+  height: 100vh; }
   .landing__subtitle {
     padding: 2rem;
     font-weight: 100; }
@@ -1625,7 +1626,8 @@
 .more-stuff {
   background-image: url("../img/bg.jpg");
   background-size: cover;
-  background-position: 0 50vh; }
+  background-position: 0 50vh;
+  height: 100vh; }
   .more-stuff__btn-wrap {
     margin-top: 6rem; }
   .more-stuff__subheading {
