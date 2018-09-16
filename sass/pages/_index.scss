@@ -4,6 +4,8 @@
     background-size: cover;
     background-position: 0 17vh;
     text-align: center;
+    height: 100vh;
+
 
     &__subtitle{
         padding: 2rem;
@@ -37,6 +39,7 @@
     background-image: url('../img/bg.jpg');
     background-size: cover;
     background-position: 0 50vh;
+    height: 100vh;
 
     &__btn-wrap{
         margin-top: 6rem;
