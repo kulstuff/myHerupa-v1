@@ -75,7 +75,6 @@
     />
   </head>
   <body>
-    <div id="bar"></div>
     <a href="http://bit.ly/myherupawhatsapp" target="_blank">
       <i class="fab fa-whatsapp display4 contact-us" title="Contact Us"></i>
     </a>
@@ -181,6 +180,7 @@
     <script src="js/Scrollify-master/jquery.scrollify - copy.js"></script>
     <script src="/promise.js"></script>
     <script src="/fetch.js"></script>
+    <script src="js/pace.js"></script>
 
     <script src="js/script.js"></script>
 
@@ -192,45 +192,7 @@
       }
     </script>
 
-    // <!-- Implements Scrollify -->
-    <script>
-      // function scrollifyClick() {
-      //   $.scrollify.next();
-      // }
-      // $(function() {
-      //   $.scrollify({
-      //     section: ".scr__panel"
-      //   });
-      // });
-      var pg=0; //progress bar width initially
-      document.onreadystatechange = function()
-      {
-        if(document.readyState=="interactive")
-        {
-          var allElem = $("*");
-          var length = allElem.length;
-          for(var i=0;i<length;i++) {
-            set_elem(allElem[i],length);
-          }
-        }
-      }
-
-      function  set_elem(elem,total) {
-        var percent_inc = 100 / total; //equally divide 100 among all elements
-        
-      //if element is loaded
-        if($(elem).length==1) {
-          $('#bar').animate({width:pg+percent_inc+"%"},10,function(){
-            if(document.getElementById("bar").style.width=="100%") {
-              //hide the bar
-              $('#bar').fadeOut(350);
-            }
-          });
-          //update the previous width value 
-          pg = pg+percent_inc;
-        }
-      } 
-    </script>
+    <script src="js/pace.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script

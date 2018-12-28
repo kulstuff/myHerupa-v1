@@ -1,13 +1,9 @@
 @import "variables";
-
 @import "base";
-
 @import "animations";
-
 @import "typography";
 @import "buttons";
 @import "card";
-
 @import "pages/time-table";
 @import "pages/video";
 @import "pages/index";
@@ -21,8 +17,30 @@
 @import "pages/food";
 @import "pages/vlec";
 @import "pages/news";
-
 @import "grid";
 @import "scroll";
-
 @import "menu";
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .pace-inactive {
+    display: none;
+  }
+  
+  .pace .pace-progress {
+    background: lightskyblue;
+    position: fixed;
+    box-shadow: lightblue 0.2rem 0.2rem 5px;
+    z-index: 9000000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+  }
+  

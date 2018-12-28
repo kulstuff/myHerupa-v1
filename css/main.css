@@ -7,17 +7,6 @@
   font-family: 'Raleway', sans-serif;
   color: black; }
 
-  #bar {
-    position: fixed;
-    width:0%;
-    height:3px;
-    box-shadow: yellow 0.2rem 0.2rem 5px;
-    top:0;
-    left:0;
-    z-index:9000000;
-    background: greenyellow;
-  }  
-
 @media screen and (max-width: 900px) {
   .hide-phone {
     display: none; } }
@@ -4070,3 +4059,23 @@ body {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000; }
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: lightskyblue;
+  position: fixed;
+  box-shadow: lightblue 0.2rem 0.2rem 5px;
+  z-index: 9000000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px; }
