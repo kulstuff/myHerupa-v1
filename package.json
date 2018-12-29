@@ -4,8 +4,9 @@
   "description": "Font Used = 'Raleway' Link  = \"https://fonts.googleapis.com/css?family=Raleway\"  Font Used = 'Roboto' Link = \"https://font.google.com/css/css?family=Roboto\" Font Size = 62.5% (10px)",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w",
-    "start": "http-server -c-1 -p 3000"
+    "start-server": "http-server -c-1 -p 3000",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "author": "KulStuff",
   "license": "ISC",
