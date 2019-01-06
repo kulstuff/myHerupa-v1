@@ -1,8 +1,58 @@
 .google-login-box {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0vh;
+    left: 15vw;
     height: 20vh;
-    width: 100%;
-    background-color: red;
+    width: 70vw;
+    // border-bottom: solid black 1px;
+    box-shadow: #eee 0rem 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.login_catch-flyerpane{
+    float: left;
+    margin-top: 0.5%;
+    margin-left: 2%;
+    background-color: #f9f9f9;
+    height: 90%;
+    width: 80%;
+    overflow: scroll;
+    &-side {
+        float: left;
+        display: block;
+        height: 70%;
+        // border-bottom: solid black 1px ;
+        width: 50%;
+        &-heading{
+            text-align: center;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        &-content{
+            text-align: center;
+            width: 100%;
+            padding: 1rem;
+            padding-top: 0.25rem;
+            font-size: 1.75rem;
+        }
+        &-right{
+            border-left: 0.5px solid #eee; 
+        }
+        &-left{
+            border-right: 0.5px solid #eee;
+        }
+    }
+}
+
+.googleSignInButton{
+    display: inline-block;
+    margin-left: 30%;
+}   
+
+.auth_signup{
+    float: left;
+    width: 17%;
+    height: 90%;
 }

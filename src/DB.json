@@ -1,0 +1,2860 @@
+{
+    "year": {
+        "one": {
+            "semester": {
+                "one": {
+                    "courses": {
+                        "poolB": [
+                            {   
+                                "name": "Electrical",
+                                "dBid": "1",
+                                "code": "UEE001",
+                                "courseName": "ELECTRICAL ENGINEERING",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Electr", "ical"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#944743"},{"secondary":"pink-dark"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Environment",
+                                "dBid": "2",
+                                "code": "UEN001",
+                                "courseName": "ENVIRONMENT ENGINEERING",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Environ", "ment"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#6B5B95"},{"secondary":"violet"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Mechanics",
+                                "dBid": "3",
+                                "code": "UES001",
+                                "courseName": "MECHANICS",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Mech", "anics"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#ED9302"},{"secondary":"yellow"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Mathematics I",
+                                "dBid": "4",
+                                "code": "UES001",
+                                "courseName": "Mathematics-I",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Mathe", "matics 1"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": false,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#E94B3C"},{"secondary":"red"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "Course Site": "https://sites.google.com/a/thapar.edu/uma003/",
+                                    "Syllabus": "https://docs.google.com/a/thapar.edu/viewer?a=v&pid=sites&srcid=dGhhcGFyLmVkdXx1bWEwMDN8Z3g6NzgwMWM1OGIxZDRiMWQ4NQ",
+                                    "Notes & Slides": "https://drive.google.com/open?id=1yiT6ImN9CH6FARHyjS_7Ow8-NIh1ua7t",
+                                    "Books": "https://drive.google.com/open?id=1IJ3jYyL3VEHYQtwP6VG_RnNjyXh5jP6g",
+                                    "Lab": "",
+                                    "Tutorials": "https://drive.google.com/open?id=1l6z2DqLI1thuFFIpHdBpe1tmepWPg13R",
+                                    "Tutorial Solutuons": "https://drive.google.com/open?id=1iNVWQdKSHNXSDruf5jVsYfhqH_xQ_CUu",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "Previous Year Papers": "https://drive.google.com/open?id=1BbgHqIL-ZMYeGLIolBcnuyeHNIXnS4Oc",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Computer Programming I",
+                                "dBid": "5",
+                                "code": "UTA007",
+                                "courseName": "COMPUTER PROGRAMMING-I",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Computer", "Programming 1"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#005960"},{"secondary":"green-dark"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Applied Chemistry",
+                                "dBid": "6",
+                                "code": "UCB008",
+                                "courseName": "APPLIED CHEMISTRY",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Applied", "Chemistry"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#6F9FD8"},{"secondary":"blue-light"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            }
+                        ],
+                        "poolA": [
+                            {   
+                                "name": "Computer Programming II",
+                                "dBid": "7",
+                                "code": "UTA009",
+                                "courseName": "COMPUTER PROGRAMMING-II",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Computer", "Programming 2"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#D2691E"},{"secondary":"orange"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Applied Physics",
+                                "dBid": "8",
+                                "code": "UPH004",
+                                "courseName": "APPLIED PHYSICS",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Applied", "Physics"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#79C753"},{"secondary":"green"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Electronics",
+                                "dBid": "9",
+                                "code": "UEC001",
+                                "courseName": "ELECTRONICS ENGINEERING",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Electr", "onics"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#79C753"},{"secondary":"green"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Mathematics II",
+                                "dBid": "10",
+                                "code": "UMA004",
+                                "courseName": "MATHEMATICS-II",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Mathe", "matics 2"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#4F84C4"},{"secondary":"blue"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Engineering Drawing I",
+                                "dBid": "11",
+                                "code": "UTA018",
+                                "courseName": "ENGINEERING DRAWING-I",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Engineering", "Drawing 1"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#2E4A62"},{"secondary":"red-dark"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Professional Communication",
+                                "dBid": "12",
+                                "code": "UHU003",
+                                "courseName": "PROFESSIONAL COMMUNICATION",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Professional", "Communication"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#BC243C"},{"secondary":"red-dark"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            },
+                            {   
+                                "name": "Engineering Design 1",
+                                "dBid": "13",
+                                "code": "UTA013",
+                                "courseName": "ENGINEERING DESIGN 1",
+                                "altCode": "",
+                                "mhCode": "",
+                                "nameParts": ["Engineering", "Design 2"],
+                                "pun": "We hope You Laugh Till it Hertz",
+                                "illustrate": "",
+                                "isLab": true,
+                                "isTut": true,
+                                "topics": {
+                                    "number": 6,
+                                    "topics": {
+                                        "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                        "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                    }
+                                },
+                                "colors": [{"primary":"#4F1A5F"},{"secondary":"violet-dark"},{"accent":""}],
+                                "marksDistribution": {
+                                    "crietiaCount": 4,
+                                    "MST": "",
+                                    "EST": "",
+                                    "Sessionals": "",
+                                    "Lab": ""
+                                },
+                                "quizes": {
+                                    "current": [{},{}],
+                                    "past": [{},{}]
+                                },
+                                "daysToNextExam": "",
+                                "videos": {
+                                    "number": "$number",
+                                    "aliases": []
+                                },
+                                "links": {
+                                    "CourseSite": "",
+                                    "Syllabus": "",
+                                    "Notes&Slides": "",
+                                    "Books": "",
+                                    "Lab": "",
+                                    "Tutorials": "",
+                                    "Tutorial Solutuons": "",
+                                    "Topics": ["","",""],
+                                    "Quizes": "",
+                                    "PreviousYearPapers": "",
+                                    "MVCBundle": "",
+                                    "Concourse": []
+                                },
+                                "comments": ["", ""],
+                                "credits": 4.5,
+                                "priority": {
+                                    "number": "",
+                                    "color": "",
+                                    "rating": ""
+                                },
+                                "teachers": [{"code":"name"}, {"code":"name"}],
+                                "coveragePogress": {
+                                    "Perc": "",
+                                    "Tut": {
+                                        "number": "",
+                                        "completed": ""
+                                    },
+                                    "Lab":{
+                                        "number": "",
+                                        "completed": ""
+                                    }
+                                },
+                                "recent ADDs": [
+                                    "", "", "", ""
+                                ],
+                                "explicits": {
+                                    "formation-course": "",
+                                    "color": ""
+                                }
+                            }
+                        ],
+                        "univ": {
+                            "Biotech Department": [
+                                {   
+                                    "name": "Computer Programming II",
+                                    "dBid": "7",
+                                    "code": "UTA009",
+                                    "courseName": "COMPUTER PROGRAMMING-II",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#D2691E"},{"secondary":"orange"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 3.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Applied Physics",
+                                    "dBid": "8",
+                                    "code": "UPH004",
+                                    "courseName": "APPLIED PHYSICS",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#79C753"},{"secondary":"green"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Introductory Mathematics I",
+                                    "dBid": "14",
+                                    "code": "UMA004",
+                                    "courseName": "INTRODUCTORY MATHEMATICS-I",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#C47FAD"},{"secondary":"pink"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Introductory Mathematics II",
+                                    "dBid": "15",
+                                    "code": "UMA004",
+                                    "courseName": "INTRODUCTORY MATHEMATICS-II",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#E94B3C"},{"secondary":"red"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Engineering Drawing I",
+                                    "dBid": "11",
+                                    "code": "UTA018",
+                                    "courseName": "ENGINEERING DRAWING-I",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#2E4A62"},{"secondary":"red-dark"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Professional Communication",
+                                    "dBid": "12",
+                                    "code": "UHU003",
+                                    "courseName": "PROFESSIONAL COMMUNICATION",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#BC243C"},{"secondary":"red-dark"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Computer Programming I",
+                                    "dBid": "5",
+                                    "code": "UTA007",
+                                    "courseName": "COMPUTER PROGRAMMING-I",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#005960"},{"secondary":"green-dark"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Applied Chemistry",
+                                    "dBid": "6",
+                                    "code": "UCB008",
+                                    "courseName": "APPLIED CHEMISTRY",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#6F9FD8"},{"secondary":"blue-light"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Introduction to Biotechnology I",
+                                    "dBid": "16",
+                                    "code": "UCB008",
+                                    "courseName": "INTRODUCTION TO BIOTECHNOLOGY-I",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#4f1a5f"},{"secondary":"violet-dark"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Biochemistry I",
+                                    "dBid": "17",
+                                    "code": "UCB008",
+                                    "courseName": "BIOCHEMISTRY I",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#6B5B95"},{"secondary":"violet"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Microbiology",
+                                    "dBid": "18",
+                                    "code": "UCB008",
+                                    "courseName": "MICROBIOLOGY",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#944743"},{"secondary":"pink-dark"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Development Biology",
+                                    "dBid": "19",
+                                    "code": "UCB008",
+                                    "courseName": "DEVELOPMENT BIOLOGY",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#4F84C4"},{"secondary":"blue"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Cell Biology and Genetics",
+                                    "dBid": "20",
+                                    "code": "UCB008",
+                                    "courseName": "CELL BIOLOGY AND GENETICS",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#ED9302"},{"secondary":"yellow"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "two": {
+                    "courses": {
+
+                    }
+                }
+            }
+        },
+        "two": {
+            "streams": [
+                {
+                    "Name": "Computer Science",
+                    "code": "COE", 
+                    "Department": "Computer Science & Engineering",
+                    "NameParts": ["Computer", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "three": [
+                                {   
+                                    "name": "Inventions & Innovations in Computing",
+                                    "dBid": "21",
+                                    "code": "UCS407",
+                                    "courseName": "INVENTIONS AND INNOVATIONS IN COMPUTING",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "nameParts": ["Inventions", "&Innovations"],
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#6B5B95"},{"secondary":"violet"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {   
+                                    "name": "Engineering Design 1",
+                                    "dBid": "13",
+                                    "code": "UTA013",
+                                    "courseName": "ENGINEERING DESIGN 1",
+                                    "altCode": "",
+                                    "mhCode": "",
+                                    "nameParts": ["Engineering", "Design 2"],
+                                    "pun": "We hope You Laugh Till it Hertz",
+                                    "illustrate": "",
+                                    "isLab": true,
+                                    "isTut": true,
+                                    "topics": {
+                                        "number": 6,
+                                        "topics": {
+                                            "DC Circuits": ["Kirchhoff’s voltage and current laws", "Power Dissipation;"],
+                                            "Steady state analysis of DC Circuits": ["The Ideal Capacitor", "Permittivity;"]
+                                        }
+                                    },
+                                    "colors": [{"primary":"#4F1A5F"},{"secondary":"violet-dark"},{"accent":""}],
+                                    "marksDistribution": {
+                                        "crietiaCount": 4,
+                                        "MST": "",
+                                        "EST": "",
+                                        "Sessionals": "",
+                                        "Lab": ""
+                                    },
+                                    "quizes": {
+                                        "current": [{},{}],
+                                        "past": [{},{}]
+                                    },
+                                    "daysToNextExam": "",
+                                    "videos": {
+                                        "number": "$number",
+                                        "aliases": []
+                                    },
+                                    "links": {
+                                        "CourseSite": "",
+                                        "Syllabus": "",
+                                        "Notes&Slides": "",
+                                        "Books": "",
+                                        "Lab": "",
+                                        "Tutorials": "",
+                                        "Tutorial Solutuons": "",
+                                        "Topics": ["","",""],
+                                        "Quizes": "",
+                                        "PreviousYearPapers": "",
+                                        "MVCBundle": "",
+                                        "Concourse": []
+                                    },
+                                    "comments": ["", ""],
+                                    "credits": 4.5,
+                                    "priority": {
+                                        "number": "",
+                                        "color": "",
+                                        "rating": ""
+                                    },
+                                    "teachers": [{"code":"name"}, {"code":"name"}],
+                                    "coveragePogress": {
+                                        "Perc": "",
+                                        "Tut": {
+                                            "number": "",
+                                            "completed": ""
+                                        },
+                                        "Lab":{
+                                            "number": "",
+                                            "completed": ""
+                                        }
+                                    },
+                                    "recent ADDs": [
+                                        "", "", "", ""
+                                    ],
+                                    "explicits": {
+                                        "formation-course": "",
+                                        "color": ""
+                                    }
+                                },
+                                {
+                                    
+                                }
+                            ],
+                            "four": []
+                        }
+                    },
+                    "colors": [{"primary": "#E94B3C"}, {"secondary": "red"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electronics & Communication",
+                    "code": "ECE",
+                    "Department": "Electronics & Communication Engineering",
+                    "NameParts": ["Electronics", "&Communication"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#BC243C"}, {"secondary": "red-dark"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electronics & Computer",
+                    "code": "ENC",
+                    "Department": "Electronics & Communication Engineering",
+                    "NameParts": ["Electronics", "&Computer"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#005960"}, {"secondary": "green-dark"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Chemical",
+                    "code": "CHE",
+                    "Department": "Chemical Engineering",
+                    "NameParts": ["Chemical", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#2E4A62"}, {"secondary": "blue-dark"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Civil",
+                    "code": "CIE",
+                    "Department": "Civil Engineering",
+                    "NameParts": ["Civil", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#2E4A62"}, {"secondary": "pink"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Biotechnology",
+                    "code": "BTD",
+                    "Department": "Department of Biotechnology",
+                    "NameParts": ["Bio", "Technology"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#4F84C4"}, {"secondary": "blue"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electronics & Instrumentation",
+                    "code": "EIC",
+                    "Department": "Electrical & Intrumentation Engineering",
+                    "NameParts": ["Electronics", "&Instrumentation"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#D2691E"}, {"secondary": "orange"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Mechanical",
+                    "code": "MEE",
+                    "Department": "Mechanical Engineering Department",
+                    "NameParts": ["Mechanical", "&Engineering"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#ED9302"}, {"secondary": "yellow"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Production",
+                    "code": "MPE",
+                    "Department": "Mechanical Engineering Department",
+                    "NameParts": ["Mechanical", "(Production)"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#79C753"}, {"secondary": "green"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Mechatronics",
+                    "code": "MTX",
+                    "Department": "Mechanical Engineering Department",
+                    "NameParts": ["Mechanics", "Department"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#E94B3C"}, {"secondary": "red"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electrical",
+                    "code": "ELE",
+                    "Department": "Electrical & Intrumentation Engineering",
+                    "NameParts": ["Electrical", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "three": {
+
+                            },
+                            "four": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#2E4A62"}, {"secondary": "blue"}, {"accent": ""}]
+                }
+            ]
+        },
+        "three": {
+            "streams": [
+                {
+                    "Name": "Computer Science",
+                    "code": "COE", 
+                    "Department": "Computer Science & Engineering",
+                    "NameParts": ["Computer", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#E94B3C"}, {"secondary": "red"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electronics & Communication",
+                    "code": "ECE",
+                    "Department": "Electronics & Communication Engineering",
+                    "NameParts": ["Electronics", "&Communication"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#BC243C"}, {"secondary": "red-dark"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electronics & Computer",
+                    "code": "ENC",
+                    "Department": "Electronics & Communication Engineering",
+                    "NameParts": ["Electronics", "&Computer"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#005960"}, {"secondary": "green-dark"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Chemical",
+                    "code": "CHE",
+                    "Department": "Chemical Engineering",
+                    "NameParts": ["Chemical", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#2E4A62"}, {"secondary": "blue-dark"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Civil",
+                    "code": "CIE",
+                    "Department": "Civil Engineering",
+                    "NameParts": ["Civil", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#2E4A62"}, {"secondary": "pink"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Biotechnology",
+                    "code": "BTD",
+                    "Department": "Department of Biotechnology",
+                    "NameParts": ["Bio", "Technology"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#4F84C4"}, {"secondary": "blue"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electronics & Instrumentation",
+                    "code": "EIC",
+                    "Department": "Electrical & Intrumentation Engineering",
+                    "NameParts": ["Electronics", "&Instrumentation"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#D2691E"}, {"secondary": "orange"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Mechanical",
+                    "code": "MEE",
+                    "Department": "Mechanical Engineering Department",
+                    "NameParts": ["Mechanical", "&Engineering"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#ED9302"}, {"secondary": "yellow"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Production",
+                    "code": "MPE",
+                    "Department": "Mechanical Engineering Department",
+                    "NameParts": ["Mechanical", "(Production)"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#79C753"}, {"secondary": "green"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Mechatronics",
+                    "code": "MTX",
+                    "Department": "Mechanical Engineering Department",
+                    "NameParts": ["Mechanics", "Department"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#E94B3C"}, {"secondary": "red"}, {"accent": ""}]
+                },
+                {
+                    "Name": "Electrical",
+                    "code": "ELE",
+                    "Department": "Electrical & Intrumentation Engineering",
+                    "NameParts": ["Electrical", "Engineering"],
+                    "courses": {
+                        "semester": {
+                            "five": {
+
+                            },
+                            "six": {
+
+                            }
+                        }
+                    },
+                    "colors": [{"primary": "#2E4A62"}, {"secondary": "blue"}, {"accent": ""}]
+                }
+            ]
+        }
+    },
+    "user": {
+        "name": {
+            "firstName": "",
+            "lastName": ""
+        },
+        "rollNo": "",
+        "explicits": "",
+        "farmayish": ""
+    },
+    "teachers": {
+        "management": {
+
+        },
+        "departments": {
+
+        },
+        "farmayish": {
+
+        }
+    },
+    "UIUX": {
+        "formations": {
+            "1": {
+                "mob": "1",
+                "tablet": "1",
+                "smLaptop": "1",
+                "lgLaptop": "1"
+            },
+            "2": {
+                "mob": "1-1",
+                "tablet": "1-1",
+                "smLaptop": "2",
+                "lgLaptop": "2"
+            },
+            "3": {
+                "mob": "1-1-1",
+                "tablet": "2-1",
+                "smLaptop": "2-1",
+                "lgLaptop": "2-1"
+            },
+            "4": {
+                "mob": "1-1-1-1",
+                "tablet": "1-2-1",
+                "smLaptop": "1-2-1",
+                "lgLaptop": "1-2-1"
+            },
+            "5": {
+                "mob": "1-1-1-1-1",
+                "tablet": "1-2-1-1",
+                "smLaptop": "1-2-1-1",
+                "lgLaptop": "1-2-1-1"
+            },
+            "6": {
+                "mob": "1-1-1-1-1-1",
+                "tablet": "1-1-1-1-1-1",
+                "smLaptop": "1-3-2",
+                "lgLaptop": "1-3-2"
+            },
+            "7": {
+                "mob": "1-1-1-1-1-1-1",
+                "tablet": "1-1-1-1-1-1-1",
+                "smLaptop": "1-3-2-1",
+                "lgLaptop": "1-3-2-1"
+            },
+            "8": {
+                "mob": "1-1-1-1-1-1-1-1",
+                "tablet": "2-1-2-2-1",
+                "smLaptop": "2-3-2-1",
+                "lgLaptop": "2-3-2-1"
+            },
+            "9": {
+                "mob": "1-1-1-1-1-1-1-1-1",
+                "tablet": "2-1-2-1-2-1",
+                "smLaptop": "3-4-2",
+                "lgLaptop": "3-4-2"
+            },
+            "10": {
+                "mob": "1-1-1-1-1-1-1-1-1-1",
+                "tablet": "2-2-1-1-2-2",
+                "smLaptop": "3-4-2-1",
+                "lgLaptop": "3-4-2-1"
+            },
+            "11": {
+                "mob": "1-1-1-1-1-1-1-1-1-1-1",
+                "tablet": "2-2-1-1-2-2-1",
+                "smLaptop": "1-3-4-2-1",
+                "lgLaptop": "1-3-4-2-1"
+            },
+            "12": {
+                "mob": "1-1-1-1-1-1-1-1-1-1-1-1",
+                "tablet": "2-2-1-2-1-2-2",
+                "smLaptop": "2-3-4-2-1",
+                "lgLaptop": "2-3-4-2-1"
+            },
+            "13": {
+                "mob": "1-1-1-1-1-1-1-1-1-1-1-1-1",
+                "tablet": "1-2-2-1-2-1-2-2",
+                "smLaptop": "1-2-3-4-2-1",
+                "lgLaptop": "1-2-3-4-2-1"
+            },
+            "14": {
+                "mob": "1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+                "tablet": "1-2-2-1-2-1-2-2-1",
+                "smLaptop": "1-3-4-2-3-1",
+                "lgLaptop": "1-3-4-2-3-1"
+            },
+            "15": {
+                "mob": "1-1-1-1-1-1-1-1-1-1-1-1-1-1-1",
+                "tablet": "1-2-2-1-2-1-2-2-1-1",
+                "smLaptop": "2-3-4-2-3-1",
+                "lgLaptop": "2-3-4-2-3-1"
+            }
+        },
+        "ButtonOrders": {
+            "streams": {
+                "COE": {
+                    "year": {
+                        "two": {
+                            "even": [],
+                            "odd": ["Inventions & Innovations in Computing", "Engineering Design 1", "Engineering Materials", "Operating Systems", "Numerical Analysis", "Computer Networks", "Discrete Mathematical Structures"]
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "ENC": {
+                    "year": {
+                        "two": {
+                            "even": {
+
+                            },
+                            "odd": ["Engineering Design 1", "Enineering Materials", "Circuit Analysis & Sysnthesis", "Numerical Analysis", "Signals & Systems", "Embedded Systems"]
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "ECE": {
+                    "year": {
+                        "two": {
+                            "even": {
+
+                            },
+                            "odd": ["Engineering Design 1", "Enineering Materials", "Circuit Analysis & Sysnthesis", "Numerical Analysis", "Signals & Systems", "Embedded Systems"]
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "EIC": {
+                    "year": {
+                        "two": {
+                            "even": [],
+                            "odd": ["Network Analysis & Synthesis", "Optimization Techniques", "Signals & Systems", "Solids & Structures", "Engineering Design 2", "Thermofluids", "Manufacturing Processes"]
+                        },
+                        "three": {
+                            "even": [],
+                            "odd": []
+                        }
+                    }
+                },
+                "CIE": {
+                    "year": {
+                        "two": {
+                            "even": [],
+                            "odd": ["", ""]
+                        },
+                        "three": {
+                            "even": [],
+                            "odd": []
+                        }
+                    }
+                },
+                "BTD": {
+                    "year": {
+                        "two": {
+                            "even": [],
+                            "odd": []
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "CHE": {
+                    "year": {
+                        "two": {
+                            "even": {
+
+                            },
+                            "odd": {
+                                
+                            }
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "MEE": {
+                    "year": {
+                        "two": {
+                            "even": {
+
+                            },
+                            "odd": {
+                                
+                            }
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "MPE": {
+                    "year": {
+                        "two": {
+                            "even": {
+
+                            },
+                            "odd": {
+                                
+                            }
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "MTX": {
+                    "year": {
+                        "two": {
+                            "even": {
+
+                            },
+                            "odd": {
+                                
+                            }
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                },
+                "ELE": {
+                    "year": {
+                        "two": {
+                            "even": {
+
+                            },
+                            "odd": {
+                                
+                            }
+                        },
+                        "three": {
+                            "even": {
+
+                            },
+                            "odd": {
+
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

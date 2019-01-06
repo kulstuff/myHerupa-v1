@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FunctionaityButtons } from '../Components/Buttons';
 
-class Home extends Component {
+class Corridoor extends Component {
     render(){
         return(
             <section className="more-stuff scr__panel" id="more-stuff">
@@ -15,4 +15,4 @@ class Home extends Component {
     }
 }
 
-export default Home
+export default Corridoor

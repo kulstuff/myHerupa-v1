@@ -5,7 +5,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/main'),
-        filename: 'main.js'
+        filename: 'main.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -25,6 +26,9 @@ module.exports = {
                 }
             }
         ]
+    },
+    'devServer':{
+        "historyApiFallback": true
     },
     plugins: [
         new HtmlWebpackPlugin({
