@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Font Used = 'Raleway' Link  = \"https://fonts.googleapis.com/css?family=Raleway\"  Font Used = 'Roboto' Link = \"https://font.google.com/css/css?family=Roboto\" Font Size = 62.5% (10px)",
   "main": "index.js",
+  "homepage": "https://aadiyaara.github.io/ninjaproject/",
   "scripts": {
     "start-server": "http-server -c-1 -p 3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
@@ -41,6 +44,5 @@
   },
   "bugs": {
     "url": "https://github.com/dhawal27/ninjaproject/issues"
-  },
-  "homepage": "https://github.com/dhawal27/ninjaproject#readme"
+  }
 }
