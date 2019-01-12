@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time-Table</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/timet.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="myHerupa">
+    <link rel="apple-touch-icon" href="/img/myherupa-1280x1280.jpeg" sizes="1280x1280">
+    <link rel="apple-touch-icon" href="/img/myherupa-512x512.jpeg" sizes="512x512">
+    <link rel="apple-touch-icon" href="/img/myherupa-192x192.jpeg" sizes="192x192">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+<body>
+        <a href="http://bit.ly/myherupawhatsapp" target="_blank">
+            <i class="fab fa-whatsapp display4 contact-us" title="Contact Us" ></i>
+        </a>
+  <div class="video" style="background-color:#FF951F; text-align:center;padding:1rem; box-shadow:0 0 0.5rem rgba(1, 1, 1, 0.2); " ><p class="video-text" style="font-size:2.5rem; font-family: 'Raleway', sans-serif; color:#eee;">We also made an easy to follow video. <a href="https://youtu.be/-1VMtcz0-YQ" target="_blank" style="color:#eee;font-size:2.5rem;text-decoration:underline">Check it here </a></p></div>
+
+    <section class="popup" id="popup">
+        <div class="popup-content">
+            <a href="#more-stuff">
+            <p class="popup-content__heading bold centre-text display5">Enter your details</p>
+               <form id = "submit-timeTable">
+                 <select class="display7 popup__selector popup__selector-yr" id="popup__selector-yr">
+                   <option value="selector">Select your year</option>
+                   <option value="first-yr">1st year</option>
+                   <option value="second-yr">2nd year</option>
+                 </select>
+                 <select class="display7 popup__selector popup__selector-batch " id="popup__selector-batch">
+                   <option value="selector">Select your batch</option>
+                 </select>
+                 <select class="display7 popup__selector popup__selector-subbatch" id="popup__selector-subbatch">
+                   <option value="selector">Select your sub-batch</option>
+                 </select>
+                </form>
+              <div class=" display5 btn-submit">
+                <a href="#" class="submit">
+                    Submit
+                </a>
+              </div>
+              <!-- <h4 class="display7 thin centre-text color-red">Second year will be up soon.</h4> -->
+          </div>
+          <a href="#help">
+            <div class="instructions display6">
+               Instructions
+              <img class="navdown" src="../img/icons/navHovD.png">
+            </div>
+          </a>
+    </section>
+    <section id="help" class="time-table__help ">
+        <div class="display4">Adding calendar to mobile</div>
+        <div class="display6 color-gray">Its preferable to downlaod Google Calendar app for this to work smoothly.</div>
+        <div class="row">
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-1.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">Get the calendar link, open it in your BROWSER and request dekstop site as shown.</h6>
+                </div>
+            </div>
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-2.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">Once desktop site is loaded, just click "add" and wait for calendar to get added.</h6>
+                </div>
+            </div>
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-3.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">Refresh the Google Calendar app to see changes added. Next comes setting up sync</h6>
+                </div>
+            </div>
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-4.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">Once sync is complete, open up sidemenu and find and go into the settings.</h6>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-5.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">There, go into "Show more" and click your batch specific calendar.</h6>
+                </div>
+            </div>
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-6.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">Turn on sync and turn on notifications by customising the time when you are notified by an event.</h6>
+                </div>
+            </div>
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-7.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">Use the image settings if confused</h6>
+                </div>
+            </div>
+            <div class="card__collect col col-lg-3 col-xs-12">
+                <div class="card__body">
+                    <img src="../img/help-8.jpeg" alt="" class="card__image">
+                    <h6 class="display7 card__text centre-text">Finally, refresh your calendar once again and enjoy your time-table. (More stuff to be added soon).</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- jQuery and Scrollify APIs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
+    <script src="../js/Scrollify-master/jquery.scrollify.js"></script>
+    <script src="../js/script.js"></script>
+
+    <!-- Fixes Mobo scr__panel for services -->
+    <script>
+      console.log("Loaded: " + window.innerWidth);
+      if (window.innerWidth < 800) {
+          $('.services').toggleClass('scr__panel');
+      }
+    </script>
+
+    <!-- Implements Scrollify -->
+    <script>
+        $(function() {
+            $.scrollify({
+                section : ".scr__panel",
+            });
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122580305-1');
+    </script>
+
+</body>
+</html>
