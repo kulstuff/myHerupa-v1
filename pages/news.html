@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 
@@ -8,10 +9,11 @@
     <title>News & Announcements</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="css/icon-font.css">
-    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
     <link rel="manifest" href="/manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -21,75 +23,80 @@
     <link rel="apple-touch-icon" href="/img/myherupa-512x512.jpeg" sizes="512x512">
     <link rel="apple-touch-icon" href="/img/myherupa-192x192.jpeg" sizes="192x192">
 </head>
-<body class="news gray__body">
-    <div class="news__heading">News & Updates</div>
-    <div class="news__subheading">Everything from societies to academic circulars, all available together.</div>
-     <div class="news__sort col col-lg-2">
-         <h6 class="news__sort--heading">Sort By : </h6>
-         <ul class="news__sort--list">
 
-                 <li class="news__sort--item btn__society">Societies</li>
-                 <li class="news__sort--item btn__academic">Academic</li>
-                 <li class="news__sort--item btn__other">Outside Thapar</li>
-                 <li class="news__sort--item btn__reset">Reset Filters</li>
+<body>
+    <h3 class="display4 bold">
+        News & Updates
+    </h3>
+    <h4 class="display6 thin">
+        All news, be it academic or non-academic, at one place.
+    </h4>
+    <div class="news_sort col-lg-2 col-md-2 col-xs-12 col-sm-12 display6">
+        <h6 class="col-lg-12 col-md-12 display6 bold">
+            Academic
+        </h6>
+        <a class="col-lg-12 col-md-12 display6">
+            First Year
+        </a>
+        <a class="col-lg-12 col-md-12 display6">
+            Second Year
+        </a>
+        <a class="col-lg-12 col-md-12 display6">
+            Third Year
+        </a>
 
-         </ul>
+        <a class="col-lg-12 col-md-12 display6 bold">
+            Societies
+        </a>
+
+        <a class="col-lg-12 col-md-12 display6 bold">
+            Internships
+        </a>
     </div>
-     <div class="news__data col col-lg-10">
-        <section class="card news__society">
-            <div class="col col-lg-2">
-                <div class="card__date">12<br>July</div>
+    <div class="news_section col-lg-10 col-md-10 col-xs-12 col-sm-12 display6">
+        <div class="news_article-1 academic">
+            <div class="news_article--date display6 col-lg-2">
+                19/06
             </div>
-            <div class="col col-lg-10">
-                <h4 class="card__title">News Societies #1</h4>
-                <p class="card__text ">Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.</p>
+            <div class="news_article--title display6 col-lg-10">
+                Random Shitty Person Born
             </div>
-        </section>
-        <section class="card news__academic">
-            <div class="col col-lg-2">
-                <div class="card__date">12<br>July</div>
+            <div class="news_article--data display7">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi debitis eius voluptas nesciunt nisi
+                aspernatur velit vitae sint veniam, temporibus architecto provident, aliquid dolore ab ex. Commodi odio
+                ducimus ea!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi debitis eius voluptas nesciunt nisi
+                aspernatur velit vitae sint veniam, temporibus architecto provident, aliquid dolore ab ex. Commodi odio
+                ducimus ea!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi debitis eius voluptas nesciunt nisi
+                aspernatur velit vitae sint veniam, temporibus architecto provident, aliquid dolore ab ex. Commodi odio
+                ducimus ea!
             </div>
-            <div class="col col-lg-10">
-                <h4 class="card__title">News Academic #1</h4>
-                <p class="card__text">Shreyansh Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.</p>
-            </div>
-        </section>
-        <section class="card news__other">
-            <div class="col col-lg-2">
-                <div class="card__date">12<br>July</div>
-            </div>
-            <div class="col col-lg-10">
-                <h4 class="card__title">News Other #1</h4>
-                <p class="card__text">Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.</p>
-            </div>
-        </section>
-        <section class="card news__society">
-            <div class="col col-lg-2">
-                <div class="card__date">12<br>July</div>
-            </div>
-            <div class="col col-lg-10">
-            <h4 class="card__title">News Society #2</h4>
-                <p class="card__text">Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.</p>
-            </div>
-        </section>
-        <section class="card news__academic">
-            <div class="col col-lg-2">
-                <div class="card__date">12<br>July</div>
-            </div>
-            <div class="col col-lg-10">
-                <h4 class="card__title">News Academic #2</h4>
-                <p class="card__text">Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique error sapiente doloribus itaque, iusto quae qui quas. Libero esse ex hic cum ea, accusantium recusandae nesciunt, ipsa numquam iusto ad.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique error sapiente doloribus itaque, iusto quae qui quas. </p>
-            </div>
-        </section>
-    </div>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-122580305-1');
-</script>
+        </div>
+        <hr>
+        <div class="news_article-1 academic">
+            <div class="news_article--date display6 col-lg-2">
+                04/04
+            </div>
+            <div class="news_article--title display6 col-lg-10">
+                Super Awesome Person Born
+            </div>
+            <div class="news_article--data display7">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi debitis eius voluptas nesciunt nisi
+                aspernatur velit vitae sint veniam, temporibus architecto provident, aliquid dolore ab ex. Commodi odio
+                ducimus ea!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi debitis eius voluptas nesciunt nisi
+                aspernatur velit vitae sint veniam, temporibus architecto provident, aliquid dolore ab ex. Commodi odio
+                ducimus ea!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi debitis eius voluptas nesciunt nisi
+                aspernatur velit vitae sint veniam, temporibus architecto provident, aliquid dolore ab ex. Commodi odio
+                ducimus ea!
+            </div>
+
+        </div>
+        <hr>
+    </div>
 </body>
+
 </html>

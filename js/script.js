@@ -193,12 +193,13 @@ $(document).ready(function(){
         else if(s1.value == 1)
         {
             var subjects = ["0|Select Subject",
-                            "6|Engieering Design Project-2",
                             "3.5|Manufacturing Process",
                             "3.5|Optimization Techniques",
                             "4.5|Solids and Structures",
                             "4.5|Thermo-Fluids",
+                            "5|Engineering Design Project-1",
                             "3.5|Material and Energy Balances",
+                            "6|Engieering Design Project-2",
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
                             "3.5|Chemical Engineering Thermodynamics",
@@ -224,7 +225,7 @@ $(document).ready(function(){
         }
         else if(s1.value == 3)
         {
-            var subjects = ["0|Select Suject",
+            var subjects = ["0|Select Subject",
                             "5|Engineering Design Project-1",
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
@@ -242,16 +243,17 @@ $(document).ready(function(){
         }
         else if(s1.value == 4)
         {
-            var subjects = ["0|Select Suject",
-                            "6|Engineering Design Project-1",
+            var subjects = ["0|Select Subject",
+                            "5|Engineering Design Project-1",
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
                             "3.5|Circuit Analysis & Synthesis",
-                            "4.5|Microprocessors & their Applications",
+                            //"4.5|Microprocessors & their Applications",
                             "4.5|Signals & Systems",
+                            "4.5|Embedded Systems",
                             "6|Engineering Design Project-2",
                             "3.5|Manufacturing Processes",
-                            "3.5|Otimization Techniques",
+                            "3.5|Optimization Techniques",
                             "4.5|Solids and Strcutures",
                             "4.5|Thermo-Fluids",
                             "4.5|Analog and Electronic Circuits"];
@@ -259,12 +261,14 @@ $(document).ready(function(){
 
         else if(s1.value == 5)
         {
-            var subjects = ["0|Select Suject",
-                            "6|Engineering Design Project-1",
+            var subjects = ["0|Select Subject",
+                            "5|Engineering Design Project-1",
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
-                            "4.5|Microprocessors & their Applications",
-                            "3.5|Network Analysis & Synthesis",
+                            //"4.5|Microprocessors & their Applications",
+                            //"3.5|Network Analysis & Synthesis",
+                            "4.5|Embedded Systems",
+                            "3.5|Circuit Analysis & Synthesis",
                             "4.5|Signals & Systems",
                             "6|Engineering Design Project-2",
                             "3.5|Manufacturing Processes",
@@ -276,23 +280,26 @@ $(document).ready(function(){
 
         else if(s1.value == 6)
         {
-            var subjects = ["0|Select Suject",
+            var subjects = ["0|Select Subject",
                             "6|Engieering Design Project-2",
                             "3.5|Manufacturing Process",
                             "3.5|Optimization Techniques",
                             "4.5|Solids and Structures",
                             "4.5|Thermo-Fluids",
-                            "4.5|Electrical & Electronic Measurements",
-                            "3|Humanities for Engiineers",
+                            "4.5|Signals & Systems",
+                            "3.5|Network Analysis & Synthesis",
+                            //"4.5|Electrical & Electronic Measurements",
+                            "3|Humanities for Engineers",
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
+                            "3|Energy & Environment",
                             "8|Sensors and Signal Conditioning with Project",
                             "3.5|Techniques on Sigal and Systems"];
         }
 
         else if(s1.value == 7)
         {
-            var subjects = ["0|Select Suject",
+            var subjects = ["0|Select Subject",
                             "6|Engieering Design Project-2",
                             "3.5|Manufacturing Process",
                             "3.5|Optimization Techniques",
@@ -304,54 +311,61 @@ $(document).ready(function(){
                             "4.5|Numerical Analysis",
                             "4.5|Analog and Electronic Circuits",
                             "4.5|DC Machines and Transformers",
-                            "3.5|Network Analysis & Synthesis",
+                            "3.5|Circuit Analysis & Synthesis",
                             "3|Power System Practices"];
                         }
 
         else if(s1.value == 8)
         {
-            var subjects = ["0|Select Suject",
+            var subjects = ["0|Select Subject",
                             "6|Engieering Design Project-2",
                             "3.5|Manufacturing Process",
                             "3.5|Optimization Techniques",
                             "4.5|Solids and Structures",
                             "4.5|Thermo-Fluids",
                             "4.5|Mechanics of Machines",
+                            //
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
                             "4|Mechatronics",
                             "4|Machine Design",
-                            "8|Computer Aided Design & Analysis"];
+                            "8|Computer Aided Design & Analysis",
+                            "2.5|Industrial Engineering"];
         }
         else if(s1.value == 9)
         {
-            var subjects = ["0|Select Suject",
+            var subjects = ["0|Select Subject",
                             "6|Engieering Design Project-2",
                             "3.5|Manufacturing Process",
                             "3.5|Optimization Techniques",
                             "4.5|Solids and Structures",
                             "4.5|Thermo-Fluids",
                             "4.5|Mechanics of Machines",
+                            //
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
-                            "3|Humanities for Engineers",
-                            "4.5|Signals & Systems",
-                            "8|Computer Aided Design & Analysis"]
+                            "4|Mechatronics",
+                            //"3|Humanities for Engineers",
+                            "4|Machine Design",
+                            "8|Computer Aided Design & Analysis",
+                            "2.5|Industrial Engineering"]
         }
         else if(s1.value == 10)
         {
-            var subjects = ["0|Select Suject",
+            var subjects = ["0|Select Subject",
                             "6|Engieering Design Project-2",
                             "3.5|Manufacturing Process",
                             "3.5|Optimization Techniques",
                             "4.5|Solids and Structures",
                             "4.5|Thermo-Fluids",
                             "4.5|Mechanics of Machines",
+                            //
                             "4.5|Engineering Materials",
                             "4.5|Numerical Analysis",
                             "4|Industrial Automation",
                             "8|Computer Aided Design & Analysis",
-                            "4|Machine Design"];
+                            "4|Machine Design",
+                            "2.5|Industrial Engineering"];
         }
 
 
@@ -2410,7 +2424,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div1-pic-img").css('background-image',"url('../img/societies/toastmasters/two.jpg')");
     $(".div1-pic-text").html('<hr style="margin:1rem;">Toast Tussle<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/toastmasters/three.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Taost Tussle<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Toast Tussle<hr style="margin:1rem;">');
     $(".div2-pic-img-2").css('background-image',"url('../img/societies/toastmasters/four.jpg')");
     $(".div2-pic-text-2").html('<hr style="margin:1rem;">Toast Talks<hr style="margin:1rem;">');
     $(".div3-title").html('Toastmasters TU');
@@ -2435,7 +2449,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div1-pic-img").css('background-image',"url('../img/societies/urja/2.jpg')");
     $(".div1-pic-text").html('<hr style="margin:1rem;">Football<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/urja/3.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Atheletics<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Badminton<hr style="margin:1rem;">');
     $(".div2-pic-img-2").css('background-image',"url('../img/societies/urja/4.jpg')");
     $(".div2-pic-text-2").html('<hr style="margin:1rem;">Sport Fest<hr style="margin:1rem;">');
     $(".div3-title").html('Urja');
@@ -2482,11 +2496,11 @@ $(".societies__cards--adv-club").click(function (){
  $(".societies__cards--spades").click(function (){
     $(".div1-logo").css('background-image',"url('../img/societies/spades/1.jpg')");
     $(".div1-pic-img").css('background-image',"url('../img/societies/spades/2.jpg')");
-    $(".div1-pic-text").html('<hr style="margin:1rem;">Toast Tussle<hr style="margin:1rem;">');
+    $(".div1-pic-text").html('<hr style="margin:1rem;">Basketball<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/spades/3.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Taost Tussle<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Badminton<hr style="margin:1rem;">');
     $(".div2-pic-img-2").css('background-image',"url('../img/societies/spades/4.jpg')");
-    $(".div2-pic-text-2").html('<hr style="margin:1rem;">Toast Talks<hr style="margin:1rem;">');
+    $(".div2-pic-text-2").html('<hr style="margin:1rem;">VolleyBall<hr style="margin:1rem;">');
     $(".div3-title").html('Spades TU');
     $(".div3-events").css('display','flex');
     $(".div3-events-1").html('Spades tournament');
@@ -2508,9 +2522,9 @@ $(".societies__cards--adv-club").click(function (){
     $(".div1-pic-img").css('background-image',"url('../img/societies/virsa/2.jpg')");
     $(".div1-pic-text").html('<hr style="margin:1rem;">Bhangra<hr style="margin:1rem;">');
     $(".div2-pic-img-1").css('background-image',"url('../img/societies/virsa/3.jpg')");
-    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Taost Tussle<hr style="margin:1rem;">');
-    $(".div2-pic-img-2").css('background-image',"url('../img/societies/virsa/four.jpg')");
-    $(".div2-pic-text-2").html('<hr style="margin:1rem;">Toast Talks<hr style="margin:1rem;">');
+    $(".div2-pic-text-1").html('<hr style="margin:1rem;">Ethnic Fashion<hr style="margin:1rem;">');
+    $(".div2-pic-img-2").css('background-image',"url('../img/societies/virsa/4.jpg')");
+    $(".div2-pic-text-2").html('<hr style="margin:1rem;">Musical Night<hr style="margin:1rem;">');
     $(".div3-title").html('Virsa TU');
    $(".div3-events").css('display','flex');
    $(".div3-events-1").html('Virsa event');
@@ -2530,13 +2544,16 @@ $(".societies__cards--adv-club").click(function (){
 
 $("#parent").mouseup(function(e)
     {
+        // alert("Yo");
         var subject = $("#child");
         if(e.target.id != subject.attr('id') && !subject.has(e.target).length)
         {
             $(".societies__modal--bg").animate({opacity : "0"});
             $(".societies__modal--bg").css("z-index","-100");
+
         }
     });
+    
 $(".societies__nav--sort-travel").click( function(){
 
     $("div:not(.travel)").css('display','none');
@@ -2665,4 +2682,61 @@ $(".category-delivery").click(function (){
     }, 1000);
 });
 
+$(".playlist__video-1").mouseenter(function() {
+    $(".playlist__video-2").animate({
+        width : "10%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+
+$(".playlist__video-2").mouseenter(function() {
+    $(".playlist__video-1").animate({
+        width : "13.3%"
+    });
+    $(".playlist__video-3").animate({
+        width : "13.3%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+
+$(".playlist__video-3").mouseenter(function() {
+    $(".playlist__video-2").animate({
+        width : "13.3%"
+    });
+    $(".playlist__video-4").animate({
+        width : "13.3%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+$(".playlist__video-4").mouseenter(function() {
+    $(".playlist__video-5").animate({
+        width : "13.3%"
+    });
+    $(".playlist__video-6").animate({
+        width : "13.3%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+
+$(".playlist__video-6").mouseenter(function() {
+    $(".playlist__video-5").animate({
+        width : "10%"
+    });
+    $(this).animate({
+        width : "23.32%"
+    });
+});
+$(".playlist__video").mouseleave(function() {
+    $("div").animate({
+        width : "16.66%"
+    });
+});
 });
