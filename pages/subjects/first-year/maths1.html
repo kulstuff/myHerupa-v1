@@ -52,7 +52,7 @@
     />
   </head>
 
-  <body class="stream">
+  <body class="stream" onload = "getVars('10%','20%','50%','20%')">
     <a href="../../first-year.html"
       ><img src="../../../img/back.png" class="stream__menu stream__menu--red"
     /></a>
@@ -114,11 +114,31 @@
         >Previous Year Papers</a
       >
     </div>
+    <div class="dist">
+      <div class="dist__head">
+        <span class="md_title--red">Mark</span><span>distribution<span>
+      </div>
+      <div class="dist__ray dist__ray-lab dist__ray--red">
+        Lab
+      </div>
+      <div class="dist__ray dist__ray-red dist__ray-tut dist__ray--red">
+        Tutorials
+      </div>
+      <div class="dist__ray dist__ray-mst dist__ray--red">
+        Mid-sem
+      </div>
+      <div class="dist__ray dist__ray-est dist__ray--red">
+        End-sem                            
+      </div>
+  </div>
+
+
     <!-- <a href="../../vlec.html#firstMaths1" id="react-hide" class="btn__stream display6 btn__subject--red-ppr col col-xs-12 col-sm-12 col-md-12 col-lg-12">Vlectures (BETA)</a> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/promise.js"></script>
     <script src="/fetch.js"></script>
     <script src="main.js"></script>
+    <script src="../../../js/md.js"></script>
     <script type="text/javascript" src="../../../js/subjectsMenu.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
