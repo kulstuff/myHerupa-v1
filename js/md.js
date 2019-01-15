@@ -1,7 +1,7 @@
 
 
     function getVars(est, mst, tut, lab){
-        console.log();
+        console.log("hi");
         
         var tutPerc = tut;
         var mstPerc = mst;
