@@ -1,0 +1,118 @@
+.dist{
+  height: 4vh;
+  width: 100%;
+  background-color: #eee;
+  margin-top:2vh;
+
+  &__head {  
+      height: 6vh;
+      width:100%;
+      background-color:#eee;
+      float:left;
+      text-align: center;
+      padding-top: 1vh;
+      font-size: 2.5rem;
+  }
+  &__ray {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1.2vh;
+    height:4vh;
+    width:25%;
+    color: #ffffff;
+    float: left;
+    font-size: 1.5rem;
+    &--red {
+        @include setMDSubject($color-red);
+      }
+      &--red-dark {
+        @include setMDSubject($color-red-dark);
+      }
+      &--blue-light {
+        @include setMDSubject($color-blue-light);
+      }
+      &--blue {
+        @include setMDSubject($color-blue);
+      }
+      &--blue-dark {
+        @include setMDSubject($color-blue-dark);
+      }
+      &--green {
+        @include setMDSubject($color-green);
+      }
+      &--green-dark {
+        @include setMDSubject($color-green-dark);
+      }
+      &--pink {
+        @include setMDSubject($color-pink);
+      }
+      &--pink-dark {
+        @include setMDSubject($color-pink-dark);
+      }
+  
+      &--pink-light {
+        @include setMDSubject($color-pink-pallete-2);
+      }
+      &--yellow {
+        @include setMDSubject($color-yellow);
+      }
+      &--violet {
+        @include setMDSubject($color-violet);
+      }
+      &--violet-dark {
+        @include setMDSubject($color-violet-dark);
+      }
+      &--orange {
+        @include setMDSubject($color-orange);
+      }
+  }
+}
+
+.md_title{
+    &--red {
+        @include setMDTitle($color-red);
+      }
+      &--red-dark {
+        @include setMDTitle($color-red-dark);
+      }
+      &--blue-light {
+        @include setMDTitle($color-blue-light);
+      }
+      &--blue {
+        @include setMDTitle($color-blue);
+      }
+      &--blue-dark {
+        @include setMDTitle($color-blue-dark);
+      }
+  
+      &--green {
+        @include setMDTitle($color-green);
+      }
+      &--green-dark {
+        @include setMDTitle($color-green-dark);
+      }
+  
+      &--pink {
+        @include setMDTitle($color-pink);
+      }
+      &--pink-dark {
+        @include setMDTitle($color-pink-dark);
+      }
+  
+      &--pink-light {
+        @include setMDTitle($color-pink-pallete-2);
+      }
+      &--yellow {
+        @include setMDTitle($color-yellow);
+      }
+  
+      &--violet {
+        @include setMDTitle($color-violet);
+      }
+      &--violet-dark {
+        @include setMDTitle($color-violet-dark);
+      }
+  
+      &--orange {
+        @include setMDTitle($color-orange);
+      }
+}

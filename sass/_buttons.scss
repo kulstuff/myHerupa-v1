@@ -6,6 +6,18 @@
   }
 }
 
+@mixin setMDSubject($color) {
+  background-color: $color;
+  &:hover {
+    color: $color;
+    background-color: black;
+  }
+}
+
+@mixin setMDTitle($color) {
+  color: $color;
+}
+
 @mixin getStreamPage($color) {
   &-site {
     background-color: darken($color, 5%);
