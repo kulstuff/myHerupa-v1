@@ -4194,6 +4194,12 @@ body {
 .md_title--orange {
   color: #D2691E; }
 
+.main_section {
+  background-image: url("../img/pubg/back2.png");
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.9; }
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
