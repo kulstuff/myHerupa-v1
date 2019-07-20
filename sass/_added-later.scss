@@ -1,0 +1,188 @@
+//Marks disttribution
+.dist {
+  height: 4vh;
+  width: 100%;
+  background-color: #eee;
+  margin-top: 2vh;
+}
+.dist__head {
+  height: 6vh;
+  width: 100%;
+  background-color: #eee;
+  float: left;
+  text-align: center;
+  padding-top: 1vh;
+  font-size: 2.5rem;
+}
+.dist__ray {
+  font-family: "Raleway", sans-serif;
+  padding-top: 1.2vh;
+  height: 4vh;
+  width: 25%;
+  color: #ffffff;
+  float: left;
+  font-size: 1.5rem;
+}
+.dist__ray--red {
+  background-color: #e94b3c;
+}
+.dist__ray--red:hover {
+  color: #e94b3c;
+  background-color: black;
+}
+.dist__ray--red-dark {
+  background-color: #bc243c;
+}
+.dist__ray--red-dark:hover {
+  color: #bc243c;
+  background-color: black;
+}
+.dist__ray--blue-light {
+  background-color: #6f9fd8;
+}
+.dist__ray--blue-light:hover {
+  color: #6f9fd8;
+  background-color: black;
+}
+.dist__ray--blue {
+  background-color: #4f84c4;
+}
+.dist__ray--blue:hover {
+  color: #4f84c4;
+  background-color: black;
+}
+.dist__ray--blue-dark {
+  background-color: #2e4a62;
+}
+.dist__ray--blue-dark:hover {
+  color: #2e4a62;
+  background-color: black;
+}
+.dist__ray--green {
+  background-color: #79c753;
+}
+.dist__ray--green:hover {
+  color: #79c753;
+  background-color: black;
+}
+.dist__ray--green-dark {
+  background-color: #005960;
+}
+.dist__ray--green-dark:hover {
+  color: #005960;
+  background-color: black;
+}
+.dist__ray--pink {
+  background-color: #c47fad;
+}
+.dist__ray--pink:hover {
+  color: #c47fad;
+  background-color: black;
+}
+.dist__ray--pink-dark {
+  background-color: #944743;
+}
+.dist__ray--pink-dark:hover {
+  color: #944743;
+  background-color: black;
+}
+.dist__ray--pink-light {
+  background-color: #ff9991;
+}
+.dist__ray--pink-light:hover {
+  color: #ff9991;
+  background-color: black;
+}
+.dist__ray--yellow {
+  background-color: #ed9302;
+}
+.dist__ray--yellow:hover {
+  color: #ed9302;
+  background-color: black;
+}
+.dist__ray--violet {
+  background-color: #6b5b95;
+}
+.dist__ray--violet:hover {
+  color: #6b5b95;
+  background-color: black;
+}
+.dist__ray--violet-dark {
+  background-color: #4f1a5f;
+}
+.dist__ray--violet-dark:hover {
+  color: #4f1a5f;
+  background-color: black;
+}
+.dist__ray--orange {
+  background-color: #d2691e;
+}
+.dist__ray--orange:hover {
+  color: #d2691e;
+  background-color: black;
+}
+
+.md_title--red {
+  color: #e94b3c;
+}
+
+.md_title--red-dark {
+  color: #bc243c;
+}
+
+.md_title--blue-light {
+  color: #6f9fd8;
+}
+
+.md_title--blue {
+  color: #4f84c4;
+}
+
+.md_title--blue-dark {
+  color: #2e4a62;
+}
+
+.md_title--green {
+  color: #79c753;
+}
+
+.md_title--green-dark {
+  color: #005960;
+}
+
+.md_title--pink {
+  color: #c47fad;
+}
+
+.md_title--pink-dark {
+  color: #944743;
+}
+
+.md_title--pink-light {
+  color: #ff9991;
+}
+
+.md_title--yellow {
+  color: #ed9302;
+}
+
+.md_title--violet {
+  color: #6b5b95;
+}
+
+.md_title--violet-dark {
+  color: #4f1a5f;
+}
+
+.md_title--orange {
+  color: #d2691e;
+}
+
+
+//Measurement Notes ??
+.main_section {
+  background-image: url("../img/pubg/back2.png");
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.9;
+}
