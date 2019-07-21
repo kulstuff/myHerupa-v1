@@ -1509,7 +1509,8 @@
         width: 50%; } }
     @media screen and (max-width: 600px) {
       .popup-content {
-        width: 85%; } }
+        width: 85%;
+        top: 6%; } }
     .popup-content__heading {
       margin-top: 2rem; }
   .popup__close {
