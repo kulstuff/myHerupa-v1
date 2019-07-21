@@ -62,7 +62,7 @@ const CIE3 = [
   "https://calendar.google.com/calendar/b/2?cid=Z3RtdDdzdjFzYjg1ZGZvcG0zbWxoMjB1N29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
 ];
 
-const ECI3 = [
+const EIC3 = [
   "https://calendar.google.com/calendar/b/2?cid=Nmplbmg0bWJhOXZubW5samZsZGduMHJodG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar/b/2?cid=N3VmMHJuZG5wZjZlYmNscjNzMzk4c2w3OHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar/b/2?cid=MHMybW9ob251ZnVhYnRobm4yMDE3djB2MjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
