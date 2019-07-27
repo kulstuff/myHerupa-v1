@@ -1683,7 +1683,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-events-3").html('');
     $(".div3-events-4").html('');
     $(".div3-about").css('height','50%');
-    $(".div3-about").html('ETE STUDENTS FORUM,headed by DR. HEMDUTT JOSHI (president), is a society created by the students of ECE which indulges to have technical and non-technical events in the university.');
+    $(".div3-about").html('IETE Students Forum, is a society which conducts technical events and infuses in the students the true essence of Electronics.It provides a platform to exchange ideas and facilitates workshops and projects.Mentors take care of the technical aspects.');
     $(".div3-contact-1").html('');
     $(".div3-contact-2").html('');
     $(".div3-contact-link").html('FB/TUECECLUB');
