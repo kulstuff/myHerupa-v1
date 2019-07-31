@@ -3,47 +3,23 @@
   "version": "1.0.0",
   "description": "Font Used = 'Raleway' Link  = \"https://fonts.googleapis.com/css?family=Raleway\"  Font Used = 'Roboto' Link = \"https://font.google.com/css/css?family=Roboto\" Font Size = 62.5% (10px)",
   "main": "index.js",
-  "homepage": "https://aadiyaara.github.io/ninjaproject/",
   "scripts": {
-    "start-server": "http-server -c-1 -p 3000",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "start": "http-server -c-1 -p 3000"
   },
   "author": "KulStuff",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^2.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "http-server": "^0.10.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14"
+    "node-sass": "^4.9.2",
+    "http-server": "^0.10.0"
   },
-  "dependencies": {
-    "firebase": "^5.7.2",
-    "gh-pages": "^2.0.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-google-login": "^4.0.1",
-    "react-redux": "^6.0.0",
-    "react-router-dom": "^4.3.1",
-    "redux": "^4.0.1"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dhawal27/ninjaproject.git"
   },
   "bugs": {
     "url": "https://github.com/dhawal27/ninjaproject/issues"
-  }
+  },
+  "homepage": "https://github.com/dhawal27/ninjaproject#readme"
 }

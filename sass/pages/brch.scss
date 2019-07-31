@@ -19,7 +19,7 @@
     overflow-y: hidden;
     text-align: center;
     // background-image: radial-gradient(#0000ee 0%, #000  150%);
-    background-image: url('/img/businessbg2.jpg');
+    background-image: url('../img/businessbg2.jpg');
     background-size: cover;
     &__heading{
       color: white;
@@ -315,7 +315,7 @@
   }
   &__intro{
     position: relative;
-    background-image: url(/img/wave2.jpg);
+    background-image: url(../img/wave2.jpg);
     background-size: 100vw 120vh;
     overflow-x: hidden;
     overflow-y: hidden;
