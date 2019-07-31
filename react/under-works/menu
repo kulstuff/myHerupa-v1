@@ -1,0 +1,35 @@
+<nav id="nav" class="nav nav__blue-light">
+        <div id="nav__varGrid__collect">
+            <div class="nav__varGrid__wrapper">
+                <a href="maths1.html" class="col color-white col-lg-12 display6 btn__stream btn__subject--red-site">Mathematics 1</a>
+                <a href="maths2.html" id="nav__subject-btn" class="subject-btn btn__subject--blue-site">Mathematics 2</a>
+                <a href="phy.html" id="nav__subject-btn" class="subject-btn btn__subject--green-site">Applied Physics</a>
+                <a href="electronics.html" id="nav__subject-btn" class="subject-btn  btn__subject--pink-site">Electronics</a>
+                <a href="electrical.html" id="nav__subject-btn" class="subject-btn  btn__subject--pink-dark-site">Electrical</a>
+                <a href="mech.html" id="nav__subject-btn" class="subject-btn  btn__subject--yellow-site">Mechanics</a>
+                <a href="env.html" id="nav__subject-btn" class="subject-btn  btn__subject--violet-site">Environment</a>
+                <a href="draw1.html" id="nav__subject-btn" class="subject-btn btn__subject--blue-dark-site">Engineering and Drawing 1</a>
+                <a href="draw1.html" id="nav__subject-btn" class="subject-btn btn__subject--violet-dark-site">Engineering and Drawing 2</a>
+                <a href="chem.html" id="nav__subject-btn" class="subject-btn btn__subject--blue-light-site">Appplied Chemistry</a>
+                <a href="cs1.html" id="nav__subject-btn" class="subject-btn btn__subject--green-dark-site">Computer Science 1</a>
+                <a href="cs2.html" id="nav__subject-btn" class="subject-btn btn__subject--orange-site">Computer Science 2</a>
+                <a href="com.html" id="nav__subject-btn" class="subject-btn btn__subject--red-dark-site">Professional Communication</a> -->
+            </div>
+            <img class="nav__varGrid__hover nav__varGrid__hoverUp" src="../../../img/icons/navHovU.png">
+            <img class="nav__varGrid__hover nav__varGrid__hoverDown" src="../../../img/icons/navHovD.png">
+        </div>
+        <div class="nav__carousel">Ads?</div>
+        <div class="nav__back nav__back__4"><span><</span> Back</div>
+        <div class="nav__fiddler">
+            <div class="nav__fiddlerLeft">
+                <img class="nav__fiddlerLeft__img" src="../../../img/icons/calculator.png">
+                <div class="nav__fiddlerLeft__head">C.G Calculator</div>
+                <div class="nav__fiddlerLeft__text">Click to calculate your C.G. for this sem or Commulatively</div>
+            </div>
+            <div class="nav__fiddlerRight">
+                <img class="nav__fiddlerRight__img" src="../../../img/icons/slides.png">
+                <div class="nav__fiddlerRight__head">Resourses</div>
+                <div class="nav__fiddlerRight__text">Explore other feathures like WiFi passwords and Announcements</div>
+            </div>
+        </div>
+    </nav>

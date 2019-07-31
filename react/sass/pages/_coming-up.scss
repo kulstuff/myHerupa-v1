@@ -1,0 +1,13 @@
+
+.coming-up{
+    background-color: #eee;
+    text-align: center;
+    padding-top: 6rem;
+
+    @media screen and (min-width : 1920px){
+        padding-top: 12rem;
+    }
+    &__text{
+        padding: 3rem;
+    }
+}
