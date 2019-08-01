@@ -80,14 +80,16 @@
       color: white;
     }
     &--first-year--text,
-    &--second-year--text {
+    &--second-year--text,
+    &--third-year--text {
       -webkit-background-clip: text;
       color: transparent;
     }
     &--first-year--text {
       background-image: linear-gradient(
         to right,
-        #5172fe 10%,
+        #47fe7f 10%,
+        #5172fe,
         #5990fd,
         #7acafe 40%,
         #ce93ff,
@@ -98,11 +100,20 @@
     &--second-year--text {
       background-image: linear-gradient(
         to right,
+        #a452d2,
+        #9645fa,
         #ff463b,
-        #fe5d38,
+        #ff3978,
+        #fb9d34
+      );
+    }
+    &--third-year--text {
+      background-image: linear-gradient(
+        to right,
         #fb9d34 30%,
         #ffc338,
-        #fcfc3d
+        #fcfc3d,
+        #fee13b
       );
     }
 
