@@ -1976,7 +1976,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-events-4").html('');
     $(".div3-about").css('height','50%');
     $(".div3-about").html("Thapar Toastmasters Club, a chapter of Toastmasters International is an organization that helps its members to improve their public speaking, communication and leadership skills. A very juvenile club started in Thapar Institute of Engineering & Technology, who meet every Wednesday, not just to overcome their stage fear and improve their communication skills, but to become a better orator and a better leader. ");
-    $(".div3-contact-1").html('Vaibhav Dhir : 09664954626');
+    $(".div3-contact-1").html('Prakhar Chaudhary : 09877437998');
     $(".div3-contact-2").html('');
     $(".div3-contact-link").html('FB/ThaparToastmastersClub');
     $(".div3-contact-link").attr('href','https://facebook.com/ThaparToastmastersClub');
