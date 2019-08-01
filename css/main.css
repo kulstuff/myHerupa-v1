@@ -663,13 +663,15 @@
   .btn__landing:hover {
     background-color: rgba(255, 255, 255, 0.7);
     color: white; }
-  .btn__landing--first-year--text, .btn__landing--second-year--text {
+  .btn__landing--first-year--text, .btn__landing--second-year--text, .btn__landing--third-year--text {
     -webkit-background-clip: text;
     color: transparent; }
   .btn__landing--first-year--text {
-    background-image: linear-gradient(to right, #5172fe 10%, #5990fd, #7acafe 40%, #ce93ff, #a452d2, #9645fa); }
+    background-image: linear-gradient(to right, #47fe7f 10%, #5172fe, #5990fd, #7acafe 40%, #ce93ff, #a452d2, #9645fa); }
   .btn__landing--second-year--text {
-    background-image: linear-gradient(to right, #ff463b, #fe5d38, #fb9d34 30%, #ffc338, #fcfc3d); }
+    background-image: linear-gradient(to right, #a452d2, #9645fa, #ff463b, #ff3978, #fb9d34); }
+  .btn__landing--third-year--text {
+    background-image: linear-gradient(to right, #fb9d34 30%, #ffc338, #fcfc3d, #fee13b); }
   @media screen and (max-width: 900px) {
     .btn__landing {
       margin-top: 2rem;
