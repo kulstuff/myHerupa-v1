@@ -26,12 +26,7 @@ $(document).ready(function() {
         "H|H",
         "I|I",
         "J|J",
-        "K|K",
-        "L|L",
-        "M|M",
-        "N|N",
-        "O|O",
-        "P|P"
+        "K|K"
       ];
 
       for (var option in batch) {
@@ -74,7 +69,17 @@ $(document).ready(function() {
     var year = document.getElementById("popup__selector-yr");
     s2.innerHTML = "";
     if (year.value == "first-yr") {
-      addSubOptions(0);
+      // console.log(s1.value);
+
+      if (
+        s1.value == "G" ||
+        s1.value == "H" ||
+        s1.value == "I" ||
+        s1.value == "J" ||
+        s1.value == "K"
+      )
+        addSubOptions(8);
+      else addSubOptions(5);
     } else if (year.value == "second-yr") {
       if (s1.value == "COE") {
         addSubOptions(32);
