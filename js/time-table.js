@@ -81,7 +81,7 @@ $(document).ready(function() {
 s1.value == "CSE"
       )
         addSubOptions(8);
-      else addSubOptions(5);
+      else addSubOptions(6);
     } else if (year.value == "second-yr") {
       if (s1.value == "COE") {
         addSubOptions(32);
