@@ -107,6 +107,17 @@ const K = [
   "https://calendar.google.com/calendar?cid=c427oh6m2jlt11m4d5bv2eapb8@group.calendar.google.com"
 ];
 
+const CSE = [
+ "https://calendar.google.com/calendar?cid=v6o9os3uak3h3ffukgpsukd5tk@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=tqpt7u7b8mdmqdpioqupr0qdfc@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=84ventedp2bdkiisojvqm49elo@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=0le9obvm67s72fsuce3pqgnkdo@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=iv558u56gq9f8i6h4a012ss2qk@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=kbkkjmasq0l44phjd4u7i772oc@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=999vq85tjogbhv1mpb8qqbbkh4@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=febfsik85eio539vq2m4p3df70@group.calendar.google.com"
+];
+
 // const BTD = [
 //   "https://calendar.google.com/calendar?cid=bmo3bXF2aW9xMDFmbnBjbm9iM2dzaGNlazBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
 //   "https://calendar.google.com/calendar?cid=dmE2Zm9tZmpyajQzNWU4ZnFza2lzbjBqcWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",

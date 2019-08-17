@@ -26,7 +26,8 @@ $(document).ready(function() {
         "H|H",
         "I|I",
         "J|J",
-        "K|K"
+        "K|K",
+"CSE|CSE"
       ];
 
       for (var option in batch) {
@@ -76,7 +77,8 @@ $(document).ready(function() {
         s1.value == "H" ||
         s1.value == "I" ||
         s1.value == "J" ||
-        s1.value == "K"
+        s1.value == "K" ||
+s1.value == "CSE"
       )
         addSubOptions(8);
       else addSubOptions(6);
