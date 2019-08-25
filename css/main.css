@@ -1,3 +1,11 @@
+.myTeam--heading {
+  padding: 10px;
+  font-family: "Raleway"; }
+
+.myTeam--box {
+  background-color: white;
+  box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.1); }
+
 * {
   box-sizing: border-box;
   padding: 0;
