@@ -3,7 +3,8 @@ const A = [
   "https://calendar.google.com/calendar?cid=ZGlyOXZoNzI5bmsybHBkZ2RrZGM2ZDM3bWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=MzVtNDltbnZsZjJsa29kYzFiazZuYTJzb2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=cWdyZW1zMnQ0aWx2dTlnOGN2ZW5uY2UxZDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=MnRlYWkwdThwbHJjN2Nucm10cmFmMmNrNW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=MnRlYWkwdThwbHJjN2Nucm10cmFmMmNrNW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=5clvve7n6a8o2lsa41n1t4rs3k@group.calendar.google.com"
 ];
 
 const B = [
@@ -11,7 +12,8 @@ const B = [
   "https://calendar.google.com/calendar?cid=MHFxdGduZHM3MjFycGpycXZqNWlpMnZ0aXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=MzljbmVtaXRldWUwN2ZzdHVtbDRsdGc2MmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=a2YzZHUzYzZuMWlmaHI2MWtqM3ZrbzVkOGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=ZzcxdG9ka29hOTQwN2R1b3IyaWhnOXJoMWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=ZzcxdG9ka29hOTQwN2R1b3IyaWhnOXJoMWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=ukbkmof8784nloc09vmkjk8lhs@group.calendar.google.com"
 ];
 
 const C = [
@@ -19,7 +21,8 @@ const C = [
   "https://calendar.google.com/calendar?cid=MmNibmNmMDNyOG1lMnVucGs4Mmd2NnF0ZzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=YmdkM3RrcDZ1YTBxMTQxODJyM3Uxc3VmYTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=NG8xMjlnaDJrdHRkODQ3NzlwMjlkc2Rtc2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=ZjdwbGo3YTVjZTcxNWNzbzlyN2R2M2wyYXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=ZjdwbGo3YTVjZTcxNWNzbzlyN2R2M2wyYXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=fgq6itjuk0l2vnb4qnsf0kh6uo@group.calendar.google.com"
 ];
 
 const D = [
@@ -27,7 +30,8 @@ const D = [
   "https://calendar.google.com/calendar?cid=aGZoNGk0dG1kY2MzdWxsaGNuMTd0aWlkazhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=dGFnMnR0dnI3ZGgzdGJ0MXNpdnJmazA2MzBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=NmplZzQ3ZnR0MXY5bHYzNDk1NWtkYjRuZ3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=dDBldWNiamk2YzdzN2UxdW1waWY2dHBxYnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=dDBldWNiamk2YzdzN2UxdW1waWY2dHBxYnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=2teai0u8plrc7cnrmtraf2ck5o@group.calendar.google.com"
 ];
 
 const E = [
@@ -35,7 +39,8 @@ const E = [
   "https://calendar.google.com/calendar?cid=c3NwNGVscGFjcm9taG8waGdmZW12N3E5cjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=M2VqNTQ0cjRpcDhscmdicThoYWljaW05b2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=N2tlZ2Q4dWNzcnBwdmFvZm12bzVwNXU0OWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=NTcyM2tlZXN1czc2djhkdHV2NWgxZ2JmZmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=NTcyM2tlZXN1czc2djhkdHV2NWgxZ2JmZmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=nrvlnt1anmq5g903k2mt0m1r2o@group.calendar.google.com"
 ];
 
 const F = [
@@ -43,7 +48,8 @@ const F = [
   "https://calendar.google.com/calendar?cid=YTBkdmM3NGJpMWZqaTRmbjgyODF2bmlxZDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=YTk5NTBxMms1YXEzNHAxZ2k1YmxkZWt2bThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=bmVhZTd1NWN0ZzFubW9hYjNhc3EzdWprbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=amk5bmNkNmM5cHZxZWJlZHJmY2VmZmFlcW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=amk5bmNkNmM5cHZxZWJlZHJmY2VmZmFlcW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=vidp9i1n59l3a5ion94phsl72c@group.calendar.google.com"
 ];
 
 const G = [
@@ -51,7 +57,10 @@ const G = [
   "https://calendar.google.com/calendar?cid=dGxvcWxvdmtnbTMxbXNmZ3I3YjVmbDdra2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=NTY3OHJ0NTFwM21hbTVocDB0aTk2M21ha2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=amhlZ2dncTFpNXQ3bjJhZGIwb3ViMGo1a2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=bDZqbGl0dTQxaG1jM201YTlmN3Noc3NwaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=bDZqbGl0dTQxaG1jM201YTlmN3Noc3NwaWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=5rgc6eibo3rd9h2qm1shaid3pk@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=4r9jb9uch0bkj4e1us1811570c@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=3srglngn6q1m29icb9mja1r4p0@group.calendar.google.com"
 ];
 
 const H = [
@@ -59,7 +68,10 @@ const H = [
   "https://calendar.google.com/calendar?cid=OTdiaG41MjQ4Z3ZlYmoxa2VyZnRsMnY2Z29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=aXVrYm1oaHR0dDhnbzllZjhmZXM0dTJpODBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=bnJxanJuaTI1M3FqZ3N2cXM1c3VsMDQxczRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=bGxyZW5xbDY3dGllaDc2ZmxlM3V2Z3BiZmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=bGxyZW5xbDY3dGllaDc2ZmxlM3V2Z3BiZmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=17k4jcso81bm9b729n2vl907qo@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=5hoctanaqopg8s57rhvkhonp8c@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=cj804jjpv62iliqe89hp64220s@group.calendar.google.com"
 ];
 
 const I = [
@@ -67,7 +79,10 @@ const I = [
   "https://calendar.google.com/calendar?cid=bW9iMzU3M2g1OTZ0cDBvcjl1a2dvNnI1bjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=cWN1bTZmcm9iMWVjMGxqYmc0dDdzZ2ljaThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=MWhjZmdyNnZ0Yzc2bjdrYjkzY3Axbm9odG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=YWY4NHYyaWY0NGlkNWxoZDZzOWEwMWVsMDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=YWY4NHYyaWY0NGlkNWxoZDZzOWEwMWVsMDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=ch5heas1hm7pptk1v4j66hbkak@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=ag3gi2fu4ajlkic6tel9uvi3ug@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=c1oa1h7jiud1fi8t7958j7cqg4@group.calendar.google.com"
 ];
 
 const J = [
@@ -75,7 +90,10 @@ const J = [
   "https://calendar.google.com/calendar?cid=YjVoN2JvajhqYmYydWhpZmdnM2NpbWpnNXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=MDEwdTYxNmZnbG1sNGkxdmdnbDN0ZWkxbXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=bjU5dm5mdjdnOTludmJsaHFhM2FiMG84MnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=cnJwaDlrcjE4bnZxazZkOW9xYzE0ajdkamNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=cnJwaDlrcjE4bnZxazZkOW9xYzE0ajdkamNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=7oig72mo37nosi8ntras976kf8@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=2kapsjbftqbpqpbvtts186ledk@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=1caq3uiegq7bk11bp5ipbv7s4s@group.calendar.google.com"
 ];
 
 const K = [
@@ -83,51 +101,25 @@ const K = [
   "https://calendar.google.com/calendar?cid=NWVkamRlcnM0YmxjNmFuMjlxZmllZWo0azBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=NWY3MTVkdTA2NHZuajhqZmsxdTJpa3E2dm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
   "https://calendar.google.com/calendar?cid=bnE0ZjlybXBzZzk0OWNjcWk4ZzVhb284bnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=azNoZ3FkZmZsYjZhODQ3YmE5aDRmbzg0b2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+  "https://calendar.google.com/calendar?cid=azNoZ3FkZmZsYjZhODQ3YmE5aDRmbzg0b2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+  "https://calendar.google.com/calendar?cid=6ll60tr6rivgdf4oj1kg8uo5uc@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=kvo571kkabpariin1b56g7erb4@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=c427oh6m2jlt11m4d5bv2eapb8@group.calendar.google.com"
 ];
 
-const L = [
-  "https://calendar.google.com/calendar?cid=YmVtbTFvbzVkbm85NnZnaXBtbnR0cGlxbHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=ZWUxb2wybW0wdXI4aGhkbDRyZzZibTEwa2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=cTk2Ymg3N20xdTNja3V2MXFzNmxnbGh2ZDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=aWtqajNoc29paWg5bnQ4bWl1azFhamlmM2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=aGxiOW02a3QyY28xdHRsb3Jtc3NrcDFlZ2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+const CSE = [
+ "https://calendar.google.com/calendar?cid=v6o9os3uak3h3ffukgpsukd5tk@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=tqpt7u7b8mdmqdpioqupr0qdfc@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=84ventedp2bdkiisojvqm49elo@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=0le9obvm67s72fsuce3pqgnkdo@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=iv558u56gq9f8i6h4a012ss2qk@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=kbkkjmasq0l44phjd4u7i772oc@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=999vq85tjogbhv1mpb8qqbbkh4@group.calendar.google.com",
+ "https://calendar.google.com/calendar?cid=febfsik85eio539vq2m4p3df70@group.calendar.google.com"
 ];
 
-const M = [
-  "https://calendar.google.com/calendar?cid=Z3Z0ZWt2bWJzM3Y3NjhqZ3E1Z3BvOHZ0ZDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=NHBlZ2xucTZpODdrOHZ1b3M2bG10NHMxbmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=OXJnMW4wcDc1ZTQwYnFjMmllZm04ZDh2bW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=YjNpcmpsM2FrMXZsNmpsODE2a2JhcGtxNmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=M3ZoNXBsZzh1MXI5amVsamRxZzJsaGVkNTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-];
-
-const N = [
-  "https://calendar.google.com/calendar?cid=ZmwwMzB2YnYyb3BxdHI4NGtlcWRrNjc0YzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=cTdnY2VyYzFza2pyYTFhdmZrcW9qb25jajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=MTI3aG5rNmZnY2FqYmNjcWU2bmh0dXY5ZjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=dmhkcW1oOXNzZGplanA0cDhhZ250ZGZhZ29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=M2luaTBwOHJpc28wZGNna3JtNjg0cTJ0cWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-];
-
-const O = [
-  "https://calendar.google.com/calendar?cid=MGdwOWw0aWFmbjA2cXUybTdxODF0dHMybThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=bzExNXZsa3RrZGRzdWt1MXBodDBmazZvc2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=cmdwbGs1YThtdTExMWx2Z3U5ZGYydDh2MnNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=bmJkNTdjamk5Ym91ZjVhNnZuc2FjZjNhZGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=azduczVrbjFybWd1M202NTQxc2R2YTlndjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-];
-
-const P = [
-  "https://calendar.google.com/calendar?cid=N2o3NDAyMTN2M241dnBmdnZuNW9nNXJwb2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=cmtodmk1NHB2ZWR1bmJlODBnbGNydjNkMjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=YWdlc2dlcjZhdmpqam04aTBya3F2bWRpMmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=ZTE4ZG82YjAwNHNpNzc2MmFyMGk1cmFlMGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=ajJ1ZXBrYTdtc3Z2N25pMzIyZzZnNHNlMWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-];
-
-const BTD = [
-  "https://calendar.google.com/calendar?cid=bmo3bXF2aW9xMDFmbnBjbm9iM2dzaGNlazBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=dmE2Zm9tZmpyajQzNWU4ZnFza2lzbjBqcWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
-  "https://calendar.google.com/calendar?cid=b250MXBvN3NqbWdyN2huYWpjc3U0ZWVnZDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-];
+// const BTD = [
+//   "https://calendar.google.com/calendar?cid=bmo3bXF2aW9xMDFmbnBjbm9iM2dzaGNlazBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+//   "https://calendar.google.com/calendar?cid=dmE2Zm9tZmpyajQzNWU4ZnFza2lzbjBqcWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+//   "https://calendar.google.com/calendar?cid=b250MXBvN3NqbWdyN2huYWpjc3U0ZWVnZDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+// ];
