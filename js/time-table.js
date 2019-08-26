@@ -27,7 +27,8 @@ $(document).ready(function() {
         "I|I",
         "J|J",
         "K|K",
-"CSE|CSE"
+        "CSE|CSE",
+        "CSBS|CSBS"
       ];
 
       for (var option in batch) {
@@ -78,9 +79,10 @@ $(document).ready(function() {
         s1.value == "I" ||
         s1.value == "J" ||
         s1.value == "K" ||
-s1.value == "CSE"
+        s1.value == "CSE"
       )
         addSubOptions(8);
+      else if (s1.value == "CSBS") addSubOptions(2);
       else addSubOptions(6);
     } else if (year.value == "second-yr") {
       if (s1.value == "COE") {
