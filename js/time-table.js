@@ -28,7 +28,8 @@ $(document).ready(function() {
         "J|J",
         "K|K",
         "CSE|CSE",
-        "CSBS|CSBS"
+        "CSBS|CSBS",
+        "EC|EC"
       ];
 
       for (var option in batch) {
@@ -79,7 +80,8 @@ $(document).ready(function() {
         s1.value == "I" ||
         s1.value == "J" ||
         s1.value == "K" ||
-        s1.value == "CSE"
+        s1.value == "CSE" ||
+        s1.value == "EC"
       )
         addSubOptions(8);
       else if (s1.value == "CSBS") addSubOptions(2);
