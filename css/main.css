@@ -3821,6 +3821,62 @@ body {
 .news_article--gray {
   background-color: white; }
 
+body {
+  background-color: white; }
+
+.resource-element {
+  font-size: 2rem;
+  box-shadow: 0 0 5px 1px lightgrey;
+  cursor: pointer;
+  margin-left: 1rem;
+  display: inline;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: white; }
+
+.resource-hub {
+  background-color: rgba(255, 255, 255, 0.4); }
+  .resource-hub-document-main {
+    flex: 5; }
+  .resource-hub-document-ads {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.4); }
+
+.resource-loaded-document {
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
+#resource {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/Resource-bg.svg");
+  background-size: cover; }
+
+#resource-sidebar {
+  display: grid;
+  height: 100vh;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: grey 1rem;
+  z-index: 1000; }
+
+#resource-grid {
+  height: 80vh;
+  width: 100%;
+  padding: 1rem 2rem;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+#resource-hub {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2); }
+
+#resource-hub-document {
+  height: 100%; }
+
 /*Grid System with Media Query*/
 .col {
   float: left; }
