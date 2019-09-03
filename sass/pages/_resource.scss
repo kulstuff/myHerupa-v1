@@ -89,8 +89,13 @@ body {
   display: grid;
   height: 100vh;
   width: 20%;
-  background-color: rgba($color: #ffffff, $alpha: 0.4);
-  box-shadow: grey 1rem;
+
+  @media screen and (max-width: 900px) {
+    // display: none !important;
+    width: 100%;
+  }
+  //   background-color: rgba($color: #ffffff, $alpha: 0.4);
+  //   box-shadow: grey 1rem;
   z-index: 1000;
   padding: 1rem;
   background-color: black;

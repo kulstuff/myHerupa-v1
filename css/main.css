@@ -17,17 +17,17 @@
 
 @media screen and (max-width: 900px) {
   .hide-phone {
-    display: none; } }
+    display: none !important; } }
 
 @media screen and (min-width: 600px) {
   .hide-desktop {
-    display: none; } }
+    display: none !important; } }
 
 .hide-small-desktop {
-  display: none; }
+  display: none !important; }
   @media screen and (min-width: 1400px) {
     .hide-small-desktop {
-      display: block; } }
+      display: block !important; } }
 
 .bold {
   font-weight: 900;
@@ -3881,11 +3881,12 @@ body {
   display: grid;
   height: 100vh;
   width: 20%;
-  background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: grey 1rem;
   z-index: 1000;
   padding: 1rem;
   background-color: black; }
+  @media screen and (max-width: 900px) {
+    #resource-sidebar {
+      width: 100%; } }
 
 #resource-grid {
   height: 100%;

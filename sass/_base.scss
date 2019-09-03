@@ -10,19 +10,19 @@
 
 .hide-phone {
   @media screen and (max-width: 900px) {
-    display: none;
+    display: none !important;
   }
 }
 
 .hide-desktop {
   @media screen and (min-width: 600px) {
-    display: none;
+    display: none !important;
   }
 }
 .hide-small-desktop {
-  display: none;
+  display: none !important;
   @media screen and (min-width: 1400px) {
-    display: block;
+    display: block !important;
   }
 }
 .bold {
