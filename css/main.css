@@ -3824,9 +3824,22 @@ body {
 body {
   background-color: white; }
 
+@media screen and (max-width: 400px) {
+  .resource-sidebar {
+    max-width: 0.5rem; } }
+
 .resource-sidebar__header {
+  font-size: 2rem;
   color: white;
   font-family: "Raleway", sans-serif; }
+  @media screen and (max-width: 400px) {
+    .resource-sidebar__header {
+      font-size: 1.25rem; } }
+
+.resource-sidebar__bars {
+  width: 3rem;
+  height: 3rem;
+  color: white; }
 
 .resource-sidebar__footer {
   position: relative;
@@ -3839,6 +3852,10 @@ body {
   display: block;
   width: 100%;
   transition: 0.25s; }
+  @media screen and (max-width: 400px) {
+    .resource-sidebar__footer {
+      margin: 50px 0px;
+      padding: 5px; } }
   .resource-sidebar__footer:hover {
     background-color: white;
     color: black; }
@@ -3881,11 +3898,16 @@ body {
   display: grid;
   height: 100vh;
   width: 20%;
-  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: grey 1rem;
   z-index: 1000;
   padding: 1rem;
   background-color: black; }
+  @media screen and (max-width: 400px) {
+    #resource-sidebar {
+      width: 100vw !important; } }
+  @media screen and (max-width: 700px) {
+    #resource-sidebar {
+      width: 100vw !important; } }
 
 #resource-grid {
   height: 100%;
@@ -3897,9 +3919,18 @@ body {
   height: 100vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2); }
+  @media screen and (max-width: 400px) {
+    #resource-hub {
+      width: 0vw; } }
 
 #resource-hub-document {
   height: 100%; }
+
+#resource-bars {
+  background-color: black; }
+  @media screen and (min-width: 400px) {
+    #resource-bars {
+      display: none; } }
 
 /*Grid System with Media Query*/
 .col {

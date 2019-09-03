@@ -4,7 +4,7 @@ var itemURLs = [];
 var itemNames = [];
 var selectedDocumentId;
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Set the URL for Request FOLDER CONTENTS
   var URL =
     "https://www.googleapis.com/drive/v3/files?q=%27" +
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   // Get links of the children
   var xmlHttp = new XMLHttpRequest();
-  xmlHttp.onreadystatechange = function() {
+  xmlHttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       console.log(JSON.parse(this.responseText));
       JSON.parse(this.responseText).files.forEach(file => {
@@ -29,7 +29,7 @@ $(document).ready(function() {
         }
       });
     }
-    $(".resource-element").click(function() {
+    $(".resource-element").click(function () {
       console.log(this.className);
       if ($(".resource-loaded-document")) {
         $(".resource-loaded-document").remove();
@@ -44,10 +44,24 @@ $(document).ready(function() {
       document
         .getElementById("resource-overlay-document-payload")
         .append(loadDocument);
+      if (window.innerWidth < 400) {
+        $("#resource-sidebar").css({ 'display': 'none' });
+        $("#resource-hub").css({ 'display': 'block', 'width': '100vw' });
+      }
+
     });
+
   };
   xmlHttp.open("GET", URL, true); // false for synchronous request
   xmlHttp.send();
+
+
+  $("#resource-bars").click(function () {
+    // $(".resource-sidebar__bars").css('color', 'black');
+    $("#resource-sidebar").css('display', 'block');
+    $("#resource-hub").css('display', 'none');
+
+  })
 
   // Click Test
 });

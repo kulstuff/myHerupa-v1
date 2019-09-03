@@ -3,15 +3,32 @@ body {
 }
 .resource {
   &-sidebar {
+    @media screen and (max-width: 400px){
+        max-width: 0.5rem;
+    }
     &__header {
-      //   font-size: 10px;
+      @media screen and (max-width: 400px){
+        font-size: 1.25rem;
+    }
+      font-size: 2rem;
       color: white;
-      font-family: "Raleway", sans-serif;
+      font-family: "Raleway", sans-serif; 
+      
+    }
+    &__bars{
+      width:3rem;
+      height: 3rem;
+      color: white;
     }
     &__footer {
+      @media screen and (max-width: 400px){
+        // font-size: 1.25rem;
+        margin: 50px 0px;
+        padding:5px;
+    }
       position: relative;
       bottom: -25%;
-      text-align: center;
+      text-align: center; 
       margin: 75px 0px;
       padding: 10px;
       border: 1px solid white;
@@ -56,10 +73,12 @@ body {
     }
   }
   &-hub {
+    
     background-color: rgba($color: #ffffff, $alpha: 0.4);
     &-document {
       &-main {
         flex: 5;
+       
       }
       &-ads {
         // flex: 2;
@@ -84,12 +103,18 @@ body {
   background-image: url("../img/Resource-bg.svg");
   background-size: cover;
 }
-
+ 
 #resource-sidebar {
+  @media screen and (max-width: 400px){
+    width: 100vw !important;
+  }
+  @media screen and (max-width: 700px){
+    width: 100vw !important;
+  }
   display: grid;
   height: 100vh;
   width: 20%;
-  background-color: rgba($color: #ffffff, $alpha: 0.4);
+  // background-color: rgba($color: #ffffff, $alpha: 0.4);
   box-shadow: grey 1rem;
   z-index: 1000;
   padding: 1rem;
@@ -110,9 +135,20 @@ body {
 #resource-hub {
   height: 100vh;
   width: 100%;
+  @media screen and (max-width: 400px){
+    width: 0vw ;
+  }
   background-color: rgba($color: #ffffff, $alpha: 0.2);
 }
 
 #resource-hub-document {
   height: 100%;
+}
+
+
+#resource-bars{
+  @media screen and (min-width: 400px){
+    display: none
+  }
+  background-color: black;
 }
