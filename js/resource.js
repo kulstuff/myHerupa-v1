@@ -1,6 +1,6 @@
-var resourceURL = (window.location.href + '').split('?resURL=')[1]
+var resourceURL = (window.location.href + '').split('#resURL=')[1]
 // var resourceURL = Request.QueryString["resURL"]
-console.log((window.location.href + '').split('?resURL=')[1])
+// console.log((window.location.href + '').split('#resURL=')[1])
 // window.location.href = (window.location.href + '').split('#')[0]
 // var resourceURL = "1l6z2DqLI1thuFFIpHdBpe1tmepWPg13R";
 var itemURLs = [];
