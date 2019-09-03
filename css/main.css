@@ -3824,22 +3824,45 @@ body {
 body {
   background-color: white; }
 
+.resource-sidebar__header {
+  color: white;
+  font-family: "Raleway", sans-serif; }
+
+.resource-sidebar__footer {
+  position: relative;
+  bottom: -25%;
+  text-align: center;
+  margin: 75px 0px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  transition: 0.25s; }
+  .resource-sidebar__footer:hover {
+    background-color: white;
+    color: black; }
+
 .resource-element {
-  font-size: 2rem;
-  box-shadow: 0 0 5px 1px lightgrey;
   cursor: pointer;
-  margin-left: 1rem;
-  display: inline;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  background-color: white; }
+  color: white;
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid white;
+  display: block;
+  word-wrap: break-word;
+  overflow: hidden; }
+  .resource-element:last-child {
+    border: 0; }
+  .resource-element-icon {
+    color: whitesmoke;
+    float: left; }
 
 .resource-hub {
   background-color: rgba(255, 255, 255, 0.4); }
   .resource-hub-document-main {
     flex: 5; }
   .resource-hub-document-ads {
-    flex: 1;
     background-color: rgba(255, 255, 255, 0.4); }
 
 .resource-loaded-document {
@@ -3857,15 +3880,16 @@ body {
 #resource-sidebar {
   display: grid;
   height: 100vh;
-  width: 25%;
+  width: 20%;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: grey 1rem;
-  z-index: 1000; }
+  z-index: 1000;
+  padding: 1rem;
+  background-color: black; }
 
 #resource-grid {
-  height: 80vh;
+  height: 100%;
   width: 100%;
-  padding: 1rem 2rem;
   overflow-x: hidden;
   overflow-y: scroll; }
 
