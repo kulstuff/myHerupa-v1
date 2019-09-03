@@ -1,4 +1,7 @@
-var resourceURL = "1IJ3jYyL3VEHYQtwP6VG_RnNjyXh5jP6g";
+var resourceURL = (window.location.href + '').split('?resURL=')[1]
+// var resourceURL = Request.QueryString["resURL"]
+console.log((window.location.href + '').split('?resURL=')[1])
+// window.location.href = (window.location.href + '').split('#')[0]
 // var resourceURL = "1l6z2DqLI1thuFFIpHdBpe1tmepWPg13R";
 var itemURLs = [];
 var itemNames = [];
@@ -44,7 +47,7 @@ $(document).ready(function () {
       document
         .getElementById("resource-overlay-document-payload")
         .append(loadDocument);
-      if (window.innerWidth < 400) {
+      if (window.innerWidth < 700) {
         $("#resource-sidebar").css({ 'display': 'none' });
         $("#resource-hub").css({ 'display': 'block', 'width': '100vw' });
       }
@@ -58,7 +61,7 @@ $(document).ready(function () {
 
   $("#resource-bars").click(function () {
     // $(".resource-sidebar__bars").css('color', 'black');
-    $("#resource-sidebar").css('display', 'block');
+    $("#resource-sidebar").css('display', 'grid');
     $("#resource-hub").css('display', 'none');
 
   })
