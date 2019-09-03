@@ -1,73 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Resource</title>
-    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
-    <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/main.css" />
-  </head>
-  <body>
-    <div id="resource">
-      <div id="resource-sidebar">
-        <div class="resource-sidebar__header display6">
-          Click on below resource to access them.
-          <!-- <ion-icon name="document"></ion-icon> -->
-        </div>
-        <div id="resource-grid"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Resource</title>
+  <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
 
-        <div class="display6">
-          <a
-            href="https://forms.gle/TD6MRT2cNzhmprxe7"
-            class="color-white resource-sidebar__footer"
-            >Any Feedback ?</a
-          >
-          <!-- <ion-icon name="document"></ion-icon> -->
-        </div>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <div id="resource-bars">
+    <ion-icon name="menu" class="resource-sidebar__bars"></ion-icon>
+  </div>
+  <div id="resource">
+    <div id="resource-sidebar">
+      <div class="resource-sidebar__header ">
+
+
+        Click on below resource to access them.
+        <!-- <ion-icon name="document"></ion-icon> -->
       </div>
-      <div id="resource-hub">
-        <div id="resource-hub-controls"></div>
-        <div id="resource-hub-document" style="display: flex;">
-          <div
-            id="resource-overlay-document-payload"
-            class="resource-hub-document-main"
-          ></div>
-          <div class="resource-hub-document-ads"></div>
-        </div>
+      <div id="resource-grid"></div>
+
+      <div class="display6">
+        <a href="https://forms.gle/TD6MRT2cNzhmprxe7" class="color-white resource-sidebar__footer">Any Feedback ?</a>
+        <!-- <ion-icon name="document"></ion-icon> -->
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/resource.js"></script>
+    <div id="resource-hub">
+      <div id="resource-hub-controls"></div>
+      <div id="resource-hub-document" style="display: flex;">
+        <div id="resource-overlay-document-payload" class="resource-hub-document-main"></div>
+        <div class="resource-hub-document-ads"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/resource.js"></script>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-      gtag("config", "UA-122580305-1");
-    </script>
-  </body>
+    gtag("config", "UA-122580305-1");
+  </script>
+</body>
+
 </html>
