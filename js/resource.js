@@ -41,6 +41,7 @@ $(document).ready(function () {
       var loadDocument = document.createElement("iframe");
       loadDocument.className +=
         " resource-loading-document resource-loaded-document";
+      loadDocument.id = 'loadDocument'
       loadDocument.src =
         "https://docs.google.com/file/d/" +
         this.className.split("resource-element-id-")[1] +
@@ -52,18 +53,22 @@ $(document).ready(function () {
         $("#resource-sidebar").css({ 'display': 'none' });
         $("#resource-hub").css({ 'display': 'block', 'width': '100vw' });
       }
-      var iframeDoc = loadDocument.contentDocument || loadDocument.contentWindow.document
-      console.log(iframeDoc.readyState)
+      $('#loadDocument').on('load', function(){
+        $('#resource-loader').css({'display': 'none'})
+        // your code (will be called once iframe is done loading)
+      });
+      // var iframeDoc = loadDocument.contentDocument || loadDocument.contentWindow.document
+      // console.log(iframeDoc.readyState)
       // setTimeout(100, setLoader)
-      if (  iframeDoc.readyState  == 'complete' ) {
+      // if (  iframeDoc.readyState  == 'complete' ) {
         // loadDocument.contentWindow.alert("Hello");
-        loadDocument.contentWindow.onload = function() {
-          alert("I am loaded")
-        };
+        // loadDocument.contentWindow. = function() {
+        //   alert("I am loaded")
+        // };
         // The loading is complete, call the function we want executed once the iframe is loaded
-        afterLoading();
+        // afterLoading();
         // return;
-      }
+      // }
     });
     
   };
@@ -83,7 +88,7 @@ $(document).ready(function () {
   // }
   
   function afterLoading(){
-    $('#resource-loader').css({'display': 'none'})
+
     // alert("I am here")
   }
 
