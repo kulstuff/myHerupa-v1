@@ -3928,7 +3928,7 @@ body {
 
 #resource-bars {
   position: absolute;
-  bottom: 0%;
+  bottom: 7.5%;
   border-radius: 50%;
   padding: 6px;
   left: 50%;
@@ -3937,6 +3937,15 @@ body {
   @media screen and (min-width: 700px) {
     #resource-bars {
       display: none; } }
+
+#resource-loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000000000;
+  transform: scale(0.15); }
 
 /*Grid System with Media Query*/
 .col {
