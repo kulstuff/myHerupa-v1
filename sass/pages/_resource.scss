@@ -161,3 +161,14 @@ body {
   transform: translate(-50%,0);
   background-color: black;
 }
+
+#resource-loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000000000;
+  transform: scale(0.15)
+  // display: none;
+}
