@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resource</title>
+    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <div id="resource-bars">
+      <ion-icon name="menu" class="resource-sidebar__bars"></ion-icon>
+    </div>
+    <div id="resource">
+      <div id="resource-sidebar">
+        <div class="resource-sidebar__header ">
+          Click on below resource to access them.
+          <!-- <ion-icon name="document"></ion-icon> -->
+        </div>
+        <div id="resource-grid"></div>
+
+        <div class="display6">
+          <a
+            href="https://forms.gle/TD6MRT2cNzhmprxe7"
+            class="color-white resource-sidebar__footer"
+            >Any Feedback ?</a
+          >
+          <!-- <ion-icon name="document"></ion-icon> -->
+        </div>
+      </div>
+      <div id="resource-hub">
+        <div id="resource-hub-controls"></div>
+        <div id="resource-hub-document" style="display: flex;">
+          <div
+            id="resource-overlay-document-payload"
+            class="resource-hub-document-main"
+          >
+            <div id="resource-loader">
+              <svg
+                version="1.1"
+                id="L3"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 100 100"
+                enable-background="new 0 0 0 0"
+                xml:space="preserve"
+              >
+                <circle
+                  fill="none"
+                  stroke="#e74c3c"
+                  stroke-width="4"
+                  cx="50"
+                  cy="50"
+                  r="44"
+                  style="opacity:0.5;"
+                />
+                <circle
+                  fill="#fff"
+                  stroke="#e74c3c"
+                  stroke-width="3"
+                  cx="8"
+                  cy="54"
+                  r="6"
+                >
+                  <animateTransform
+                    attributeName="transform"
+                    dur="2s"
+                    type="rotate"
+                    from="0 50 48"
+                    to="360 50 52"
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </svg>
+            </div>
+          </div>
+          <div class="resource-hub-document-ads"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/resource.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122580305-1");
+    </script>
+  </body>
+</html>
