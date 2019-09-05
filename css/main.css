@@ -17,17 +17,17 @@
 
 @media screen and (max-width: 900px) {
   .hide-phone {
-    display: none; } }
+    display: none !important; } }
 
 @media screen and (min-width: 600px) {
   .hide-desktop {
-    display: none; } }
+    display: none !important; } }
 
 .hide-small-desktop {
-  display: none; }
+  display: none !important; }
   @media screen and (min-width: 1400px) {
     .hide-small-desktop {
-      display: block; } }
+      display: block !important; } }
 
 .bold {
   font-weight: 900;
@@ -3852,7 +3852,7 @@ body {
   display: block;
   width: 100%;
   transition: 0.25s; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     .resource-sidebar__footer {
       margin: 50px 0px;
       padding: 5px; } }

@@ -1,4 +1,4 @@
-var resourceURL = (window.location.href + '').split('#resURL=')[1]
+var resourceURL = (window.location.href + "").split("#resURL=")[1];
 // var resourceURL = Request.QueryString["resURL"]
 // console.log((window.location.href + '').split('#resURL=')[1])
 // window.location.href = (window.location.href + '').split('#')[0]
@@ -7,7 +7,7 @@ var itemURLs = [];
 var itemNames = [];
 var selectedDocumentId;
 
-$(document).ready(function () {
+$(document).ready(function() {
   // Set the URL for Request FOLDER CONTENTS
   var URL =
     "https://www.googleapis.com/drive/v3/files?q=%27" +
@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   // Get links of the children
   var xmlHttp = new XMLHttpRequest();
-  xmlHttp.onreadystatechange = function () {
+  xmlHttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       console.log(JSON.parse(this.responseText));
       JSON.parse(this.responseText).files.forEach(file => {
@@ -32,16 +32,16 @@ $(document).ready(function () {
         }
       });
     }
-    $(".resource-element").click(function () {
+    $(".resource-element").click(function() {
       // console.log(this.className);
-      $('#resource-loader').css({'display': 'block'})
+      $("#resource-loader").css({ display: "block" });
       if ($(".resource-loaded-document")) {
         $(".resource-loaded-document").remove();
       }
       var loadDocument = document.createElement("iframe");
       loadDocument.className +=
         " resource-loading-document resource-loaded-document";
-      loadDocument.id = 'loadDocument'
+      loadDocument.id = "loadDocument";
       loadDocument.src =
         "https://docs.google.com/file/d/" +
         this.className.split("resource-element-id-")[1] +
@@ -50,45 +50,41 @@ $(document).ready(function () {
         .getElementById("resource-overlay-document-payload")
         .append(loadDocument);
       if (window.innerWidth < 700) {
-        $("#resource-sidebar").css({ 'display': 'none' });
-        $("#resource-hub").css({ 'display': 'block', 'width': '100vw' });
+        $("#resource-sidebar").css({ display: "none" });
+        $("#resource-hub").css({ display: "block", width: "100vw" });
       }
-      $('#loadDocument').on('load', function(){
-        $('#resource-loader').css({'display': 'none'})
+      $("#loadDocument").on("load", function() {
+        $("#resource-loader").css({ display: "none" });
         // your code (will be called once iframe is done loading)
       });
       // var iframeDoc = loadDocument.contentDocument || loadDocument.contentWindow.document
       // console.log(iframeDoc.readyState)
       // setTimeout(100, setLoader)
       // if (  iframeDoc.readyState  == 'complete' ) {
-        // loadDocument.contentWindow.alert("Hello");
-        // loadDocument.contentWindow. = function() {
-        //   alert("I am loaded")
-        // };
-        // The loading is complete, call the function we want executed once the iframe is loaded
-        // afterLoading();
-        // return;
+      // loadDocument.contentWindow.alert("Hello");
+      // loadDocument.contentWindow. = function() {
+      //   alert("I am loaded")
+      // };
+      // The loading is complete, call the function we want executed once the iframe is loaded
+      // afterLoading();
+      // return;
       // }
     });
-    
   };
   xmlHttp.open("GET", URL, true); // false for synchronous request
   xmlHttp.send();
-  
-  
-  $("#resource-bars").click(function () {
-    // $(".resource-sidebar__bars").css('color', 'black');
-    $("#resource-sidebar").css('display', 'grid');
-    $("#resource-hub").css('display', 'none');
-    
-  })
-  
-  // function setLoader(){
-    //   alert("I am here")
-  // }
-  
-  function afterLoading(){
 
+  $("#resource-bars").click(function() {
+    // $(".resource-sidebar__bars").css('color', 'black');
+    $("#resource-sidebar").css("display", "grid");
+    $("#resource-hub").css("display", "none");
+  });
+
+  // function setLoader(){
+  //   alert("I am here")
+  // }
+
+  function afterLoading() {
     // alert("I am here")
   }
 
