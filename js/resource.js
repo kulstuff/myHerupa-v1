@@ -34,7 +34,7 @@ $(document).ready(function () {
     }
     $(".resource-element").click(function () {
       // console.log(this.className);
-      $('#resource-loader').css({'display': 'block'})
+      $('#resource-loader').css({ 'display': 'block' })
       if ($(".resource-loaded-document")) {
         $(".resource-loaded-document").remove();
       }
@@ -53,41 +53,41 @@ $(document).ready(function () {
         $("#resource-sidebar").css({ 'display': 'none' });
         $("#resource-hub").css({ 'display': 'block', 'width': '100vw' });
       }
-      $('#loadDocument').on('load', function(){
-        $('#resource-loader').css({'display': 'none'})
+      $('#loadDocument').on('load', function () {
+        $('#resource-loader').css({ 'display': 'none' })
         // your code (will be called once iframe is done loading)
       });
       // var iframeDoc = loadDocument.contentDocument || loadDocument.contentWindow.document
       // console.log(iframeDoc.readyState)
       // setTimeout(100, setLoader)
       // if (  iframeDoc.readyState  == 'complete' ) {
-        // loadDocument.contentWindow.alert("Hello");
-        // loadDocument.contentWindow. = function() {
-        //   alert("I am loaded")
-        // };
-        // The loading is complete, call the function we want executed once the iframe is loaded
-        // afterLoading();
-        // return;
+      // loadDocument.contentWindow.alert("Hello");
+      // loadDocument.contentWindow. = function() {
+      //   alert("I am loaded")
+      // };
+      // The loading is complete, call the function we want executed once the iframe is loaded
+      // afterLoading();
+      // return;
       // }
     });
-    
+
   };
   xmlHttp.open("GET", URL, true); // false for synchronous request
   xmlHttp.send();
-  
-  
+
+
   $("#resource-bars").click(function () {
     // $(".resource-sidebar__bars").css('color', 'black');
     $("#resource-sidebar").css('display', 'grid');
     $("#resource-hub").css('display', 'none');
-    
+
   })
-  
+
   // function setLoader(){
-    //   alert("I am here")
+  //   alert("I am here")
   // }
-  
-  function afterLoading(){
+
+  function afterLoading() {
 
     // alert("I am here")
   }
