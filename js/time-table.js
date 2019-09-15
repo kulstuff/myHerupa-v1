@@ -84,7 +84,7 @@ $(document).ready(function() {
         s1.value == "EC"
       )
         addSubOptions(8);
-      else if (s1.value == "CSBS") addSubOptions(2);
+      else if (s1.value == "CSBS") addSubOptions(3);
       else addSubOptions(6);
     } else if (year.value == "second-yr") {
       if (s1.value == "COE") {
