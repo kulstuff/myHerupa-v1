@@ -120,7 +120,8 @@ const CSE = [
 
 const CSBS = [
   "https://calendar.google.com/calendar?cid=lsf9mb59gu92kfvf3gatur6t6k@group.calendar.google.com",
-  "https://calendar.google.com/calendar?cid=4u6ciphnlodkq3f93mb2317g88@group.calendar.google.com"
+  "https://calendar.google.com/calendar?cid=mhdpucl56a4jp9gi1g5om3jm60@group.calendar.google.com",
+  "https://calendar.google.com/calendar?cid=rj3adgg42t58dm71k0vi8n2krc@group.calendar.google.com"
 ];
 
 const EC = [
