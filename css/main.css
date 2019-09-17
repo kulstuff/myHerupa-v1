@@ -4074,10 +4074,8 @@ html {
   flex: 1.2;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem; }
-  @media screen and (min-width: 700px) {
-    #resource-sidebar-moboset {
-      display: none; } }
+  padding-bottom: 1rem;
+  display: none; }
 
 #resource-sidebar-folderBar {
   position: fixed;
