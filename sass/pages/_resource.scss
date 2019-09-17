@@ -11,14 +11,12 @@ body {
     &__header {
       @media screen and (max-width: 700px) {
         font-size: 1.25rem;
-        // display: none;
         flex: 1.5;
         z-index: 100000000000000000000000000000000000000000000;
-        // background-color: yellow;
       }
       font-size: 2rem;
       color: black;
-      flex: 1;
+      flex: 0.5; 
       padding-top: 2rem;
       padding-bottom: 1rem;
       padding-left: 2rem;
@@ -31,22 +29,19 @@ body {
     }
     &__footer {
       @media screen and (max-width: 400px) {
-        // font-size: 1.25rem;
+        font-size: 1.25rem;
         margin: 50px 0px;
         padding: 5px;
       }
-      position: relative;
-      bottom: -25%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       margin: 75px 0px;
       padding: 10px;
       border: 1px solid white;
-      //   background-color: red;
       border-radius: 3px;
-      display: block;
-      width: 100%;
       transition: 0.25s;
-      //   animation-duration: 3s;
       &:hover {
         background-color: white;
         color: black;
@@ -54,7 +49,7 @@ body {
     }
     &-folderChip {
       background-color: white;
-      padding: 0.8rem 2rem;
+      padding: 0.8vh 2vw;
       // display: inline;
       // margin-top: 1rem;
       font-size: 1rem;
@@ -184,6 +179,7 @@ body {
     box-shadow: 0.1rem 0rem 1rem #777;
     flex-direction: column;
   }
+  position: relative;
   overflow-y: hidden;
   transition: 0.1s;
   display: flex;
@@ -193,6 +189,19 @@ body {
   z-index: 10000;
   background-color: white;
   transition: 0.5s ease-in-out;
+}
+
+#resource-sidebar-mobo-seek {
+  position: absolute;
+  top: 15px;
+  left: 10vw;
+  width: 80vw;
+  background-color: grey;
+  height: 3px;
+  opacity: 0;
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
 }
 
 #resource-sidebar-minibar {
@@ -293,7 +302,7 @@ html {
   //   padding: 1rem 2rem;
   // background-color: white;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   padding-bottom: 3rem;
   color: red;
   background-color: white;
@@ -314,13 +323,25 @@ html {
     white-space: nowrap;
     overflow-x: scroll;
   }
+  margin-top: 1vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 70px;
+  }
+  // ::-webkit-scrollbar-thumb {
+  //     border-radius: 4px;
+  //     background-color: rgba(0,0,0,.5);
+  //     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  // }
 }
 
 #resource-sidebar-moboset {
   display: flex;
   flex: 1.2;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  padding-bottom: 1rem;
   @media screen and (min-width: 700px) {
     display: none;
   }
@@ -340,6 +361,9 @@ html {
 }
 
 #resource-sidebar-suggestions {
+  flex: 1;
+  text-align: center;
+  padding-top: 3vh;
   @media screen and (max-width: 700px) {
     display: none;
   }
@@ -380,12 +404,14 @@ html {
   @media screen and (max-width: 700px) {
     display: none;
   }
+  transform: scale(0.6579);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   justify-content: center;
-  padding-top: 3vh;
+  // padding-top: 3vh;
+  flex: 1;
   &-mobo {
     // z-index: 100000000000000;
     align-items: center;
@@ -472,6 +498,9 @@ html {
   width: 100%;
   z-index: 1000000000;
   transform: scale(0.25);
+  @media screen and (max-width: 700px) {
+    transform: scale(0.1);
+  }
   // display: none;
 }
 
