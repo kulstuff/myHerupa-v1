@@ -142,6 +142,10 @@ $('#resource-sidebar-search-input').on('input', function (e) {
 })
 
 $(document).ready(function() {
+  var appleDevices = ['iPhone'];
+  if (appleDevices.indexOf(navigator.platform) > -1) {
+      $('#resource-sidebar-moboset').hide();
+  }
   // Set the URL for Request FOLDER CONTENTS
   var URL =
     "https://www.googleapis.com/drive/v3/files?q=%27" +
