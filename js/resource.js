@@ -126,6 +126,8 @@ $('#resource-sidebar-search-input').on('input', function (e) {
       console.log('Checks')
       $("#resource-hub").css({ zIndex: '100' });
       var bottomSideBar = document.getElementById('resource-sidebar')
+      $('#resource-sidebar-header').css({opacity: 0})
+      $('#resource-sidebar-mobo-seek').animate({opacity: 1})
       bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
       bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
       sideBarOnDisplay = !sideBarOnDisplay
@@ -185,9 +187,7 @@ $(document).ready(function() {
           genericChip.innerHTML = file.name
           // Set onClick Listener later to avoid multiple API calls
           // Check if a folderbar exists already!
-          if(document.getElementById('resource-sidebar-folderBar')) {
-          }
-          else {
+          if(!document.getElementById('resource-sidebar-folderBar')) {
             folderBar = document.createElement('div')
             folderBar.id = 'resource-sidebar-folderBar'
             folderBar.className += ' resource-sidebar-content-folderBar'
@@ -244,8 +244,10 @@ $(document).ready(function() {
         console.log('checks')
         $("#resource-hub").css({ zIndex: '100' });
         var bottomSideBar = document.getElementById('resource-sidebar')
-        bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 90)'
-        bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 10)'
+        $('#resource-sidebar-header').animate({opacity: 0})
+        $('#resource-sidebar-mobo-seek').animate({opacity: 1})
+        bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
+        bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
         sideBarOnDisplay = !sideBarOnDisplay
         $("#resource-sidebar").css({ zIndex: '100000000000000000002' });
       }
@@ -327,6 +329,8 @@ if(window.innerWidth < 700) {
   })
   hammerController.on('swipeup', function () {
     if(!sideBarOnDisplay) {
+      $('#resource-sidebar-header').animate({opacity: 1})
+      $('#resource-sidebar-mobo-seek').animate({opacity: 0})
       bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
       bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
       sideBarOnDisplay = !sideBarOnDisplay
@@ -334,6 +338,8 @@ if(window.innerWidth < 700) {
   })
   hammerController.on('swipedown', function () {
     if(sideBarOnDisplay) {
+      $('#resource-sidebar-header').animate({opacity: 0})
+      $('#resource-sidebar-mobo-seek').animate({opacity: 1})
       bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
       bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
       sideBarOnDisplay = !sideBarOnDisplay
