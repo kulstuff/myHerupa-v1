@@ -342,8 +342,8 @@ html {
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
+  display: none;
   @media screen and (min-width: 700px) {
-    display: none;
   }
 }
 
