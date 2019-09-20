@@ -322,21 +322,13 @@ $('#resource-sidebar').click(function () {
 if(window.innerWidth < 700) {
   var bottomSideBar = document.getElementById('resource-sidebar')
   var hammerController = new Hammer(bottomSideBar)
-  hammerController.get('swipe').set({
-    direction: Hammer.DIRECTION_ALL,
-    threshold: 1, 
-    velocity: 0.1
-  })
-  hammerController.on('swipeup', function () {
-    if(!sideBarOnDisplay) {
-      $('#resource-sidebar-header').animate({opacity: 1})
-      $('#resource-sidebar-mobo-seek').animate({opacity: 0})
-      bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
-      bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
-      sideBarOnDisplay = !sideBarOnDisplay
-    }
-  })
-  hammerController.on('swipedown', function () {
+  // hammerController.get('swipe').set({
+  //   direction: Hammer.DIRECTION_ALL,
+  //   threshold: 1, 
+  //   velocity: 0.1
+  // })
+  hammerController.on('pandown', function (e) {
+    // console.log('Pan Down:', e)
     if(sideBarOnDisplay) {
       $('#resource-sidebar-header').animate({opacity: 0})
       $('#resource-sidebar-mobo-seek').animate({opacity: 1})
@@ -345,10 +337,14 @@ if(window.innerWidth < 700) {
       sideBarOnDisplay = !sideBarOnDisplay
     }
   })
-  hammerController.on('pandown', function (e) {
-    console.log('Pan Down:', e)
-  })
   hammerController.on('panup', function (e) {
-    console.log('Pan Up: ', e)
+    if(!sideBarOnDisplay) {
+      $('#resource-sidebar-header').animate({opacity: 1})
+      $('#resource-sidebar-mobo-seek').animate({opacity: 0})
+      bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
+      bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
+      sideBarOnDisplay = !sideBarOnDisplay
+    }
+    // console.log('Pan Up: ', e)
   })
 }
