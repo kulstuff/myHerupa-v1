@@ -3890,11 +3890,11 @@ body {
   color: black;
   cursor: pointer;
   margin-right: 1rem;
-  box-shadow: 0 0 1px 1px #E94B3C; }
+  box-shadow: 0 0 1px 1px #e94b3c; }
 
 .resource-element {
   cursor: pointer;
-  font-family: 'Raleway' !important;
+  font-family: "Roboto" sans-serif !important;
   color: black;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -3912,7 +3912,7 @@ body {
   padding-right: 1rem;
   padding-bottom: 0.5rem;
   background-color: white;
-  color: #E94B3C;
+  color: #e94b3c;
   overflow: hidden; }
   @media screen and (max-width: 700px) {
     .resource-element {
@@ -3923,7 +3923,7 @@ body {
       width: 40vw;
       font-size: 1.45rem;
       color: white;
-      background-image: linear-gradient(135deg, #E94B3C 0%, white 270%); } }
+      background-image: linear-gradient(135deg, #e94b3c 0%, white 270%); } }
   .resource-element:hover {
     box-shadow: 0rem 0.35rem 0.5rem #ddd; }
   .resource-element-thumbnail {
@@ -4003,7 +4003,7 @@ body {
   width: 19%;
   display: flex;
   justify-content: center;
-  background-color: #E94B3C; }
+  background-color: #e94b3c; }
   @media screen and (max-width: 700px) {
     #resource-sidebar-minibar {
       display: none; } }
@@ -5227,21 +5227,9 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff,
- 0 0 15px  #fff,
- 0 0 25px  #fff,
- 0 0 40px  #FF9900,
- 0 0 70px  #FF9900,
- 0 0 90px  #FF9900,
- 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff,
- 0 0 10px #fff,
- 0 0 15px #fff,
- 0 0 20px #FF9900,
- 0 0 35px #FF9900,
- 0 0 40px #FF9900,
- 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5252,13 +5240,7 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent,
- 0 0 15px  transparent,
- 0 0 25px  transparent,
- 0 0 40px  transparent,
- 0 0 70px  transparent,
- 0 0 90px  transparent,
- 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
