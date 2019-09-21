@@ -4111,7 +4111,8 @@ html {
     #resource-sidebar-folderBar {
       max-width: 100%; } }
   #resource-sidebar-folderBar > ::-webkit-scrollbar {
-    width: 5px; }
+    width: 5px;
+    display: none; }
 
 #resource-sidebar-suggestions {
   flex: 1;
