@@ -385,6 +385,7 @@ if(window.innerWidth < 700) {
     // console.log('Pan Up: ', e)
   // })
 }
+console.log('Test Penultimate')
 
 if(window.innerWidth < 700) {
   var goToDrive = document.createElement('a')
