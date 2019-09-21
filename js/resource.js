@@ -385,3 +385,14 @@ if(window.innerWidth < 700) {
     // console.log('Pan Up: ', e)
   // })
 }
+
+if(window.innerWidth < 700) {
+  var goToDrive = document.createElement('a')
+  goToDrive.id = 'GoToDrive'
+  goToDrive.className += ' display8'
+  goToDrive.style.paddingLeft = '2rem'
+  goToDrive.style.color = 'red'
+  goToDrive.href = 'https://drive.google.com/open?id=' + resourceURL
+  goToDrive.innerHTML = 'View in drive'
+  $('#resource-sidebar-header').append(goToDrive)
+}
