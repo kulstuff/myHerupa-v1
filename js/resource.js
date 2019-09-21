@@ -395,4 +395,5 @@ if(window.innerWidth < 700) {
   goToDrive.href = 'https://drive.google.com/open?id=' + resourceURL
   goToDrive.innerHTML = 'View in drive'
   $('#resource-sidebar-header').append(goToDrive)
+  
 }
