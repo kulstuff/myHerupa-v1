@@ -968,16 +968,17 @@ background-color: white;
 // .seconds-1,.seconds-2,.seconds-3,.seconds-4,.seconds-5,.seconds-6,.seconds-7,.seconds-8,.seconds-9,.seconds-10,.seconds-11,.seconds-12,.seconds-13,.seconds-14,.seconds-15,.seconds-16,.seconds-17,.seconds-18,.seconds-19,.seconds-20,.seconds-21,.seconds-22,.seconds-23,.seconds-24,.seconds-25,.seconds-26,.seconds-27{
 //   display: none;
 // }
-.bottom-bar__icon{
-  height: 5rem;
-  margin: 0 auto;
-  float: left;
-}
-.seconds{
-  display:none;
-}
-::-webkit-scrollbar {
-  display: none;
+  .bottom-bar__icon{
+    height: 5rem;
+    margin: 0 auto;
+    float: left;
+  }
+  .seconds{
+    display:none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+    // opacity: 0;
   }
 .sort-bar_heading{
   @media screen and(max-width:600px){
