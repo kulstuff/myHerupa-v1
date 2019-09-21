@@ -3823,54 +3823,84 @@ body {
 
 body {
   background-color: white; }
+  body ::-webkit-scrollbar {
+    display: block !important; }
 
-@media screen and (max-width: 400px) {
-  .resource-sidebar {
-    max-width: 0.5rem; } }
+.resource-sidebar__bars {
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  position: relative;
+  left: 45%;
+  transform: translateX(-25%); }
+
+.resource-sidebar-search-icon {
+  max-height: 1.5em; }
 
 .resource-sidebar__header {
   font-size: 2rem;
-  color: white;
+  color: black;
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
   font-family: "Raleway", sans-serif; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 700px) {
     .resource-sidebar__header {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem;
+      flex: 1.5;
+      z-index: 100000000000000000000000000000000000000000000; } }
 
-.resource-sidebar__bars {
-  width: 3rem;
-  height: 3rem;
-  color: white; }
-
-.resource-sidebar__footer {
-  position: relative;
-  bottom: -25%;
-  text-align: center;
-  margin: 75px 0px;
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 3px;
-  display: block;
-  width: 100%;
-  transition: 0.25s; }
-  @media screen and (max-width: 600px) {
-    .resource-sidebar__footer {
-      margin: 50px 0px;
-      padding: 5px; } }
-  .resource-sidebar__footer:hover {
-    background-color: white;
-    color: black; }
+.resource-sidebar-folderChip {
+  background-color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 100rem;
+  color: black;
+  cursor: pointer;
+  margin-right: 1rem;
+  box-shadow: 0 0 1px 1px #e94b3c; }
 
 .resource-element {
+  color: black;
   cursor: pointer;
-  color: white;
-  padding: 10px 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
-  border-bottom: 2px solid white;
   display: block;
   word-wrap: break-word;
+  margin-top: 1.5rem;
+  min-height: 7.5vh;
+  box-shadow: 0rem 0rem 0.5rem #ddd;
+  border-radius: 1rem;
+  transition: 0.35s;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  color: #e94b3c;
   overflow: hidden; }
-  .resource-element:last-child {
-    border: 0; }
+  @media screen and (max-width: 700px) {
+    .resource-element {
+      display: inline-flex;
+      height: calc(var(--vh, 1vh) * 3.5);
+      padding: 0;
+      margin-right: 2rem;
+      width: 40vw;
+      font-size: 1.45rem;
+      color: white;
+      background-image: linear-gradient(135deg, #e94b3c 0%, white 270%); } }
+  .resource-element:hover {
+    box-shadow: 0rem 0.35rem 0.5rem #ddd; }
+  .resource-element-thumbnail {
+    flex: 1;
+    transition: 0.5s;
+    box-shadow: 0rem 0rem 0.5rem #ddd; }
+    .resource-element-thumbnail:hover {
+      box-shadow: 0.15rem 0rem 0.5rem #ddd; }
   .resource-element-icon {
     color: whitesmoke;
     float: left; }
@@ -3878,7 +3908,9 @@ body {
 .resource-hub {
   background-color: rgba(255, 255, 255, 0.4); }
   .resource-hub-document-main {
-    flex: 5; }
+    flex: 5;
+    position: relative;
+    transition: 0.5s; }
   .resource-hub-document-ads {
     background-color: rgba(255, 255, 255, 0.4); }
 
@@ -3893,60 +3925,140 @@ body {
   width: 100%;
   background-image: url("../img/Resource-bg.svg");
   background-size: cover; }
-
-#resource-sidebar {
-  display: grid;
-  height: 100vh;
-  width: 20%;
-  box-shadow: grey 1rem;
-  z-index: 1000;
-  padding: 1rem;
-  background-color: black; }
-  @media screen and (max-width: 400px) {
-    #resource-sidebar {
-      width: 100vw !important; } }
-  @media screen and (max-width: 700px) {
-    #resource-sidebar {
-      width: 100vw !important; } }
-
-#resource-grid {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll; }
-
-#resource-hub {
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.2); }
-  @media screen and (max-width: 700px) {
-    #resource-hub {
-      width: 0vw; } }
-
-#resource-hub-document {
-  height: 100%; }
-
-#resource-bars {
-  position: absolute;
-  bottom: 7.5%;
-  border-radius: 50%;
-  padding: 6px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: black; }
-  @media screen and (min-width: 700px) {
-    #resource-bars {
-      display: none; } }
-
-#resource-loader {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1000000000;
-  transform: scale(0.15);
-  display: none; }
+  #resource-body {
+    max-height: calc( var(--vh, 1vh) * 100) !important;
+    overflow: hidden;
+    box-sizing: border-box !important; }
+  #resource-sidebar {
+    overflow-y: hidden;
+    transition: 0.1s;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 25%;
+    z-index: 10000;
+    background-color: white;
+    transition: 0.5s ease-in-out; }
+    @media screen and (max-width: 700px) {
+      #resource-sidebar {
+        width: 100vw;
+        position: absolute;
+        top: calc(var(--vh, 1vh) * 75);
+        left: 0;
+        z-index: 100000000000000000000;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        overflow-y: hidden;
+        height: calc(var(--vh, 1vh) * 25);
+        box-shadow: 0.1rem 0rem 1rem #777;
+        flex-direction: column; } }
+    @media screen and (max-width: 700px) {
+      #resource-sidebar-suggestions {
+        display: none; } }
+    #resource-sidebar-minibar {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      background-color: #e94b3c; }
+      @media screen and (max-width: 700px) {
+        #resource-sidebar-minibar {
+          display: none; } }
+    #resource-sidebar-toggle-static {
+      position: absolute;
+      cursor: pointer;
+      z-index: 10000000; }
+      @media screen and (max-width: 700px) {
+        #resource-sidebar-toggle-static {
+          display: none; } }
+    #resource-sidebar-header {
+      z-index: 10000000000000000000000000000; }
+    #resource-sidebar-search {
+      margin-right: 0;
+      background-color: #eee;
+      padding: 0.5rem 1rem;
+      border-radius: 5px; }
+      #resource-sidebar-search-input {
+        margin: 1.5rem;
+        padding-left: 0.5rem;
+        width: 70%;
+        border: none;
+        background-color: #eee; }
+        #resource-sidebar-search-input:focus {
+          border: none;
+          outline: none; }
+      @media screen and (max-width: 700px) {
+        #resource-sidebar-search {
+          margin-top: 2rem; } }
+    #resource-sidebar-folderBar {
+      position: fixed;
+      background-color: white;
+      width: 100%;
+      padding: 1rem;
+      max-width: 19vw;
+      overflow-x: auto;
+      white-space: nowrap; }
+      @media screen and (max-width: 700px) {
+        #resource-sidebar-folderBar {
+          bottom: 10%;
+          max-width: 100%; }
+          #resource-sidebar-folderBar ::-webkit-scrollbar {
+            display: none !important; } }
+      @media screen and (min-width: 700px) {
+        #resource-sidebar-folderBar {
+          top: 12.5%;
+          height: 50px; } }
+  #resource-grid {
+    top: 5%;
+    height: 60%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    padding-bottom: 3rem;
+    color: red;
+    background-color: white;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    @media screen and (max-width: 700px) {
+      #resource-grid {
+        height: 20vh;
+        overflow-x: scroll;
+        white-space: nowrap;
+        flex: 3;
+        margin-top: 0; } }
+  #resource-elements {
+    padding-top: 2vh; }
+    @media screen and (max-width: 700px) {
+      #resource-elements {
+        max-width: 100vw;
+        max-height: 100%;
+        margin-top: 1rem;
+        white-space: nowrap;
+        overflow-x: scroll; } }
+  #resource-list-loader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000000000;
+    transform: scale(0.2); }
+  #resource-overlay-document-payload {
+    z-index: 1 !important; }
+  #resource-hub {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2); }
+    @media screen and (max-width: 700px) {
+      #resource-hub {
+        height: calc(var(--vh, 1vh) * 100); } }
+    #resource-hub-document {
+      position: relative;
+      height: 100%; }
+      @media screen and (max-width: 700px) {
+        #resource-hub-document {
+          height: calc(var(--vh, 1vh) * 100); } }
 
 /*Grid System with Media Query*/
 .col {
