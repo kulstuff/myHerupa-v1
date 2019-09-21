@@ -9,6 +9,7 @@
 // AA ADD OPTION TO UPLOAD AND CONTRIBUTE NOTES FROM STUDENTS
 // AA Color as an argument to be resolved from the drive if possible
 // AA Title Changing
+// AA We are still worthy of the hammer
 
 // A (Within Month)
 // Put the minibar to use with icons to Different Locations in same Drive []
@@ -127,7 +128,7 @@ $('#resource-sidebar-search-input').on('input', function (e) {
       $("#resource-hub").css({ zIndex: '100' });
       var bottomSideBar = document.getElementById('resource-sidebar')
       $('#resource-sidebar-header').css({opacity: 0})
-      $('#resource-sidebar-mobo-seek').animate({opacity: 1})
+      $('#resource-sidebar-mobo').animate({opacity: 1})
       bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
       bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
       sideBarOnDisplay = !sideBarOnDisplay
@@ -139,6 +140,36 @@ $('#resource-sidebar-search-input').on('input', function (e) {
     });
   });
   })
+})
+
+$('#resource-up-chevron').click(function () {
+  var bottomSideBar = document.getElementById('resource-sidebar')
+  $('#resource-sidebar-header').animate({opacity: 1})
+  $('#resource-sidebar-mobo').animate({opacity: 0})
+  bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
+  bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
+  sideBarOnDisplay = !sideBarOnDisplay
+})
+
+$('.resource-down-chevron').click( function () {
+  var bottomSideBar = document.getElementById('resource-sidebar')
+  if(sideBarOnDisplay) {
+    $('#resource-sidebar-header').animate({opacity: 0})
+    $('#resource-sidebar-mobo').animate({opacity: 1})
+    bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
+    bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
+    sideBarOnDisplay = !sideBarOnDisplay
+  }
+  else {
+    // $('.resource-down-chevron').css({
+    //   transform: "rotateZ(90)"
+    // })
+    $('#resource-sidebar-header').animate({opacity: 1})
+    $('#resource-sidebar-mobo').animate({opacity: 0})
+    bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
+    bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
+    sideBarOnDisplay = !sideBarOnDisplay
+  }
 })
 
 $(document).ready(function() {
@@ -245,7 +276,7 @@ $(document).ready(function() {
         $("#resource-hub").css({ zIndex: '100' });
         var bottomSideBar = document.getElementById('resource-sidebar')
         $('#resource-sidebar-header').animate({opacity: 0})
-        $('#resource-sidebar-mobo-seek').animate({opacity: 1})
+        $('#resource-sidebar-mobo').animate({opacity: 1})
         bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
         bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
         sideBarOnDisplay = !sideBarOnDisplay
@@ -320,35 +351,31 @@ $('#resource-sidebar').click(function () {
 })
 
 if(window.innerWidth < 700) {
-  var bottomSideBar = document.getElementById('resource-sidebar')
-  var hammerController = new Hammer(bottomSideBar)
-  hammerController.get('swipe').set({
-    direction: Hammer.DIRECTION_ALL,
-    threshold: 1, 
-    velocity: 0.1
-  })
-  hammerController.on('swipeup', function () {
-    if(!sideBarOnDisplay) {
-      $('#resource-sidebar-header').animate({opacity: 1})
-      $('#resource-sidebar-mobo-seek').animate({opacity: 0})
-      bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
-      bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
-      sideBarOnDisplay = !sideBarOnDisplay
-    }
-  })
-  hammerController.on('swipedown', function () {
-    if(sideBarOnDisplay) {
-      $('#resource-sidebar-header').animate({opacity: 0})
-      $('#resource-sidebar-mobo-seek').animate({opacity: 1})
-      bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
-      bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
-      sideBarOnDisplay = !sideBarOnDisplay
-    }
-  })
-  hammerController.on('pandown', function (e) {
-    console.log('Pan Down:', e)
-  })
-  hammerController.on('panup', function (e) {
-    console.log('Pan Up: ', e)
-  })
+  // var bottomSideBar = document.getElementById('resource-sidebar')
+  // var hammerController = new Hammer(bottomSideBar)
+  // hammerController.get('swipe').set({
+  //   direction: Hammer.DIRECTION_ALL,
+  //   threshold: 1, 
+  //   velocity: 0.1
+  // })
+  // hammerController.on('pandown', function (e) {
+    // console.log('Pan Down:', e)
+  //   if(sideBarOnDisplay) {
+  //     $('#resource-sidebar-header').animate({opacity: 0})
+  //     $('#resource-sidebar-mobo-seek').animate({opacity: 1})
+  //     bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
+  //     bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
+  //     sideBarOnDisplay = !sideBarOnDisplay
+  //   }
+  // })
+  // hammerController.on('panup', function (e) {
+  //   if(!sideBarOnDisplay) {
+  //     $('#resource-sidebar-header').animate({opacity: 1})
+  //     $('#resource-sidebar-mobo-seek').animate({opacity: 0})
+  //     bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
+  //     bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
+  //     sideBarOnDisplay = !sideBarOnDisplay
+  //   }
+    // console.log('Pan Up: ', e)
+  // })
 }

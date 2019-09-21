@@ -6,13 +6,33 @@ body {
   box-sizing: border-box !important;
 }
 
+#resource-up-chevron {
+  z-index: 1000000000;
+  text-align: center;
+  & > img {
+    transform: rotateZ(180deg);
+    height: 1vh;
+  }
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+}
+
 .resource {
+  &-down-chevron {
+    & > img {
+      height: 1vh;
+    }
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
+  }
   &-sidebar {
     &__header {
       @media screen and (max-width: 700px) {
         font-size: 1.25rem;
         flex: 1.5;
-        z-index: 100000000000000000000000000000000000000000000;
+        z-index: 100;
       }
       font-size: 2rem;
       color: black;
@@ -169,7 +189,7 @@ body {
     position: absolute;
     top: calc(var(--vh, 1vh) * 75);
     left: 0;
-    z-index: 100000000000000000000;
+    z-index: 100;
     // display: none;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
@@ -191,12 +211,17 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-#resource-sidebar-mobo-seek {
+#resource-sidebar-mobo {
+  &-seek {
+    height: 100%;
+    width: 70%;
+    background-color: grey;
+  }
+  z-index: 150;
   position: absolute;
   top: 15px;
   left: 10vw;
   width: 80vw;
-  background-color: grey;
   height: 3px;
   opacity: 0;
   @media screen and (min-width: 700px) {
@@ -399,7 +424,7 @@ html {
   left: 50%;
   transform: translate(-50%, 0);
   background-color: black;
-  z-index: 1000000000;
+  z-index: 100;
   display: none;
 }
 
@@ -516,7 +541,7 @@ html {
 }
 
 #resource-sidebar-header {
-  z-index: 10000000000000000000000000000;
+  z-index: 101;
 }
 
 #resource-sidebar-toggle-static {
