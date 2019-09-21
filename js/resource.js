@@ -223,6 +223,12 @@ $(document).ready(function() {
             folderBar.id = 'resource-sidebar-folderBar'
             folderBar.className += ' resource-sidebar-content-folderBar'
             $('#resource-grid').prepend(folderBar)
+            if(window.innerWidth > 700) {
+              $('#resource-sidebar-folderBar').mousewheel(function(event, delta) {
+                this.scrollLeft -= (delta * 1)
+                event.preventDefault()
+              })
+            }
             generalChip = {} 
             generalChip.name = 'General'
             generalChip.id = resourceURL
