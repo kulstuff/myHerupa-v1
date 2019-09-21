@@ -1,7 +1,11 @@
 
   /*Scrollbar Styling Starts*/
   ::-webkit-scrollbar {
-    width: 5px; }
+    width: 5px; 
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
   
   ::-webkit-scrollbar-track {
     -webkit-border-radius: 10px;
@@ -10,7 +14,7 @@
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #aaa; }
+    background: #cdcdcd; }
   
   ::-webkit-scrollbar-thumb:hover {
     -webkit-border-radius: 10px;

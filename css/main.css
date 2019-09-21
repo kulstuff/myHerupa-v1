@@ -3636,9 +3636,6 @@ body {
 .seconds {
   display: none; }
 
-::-webkit-scrollbar {
-  display: none; }
-
 @media screen and (max-width: 600px) {
   .sort-bar_heading {
     width: 100%;
@@ -4076,7 +4073,7 @@ html {
       margin-top: 0; } }
 
 #resource-elements-keep {
-  padding-top: 2vh;
+  padding-top: 0vh;
   height: 100%;
   padding-bottom: 2vh;
   margin-top: 1vh;
@@ -4091,7 +4088,7 @@ html {
       padding-top: 0; } }
   #resource-elements-keep::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 70px; }
+    width: 3px; }
 
 #resource-sidebar-moboset {
   display: flex;
@@ -4113,6 +4110,8 @@ html {
   @media screen and (max-width: 700px) {
     #resource-sidebar-folderBar {
       max-width: 100%; } }
+  #resource-sidebar-folderBar > ::-webkit-scrollbar {
+    width: 5px; }
 
 #resource-sidebar-suggestions {
   flex: 1;
@@ -4367,6 +4366,9 @@ html {
 /*Scrollbar Styling Starts*/
 ::-webkit-scrollbar {
   width: 5px; }
+  @media screen and (max-width: 700px) {
+    ::-webkit-scrollbar {
+      display: none; } }
 
 ::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
@@ -4375,7 +4377,7 @@ html {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #aaa; }
+  background: #cdcdcd; }
 
 ::-webkit-scrollbar-thumb:hover {
   -webkit-border-radius: 10px;
@@ -5228,9 +5230,9 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5241,7 +5243,7 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
