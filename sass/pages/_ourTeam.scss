@@ -92,3 +92,11 @@
   padding: 20px;
   float: left;
 }
+.aboutus {
+  right: 0%;
+  position: fixed;
+  padding: 10px;
+  @media screen and(max-width:600px) {
+    padding: 50px 10px;
+  }
+}
