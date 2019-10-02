@@ -1,10 +1,77 @@
-.myTeam--heading {
-  padding: 10px;
-  font-family: "Raleway"; }
+.top-heading {
+  text-align: center;
+  background-color: #f5f7fb;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  padding-top: 70px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6); }
 
-.myTeam--box {
+.top-subheading {
+  text-align: center;
+  background-color: #f5f7fb;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6); }
+
+.body-cards {
+  background-color: #f5f7fb;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 20px 300px;
+  position: relative;
+  overflow: auto; }
+  @media screen and (max-width: 1280px) {
+    .body-cards {
+      padding: 20px 200px; } }
+  @media screen and (max-width: 900px) {
+    .body-cards {
+      padding: 20px 100px; } }
+  @media screen and (max-width: 500px) {
+    .body-cards {
+      padding: 20px 50px; } }
+
+.cards {
+  overflow: hidden;
   background-color: white;
-  box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  border-radius: 10px;
+  min-height: 340px;
+  text-align: center;
+  padding: 20px; }
+  .cards:hover {
+    box-shadow: 0 3px 8px 1px rgba(102, 102, 102, 0.5);
+    transform: translateY(-1.5%); }
+  .cards-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; }
+  .cards-heading {
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 0.8); }
+  .cards-subheading {
+    font-size: 14px;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.6); }
+  .cards-icons {
+    font-size: 25px;
+    padding: 15px 3px; }
+  .cards-content {
+    padding: 18px 3px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6); }
+
+.holder {
+  padding: 20px;
+  float: left; }
 
 * {
   box-sizing: border-box;
@@ -131,8 +198,6 @@
   right: 0;
   padding: 1rem;
   transition: all 0.3s; }
-  .contact-us:hover {
-    transform: scale(1.2); }
   @media screen and (max-width: 600px) {
     .contact-us {
       padding: 5rem 1rem; } }

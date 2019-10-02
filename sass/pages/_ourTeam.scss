@@ -1,10 +1,94 @@
-.myTeam {
-  &--heading {
-    padding: 10px;
-    font-family: "Raleway";
+.top-heading {
+  text-align: center;
+  background-color: #f5f7fb;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  padding-top: 70px;
+  font-weight: 500;
+  color: rgba(black, 0.6);
+}
+.top-subheading {
+  text-align: center;
+  background-color: #f5f7fb;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 400;
+  color: rgba(black, 0.6);
+}
+.body-cards {
+  //text-align: center;
+  background-color: rgba(#f5f7fb, 1);
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  // padding-top: 70px;
+  font-weight: 500;
+  color: rgba(black, 0.9);
+  padding: 20px 300px;
+  position: relative;
+  overflow: auto;
+  // height: 80vh;
+  @media screen and (max-width: 1280px) {
+    padding: 20px 200px;
   }
-  &--box {
-    background-color: white;
-    box-shadow: 0px 0.5px 10px rgba(black, 0.1);
+  @media screen and (max-width: 900px) {
+    padding: 20px 100px;
   }
+  @media screen and (max-width: 500px) {
+    padding: 20px 50px;
+  }
+}
+
+.cards {
+  // height: 350px;
+  // width: 20%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(black, 0.1);
+  // position: absolute;
+  // left: 50%;
+  // transform: translate(-50%, 0);
+  transition: all 0.3s;
+  border-radius: 10px;
+  min-height: 340px;
+  &:hover {
+    box-shadow: 0 3px 8px 1px rgba(#666, 0.5);
+    transform: translateY(-1.5%);
+    // transform: scale(1.008);
+  }
+  text-align: center;
+  padding: 20px;
+
+  &-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  &-heading {
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    // line-height: 32px;
+    letter-spacing: 0;
+    color: rgba(black, 0.8);
+  }
+  &-subheading {
+    // padding: 5px;
+    font-size: 14px;
+    padding: 0px;
+    color: rgba(black, 0.6);
+  }
+  &-icons {
+    font-size: 25px;
+    padding: 15px 3px;
+  }
+  &-content {
+    padding: 18px 3px;
+    font-size: 14px;
+    color: rgba(black, 0.6);
+  }
+}
+.holder {
+  padding: 20px;
+  float: left;
 }
