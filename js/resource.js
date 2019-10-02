@@ -9,6 +9,7 @@
 // AA ADD OPTION TO UPLOAD AND CONTRIBUTE NOTES FROM STUDENTS
 // AA Color as an argument to be resolved from the drive if possible
 // AA Title Changing
+// AA We are still worthy of the hammer
 
 // A (Within Month)
 // Put the minibar to use with icons to Different Locations in same Drive []
@@ -126,6 +127,8 @@ $('#resource-sidebar-search-input').on('input', function (e) {
       console.log('Checks')
       $("#resource-hub").css({ zIndex: '100' });
       var bottomSideBar = document.getElementById('resource-sidebar')
+      $('#resource-sidebar-header').css({opacity: 0})
+      $('#resource-sidebar-mobo').animate({opacity: 1})
       bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
       bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
       sideBarOnDisplay = !sideBarOnDisplay
@@ -137,6 +140,36 @@ $('#resource-sidebar-search-input').on('input', function (e) {
     });
   });
   })
+})
+
+$('#resource-up-chevron').click(function () {
+  var bottomSideBar = document.getElementById('resource-sidebar')
+  $('#resource-sidebar-header').animate({opacity: 1})
+  $('#resource-sidebar-mobo').animate({opacity: 0})
+  bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
+  bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
+  sideBarOnDisplay = !sideBarOnDisplay
+})
+
+$('.resource-down-chevron').click( function () {
+  var bottomSideBar = document.getElementById('resource-sidebar')
+  if(sideBarOnDisplay) {
+    $('#resource-sidebar-header').animate({opacity: 0})
+    $('#resource-sidebar-mobo').animate({opacity: 1})
+    bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
+    bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
+    sideBarOnDisplay = !sideBarOnDisplay
+  }
+  else {
+    // $('.resource-down-chevron').css({
+    //   transform: "rotateZ(90)"
+    // })
+    $('#resource-sidebar-header').animate({opacity: 1})
+    $('#resource-sidebar-mobo').animate({opacity: 0})
+    bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
+    bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
+    sideBarOnDisplay = !sideBarOnDisplay
+  }
 })
 
 $(document).ready(function() {
@@ -185,13 +218,17 @@ $(document).ready(function() {
           genericChip.innerHTML = file.name
           // Set onClick Listener later to avoid multiple API calls
           // Check if a folderbar exists already!
-          if(document.getElementById('resource-sidebar-folderBar')) {
-          }
-          else {
+          if(!document.getElementById('resource-sidebar-folderBar')) {
             folderBar = document.createElement('div')
             folderBar.id = 'resource-sidebar-folderBar'
             folderBar.className += ' resource-sidebar-content-folderBar'
             $('#resource-grid').prepend(folderBar)
+            if(window.innerWidth > 700) {
+              $('#resource-sidebar-folderBar').mousewheel(function(event, delta) {
+                this.scrollLeft -= (delta * 1)
+                event.preventDefault()
+              })
+            }
             generalChip = {} 
             generalChip.name = 'General'
             generalChip.id = resourceURL
@@ -244,8 +281,10 @@ $(document).ready(function() {
         console.log('checks')
         $("#resource-hub").css({ zIndex: '100' });
         var bottomSideBar = document.getElementById('resource-sidebar')
-        bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 90)'
-        bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 10)'
+        $('#resource-sidebar-header').animate({opacity: 0})
+        $('#resource-sidebar-mobo').animate({opacity: 1})
+        bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
+        bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
         sideBarOnDisplay = !sideBarOnDisplay
         $("#resource-sidebar").css({ zIndex: '100000000000000000002' });
       }
@@ -318,31 +357,46 @@ $('#resource-sidebar').click(function () {
 })
 
 if(window.innerWidth < 700) {
-  var bottomSideBar = document.getElementById('resource-sidebar')
-  var hammerController = new Hammer(bottomSideBar)
-  hammerController.get('swipe').set({
-    direction: Hammer.DIRECTION_ALL,
-    threshold: 1, 
-    velocity: 0.1
-  })
-  hammerController.on('swipeup', function () {
-    if(!sideBarOnDisplay) {
-      bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
-      bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
-      sideBarOnDisplay = !sideBarOnDisplay
-    }
-  })
-  hammerController.on('swipedown', function () {
-    if(sideBarOnDisplay) {
-      bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
-      bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
-      sideBarOnDisplay = !sideBarOnDisplay
-    }
-  })
-  hammerController.on('pandown', function (e) {
-    console.log('Pan Down:', e)
-  })
-  hammerController.on('panup', function (e) {
-    console.log('Pan Up: ', e)
-  })
+  // var bottomSideBar = document.getElementById('resource-sidebar')
+  // var hammerController = new Hammer(bottomSideBar)
+  // hammerController.get('swipe').set({
+  //   direction: Hammer.DIRECTION_ALL,
+  //   threshold: 1, 
+  //   velocity: 0.1
+  // })
+  // hammerController.on('pandown', function (e) {
+    // console.log('Pan Down:', e)
+  //   if(sideBarOnDisplay) {
+  //     $('#resource-sidebar-header').animate({opacity: 0})
+  //     $('#resource-sidebar-mobo-seek').animate({opacity: 1})
+  //     bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
+  //     bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
+  //     sideBarOnDisplay = !sideBarOnDisplay
+  //   }
+  // })
+  // hammerController.on('panup', function (e) {
+  //   if(!sideBarOnDisplay) {
+  //     $('#resource-sidebar-header').animate({opacity: 1})
+  //     $('#resource-sidebar-mobo-seek').animate({opacity: 0})
+  //     bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
+  //     bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
+  //     sideBarOnDisplay = !sideBarOnDisplay
+  //   }
+    // console.log('Pan Up: ', e)
+  // })
 }
+console.log('Test Penultimate')
+
+var goToDrive = document.createElement('a')
+goToDrive.id = 'GoToDrive'
+if(window.innerWidth < 700) {
+  goToDrive.className += ' display8'
+}
+else {
+  goToDrive.classList += ' display10'
+}
+goToDrive.style.paddingLeft = '2rem'
+goToDrive.style.color = 'red'
+goToDrive.href = 'https://drive.google.com/open?id=' + resourceURL
+goToDrive.innerHTML = 'View in drive'
+$('#resource-sidebar-header').append(goToDrive)

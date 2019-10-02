@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Resource</title>
-    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
-    <link
-      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
-      rel="stylesheet"
-    />
-
+    <meta name="keyword" content="">
+    <meta name="description" content="The sole destination for all your academic queries and an extensive portfolio of all documents (incl Tutorials and Solutions) relevant to your journey at Thapar">
+    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script async src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v2.0.1/pwacompat.min.js"></script>
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="myHerupa">
+    <link rel="apple-touch-icon" href="/img/myherupa-1280x1280.jpeg" sizes="1280x1280">
+    <link rel="apple-touch-icon" href="/img/myherupa-512x512.jpeg" sizes="512x512">
+    <link rel="apple-touch-icon" href="/img/myherupa-192x192.jpeg" sizes="192x192">
+    <meta name="theme-color" content="#eee" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
@@ -19,7 +30,7 @@
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/main.css" />
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
   </head>
 
   <body id="resource-body">
@@ -28,6 +39,12 @@
         <ion-icon name="menu" class="resource-sidebar__bars"></ion-icon>
       </div>
       <div id="resource-sidebar">
+        <div id="resource-sidebar-mobo">
+          <!-- <div id="resource-sidebar-mobo-seek"></div> -->
+          <div id="resource-up-chevron">
+            <img src="../img/down_chevron.png"/>
+          </div>
+        </div>
         <div id="resource-sidebar-minibar">
           <div id="resource-sidebar-toggle">
             <ion-icon name="menu" class="resource-sidebar__bars"></ion-icon>
@@ -40,12 +57,15 @@
           <!-- JS Loads Options Depending on Subject -->
           <div id="resource-sidebar-header" class="resource-sidebar__header ">
             Click on below resource to access them.
+            <span class="resource-down-chevron">
+              <img src="../img/down_chevron.png"/>
+            </span>
             <!-- <ion-icon name="document"></ion-icon> -->
             <br/>
             <span id='resource-sidebar-search'>
               <!-- <i class="fas fa-search"></i> -->
               <img class='resource-sidebar-search-icon' src="../img/search.png" />
-              <input name='resourceInSearch' type='text' id='resource-sidebar-search-input' class='display10' />
+              <input name='resourceInSearch' type='text' id='resource-sidebar-search-input' class='display10' placeholder="Enter name of file"/>
             </span>
           </div>
           <div id="resource-grid">
@@ -192,6 +212,7 @@
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/mousewheel.js"></script>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     <script src="../js/resource.js"></script>
 

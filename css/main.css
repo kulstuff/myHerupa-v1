@@ -3701,9 +3701,6 @@ body {
 .seconds {
   display: none; }
 
-::-webkit-scrollbar {
-  display: none; }
-
 @media screen and (max-width: 600px) {
   .sort-bar_heading {
     width: 100%;
@@ -3892,10 +3889,27 @@ body {
 * {
   box-sizing: border-box !important; }
 
+#resource-up-chevron {
+  z-index: 1000000000;
+  text-align: center; }
+  #resource-up-chevron > img {
+    transform: rotateZ(180deg);
+    height: 1vh; }
+  @media screen and (min-width: 700px) {
+    #resource-up-chevron {
+      display: none; } }
+
+.resource-down-chevron > img {
+  height: 1vh; }
+
+@media screen and (min-width: 700px) {
+  .resource-down-chevron {
+    display: none; } }
+
 .resource-sidebar__header {
   font-size: 2rem;
   color: black;
-  flex: 1;
+  flex: 0.5;
   padding-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
@@ -3904,7 +3918,7 @@ body {
     .resource-sidebar__header {
       font-size: 1.25rem;
       flex: 1.5;
-      z-index: 100000000000000000000000000000000000000000000; } }
+      z-index: 100; } }
 
 .resource-sidebar__bars {
   width: 3rem;
@@ -3912,18 +3926,18 @@ body {
   color: white; }
 
 .resource-sidebar__footer {
-  position: relative;
-  bottom: -25%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 75px 0px;
   padding: 10px;
   border: 1px solid white;
   border-radius: 3px;
-  display: block;
-  width: 100%;
   transition: 0.25s; }
   @media screen and (max-width: 400px) {
     .resource-sidebar__footer {
+      font-size: 1.25rem;
       margin: 50px 0px;
       padding: 5px; } }
   .resource-sidebar__footer:hover {
@@ -3932,17 +3946,18 @@ body {
 
 .resource-sidebar-folderChip {
   background-color: white;
-  padding: 0.8rem 2rem;
+  padding: 0.8vh 2vw;
   font-size: 1rem;
   border-radius: 100rem;
   color: black;
   cursor: pointer;
   margin-right: 1rem;
-  box-shadow: 0 0 1px 1px #E94B3C; }
+  font-family: "Roboto" sans-serif !important;
+  box-shadow: 0 0 1px 1px #e94b3c; }
 
 .resource-element {
   cursor: pointer;
-  font-family: 'Raleway' !important;
+  font-family: "Roboto" sans-serif !important;
   color: black;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -3960,7 +3975,7 @@ body {
   padding-right: 1rem;
   padding-bottom: 0.5rem;
   background-color: white;
-  color: #E94B3C;
+  color: #e94b3c;
   overflow: hidden; }
   @media screen and (max-width: 700px) {
     .resource-element {
@@ -3971,7 +3986,7 @@ body {
       width: 40vw;
       font-size: 1.45rem;
       color: white;
-      background-image: linear-gradient(135deg, #E94B3C 0%, white 270%); } }
+      background-image: linear-gradient(135deg, #e94b3c 0%, white 270%); } }
   .resource-element:hover {
     box-shadow: 0rem 0.35rem 0.5rem #ddd; }
   .resource-element-thumbnail {
@@ -4006,6 +4021,7 @@ body {
   background-size: cover; }
 
 #resource-sidebar {
+  position: relative;
   overflow-y: hidden;
   transition: 0.1s;
   display: flex;
@@ -4021,7 +4037,7 @@ body {
       position: absolute;
       top: calc(var(--vh, 1vh) * 75);
       left: 0;
-      z-index: 100000000000000000000;
+      z-index: 100;
       border-top-left-radius: 1.5rem;
       border-top-right-radius: 1.5rem;
       overflow-y: hidden;
@@ -4029,12 +4045,28 @@ body {
       box-shadow: 0.1rem 0rem 1rem #777;
       flex-direction: column; } }
 
+#resource-sidebar-mobo {
+  z-index: 150;
+  position: absolute;
+  top: 15px;
+  left: 10vw;
+  width: 80vw;
+  height: 3px;
+  opacity: 0; }
+  #resource-sidebar-mobo-seek {
+    height: 100%;
+    width: 70%;
+    background-color: grey; }
+  @media screen and (min-width: 700px) {
+    #resource-sidebar-mobo {
+      display: none; } }
+
 #resource-sidebar-minibar {
   height: 100%;
   width: 19%;
   display: flex;
   justify-content: center;
-  background-color: #E94B3C; }
+  background-color: #e94b3c; }
   @media screen and (max-width: 700px) {
     #resource-sidebar-minibar {
       display: none; } }
@@ -4090,7 +4122,7 @@ html {
   width: 100%;
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   padding-bottom: 3rem;
   color: red;
   background-color: white;
@@ -4107,39 +4139,54 @@ html {
       margin-top: 0; } }
 
 #resource-elements-keep {
-  padding-top: 2vh; }
+  padding-top: 0vh;
+  height: 100%;
+  padding-bottom: 2vh;
+  margin-top: 1vh;
+  overflow-y: scroll; }
   @media screen and (max-width: 700px) {
     #resource-elements-keep {
       max-width: 100vw;
       max-height: 100%;
-      margin-top: 1rem;
+      margin-top: 0;
       white-space: nowrap;
-      overflow-x: scroll; } }
+      overflow-x: scroll;
+      padding-top: 0; } }
+  #resource-elements-keep::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 3px; }
 
 #resource-sidebar-moboset {
   display: flex;
   flex: 1.2;
-  justify-content: flex-end;
-  align-items: center; }
-  @media screen and (min-width: 700px) {
-    #resource-sidebar-moboset {
-      display: none; } }
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  display: none; }
 
 #resource-sidebar-folderBar {
-  position: fixed;
   background-color: white;
   width: 100%;
   padding: 1rem;
+  padding-bottom: 1.5vh;
   max-width: 15vw;
   overflow-x: scroll;
+  overflow-y: scroll;
   white-space: nowrap; }
   @media screen and (max-width: 700px) {
     #resource-sidebar-folderBar {
-      max-width: 100%; } }
+      max-width: 100%;
+      padding-bottom: 1vh; } }
+  #resource-sidebar-folderBar::-webkit-scrollbar {
+    height: 5px !important; }
 
-@media screen and (max-width: 700px) {
-  #resource-sidebar-suggestions {
-    display: none; } }
+#resource-sidebar-suggestions {
+  flex: 1;
+  text-align: center;
+  padding-top: 3vh; }
+  @media screen and (max-width: 700px) {
+    #resource-sidebar-suggestions {
+      display: none; } }
 
 #resource-hub {
   height: 100vh;
@@ -4164,16 +4211,17 @@ html {
   left: 50%;
   transform: translate(-50%, 0);
   background-color: black;
-  z-index: 1000000000;
+  z-index: 100;
   display: none; }
 
 #resource-lightdark {
+  transform: scale(0.6579);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   justify-content: center;
-  padding-top: 3vh; }
+  flex: 1; }
   @media screen and (max-width: 700px) {
     #resource-lightdark {
       display: none; } }
@@ -4250,6 +4298,9 @@ html {
   width: 100%;
   z-index: 1000000000;
   transform: scale(0.25); }
+  @media screen and (max-width: 700px) {
+    #resource-list-loader {
+      transform: scale(0.1); } }
 
 #resource-sidebar-toggle {
   padding-top: 2rem;
@@ -4258,7 +4309,7 @@ html {
   cursor: pointer; }
 
 #resource-sidebar-header {
-  z-index: 10000000000000000000000000000; }
+  z-index: 101; }
 
 #resource-sidebar-toggle-static {
   position: absolute;
@@ -4382,6 +4433,9 @@ html {
 /*Scrollbar Styling Starts*/
 ::-webkit-scrollbar {
   width: 5px; }
+  @media screen and (max-width: 700px) {
+    ::-webkit-scrollbar {
+      display: none; } }
 
 ::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
@@ -4390,7 +4444,7 @@ html {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #aaa; }
+  background: #cdcdcd; }
 
 ::-webkit-scrollbar-thumb:hover {
   -webkit-border-radius: 10px;
@@ -5243,9 +5297,9 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5256,7 +5310,7 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
