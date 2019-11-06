@@ -224,6 +224,12 @@ body {
   @media screen and (max-width: 700px) {
     display: none;
   }
+  &-one {
+    height: 50vh;
+  }
+  &-two {
+    height: 50vh;
+  }
 }
 
 #resource-sidebar-mobo {

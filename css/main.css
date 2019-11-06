@@ -4053,10 +4053,16 @@ body {
 
 #resource-ads {
   height: 100vh;
-  width: 15vw; }
+  width: 15vw;
+  padding-top: 10vh;
+  background-color: white !important; }
   @media screen and (max-width: 700px) {
     #resource-ads {
       display: none; } }
+  #resource-ads-one {
+    height: 50vh; }
+  #resource-ads-two {
+    height: 50vh; }
 
 #resource-sidebar-mobo {
   z-index: 150;
