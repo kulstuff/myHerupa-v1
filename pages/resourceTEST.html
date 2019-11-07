@@ -36,18 +36,13 @@
   <body id="resource-body">
     <div id="resource">
       <div id="resource-sidebar-toggle-static">
-        <ion-icon name="menu" class="resource-sidebar__bars"></ion-icon>
+          <img  src="../img/menu_black.svg"/>
       </div>
       <div id="resource-sidebar">
-        <div id="resource-sidebar-mobo">
-          <!-- <div id="resource-sidebar-mobo-seek"></div> -->
-          <div id="resource-up-chevron">
-            <img src="../img/down_chevron.png"/>
-          </div>
-        </div>
         <div id="resource-sidebar-minibar">
           <div id="resource-sidebar-toggle">
-            <ion-icon name="menu" class="resource-sidebar__bars"></ion-icon>
+            <img  src="../img/menu_white.svg"/>
+            <!-- <ion-icon name="menu" class="resource-sidebar__bars"></ion-icon> -->
           </div>
           <!-- Subject Argument -->
           <!-- JS Loads Options Depending on Subject -->
@@ -55,20 +50,37 @@
         <div id="resource-sidebar-content">
           <!-- Subject Argument -->
           <!-- JS Loads Options Depending on Subject -->
-          <div id="resource-sidebar-header" class="resource-sidebar__header ">
-            Click on below resource to access them.
-            <span class="resource-down-chevron">
-              <img src="../img/down_chevron.png"/>
-            </span>
-            <!-- <ion-icon name="document"></ion-icon> -->
-            <br/>
-            <span id='resource-sidebar-search'>
-              <!-- <i class="fas fa-search"></i> -->
-              <img class='resource-sidebar-search-icon' src="../img/search.png" />
-              <input name='resourceInSearch' type='text' id='resource-sidebar-search-input' class='display10' placeholder="Enter name of file"/>
-            </span>
+          <div id="resource-sidebar-header" class="display8">
+            <div id="resource-sidebar-header-heading" class="display7">
+              Maths 1 > Notes & Slides.
+            </div>
+            <div id='resource-sidebar-controls'>
+              <div id='resource-sidebar-search' class="display6">
+                <img id='resource-sidebar-search-icon' src="../img/search.png" />
+                <input name='resourceInSearch' type='text' id='resource-sidebar-search-input' class='display10' placeholder="Enter name of file"/>
+              </div>
+              <img id="resource-sidebar-controls-left" src="../img/barRightChevron.svg"/>
+              <img id="resource-sidebar-controls-right" src="../img/barRightChevron.svg"/>
+            </div>
+            <div id="resource-sidebar-bay" class="display7">
+              <div id="resource-sidebar-bay-categories">
+                Test
+              </div>
+              <div id="resource-sidebar-bay-upload">UPLOAD</div>
+            </div>
+            <div id="resource-sidebar-selector">
+              <div id="resource-sidebar-selector-a">
+                Test
+              </div>
+              <div id="resource-sidebar-selector-b">
+                UPLOAD
+              </div>
+            </div>
           </div>
-          <div id="resource-grid">
+          <div id="resource-grid"></div>
+            <!-- <ion-icon name="document"></ion-icon> -->
+            <!-- 
+          </div>
             <div id="resource-elements-keep">
               <div id="resource-list-loader">
                 <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -112,9 +124,9 @@
           </div>
           <div id="resource-lightdark" class="display7">
             <div id="resource-lightdark-caption" class="resource-lightdark-caption-upper display8">
-              Try our new <span class="resource-lightdark-empha display8"> Dark Mode </span>
+              Try our new <span class="resource-lightdark-empha display8"> Dark Mode </span> -->
             <!-- </br> -->
-            </div>
+            <!-- </div>
             <div id="resource-lightdark-slider">
               <div class="toggle toggle--daynight">
                 <input type="checkbox" id="toggle--daynight" class="toggle--checkbox">
@@ -131,7 +143,7 @@
                 href="https://forms.gle/TD6MRT2cNzhmprxe7"
                 >Any Feedback ?</a
               >
-              <div id="resource-sidebar-settings-toggle">
+              <div id="resource-sidebar-settings-toggle"> -->
                 <!-- <div id="resource-lightdark-mobo" class="display7">
                   <div id="resource-lightdark-caption" class="resource-lightdark-caption-upper display8">
                     Try our new <span class="resource-lightdark-empha display8"> Dark Mode </span> -->
@@ -147,18 +159,18 @@
                     Current Mode: <span id="resource-lightdark-curr" class="display8"> Light </span>
                   </div>
                 </div> -->
-              </div>
+              <!-- </div> -->
               <!-- <ion-icon name="document"></ion-icon> -->
-            </div>
+            <!-- </div>
           </div>
           <div id="resource-sidebar-suggestions" class="display6">
             <a
               href="https://forms.gle/TD6MRT2cNzhmprxe7"
               class="resource-sidebar__footer"
               >Any Feedback ?</a
-            >
+            > -->
             <!-- <ion-icon name="document"></ion-icon> -->
-          </div>
+          <!-- </div> -->
         </div>
       </div>
       <div id="resource-hub">
@@ -213,7 +225,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/mousewheel.js"></script>
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <!-- <script src="https://hammerjs.github.io/dist/hammer.js"></script> -->
     <script src="../js/resource.js"></script>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
