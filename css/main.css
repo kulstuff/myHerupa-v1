@@ -3999,6 +3999,7 @@ body {
 
 #resource {
   height: 100vh;
+<<<<<<< HEAD
   width: 100%; }
   #resource-body {
     background-color: white; }
@@ -4074,6 +4075,32 @@ body {
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
+=======
+  width: 100%;
+  background-image: url("../img/Resource-bg.svg");
+  background-size: cover; }
+
+#resource-sidebar {
+  position: relative;
+  overflow-y: hidden;
+  transition: 0.1s;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 30%;
+  z-index: 10000;
+  background-color: white;
+  transition: 0.5s ease-in-out; }
+  @media screen and (max-width: 700px) {
+    #resource-sidebar {
+      width: 100vw;
+      position: absolute;
+      top: calc(var(--vh, 1vh) * 75);
+      left: 0;
+      z-index: 100;
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+>>>>>>> 59069eb912234314e7e6ef7355a14867add3fd66
       overflow-y: hidden;
       flex: 0.75; }
       #resource-sidebar-header-heading {
@@ -4113,6 +4140,18 @@ body {
       #resource-grid {
         grid-template-columns: 25% 25% 25% 25%;
         grid-auto-rows: 30vh; } }
+
+#resource-ads {
+  height: 100vh;
+  width: 15vw;
+  background-color: white !important; }
+  @media screen and (max-width: 700px) {
+    #resource-ads {
+      display: none; } }
+  #resource-ads-one {
+    height: 50vh; }
+  #resource-ads-two {
+    height: 50vh; }
 
 #resource-sidebar-mobo {
   position: absolute;
