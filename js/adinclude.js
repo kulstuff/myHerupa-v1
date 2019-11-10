@@ -1,10 +1,8 @@
 var ins   = document.createElement("ins");
 ins.setAttribute('class','adsbygoogle');
-ins.setAttribute('style','display:block; text-align:center;');/*add other styles if required*/
+ins.setAttribute('style','display:inline-block;width:275px;height:152px');/*add other styles if required*/
 ins.setAttribute('data-ad-client','ca-pub-4625423558686989');
-ins.setAttribute('data-ad-slot','7408371487');
-ins.setAttribute('data-ad-format','fluid')
-ins.setAttribute('data-ad-layput','in-article')
+ins.setAttribute('data-ad-slot','2712833606')
 document.getElementById('one').appendChild(ins)
 
 
