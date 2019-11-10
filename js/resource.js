@@ -280,7 +280,7 @@ $('#resource-sidebar-search-input').on('input', function (e) {
     }
     if (index == (files.length - 1)) insertAdTile(1, 'Advertisement')
   })
-  // setOnClickListeners()
+  setOnClickListeners()
 })
 
 $(document).ready(function() {
