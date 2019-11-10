@@ -47,7 +47,8 @@ console.log('Inner Width of Window: ', window.innerWidth)
 console.log('Inner Height of Window: ', window.innerHeight)
 
 var listDocAdIDs = ['one', 'two', 'three', 'four', 'five']
-var listAdsenseFixedAdsIDs = ['2712833606', '4820122198', '8432558989', '930665695', '7405938849']
+var listAdsenseDeskFixedAdsIDs = ['2712833606', '4820122198', '8432558989', '930665695', '7405938849']
+var listAdsenseMobileFixedAdsIDs = ['1180754925', '8596210511', '8882672048', '6049938229', '7569590370']
 
 var adTiles = []
 // Monetary
@@ -138,52 +139,6 @@ var tileAds = [
          data-ad-format="fluid"
          data-ad-client="ca-pub-4625423558686989"
          data-ad-slot="6558324245"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>`
-  },
-  {
-    adType: 'Display',
-    platform: 'Desktop',
-    adId: 7,
-    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Display 1 for Resource -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4625423558686989"
-         data-ad-slot="1613582349"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>`
-  },
-  {
-    adType: 'Display',
-    platform: 'Desktop',
-    adId: 8,
-    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Display 2 for Resource -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-4625423558686989"
-         data-ad-slot="3957492894"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>`
-  },
-  {
-    adType: 'Display',
-    platform: 'Mobile',
-    adId: 9,
-    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Display 3 for Resource Mob -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:300px;height:125px"
-         data-ad-client="ca-pub-4625423558686989"
-         data-ad-slot="4048173996"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>`
@@ -656,7 +611,7 @@ var insertAdTile = function (spacer, branchText) {
     ins.setAttribute('class','adsbygoogle')
     ins.setAttribute('style','display:inline-block;width:300px;height:150px')
     ins.setAttribute('data-ad-client','ca-pub-4625423558686989')
-    ins.setAttribute('data-ad-slot',listAdsenseFixedAdsIDs[countAd])
+    ins.setAttribute('data-ad-slot', ( window.innerWidth> 700 ? listAdsenseDeskFixedAdsIDs[countAd] : listAdsenseMobileFixedAdsIDs[countAd]))
     elem.appendChild(ins)
 
     var inlineScript = document.createElement("script")
