@@ -10,8 +10,7 @@ $(document).ready(function(){
     $('.nav__back').click(function(){
         $('#nav__varGrid__collect').hide();
         $('#nav').toggle(1000);
-    });
-
+    }); 
     $('.nav__fiddlerLeft').mouseenter(function() {
         $('.nav__fiddlerRight__text').fadeOut().hide();
         $('.nav__fiddlerRight__head').fadeOut().hide();

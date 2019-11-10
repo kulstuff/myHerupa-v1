@@ -43,64 +43,148 @@ var folders = []
 var sideDisplay = 'Full'
 var countAd = 0
 
+console.log('Inner Width of Window: ', window.innerWidth)
+console.log('Inner Height of Window: ', window.innerHeight)
+
 var adTiles = []
 // Monetary
 var tileAds = [
-  `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-4625423558686989"
-    data-ad-slot="4857255991"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>`,
-  `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- Resource horizontal -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-4625423558686989"
-       data-ad-slot="1366046622"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>`,
-  `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- Display Ad 1 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-4625423558686989"
-       data-ad-slot="1613582349"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>`,
-  `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- Display Ad 2 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-4625423558686989"
-       data-ad-slot="3957492894"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>`,
-  `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- Display Ad 3 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-4625423558686989"
-       data-ad-slot="4048173996"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>`
-
+  {
+    adType: 'Article',
+    platform: 'All',
+    adId: 1,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="7408371487"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Article',
+    platform: 'All',
+    adId: 2,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="2838571086"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Article',
+    platform: 'All',
+    adId: 3,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="5819957649"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Article',
+    platform: 'All',
+    adId: 4,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="4618556611"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Article',
+    platform: 'All',
+    adId: 5,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="2089414436"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Article',
+    platform: 'All',
+    adId: 6,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="6558324245"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Display',
+    platform: 'Desktop',
+    adId: 7,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Display 1 for Resource -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="1613582349"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Display',
+    platform: 'Desktop',
+    adId: 8,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Display 2 for Resource -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="3957492894"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  },
+  {
+    adType: 'Display',
+    platform: 'Mobile',
+    adId: 9,
+    adHTML: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Display 3 for Resource Mob -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:125px"
+         data-ad-client="ca-pub-4625423558686989"
+         data-ad-slot="4048173996"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>`
+  }
 ]
 
 // Day Night Toggle
@@ -124,17 +208,26 @@ $('#toggle--daynight').click(function () {
 $('#resource-sidebar-toggle').click(function () {
   sidebarLoaded = !sidebarLoaded
   if(window.innerWidth > 700) {
-    if(sidebarLoaded) $('#resource-sidebar').css({'margin-left': '0vw'})
-    else $('#resource-sidebar').css({'margin-left': '-25vw'})
+    if(sidebarLoaded) $('#resource-sidebar').css({'left': '0vw'})
+    else $('#resource-sidebar').css({'left': '-100vw'})
+  }
+  else {
+    if(sidebarLoaded) $('#resource-sidebar').css({'top': '100%'})
+    else $('#resource-sidebar').css({'top': '25%'})
   }
 })
+
 // Static Sidebar Toggle Contoller
 $('#resource-sidebar-toggle-static').click(function () {
   console.log(sidebarLoaded)
   sidebarLoaded = !sidebarLoaded
   if(window.innerWidth > 700) {
-    if(sidebarLoaded) $('#resource-sidebar').css({'margin-left': '0vw'})
-    else $('#resource-sidebar').css({'margin-left': '-25vw'})
+    if(sidebarLoaded) $('#resource-sidebar').css({'left': '0vw'})
+    else $('#resource-sidebar').css({'left': '0vw'})
+  }
+  else {
+    if(sidebarLoaded) $('#resource-sidebar').css({'top': '100%'})
+    else $('#resource-sidebar').css({'top': '25%'})
   }
 })
 
@@ -181,40 +274,13 @@ $('#resource-sidebar-controls-right').click(function () {
 $('#resource-sidebar-search-input').on('input', function (e) {
   $('.resource-element-capsule').remove()
   // console.log(files)
-  files.map(file => {
+  files.map((file, index) => {
     if(file.name.toUpperCase().includes(e.target.value.toUpperCase())) {
       $('#resource-grid').append(file.elem)
     }
-    
-    // $(".resource-element").click(function() {
-      // console.log(this.className);
-      // $(".resource-element").css({'backgroundColor': 'white', 'color': 'black', 'borderBottom': '#E94B3C 2px solid'})
-      // $(this).css({'backgroundColor': '#E94B3C', 'color': 'white', 'borderBottom': '#555 4px solid'})
-      // $("#resource-loader").css({ display: "block" })
-      // if ($(".resource-loaded-document")) {
-      //   $(".resource-loaded-document").remove()
-      // }
-      // var loadDocument = document.createElement("iframe")
-      // loadDocument.className += " resource-loading-document resource-loaded-document"
-      // loadDocument.id = "loadDocument"
-      // loadDocument.src = "https://docs.google.com/file/d/" + this.className.split("resource-element-id-")[1] + "/preview?usp=drivesdk"
-      // document.getElementById("resource-overlay-document-payload").append(loadDocument)
-      // if (window.innerWidth < 700) {
-      //   $("#resource-hub").css({ zIndex: '100' });
-      //   var bottomSideBar = document.getElementById('resource-sidebar')
-      //   $('#resource-sidebar-header').css({opacity: 0})
-      //   $('#resource-sidebar-mobo').animate({opacity: 1})
-      //   bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
-      //   bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
-      //   sideBarOnDisplay = !sideBarOnDisplay
-      //   $("#resource-sidebar").css({ zIndex: '102' });
-      // }
-      // $("#loadDocument").on("load", function() {
-      //   $("#resource-loader").css({ display: "none" });
-      //   // your code (will be called once iframe is done loading)
-      // })
-    // })
+    if (index == (files.length - 1)) insertAdTile(1, 'Advertisement')
   })
+  setOnClickListeners()
 })
 
 $(document).ready(function() {
@@ -229,6 +295,7 @@ $(document).ready(function() {
   var xmlHttp = new XMLHttpRequest()
   xmlHttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+      for(i = 0; i < 8; i++) {$('#resource-grid-loading-hangar').remove()}
       console.log(JSON.parse(this.responseText))
       // $('#resource-list-loader').css({'display': 'none'})
       // For each element in the GDrive Directory
@@ -281,8 +348,8 @@ $(document).ready(function() {
         else { 
           // We encounter a subfolder
           // Create a Generic Folder Chip as Resource-Sidebar-FolderChip
-          genericChip = document.createElement('span')
-          genericChip.className += ' resource-sidebar-folderChip resource-sidebar-folderChip-id-' + file.id + ' display10'
+          genericChip = document.createElement('div')
+          genericChip.className += ' display4 resource-sidebar-folderChip resource-sidebar-folderChip-id-' + file.id + ' display10'
           genericChip.innerHTML = file.name
           
           // Set onClick Listener later to avoid multiple API calls [AA]
@@ -294,18 +361,17 @@ $(document).ready(function() {
             folderBar.id = 'resource-sidebar-folderBar'
             folderBar.className += ' resource-sidebar-content-folderBar'
             
-            $('#resource-grid').prepend(folderBar)
+            $('#resource-sidebar-header').append(folderBar)
             
             // Create A General Chip to Always Refer to the main content of the Directory (Treat this as a folder)
             // Create an internal JS reference for a GENERAL folder and store it in folders List
             generalChip = {} 
             generalChip.name = 'General'
             generalChip.id = resourceURL
-            generalChip.chip = document.createElement('span')
+            generalChip.chip = document.createElement('div')
             generalChip.chip.className = ' resource-sidebar-folderChip resource-sidebar-folderChip-id-' + resourceURL + ' display10'
             generalChip.chip.innerHTML = 'General'
             folders.push(generalChip)
-            console.log('Hello by General Chip')
             $('#resource-sidebar-folderBar').append(generalChip.chip)
 
             // [AAA] Style the General by Default and other FolderChips to Seem Selected when Selected {CSS}
@@ -332,12 +398,20 @@ $(document).ready(function() {
     }
 
     // TEST
-    files.reverse()
+    // files.reverse()
     
     files.map((file, index) => {
-      if((index % 4) == 3) insertAdTile(1, 'Advertisement')
+      if((index % 5) == 3) insertAdTile(1, 'Advertisement')
       document.getElementById("resource-grid").append(file.elem);
+      if(index == (files.length - 1)) {
+        insertAdTile(1, 'Advertisement')
+      }
     })
+    // console.log('Once')
+    // var placeholderDiv = document.createElement('div')
+    // placeholderDiv.className += ' resource-element-capsule placeholderDiv'
+    // document.getElementById("resource-grid").append(placeholderDiv)
+    // console.log('Inserted Placeholder')
     
     // Set the listeners
     setOnClickListeners()
@@ -361,6 +435,14 @@ $('#resource-grid').scroll(function () {
     if(elemTop >= gridTop && elemTop <= gridBottom) return 1 
     else return 0
   }
+  // adTiles.map((adTile , index)=> {
+  //   if(!(checkTop('.resource-element-ad-' + (index + 1)))) {
+  //     $('.resource-element-ad-capsule-' + (index + 1)).css({transform: 'scale(0)'})
+  //   }
+  //   else {
+  //     $('.resource-element-ad-capsule-' + (index + 1)).css({transform: 'scale(1)'})
+  //   }
+  // })
   files.map(file => {
     if(!(checkTop('.resource-element-id-' + file.id))) {
       $('.resource-element-capsule-id-' + file.id).css({transform: 'scale(0)'})
@@ -375,16 +457,13 @@ var setOnClickListeners = function () {
   
   // ELement Tile Listener
   $(".resource-element").click(function() {
-    console.log(1)
-    // $(".resource-element").css({'backgroundColor': 'white', 'color': 'black', 'borderBottom': '#E94B3C 2px solid'})
-    // $(this).css({'backgroundColor': '#E94B3C', 'color': 'white', 'borderBottom': '#555 4px solid'})
-    // $("#resource-loader").css({ display: "block" });
-    
     // If there exists a loaded document beforehand then go on and remove it
     if ($(".resource-loaded-document")) {
       $(".resource-loaded-document").remove()
     }
 
+    $('#resource-loader').css({display: 'block'})
+    
     // Create a new Document
     var loadDocument = document.createElement("iframe")
     
@@ -398,18 +477,25 @@ var setOnClickListeners = function () {
     document
     .getElementById("resource-overlay-document-payload")
     .append(loadDocument)
-    if (window.innerWidth < 700) {
-      // $('#resource-hub').css({ zIndex: '100' });
-      var bottomSideBar = document.getElementById('resource-sidebar')
-      $('#resource-sidebar-header').animate({opacity: 0})
-      $('#resource-sidebar-mobo').animate({opacity: 1})
-      bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
-      bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
-      sideBarOnDisplay = !sideBarOnDisplay
-      // $("#resource-sidebar").css({ zIndex: '100000000000000000002' });
+    if(window.innerWidth > 700) {
+      $('#resource-sidebar').css({
+        left: '-100vw'
+      })
     }
+    else {
+      $('#resource-sidebar').css({'top': '90%'})
+      document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
+      $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
+      $('#resource-sidebar-mobile-goback').css({display: 'block'})
+      $('#resource-sidebar-mobile-goback').click(function () {
+        $('#resource-sidebar').css({'top': '25%'})
+        $('#resource-sidebar-mobile-ad').css({top: '-20vh'})
+      })
+      $('#resource-sidebar-mobile-ad').css({top: '0'})
+    }
+    sidebarDisplay = !sideDisplay
     $("#loadDocument").on("load", function() {
-      $("#resource-loader").css({ display: "none" });
+      $("#resource-loader").css({ display: 'none' })
     })
   })
   
@@ -481,9 +567,16 @@ var setOnClickListeners = function () {
         
         // Append the files one by one
         files.map((file, index) => {
-          if((index % 4) == 3) insertAdTile(1, 'Advertisement')
+          if((index % 5) == 3) insertAdTile(1, 'Advertisement')
           document.getElementById("resource-grid").append(file.elem)
+          if(index == (files.length - 1)) {
+            insertAdTile(1, 'Advertisement')
+          }
         })
+        // var placeholderDiv = document.createElement('div')
+        // placeholderDiv.className += ' resource-element-capsule placeholderDiv'
+        // document.getElementById("resource-grid").append(placeholderDiv)
+        // console.log('Inserted Placeholder')
       }
     }
     xmlHttpSubFolder.open("GET", URLSub, true) // false for synchronous request
@@ -529,8 +622,8 @@ var insertAdTile = function (spacer, branchText) {
   if(spacer == 1) {
     // Layout the mainframe called Resource-Element
     var elem = document.createElement("div")
-    elem.className += " resource-element resource-element-ad"
-    elem.innerHTML = tileAds[countAd]
+    elem.className += (' resource-element resource-element-ad resource-element-ad-' + (countAd + 1))
+    elem.innerHTML = tileAds[countAd].adHTML
 
     // Lay out its branch [AAA]  as Resource-Element-Branch
     var branch = document.createElement('div')
@@ -539,7 +632,7 @@ var insertAdTile = function (spacer, branchText) {
     
     // Encapsulate Mainfrome and its branch in Resource-Capsule
     var capsule = document.createElement('div')
-    capsule.className += ' resource-element-capsule'
+    capsule.className += (' resource-element-capsule resource-element-ad-capsule-' + (countAd + 1))
     
     // Append branch to Capsule
     capsule.append(branch)
