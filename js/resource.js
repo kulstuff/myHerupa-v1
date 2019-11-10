@@ -589,7 +589,7 @@ var setElementClicker = function () {
     else {
       $('#resource-sidebar').css({'top': '90%'})
       document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
-      $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
+      // $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
       $('#resource-sidebar-mobile-goback').css({display: 'block'})
       $('#resource-sidebar-mobile-goback').click(function () {
         $('#resource-sidebar').css({'top': '10%', height: '80vh'})
