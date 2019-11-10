@@ -189,7 +189,7 @@ var tileAds = [
 
 // test Function to print article vars
 setTimeout(function () {
-  console.log('Width: ', $('#resource-element').width() , ' Height: ', $('#resource-element').height())
+  console.log($('#resource-element'))
 }, 15000)
 
 // Day Night Toggle
