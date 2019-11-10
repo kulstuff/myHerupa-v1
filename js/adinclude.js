@@ -1,14 +1,14 @@
 var ins   = document.createElement("ins");
 ins.setAttribute('id','one');
 ins.setAttribute('class','adsbygoogle');
-ins.setAttribute('style','display:inline-block;width:275px;height:152px');/*add other styles if required*/
+ins.setAttribute('style','display:inline-block;width:400px;height:200px');/*add other styles if required*/
 ins.setAttribute('data-ad-client','ca-pub-4625423558686989');
 ins.setAttribute('data-ad-slot','2712833606')
 document.getElementById('one').appendChild(ins)
 var ins2   = document.createElement("ins");
 ins2.setAttribute('id','two');
 ins2.setAttribute('class','adsbygoogle');
-ins2.setAttribute('style','display:inline-block;width:400px;height:600px');/*add other styles if required*/
+ins2.setAttribute('style','display:inline-block;width:300px;height:150px');/*add other styles if required*/
 ins2.setAttribute('data-ad-client','ca-pub-4625423558686989');
 ins2.setAttribute('data-ad-slot','4820122198')
 document.getElementById('two').appendChild(ins2)
