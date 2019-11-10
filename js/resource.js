@@ -311,8 +311,13 @@ $(document).ready(function() {
           
           // Lay out its branch [AAA]  as Resource-Element-Branch
           var branch = document.createElement('div')
-          branch.className += ' resource-element-branch display10'
-          branch.innerHTML = file.name.split('.')[0]
+          branch.className += ' resource-element-branch'
+          var branchText = document.createElement('div')
+          branchText.className += ' display10'
+          branchText.innerHTML = file.name.split('.')[0]
+
+          branchtext = setScroll(branchText, file.name.split('.')[0])
+          branch.append(branchText)
           
           // Encapsulate Mainfrome and its branch in Resource-Capsule
           var capsule = document.createElement('div')
@@ -454,50 +459,8 @@ $('#resource-grid').scroll(function () {
 })
 
 var setOnClickListeners = function () {
-  
-  // ELement Tile Listener
-  $(".resource-element").click(function() {
-    // If there exists a loaded document beforehand then go on and remove it
-    if ($(".resource-loaded-document")) {
-      $(".resource-loaded-document").remove()
-    }
 
-    $('#resource-loader').css({display: 'block'})
-    
-    // Create a new Document
-    var loadDocument = document.createElement("iframe")
-    
-    loadDocument.className +=
-    " resource-loading-document resource-loaded-document";
-    loadDocument.id = "loadDocument";
-    loadDocument.src =
-    "https://docs.google.com/file/d/" +
-    this.className.split("resource-element-id-")[1] +
-    "/preview?usp=drivesdk";
-    document
-    .getElementById("resource-overlay-document-payload")
-    .append(loadDocument)
-    if(window.innerWidth > 700) {
-      $('#resource-sidebar').css({
-        left: '-100vw'
-      })
-    }
-    else {
-      $('#resource-sidebar').css({'top': '90%'})
-      document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
-      $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
-      $('#resource-sidebar-mobile-goback').css({display: 'block'})
-      $('#resource-sidebar-mobile-goback').click(function () {
-        $('#resource-sidebar').css({'top': '10%', height: '80vh'})
-        $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '-10vh', 'z-index': 5})
-      })
-      $('#resource-sidebar-mobile-ad').css({top: '0'})
-    }
-    sidebarDisplay = !sideDisplay
-    $("#loadDocument").on("load", function() {
-      $("#resource-loader").css({ display: 'none' })
-    })
-  })
+  setElementClicker()
   
   $('.resource-sidebar-folderChip').click(function () {
     $('.resource-element-capsule').remove()
@@ -526,8 +489,13 @@ var setOnClickListeners = function () {
             
             // Lay out its branch [AAA]  as Resource-Element-Branch
             var branch = document.createElement('div')
-            branch.className += ' resource-element-branch display10'
-            branch.innerHTML = file.name.split('.')[0]
+            branch.className += ' resource-element-branch'
+            var branchText = document.createElement('div')
+            branchText.className += ' display10'
+            branchText.innerHTML = file.name.split('.')[0]
+            
+            branchtext = setScroll(branchText, file.name.split('.')[0])
+            branch.append(branchText)
             
             // Encapsulate Mainfrome and its branch in Resource-Capsule
             var capsule = document.createElement('div')
@@ -573,6 +541,8 @@ var setOnClickListeners = function () {
             insertAdTile(1, 'Advertisement')
           }
         })
+
+        setElementClicker()
         // var placeholderDiv = document.createElement('div')
         // placeholderDiv.className += ' resource-element-capsule placeholderDiv'
         // document.getElementById("resource-grid").append(placeholderDiv)
@@ -582,6 +552,73 @@ var setOnClickListeners = function () {
     xmlHttpSubFolder.open("GET", URLSub, true) // false for synchronous request
     xmlHttpSubFolder.send()
   })
+}
+
+var setElementClicker = function () {
+  // ELement Tile Listener
+  $(".resource-element").click(function() {
+    // If there exists a loaded document beforehand then go on and remove it
+    if ($(".resource-loaded-document")) {
+      $(".resource-loaded-document").remove()
+    }
+
+    $('#resource-loader').css({display: 'block'})
+    
+    // Create a new Document
+    var loadDocument = document.createElement("iframe")
+    
+    loadDocument.className +=
+    " resource-loading-document resource-loaded-document";
+    loadDocument.id = "loadDocument";
+    loadDocument.src =
+    "https://docs.google.com/file/d/" +
+    this.className.split("resource-element-id-")[1] +
+    "/preview?usp=drivesdk";
+    document
+    .getElementById("resource-overlay-document-payload")
+    .append(loadDocument)
+    if(window.innerWidth > 700) {
+      $('#resource-sidebar').css({
+        left: '-100vw'
+      })
+    }
+    else {
+      $('#resource-sidebar').css({'top': '90%'})
+      document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
+      $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
+      $('#resource-sidebar-mobile-goback').css({display: 'block'})
+      $('#resource-sidebar-mobile-goback').click(function () {
+        $('#resource-sidebar').css({'top': '10%', height: '80vh'})
+        $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '-10vh', 'z-index': 5})
+      })
+      $('#resource-sidebar-mobile-ad').css({top: '0'})
+    }
+    sidebarDisplay = !sideDisplay
+    $("#loadDocument").on("load", function() {
+      $("#resource-loader").css({ display: 'none' })
+    })
+  })
+}
+
+var setScroll = function (elem, elemText) {
+  if ( elemText.length > 25 ) {
+    console.log('overflow')
+    var branchText = elem.innerHTML
+    elem.innerHTML = ''
+    var marqueeChild = document.createElement('marquee')
+    marqueeChild.className += ' display10'
+    marqueeChild.style.width = $(parent).width()
+    marqueeChild.innerHTML = branchText
+    elem.append(marqueeChild)
+    elem.style.color = 'white'
+    marqueeChild.style.color = 'white'
+    marqueeChild.scrollAmount = 5
+    return elem
+  }
+  else {
+    elem.style.color = 'white'
+    return elem
+  }
 }
 
 if(window.innerWidth < 700) {
