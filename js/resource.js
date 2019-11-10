@@ -46,6 +46,9 @@ var countAd = 0
 console.log('Inner Width of Window: ', window.innerWidth)
 console.log('Inner Height of Window: ', window.innerHeight)
 
+var listDocAdIDs = ['one', 'two', 'three', 'four', 'five']
+var listAdsenseFixedAdsIDs = ['2712833606', '4820122198', '8432558989', '930665695', '7405938849']
+
 var adTiles = []
 // Monetary
 var tileAds = [
@@ -640,7 +643,26 @@ var insertAdTile = function (spacer, branchText) {
     // Layout the mainframe called Resource-Element
     var elem = document.createElement("div")
     elem.className += (' resource-element resource-element-ad resource-element-ad-' + (countAd + 1))
-    elem.innerHTML = tileAds[countAd].adHTML
+    // elem.innerHTML = 
+
+    var externalScript  = document.createElement("script")
+    externalScript.type = "text/javascript"
+    externalScript.setAttribute('async','async')
+    externalScript.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+    elem.appendChild(externalScript)
+
+    var ins = document.createElement("ins")
+    ins.setAttribute('id',listDocAdIDs[countAd])
+    ins.setAttribute('class','adsbygoogle')
+    ins.setAttribute('style','display:inline-block;width:300px;height:150px')
+    ins.setAttribute('data-ad-client','ca-pub-4625423558686989')
+    ins.setAttribute('data-ad-slot',listAdsenseFixedAdsIDs[countAd])
+    elem.appendChild(ins)
+
+    var inlineScript = document.createElement("script")
+    inlineScript.type = "text/javascript";
+    inlineScript.text = '(adsbygoogle = window.adsbygoogle || []).push({});'  
+    elem.appendChild(inlineScript)
 
     // Lay out its branch [AAA]  as Resource-Element-Branch
     var branch = document.createElement('div')
