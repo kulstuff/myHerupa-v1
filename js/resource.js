@@ -609,9 +609,19 @@ var insertAdTile = function (spacer, branchText) {
     var ins = document.createElement("ins")
     ins.setAttribute('id',listDocAdIDs[countAd])
     ins.setAttribute('class','adsbygoogle')
-    ins.setAttribute('style','display:inline-block;width:300px;height:150px')
+    if(window.innerWidth > 700) {
+      ins.setAttribute('style','display:inline-block;width:300px;height:150px')
+    }
+    else {
+      ins.setAttribute('style','display:inline-block;width:150px;height:64px')
+    }
     ins.setAttribute('data-ad-client','ca-pub-4625423558686989')
-    ins.setAttribute('data-ad-slot', ( window.innerWidth> 700 ? listAdsenseDeskFixedAdsIDs[countAd] : listAdsenseMobileFixedAdsIDs[countAd]))
+    if(window.innerWidth > 700) {
+      ins.setAttribute('data-ad-slot', listAdsenseDeskFixedAdsIDs[countAd])
+    }
+    else {
+      ins.setAttribute('data-ad-slot', listAdsenseMobileFixedAdsIDs[countAd])
+    }
     elem.appendChild(ins)
 
     var inlineScript = document.createElement("script")
