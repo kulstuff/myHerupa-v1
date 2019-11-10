@@ -3966,13 +3966,13 @@ body {
   .resource-element-branch {
     z-index: 0;
     position: absolute;
-    width: 50%;
+    width: 70%;
     box-shadow: 0rem 4px 15px rgba(0, 0, 0, 0.25);
     padding: 0 1rem;
     top: 100%;
-    left: 40%;
-    height: 2vh;
-    line-height: 2vh;
+    left: 20%;
+    height: 2.15vh;
+    line-height: 2.15vh;
     letter-spacing: 1.5px;
     color: white;
     text-align: center;

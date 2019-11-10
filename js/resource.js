@@ -1,5 +1,5 @@
 // AAA PREPROD
-// File names in drive VERY Precise (for display8) and no more than one sub folder due to absence of substructure folder recursion [*]
+// File names in drive VERY Precise (for display9) and no more than one sub folder due to absence of substructure folder recursion [*]
 
 // AA (Within Week or after MST Week)
 // AA MUST ADD A NEW FEATURE SYMBOL w Date Modified and Fire Symbol for proximate examinations []
@@ -280,7 +280,7 @@ $('#resource-sidebar-search-input').on('input', function (e) {
     }
     if (index == (files.length - 1)) insertAdTile(1, 'Advertisement')
   })
-  setOnClickListeners()
+  // setOnClickListeners()
 })
 
 $(document).ready(function() {
@@ -313,7 +313,7 @@ $(document).ready(function() {
           var branch = document.createElement('div')
           branch.className += ' resource-element-branch'
           var branchText = document.createElement('div')
-          branchText.className += ' display10'
+          branchText.className += ' display9'
           branchText.innerHTML = file.name.split('.')[0]
 
           branchtext = setScroll(branchText, file.name.split('.')[0])
@@ -354,7 +354,7 @@ $(document).ready(function() {
           // We encounter a subfolder
           // Create a Generic Folder Chip as Resource-Sidebar-FolderChip
           genericChip = document.createElement('div')
-          genericChip.className += ' display4 resource-sidebar-folderChip resource-sidebar-folderChip-id-' + file.id + ' display10'
+          genericChip.className += ' display4 resource-sidebar-folderChip resource-sidebar-folderChip-id-' + file.id + ' display9'
           genericChip.innerHTML = file.name
           
           // Set onClick Listener later to avoid multiple API calls [AA]
@@ -374,7 +374,7 @@ $(document).ready(function() {
             generalChip.name = 'General'
             generalChip.id = resourceURL
             generalChip.chip = document.createElement('div')
-            generalChip.chip.className = ' resource-sidebar-folderChip resource-sidebar-folderChip-id-' + resourceURL + ' display10'
+            generalChip.chip.className = ' resource-sidebar-folderChip resource-sidebar-folderChip-id-' + resourceURL + ' display9'
             generalChip.chip.innerHTML = 'General'
             folders.push(generalChip)
             $('#resource-sidebar-folderBar').append(generalChip.chip)
@@ -399,6 +399,99 @@ $(document).ready(function() {
           // Append chip to folderbar
           $('#resource-sidebar-folderBar').append(genericChip)
         }
+      })
+      $('.resource-sidebar-folderChip').click(function () {
+        console.log(123)
+        $('.resource-element-capsule').remove()
+        // $('#resource-list-loader').css({'display': 'none'})
+        // Reset the files to be shown
+        files = []
+        $('#resource-list-loader').css({'display': 'block'})
+        // Send a new Request
+        // Set the newURL for Request FOLDER CONTENTS
+        var URLSub = "https://www.googleapis.com/drive/v3/files?q=%27" + this.className.split('id-')[1].split(' ')[0] + "%27+in+parents&key=AIzaSyCLsjQI8bnfyuh9-FKy-eH87Uq_wUG0H0Y&fields=*";
+        var xmlHttpSubFolder = new XMLHttpRequest();
+        xmlHttpSubFolder.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            console.log(JSON.parse(this.responseText))
+            $('#resource-list-loader').css({'display': 'none'})
+            
+            // The following should probably be a separate function
+            JSON.parse(this.responseText).files.forEach(file => {
+              // Check if not Folder
+              if (file.mimeType != "application/vnd.google-apps.folder") {
+                // Layout the mainframe called Resource-Element
+                var elem = document.createElement("div")
+                elem.className += " resource-element"
+                elem.className += " display7"
+                elem.className += " resource-element-id-" + file.id
+                
+                // Lay out its branch [AAA]  as Resource-Element-Branch
+                var branch = document.createElement('div')
+                branch.className += ' resource-element-branch'
+                var branchText = document.createElement('div')
+                branchText.className += ' display9'
+                branchText.innerHTML = file.name.split('.')[0]
+                
+                branchtext = setScroll(branchText, file.name.split('.')[0])
+                branch.append(branchText)
+                
+                // Encapsulate Mainfrome and its branch in Resource-Capsule
+                var capsule = document.createElement('div')
+                capsule.className += ' resource-element-capsule'
+                capsule.className += ' resource-element-capsule-id-' + file.id
+                
+                // Thumbnail insertion
+                // ThumbnailDiv
+                thumbnail = document.createElement('div')
+                thumbnail.className += ' resource-element-thumbnail'
+                // ThumbnailImage
+                thumbnailImage = document.createElement('img')
+                thumbnailImage.src = file.thumbnailLink.substring(0, file.thumbnailLink.length - 3) + '720'
+                // Insert Thumbnail Image to Thumbnail
+                thumbnail.append(thumbnailImage)
+                
+                // Add Thumbnail to the mainframe
+                elem.append(thumbnail)
+                
+                // Append branch to Capsule
+                capsule.append(branch)
+                // Preppend Mainframe to the Capsule 
+                capsule.prepend(elem)
+    
+                // Create an internal Js Reference Object and store it in files list
+                newFile = {}
+                newFile.elem = capsule
+                newFile.id = file.id
+                newFile.name = file.name
+                newFile.thumbnail = thumbnail
+                files.push(newFile)
+              }
+            })
+            
+            // TEST
+            files.reverse()
+
+            
+            // Append the files one by one
+            files.map((file, index) => {
+              if(index == 0) countAd = 0
+              if((index % 5) == 3) insertAdTile(1, 'Advertisement')
+              document.getElementById("resource-grid").append(file.elem)
+              if(index == (files.length - 1)) {
+                insertAdTile(1, 'Advertisement')
+              }
+            })
+    
+            setElementClicker()
+            // var placeholderDiv = document.createElement('div')
+            // placeholderDiv.className += ' resource-element-capsule placeholderDiv'
+            // document.getElementById("resource-grid").append(placeholderDiv)
+            // console.log('Inserted Placeholder')
+          }
+        }
+        xmlHttpSubFolder.open("GET", URLSub, true) // false for synchronous request
+        xmlHttpSubFolder.send()
       })
     }
 
@@ -448,6 +541,7 @@ $('#resource-grid').scroll(function () {
   //     $('.resource-element-ad-capsule-' + (index + 1)).css({transform: 'scale(1)'})
   //   }
   // })
+  // SET LATER
   // files.map(file => {
   //   if(!(checkTop('.resource-element-id-' + file.id))) {
   //     $('.resource-element-capsule-id-' + file.id).css({transform: 'scale(0)'})
@@ -462,96 +556,6 @@ var setOnClickListeners = function () {
 
   setElementClicker()
   
-  $('.resource-sidebar-folderChip').click(function () {
-    $('.resource-element-capsule').remove()
-    // $('#resource-list-loader').css({'display': 'none'})
-    // Reset the files to be shown
-    files = []
-    $('#resource-list-loader').css({'display': 'block'})
-    // Send a new Request
-    // Set the newURL for Request FOLDER CONTENTS
-    var URLSub = "https://www.googleapis.com/drive/v3/files?q=%27" + this.className.split('id-')[1].split(' ')[0] + "%27+in+parents&key=AIzaSyCLsjQI8bnfyuh9-FKy-eH87Uq_wUG0H0Y&fields=*";
-    var xmlHttpSubFolder = new XMLHttpRequest();
-    xmlHttpSubFolder.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        console.log(JSON.parse(this.responseText))
-        $('#resource-list-loader').css({'display': 'none'})
-        
-        // The following should probably be a separate function
-        JSON.parse(this.responseText).files.forEach(file => {
-          // Check if not Folder
-          if (file.mimeType != "application/vnd.google-apps.folder") {
-            // Layout the mainframe called Resource-Element
-            var elem = document.createElement("div")
-            elem.className += " resource-element"
-            elem.className += " display7"
-            elem.className += " resource-element-id-" + file.id
-            
-            // Lay out its branch [AAA]  as Resource-Element-Branch
-            var branch = document.createElement('div')
-            branch.className += ' resource-element-branch'
-            var branchText = document.createElement('div')
-            branchText.className += ' display10'
-            branchText.innerHTML = file.name.split('.')[0]
-            
-            branchtext = setScroll(branchText, file.name.split('.')[0])
-            branch.append(branchText)
-            
-            // Encapsulate Mainfrome and its branch in Resource-Capsule
-            var capsule = document.createElement('div')
-            capsule.className += ' resource-element-capsule'
-            capsule.className += ' resource-element-capsule-id-' + file.id
-            
-            // Thumbnail insertion
-            // ThumbnailDiv
-            thumbnail = document.createElement('div')
-            thumbnail.className += ' resource-element-thumbnail'
-            // ThumbnailImage
-            thumbnailImage = document.createElement('img')
-            thumbnailImage.src = file.thumbnailLink.substring(0, file.thumbnailLink.length - 3) + '720'
-            // Insert Thumbnail Image to Thumbnail
-            thumbnail.append(thumbnailImage)
-            
-            // Add Thumbnail to the mainframe
-            elem.append(thumbnail)
-            
-            // Append branch to Capsule
-            capsule.append(branch)
-            // Preppend Mainframe to the Capsule 
-            capsule.prepend(elem)
-
-            // Create an internal Js Reference Object and store it in files list
-            newFile = {}
-            newFile.elem = capsule
-            newFile.id = file.id
-            newFile.name = file.name
-            newFile.thumbnail = thumbnail
-            files.push(newFile)
-          }
-        })
-        
-        // TEST
-        files.reverse()
-        
-        // Append the files one by one
-        files.map((file, index) => {
-          if((index % 5) == 3) insertAdTile(1, 'Advertisement')
-          document.getElementById("resource-grid").append(file.elem)
-          if(index == (files.length - 1)) {
-            insertAdTile(1, 'Advertisement')
-          }
-        })
-
-        setElementClicker()
-        // var placeholderDiv = document.createElement('div')
-        // placeholderDiv.className += ' resource-element-capsule placeholderDiv'
-        // document.getElementById("resource-grid").append(placeholderDiv)
-        // console.log('Inserted Placeholder')
-      }
-    }
-    xmlHttpSubFolder.open("GET", URLSub, true) // false for synchronous request
-    xmlHttpSubFolder.send()
-  })
 }
 
 var setElementClicker = function () {
@@ -606,7 +610,7 @@ var setScroll = function (elem, elemText) {
     var branchText = elem.innerHTML
     elem.innerHTML = ''
     var marqueeChild = document.createElement('marquee')
-    marqueeChild.className += ' display10'
+    marqueeChild.className += ' display9'
     marqueeChild.style.width = $(parent).width()
     marqueeChild.innerHTML = branchText
     elem.append(marqueeChild)
@@ -619,36 +623,6 @@ var setScroll = function (elem, elemText) {
     elem.style.color = 'white'
     return elem
   }
-}
-
-if(window.innerWidth < 700) {
-  // var bottomSideBar = document.getElementById('resource-sidebar')
-  // var hammerController = new Hammer(bottomSideBar)
-  // hammerController.get('swipe').set({
-  //   direction: Hammer.DIRECTION_ALL,
-  //   threshold: 1, 
-  //   velocity: 0.1
-  // })
-  // hammerController.on('pandown', function (e) {
-    // console.log('Pan Down:', e)
-  //   if(sideBarOnDisplay) {
-  //     $('#resource-sidebar-header').animate({opacity: 0})
-  //     $('#resource-sidebar-mobo-seek').animate({opacity: 1})
-  //     bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 93)'
-  //     bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 07)'
-  //     sideBarOnDisplay = !sideBarOnDisplay
-  //   }
-  // })
-  // hammerController.on('panup', function (e) {
-  //   if(!sideBarOnDisplay) {
-  //     $('#resource-sidebar-header').animate({opacity: 1})
-  //     $('#resource-sidebar-mobo-seek').animate({opacity: 0})
-  //     bottomSideBar.style.top = 'calc(var(--vh, 1vh) * 75)'
-  //     bottomSideBar.style.height = 'calc(var(--vh, 1vh) * 25)'
-  //     sideBarOnDisplay = !sideBarOnDisplay
-  //   }
-    // console.log('Pan Up: ', e)
-  // })
 }
 
 // Utility Function to add Ads [Spacer: Width of the Ad] [AAA: Spacer == 2 posibility]
@@ -664,7 +638,7 @@ var insertAdTile = function (spacer, branchText) {
 
     // Lay out its branch [AAA]  as Resource-Element-Branch
     var branch = document.createElement('div')
-    branch.className += ' resource-element-branch resource-element-ad-branch display10'
+    branch.className += ' resource-element-branch resource-element-ad-branch display9'
     branch.innerHTML = branchText
     
     // Encapsulate Mainfrome and its branch in Resource-Capsule
@@ -675,6 +649,8 @@ var insertAdTile = function (spacer, branchText) {
     capsule.append(branch)
     // Preppend Mainframe to the Capsule 
     capsule.prepend(elem)
+
+    console.log(countAd)
     
     // Create an internal Js Reference Object and store it in files list
     adTile.spacer = 1
@@ -688,17 +664,3 @@ var insertAdTile = function (spacer, branchText) {
   document.getElementById('resource-grid').append(adTile.elem)
   adTiles.push(adTile)
 }
-
-// var goToDrive = document.createElement('a')
-// goToDrive.id = 'GoToDrive'
-// if(window.innerWidth < 700) {
-//   goToDrive.className += ' display8'
-// }
-// else {
-//   goToDrive.classList += ' display10'
-// }
-// goToDrive.style.paddingLeft = '2rem'
-// goToDrive.style.color = 'red'
-// goToDrive.href = 'https://drive.google.com/open?id=' + resourceURL
-// goToDrive.innerHTML = 'View in drive'
-// $('#resource-sidebar-header').append(goToDrive)
