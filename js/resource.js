@@ -488,8 +488,8 @@ var setOnClickListeners = function () {
       $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
       $('#resource-sidebar-mobile-goback').css({display: 'block'})
       $('#resource-sidebar-mobile-goback').click(function () {
-        $('#resource-sidebar').css({'top': '10%', height: '90vh'})
-        $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '0vh', 'z-index': 5})
+        $('#resource-sidebar').css({'top': '10%', height: '80vh'})
+        $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '-10vh', 'z-index': 5})
       })
       $('#resource-sidebar-mobile-ad').css({top: '0'})
     }
