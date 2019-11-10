@@ -443,14 +443,14 @@ $('#resource-grid').scroll(function () {
   //     $('.resource-element-ad-capsule-' + (index + 1)).css({transform: 'scale(1)'})
   //   }
   // })
-  files.map(file => {
-    if(!(checkTop('.resource-element-id-' + file.id))) {
-      $('.resource-element-capsule-id-' + file.id).css({transform: 'scale(0)'})
-    }
-    else {
-      $('.resource-element-capsule-id-' + file.id).css({transform: 'scale(1)'})
-    }
-  })
+  // files.map(file => {
+  //   if(!(checkTop('.resource-element-id-' + file.id))) {
+  //     $('.resource-element-capsule-id-' + file.id).css({transform: 'scale(0)'})
+  //   }
+  //   else {
+  //     $('.resource-element-capsule-id-' + file.id).css({transform: 'scale(1)'})
+  //   }
+  // })
 })
 
 var setOnClickListeners = function () {
