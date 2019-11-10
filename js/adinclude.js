@@ -8,7 +8,7 @@
 var ins2   = document.createElement("ins");
 ins2.setAttribute('id','two');
 ins2.setAttribute('class','adsbygoogle');
-ins2.setAttribute('style','display:inline-block;width:275px;height:152px');/*add other styles if required*/
+ins2.setAttribute('style','display:inline-block;width:400px;height:600px');/*add other styles if required*/
 ins2.setAttribute('data-ad-client','ca-pub-4625423558686989');
 ins2.setAttribute('data-ad-slot','4820122198')
 document.getElementById('two').appendChild(ins2)
