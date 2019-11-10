@@ -481,7 +481,7 @@ $(document).ready(function() {
             // Append the files one by one
             files.map((file, index) => {
               if(index == 0) countAd = 0
-              if((index % 5) == 3) insertAdTile(1, 'Advertisement')
+              if((index % 5) == 3 && countAd < 4) insertAdTile(1, 'Advertisement')
               document.getElementById("resource-grid").append(file.elem)
               if(index == (files.length - 1)) {
                 insertAdTile(1, 'Advertisement')
@@ -504,7 +504,8 @@ $(document).ready(function() {
     // files.reverse()
     
     files.map((file, index) => {
-      if((index % 5) == 3) insertAdTile(1, 'Advertisement')
+      if(index == 0) countAd = 0
+      if((index % 5) == 3 && countAd < 4) insertAdTile(1, 'Advertisement')
       document.getElementById("resource-grid").append(file.elem);
       if(index == (files.length - 1)) {
         insertAdTile(1, 'Advertisement')
