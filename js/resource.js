@@ -187,6 +187,11 @@ var tileAds = [
   }
 ]
 
+// test Function to print article vars
+setTimeout(function () {
+  console.log('Width: ', $('#resource-element').width() , ' Height: ', $('#resource-element').height())
+}, 15000)
+
 // Day Night Toggle
 $('#toggle--daynight').prop('checked', true)
 $('#toggle--daynight').click(function () {
