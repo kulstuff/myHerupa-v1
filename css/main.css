@@ -3891,6 +3891,9 @@ body {
 .news_article--gray {
   background-color: white; }
 
+:root {
+  --main-color: #ff3868; }
+
 * {
   box-sizing: border-box !important; }
 
@@ -3900,6 +3903,12 @@ body {
 @media screen and (min-width: 700px) {
   .resource-down-chevron {
     display: none; } }
+
+.resource-sidebar-close {
+  background-color: white;
+  font-size: 48px;
+  border-radius: 50%;
+  color: var(--main-color); }
 
 .resource-sidebar__footer {
   width: 100%;
@@ -3928,8 +3937,7 @@ body {
   color: black;
   cursor: pointer;
   margin-right: 1rem;
-  box-shadow: 0 0 1px 1px #e94b3c;
-  box-shadow: 0 0 1px 1px #6f9fd8; }
+  box-shadow: 0 0 1px 1px var(--main-color); }
   @media screen and (max-width: 700px) {
     .resource-sidebar-folderChip {
       font-size: 1rem; } }
@@ -3976,8 +3984,7 @@ body {
     letter-spacing: 1.5px;
     color: white;
     text-align: center;
-    background-color: #FF3868;
-    background-color: #6f9fd8;
+    background-color: var(--main-color);
     font-weight: 900;
     border-bottom-right-radius: 100rem;
     border-bottom-left-radius: 100rem; }
@@ -4055,8 +4062,7 @@ body {
       display: block;
       content: "";
       border-top-left-radius: 30rem;
-      background-color: #FF3868;
-      background-color: #6f9fd8; }
+      background-color: var(--main-color); }
       @media screen and (min-width: 700px) {
         #resource-sidebar::before {
           display: none; } }
@@ -4078,8 +4084,7 @@ body {
       #resource-sidebar-bay-upload {
         padding: 1rem 2.5rem;
         box-shadow: 0rem 4px 15px rgba(0, 0, 0, 0.25);
-        background-color: #FF3868;
-        background-color: #6f9fd8;
+        background-color: var(--main-color);
         color: white;
         border-radius: 10rem; }
     #resource-sidebar-selector {
@@ -4106,8 +4111,7 @@ body {
       flex: 1;
       display: flex;
       justify-content: center;
-      background-color: #FF3868;
-      background-color: #6f9fd8; }
+      background-color: var(--main-color); }
       @media screen and (max-width: 700px) {
         #resource-sidebar-minibar {
           display: none; } }
@@ -4116,7 +4120,6 @@ body {
       width: 75%;
       display: flex;
       align-items: center;
-      height: 2.25vh;
       margin-right: 0;
       background-color: #eee;
       border-radius: 1rem; }
@@ -4168,7 +4171,8 @@ body {
         margin: 0.5vh 0;
         display: inline;
         padding: 0 2rem;
-        border-radius: 100rem; }
+        border-radius: 100rem;
+        border: 2px solid var(--main-color); }
         @media screen and (max-width: 700px) {
           #resource-sidebar-header-heading {
             font-size: 1.25rem; } }
@@ -4185,7 +4189,8 @@ body {
       #resource-sidebar-toggle-static {
         position: absolute;
         padding-top: 2rem;
-        padding-left: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
         width: 5rem;
         cursor: pointer;
         z-index: 2; }
@@ -5429,9 +5434,9 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5442,7 +5447,7 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
