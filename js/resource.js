@@ -439,7 +439,7 @@ $(document).ready(function() {
             // Append the files one by one
             files.map((file, index) => {
               if(index == 0) countAd = 0
-              if((index % 5) == 3 && countAd < 4) insertAdTile(1, 'Advertisement')
+              // if((index % 5) == 3 && countAd < 4) insertAdTile(1, 'Advertisement')
               document.getElementById("resource-grid").append(file.elem)
               if(index == (files.length - 1)) {
                 insertAdTile(1, 'Advertisement')
@@ -463,7 +463,7 @@ $(document).ready(function() {
     
     files.map((file, index) => {
       if(index == 0) countAd = 0
-      if((index % 5) == 3 && countAd < 4) insertAdTile(1, 'Advertisement')
+      // if((index % 5) == 3 && countAd < 4) insertAdTile(1, 'Advertisement')
       document.getElementById("resource-grid").append(file.elem);
       if(index == (files.length - 1)) {
         insertAdTile(1, 'Advertisement')
@@ -551,15 +551,16 @@ var setElementClicker = function () {
       })
     }
     else {
-      $('#resource-sidebar').css({'top': '90%'})
-      document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
+      // $('#resource-sidebar').css({'top': '90%'})
+      $('#resource-sidebar').css({'top': 'calc(var(--vh, 1vh) * 100)'})
+      // document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
       // $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
       $('#resource-sidebar-mobile-goback').css({display: 'block'})
       $('#resource-sidebar-mobile-goback').click(function () {
-        $('#resource-sidebar').css({'top': '10%', height: '80vh'})
-        $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '-10vh', 'z-index': 5})
+        $('#resource-sidebar').css({'top': '10%', height: 'calc(var(--vh, 1vh) * 900)'})
+        // $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '-10vh', 'z-index': 5})
       })
-      $('#resource-sidebar-mobile-ad').css({top: '0'})
+      // $('#resource-sidebar-mobile-ad').css({top: '0'})
     }
     sidebarDisplay = !sideDisplay
     $("#loadDocument").on("load", function() {
@@ -600,34 +601,34 @@ var insertAdTile = function (spacer, branchText) {
     elem.className += (' resource-element resource-element-ad resource-element-ad-' + (countAd + 1))
     // elem.innerHTML = 
 
-    var externalScript  = document.createElement("script")
-    externalScript.type = "text/javascript"
-    externalScript.setAttribute('async','async')
-    externalScript.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-    elem.appendChild(externalScript)
+    // var externalScript  = document.createElement("script")
+    // externalScript.type = "text/javascript"
+    // externalScript.setAttribute('async','async')
+    // externalScript.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+    // elem.appendChild(externalScript)
 
-    var ins = document.createElement("ins")
-    ins.setAttribute('id',listDocAdIDs[countAd])
-    ins.setAttribute('class','adsbygoogle')
-    if(window.innerWidth > 700) {
-      ins.setAttribute('style','display:inline-block;width:300px;height:150px')
-    }
-    else {
-      ins.setAttribute('style','display:inline-block;width:150px;height:64px')
-    }
-    ins.setAttribute('data-ad-client','ca-pub-4625423558686989')
-    if(window.innerWidth > 700) {
-      ins.setAttribute('data-ad-slot', listAdsenseDeskFixedAdsIDs[countAd])
-    }
-    else {
-      ins.setAttribute('data-ad-slot', listAdsenseMobileFixedAdsIDs[countAd])
-    }
-    elem.appendChild(ins)
+    // var ins = document.createElement("ins")
+    // ins.setAttribute('id',listDocAdIDs[countAd])
+    // ins.setAttribute('class','adsbygoogle')
+    // if(window.innerWidth > 700) {
+    //   ins.setAttribute('style','display:inline-block;width:300px;height:150px')
+    // }
+    // else {
+    //   ins.setAttribute('style','display:inline-block;width:150px;height:64px')
+    // }
+    // ins.setAttribute('data-ad-client','ca-pub-4625423558686989')
+    // if(window.innerWidth > 700) {
+    //   ins.setAttribute('data-ad-slot', listAdsenseDeskFixedAdsIDs[countAd])
+    // }
+    // else {
+    //   ins.setAttribute('data-ad-slot', listAdsenseMobileFixedAdsIDs[countAd])
+    // }
+    // elem.appendChild(ins)
 
-    var inlineScript = document.createElement("script")
-    inlineScript.type = "text/javascript";
-    inlineScript.text = '(adsbygoogle = window.adsbygoogle || []).push({});'  
-    elem.appendChild(inlineScript)
+    // var inlineScript = document.createElement("script")
+    // inlineScript.type = "text/javascript";
+    // inlineScript.text = '(adsbygoogle = window.adsbygoogle || []).push({});'  
+    // elem.appendChild(inlineScript)
 
     // Lay out its branch [AAA]  as Resource-Element-Branch
     var branch = document.createElement('div')
@@ -636,7 +637,7 @@ var insertAdTile = function (spacer, branchText) {
     
     // Encapsulate Mainfrome and its branch in Resource-Capsule
     var capsule = document.createElement('div')
-    capsule.className += (' resource-element-capsule resource-element-ad-capsule-' + (countAd + 1))
+    capsule.className += (' resource-element-capsule resource-element-ad-capsule resource-element-ad-capsule-' + (countAd + 1))
     
     // Append branch to Capsule
     capsule.append(branch)
