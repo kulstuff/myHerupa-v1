@@ -293,7 +293,7 @@ $(document).ready(function() {
           thumbnail.className += ' resource-element-thumbnail'
           // ThumbnailImage
           thumbnailImage = document.createElement('img')
-          thumbnailImage.src = file.thumbnailLink.substring(0, file.thumbnailLink.length - 3) + '720'
+          if(file.thumbnailLink) thumbnailImage.src = file.thumbnailLink.substring(0, file.thumbnailLink.length - 3) + '720'
           // Insert Thumbnail Image to Thumbnail
           thumbnail.append(thumbnailImage)
           
