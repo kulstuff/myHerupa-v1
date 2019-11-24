@@ -83,7 +83,6 @@
         height: 10vh;
       }
     }
-    // width: 100%;
     position: absolute;
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -93,9 +92,7 @@
     box-shadow: 0rem 4px 15px rgba($color: #aaa, $alpha: 0.25);
     border-radius: 0.5rem;
     transition: 0.35s ease-in-out;
-    // transition: transform 0s;
     display: flex;
-    // z-index: 4;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -114,9 +111,7 @@
       letter-spacing: 1.5px;
       color: white;
       text-align: center;
-      // background-color: #ff3868;
       background-color: var(--main-color);
-      // z-index: 3;
       font-weight: 900;
       border-bottom-right-radius: 100rem;
       border-bottom-left-radius: 100rem;
@@ -124,57 +119,21 @@
         width: 80%;
         left: calc(1.25rem + 10%);
         padding: 0 0.5rem;
-        // font-size: 2;
       }
     }
     &-thumbnail {
       height: 100%;
       overflow-y: hidden;
       width: 100%;
-      // flex: 1;
       transition: 0.5s;
       box-shadow: 0rem 0rem 0.25rem #ddd;
-      // &:hover {
-      //   box-shadow: 0rem 0rem 0.5rem #000;
-      // }
       & > img {
-        // height: 100%;
         width: 100%;
       }
     }
     &:hover {
       box-shadow: 0rem 0.35rem 0.5rem rgba($color: #000000, $alpha: 0.25);
     }
-    // &-thumbnail {
-    // }
-
-    // @media screen and (max-width: 700px) {
-    //   display: inline-flex;
-    //   height: calc(var(--vh, 1vh) * 3.5);
-    //   padding: 0;
-    //   margin-right: 2rem;
-    //   width: 40vw;
-    //   font-size: 1.45rem;
-    //   color: white;
-    //   background-image: linear-gradient(
-    //     135deg,
-    //     var(--main-color) 0%,
-    //     rgb(255, 255, 255) 270%
-    //   );
-    // }
-    // &:active{
-    //   background-color: red;
-    //   // co
-    // }
-    // margin-top: 10px;
-    // height: 100px;
-    // border-radius: 1rem;
-    // padding: 0.5rem;
-    // background-color: white;
-    // overflow: hidden;
-    // &:last-child {
-    //   border: 0;
-    // }
     &-icon {
       color: whitesmoke;
       float: left;
@@ -231,8 +190,6 @@
 #resource {
   height: 100vh;
   width: 100%;
-  // background-image: url("../img/Resource-bg.svg");
-  // background-size: cover;
   &-body {
     background-color: white;
   }
@@ -254,13 +211,11 @@
       position: absolute;
       top: -4vh;
       left: 70%;
-      // z-index: -1;
       width: 30%;
       height: 4vh;
       display: block;
       content: "";
       border-top-left-radius: 30rem;
-      // background-color: #ff3868;
       background-color: var(--main-color);
       @media screen and (min-width: 700px) {
         display: none;
