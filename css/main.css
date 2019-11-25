@@ -4238,7 +4238,8 @@ body {
       #resource-sidebar-ad-test-img {
         height: 100%;
         width: 100%;
-        background-image: url("../../img/1080_300-Web.png"); }
+        background-image: url("../../img/1080_300-Web.png");
+        background-size: 100% 100%; }
   #resource-grid {
     flex: 5;
     display: grid;
