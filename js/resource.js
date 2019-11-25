@@ -583,15 +583,15 @@ var setElementClicker = function () {
     }
     else {
       // $('#resource-sidebar').css({'top': '90%'})
-      $('#resource-sidebar').css({'top': 'calc(var(--vh, 1vh) * 100)'})
-      // document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
+      $('#resource-sidebar').css({'top': 'calc(var(--vh, 1vh) * 90)'})
+      document.getElementById('resource-sidebar-mobile-ad').style.opacity = 1
       // $('#resource-sidebar-mobile-ad-inlet').html(tileAds[8].adHTML)
       $('#resource-sidebar-mobile-goback').css({display: 'block'})
       $('#resource-sidebar-mobile-goback').click(function () {
         $('#resource-sidebar').css({'top': '10%', height: 'calc(var(--vh, 1vh) * 90)'})
-        // $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '-10vh', 'z-index': 5})
+        $('#resource-sidebar-mobile-ad').css({top: 'auto', bottom: '0vh', 'z-index': 5})
       })
-      // $('#resource-sidebar-mobile-ad').css({top: '0'})
+      $('#resource-sidebar-mobile-ad').css({top: '0'})
     }
     sidebarDisplay = !sideDisplay
     $("#loadDocument").on("load", function() {

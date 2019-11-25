@@ -1,7 +1,6 @@
 
 (async () => {
-
-    const loadingTask = PDFJS.getDocument("https://myherupa.s3.ap-south-1.amazonaws.com/test/Tutorial+4+Solutions.pdf");
+    const loadingTask = PDFJS.getDocument("https://cors-anywhere.herokuapp.com/https://docs.google.com/uc?id=0ByP7_A9vXm17TmRYcmNScnYzS1E&amp;export=download");
     
     const pdf = await loadingTask.promise;
   
