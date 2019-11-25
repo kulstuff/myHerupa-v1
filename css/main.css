@@ -253,6 +253,11 @@
   100% {
     opacity: 0; } }
 
+body {
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum"; }
+
 @media screen and (min-width: 0px) {
   .display1 {
     font-size: 2.4rem; } }

@@ -1,3 +1,11 @@
+
+// Fixing raleway's erratic behaviour
+body{
+    -webkit-font-feature-settings: "lnum";
+    -moz-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+}
+
 @mixin makeFont($defaultSize) {
     @media screen and (min-width:0px){
         font-size: ($defaultSize*3)/15; 
