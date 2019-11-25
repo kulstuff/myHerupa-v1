@@ -32,7 +32,8 @@ window.addEventListener('resize', () => {
   // Attaching the same code to script over resizing instances
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+})
+
 
 var resourceURL = (window.location.href + "").split("#resURL=")[1]
 var itemNames = []
@@ -309,6 +310,7 @@ $(document).ready(function() {
           newFile = {}
           newFile.elem = capsule
           newFile.id = file.id
+          newFile.size = file.size
           newFile.name = file.name
           newFile.thumbnail = thumbnail
           files.push(newFile)
@@ -427,6 +429,7 @@ $(document).ready(function() {
                 newFile.elem = capsule
                 newFile.id = file.id
                 newFile.name = file.name
+                newFile.size = file.size
                 newFile.thumbnail = thumbnail
                 files.push(newFile)
               }
@@ -534,6 +537,34 @@ var setElementClicker = function () {
     
     // Create a new Document
     var loadDocument = document.createElement("iframe")
+
+    var infoHttp = new XMLHttpRequest()
+    infoHttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log('sent')
+      }
+      else {
+        console.log('Error')
+      }
+    }
+    var clickedFile = {}
+    files.map(file => {
+      if(file.id == this.className.split("resource-element-id-")[1]) clickedFile = file
+    })
+    console.log('Checked File: ', clickedFile)
+    // const query = `mutation { createInfo (name: "${clickedFile.name}", size: ${clickedFile.size}, fileID: "${this.className.split('resource-element-id-')[1]}") { instantLogged } }`
+    let query = {
+      query: `mutation {
+        createInfo (
+          name: "${clickedFile.name}",
+          size: ${clickedFile.size},
+          fileID: "${this.className.split('resource-element-id-')[1]}"
+        )
+      }`
+    }
+    infoHttp.open("POST", 'https://infographicserver.herokuapp.com/graphql', true) // false for synchronous request
+    infoHttp.setRequestHeader("Content-Type", "application/json");
+    infoHttp.send(JSON.stringify(query))
     
     loadDocument.className +=
     " resource-loading-document resource-loaded-document";
