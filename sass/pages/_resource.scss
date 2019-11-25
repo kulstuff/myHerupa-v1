@@ -382,7 +382,7 @@
         position: absolute;
         padding-top: 2rem;
         // padding-left: 2rem;
-        left: 50%;
+        left: 44%;
         transform: translateX(-50%);
         width: 5rem;
         cursor: pointer;
@@ -414,7 +414,7 @@
             &-img {
               width: 100vw;
               height: 10vh;
-              background-image: url('../../img/420_80-Mobile.png');
+              background-image: url("../../img/420_80-Mobile.png");
               background-size: 100% auto;
               // background-repeat: no-repeat;
             }
@@ -449,7 +449,7 @@
           height: 100%;
           width: 100%;
           // background-color: #fff;
-          background-image: url('../../img/1080_300-Web.png');
+          background-image: url("../../img/1080_300-Web.png");
           background-size: 100% 100%;
         }
       }
