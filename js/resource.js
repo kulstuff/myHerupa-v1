@@ -692,10 +692,17 @@ var insertAdTile = function(spacer, branchText) {
   // Set Ad Object to return
   var adTile = {};
   if (spacer == 1) {
-    // Layout the mainframe called Resource-Element
+    // Layout the mainframe called Resource-
+    var wrapA = document.createElement('a')
+    if(window.innerWidth < 700) {
+      wrapA.href = 'https://cb.lk/herumob'
+    }
+    else {
+      wrapA.href = 'https://cb.lk/heruweb'
+    }
     var elem = document.createElement("div");
     elem.className +=
-      " resource-element resource-element-ad resource-element-ad-" +
+      " resource-element-ad resource-element-ad-" +
       (countAd + 1);
     // elem.innerHTML =
 
@@ -743,7 +750,8 @@ var insertAdTile = function(spacer, branchText) {
     // Append branch to Capsule
     capsule.append(branch);
     // Preppend Mainframe to the Capsule
-    capsule.prepend(elem);
+    wrapA.append(elem)
+    capsule.prepend(wrapA);
 
     console.log(countAd);
 

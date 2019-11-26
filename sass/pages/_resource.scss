@@ -830,4 +830,23 @@ html {
   @media screen and (max-width: 700px) {
     background-image: url('../../img/180_85-Mobile.png');
   }
+  @media screen and (max-width: 700px) {
+    height: 10vh;
+  }
+  width: 95%;
+  position: absolute;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  cursor: pointer;
+  color: black;
+  height: 19vh;
+  box-shadow: 0rem 4px 15px rgba($color: #aaa, $alpha: 0.25);
+  border-radius: 0.5rem;
+  transition: 0.35s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 2;
 }

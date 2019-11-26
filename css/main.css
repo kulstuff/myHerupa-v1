@@ -4494,10 +4494,29 @@ html {
 
 .resource-element-ad {
   background-size: 100% 100%;
-  background-image: url("../../img/450_200-Web.png"); }
+  background-image: url("../../img/450_200-Web.png");
+  width: 95%;
+  position: absolute;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  cursor: pointer;
+  color: black;
+  height: 19vh;
+  box-shadow: 0rem 4px 15px rgba(170, 170, 170, 0.25);
+  border-radius: 0.5rem;
+  transition: 0.35s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 2; }
   @media screen and (max-width: 700px) {
     .resource-element-ad {
       background-image: url("../../img/180_85-Mobile.png"); } }
+  @media screen and (max-width: 700px) {
+    .resource-element-ad {
+      height: 10vh; } }
 
 /*Grid System with Media Query*/
 .col {
