@@ -31,38 +31,58 @@ document.documentElement.style.setProperty("--vh", `${vh}px`);
 window.addEventListener("resize", () => {
   // Attaching the same code to script over resizing instances
   let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-});
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+})
 
-var resourceURL = (window.location.href + "").split("#resURL=")[1];
-var itemNames = [];
-var selectedDocumentId;
-var sidebarLoaded = true;
-var files = [];
-var folders = [];
-var sideDisplay = "Full";
-var countAd = 0;
 
-console.log("Inner Width of Window: ", window.innerWidth);
-console.log("Inner Height of Window: ", window.innerHeight);
+var resourceURL = (window.location.href + "").split("#resURL=")[1]
+var itemNames = []
+var selectedDocumentId
+var sidebarLoaded = true
+var files = []
+var folders = []
+var sideDisplay = 'Full'
+var countAd = 0
 
-var listDocAdIDs = ["one", "two", "three", "four", "five"];
-var listAdsenseDeskFixedAdsIDs = [
-  "2712833606",
-  "4820122198",
-  "8432558989",
-  "930665695",
-  "7405938849"
-];
-var listAdsenseMobileFixedAdsIDs = [
-  "1180754925",
-  "8596210511",
-  "8882672048",
-  "6049938229",
-  "7569590370"
-];
 
-var adTiles = [];
+$('#resource-sidebar-mobile-ad-inlet-test').click(function () {
+  var infoHttp = new XMLHttpRequest()
+    infoHttp.onreadystatechange = function() {}
+    let query = {
+      query: `mutation {
+        clickEvent (
+          name: "CB-MOBILE"
+        )
+      }`
+    }
+    infoHttp.open("POST", 'https://infographicserver.herokuapp.com/graphql', true) // false for synchronous request
+    infoHttp.setRequestHeader("Content-Type", "application/json")
+    infoHttp.send(JSON.stringify(query))
+})
+
+$('#resource-sidebar-ad-test').click(function () {
+  var infoHttp = new XMLHttpRequest()
+    infoHttp.onreadystatechange = function() {}
+    let query = {
+      query: `mutation {
+        clickEvent (
+          name: "CB-DESKTOP"
+        )
+      }`
+    }
+    infoHttp.open("POST", 'https://infographicserver.herokuapp.com/graphql', true) // false for synchronous request
+    infoHttp.setRequestHeader("Content-Type", "application/json")
+    infoHttp.send(JSON.stringify(query))
+})
+
+console.log('Inner Width of Window: ', window.innerWidth)
+console.log('Inner Height of Window: ', window.innerHeight)
+
+var listDocAdIDs = ['one', 'two', 'three', 'four', 'five']
+var listAdsenseDeskFixedAdsIDs = ['2712833606', '4820122198', '8432558989', '930665695', '7405938849']
+var listAdsenseMobileFixedAdsIDs = ['1180754925', '8596210511', '8882672048', '6049938229', '7569590370']
+
+var adTiles = []
 // Monetary
 var tileAds = [
   {
