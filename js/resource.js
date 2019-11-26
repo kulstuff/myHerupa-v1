@@ -44,6 +44,37 @@ var folders = []
 var sideDisplay = 'Full'
 var countAd = 0
 
+
+$('#resource-sidebar-mobile-ad-inlet-test').click(function () {
+  var infoHttp = new XMLHttpRequest()
+    infoHttp.onreadystatechange = function() {}
+    let query = {
+      query: `mutation {
+        clickEvent (
+          name: "CB-MOBILE"
+        )
+      }`
+    }
+    infoHttp.open("POST", 'https://infographicserver.herokuapp.com/graphql', true) // false for synchronous request
+    infoHttp.setRequestHeader("Content-Type", "application/json")
+    infoHttp.send(JSON.stringify(query))
+})
+
+$('#resource-sidebar-ad-test').click(function () {
+  var infoHttp = new XMLHttpRequest()
+    infoHttp.onreadystatechange = function() {}
+    let query = {
+      query: `mutation {
+        clickEvent (
+          name: "CB-DESKTOP"
+        )
+      }`
+    }
+    infoHttp.open("POST", 'https://infographicserver.herokuapp.com/graphql', true) // false for synchronous request
+    infoHttp.setRequestHeader("Content-Type", "application/json")
+    infoHttp.send(JSON.stringify(query))
+})
+
 console.log('Inner Width of Window: ', window.innerWidth)
 console.log('Inner Height of Window: ', window.innerHeight)
 
