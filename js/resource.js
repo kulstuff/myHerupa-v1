@@ -700,6 +700,7 @@ var insertAdTile = function(spacer, branchText) {
     else {
       wrapA.href = 'https://cb.lk/heruweb'
     }
+    wrapA.target = '_blank'
     var elem = document.createElement("div");
     elem.className +=
       " resource-element-ad resource-element-ad-" +
