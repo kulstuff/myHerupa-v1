@@ -821,5 +821,13 @@ html {
 }
 
 .resource-element-ad-capsule {
-  opacity: 0;
+  opacity: 1;
+}
+
+.resource-element-ad {
+  background-size: 100% 100%;
+  background-image: url('../../img/450_200-Web.png');
+  @media screen and (max-width: 700px) {
+    background-image: url('../../img/180_85-Mobile.png');
+  }
 }
