@@ -433,24 +433,24 @@ $(document).ready(function() {
         xmlHttpSubFolder.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             console.log(JSON.parse(this.responseText));
-            $("#resource-list-loader").css({ display: "none" });
+            $("#resource-list-loader").css({ display: "none"})
 
             // The following should probably be a separate function
             JSON.parse(this.responseText).files.forEach(file => {
               // Check if not Folder
               if (file.mimeType != "application/vnd.google-apps.folder") {
                 // Layout the mainframe called Resource-Element
-                var elem = document.createElement("div");
-                elem.className += " resource-element";
-                elem.className += " display7";
-                elem.className += " resource-element-id-" + file.id;
+                var elem = document.createElement("div")
+                elem.className += " resource-element"
+                elem.className += " display7"
+                elem.className += " resource-element-id-" + file.id
 
                 // Lay out its branch [AAA]  as Resource-Element-Branch
-                var branch = document.createElement("div");
-                branch.className += " resource-element-branch";
-                var branchText = document.createElement("div");
-                branchText.className += " display9";
-                branchText.innerHTML = file.name.split(".")[0];
+                var branch = document.createElement("div")
+                branch.className += " resource-element-branch"
+                var branchText = document.createElement("div")
+                branchText.className += " display9"
+                branchText.innerHTML = file.name.split(".")[0]
 
                 branchtext = setScroll(branchText, file.name.split(".")[0]);
                 branch.append(branchText);
@@ -492,10 +492,10 @@ $(document).ready(function() {
                 newFile.thumbnail = thumbnail;
                 files.push(newFile);
               }
-            });
+            })
 
             // TEST
-            files.reverse();
+            files.reverse()
 
             // Append the files one by one
             files.map((file, index) => {
@@ -507,14 +507,14 @@ $(document).ready(function() {
               }
             });
 
-            setElementClicker();
+            setElementClicker()
             // var placeholderDiv = document.createElement('div')
             // placeholderDiv.className += ' resource-element-capsule placeholderDiv'
             // document.getElementById("resource-grid").append(placeholderDiv)
             // console.log('Inserted Placeholder')
           }
         };
-        xmlHttpSubFolder.open("GET", URLSub, true); // false for synchronous request
+        xmlHttpSubFolder.open("GET", URLSub, true) // false for synchronous request
         xmlHttpSubFolder.send();
       });
     }
