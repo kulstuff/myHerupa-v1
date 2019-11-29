@@ -3992,14 +3992,10 @@ body {
       font-size: 1rem; } }
 
 .resource-element {
-  width: 95%;
-  position: absolute;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  width: 100%;
   cursor: pointer;
   color: black;
-  height: 19vh;
-  box-shadow: 0rem 4px 15px rgba(170, 170, 170, 0.25);
+  height: 15vh;
   border-radius: 0.5rem;
   transition: 0.35s ease-in-out;
   display: flex;
@@ -4012,36 +4008,33 @@ body {
     .resource-element {
       height: 10vh; } }
   .resource-element-capsule {
-    height: 19vh;
+    height: 16.5vh;
     position: relative;
-    margin-top: 0.75rem;
+    margin-top: 1rem;
     z-index: 2;
-    min-width: 100%; }
+    min-width: 100%;
+    border: 1px solid var(--main-color) !important; }
     @media screen and (max-width: 700px) {
       .resource-element-capsule {
         height: 10vh; } }
   .resource-element-branch {
-    z-index: 0;
-    position: absolute;
-    width: 70%;
-    box-shadow: 0rem 4px 15px rgba(0, 0, 0, 0.25);
-    padding: 0 1rem;
-    top: 100%;
-    left: 20%;
-    height: 2.15vh;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 6.5vh;
     line-height: 2.15vh;
-    letter-spacing: 1.5px;
-    color: white;
+    color: var(--main-color);
     text-align: center;
     background-color: var(--main-color);
-    font-weight: 900;
-    border-bottom-right-radius: 100rem;
-    border-bottom-left-radius: 100rem; }
+    font-weight: 900; }
     @media screen and (max-width: 700px) {
       .resource-element-branch {
-        width: 80%;
-        left: calc(1.25rem + 10%);
+        height: 5vh;
         padding: 0 0.5rem; } }
+    .resource-element-branch-text {
+      color: white;
+      cursor: pointer; }
   .resource-element-thumbnail {
     height: 100%;
     overflow-y: hidden;
@@ -4295,9 +4288,11 @@ body {
     grid-auto-rows: 29vh; }
     @media screen and (max-width: 700px) {
       #resource-grid {
-        grid-template-columns: 48.5% 48.5%;
-        column-gap: 1vw;
-        grid-auto-rows: 15vh; } }
+        padding: 3rem 1rem;
+        padding-left: 3.5vw;
+        grid-template-columns: 45% 45%;
+        column-gap: 7.5vw;
+        grid-auto-rows: 19vh; } }
     #resource-grid-loading-hangar {
       height: 100%;
       width: 100%;
@@ -4561,6 +4556,29 @@ html {
   @media screen and (max-width: 700px) {
     .resource-element-ad {
       height: 10vh; } }
+
+#additions-body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+#updates-header {
+  flex: 1;
+  padding: 5vh 7.5vw 5vh; }
+  #updates-header-frame {
+    height: 100%;
+    width: 100%;
+    background-color: greenyellow;
+    border-radius: 2rem; }
+
+#additions {
+  flex: 1.5;
+  padding: 0vh 7.5vw 5vh; }
+  #additions-list {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/vectors/4x/Artboard 1@4x-8.png"); }
 
 /*Grid System with Media Query*/
 .col {
