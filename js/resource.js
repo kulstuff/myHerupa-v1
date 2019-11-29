@@ -500,11 +500,8 @@ $(document).ready(function() {
             // Append the files one by one
             files.map((file, index) => {
               if (index == 0) countAd = 0;
-              if((index % 7) == 3 && countAd < 1) insertAdTile(1, 'Advertisement')
-              document.getElementById("resource-grid").append(file.elem);
-              if (index == files.length - 1) {
-                insertAdTile(1, "Advertisement");
-              }
+              if((index % 7) == 3 && countAd < 1 &&window.innerWidth > 700) insertAdTile(1, 'Advertisement')
+              document.getElementById("resource-grid").append(file.elem)
             });
 
             setElementClicker()
@@ -523,12 +520,9 @@ $(document).ready(function() {
     // files.reverse()
 
     files.map((file, index) => {
-      if (index == 0) countAd = 0;
-      if((index %  7) == 3 && countAd < 1) insertAdTile(1, 'Advertisement')
-      document.getElementById("resource-grid").append(file.elem);
-      if (index == files.length - 1) {
-        insertAdTile(1, "Advertisement");
-      }
+      if (index == 0) countAd = 0
+      if((index % 7) == 3 && countAd < 1 &&window.innerWidth > 700) insertAdTile(1, 'Advertisement')
+      document.getElementById("resource-grid").append(file.elem)
     });
     // console.log('Once')
     // var placeholderDiv = document.createElement('div')
