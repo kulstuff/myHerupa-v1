@@ -315,12 +315,12 @@ $(document).ready(function() {
 
           // Lay out its branch [AAA]  as Resource-Element-Branch
           var branch = document.createElement("div");
-          branch.className += " resource-element-branch";
-          var branchText = document.createElement("div");
-          branchText.className += " display9";
-          branchText.innerHTML = file.name.split(".")[0];
+          branch.className += " resource-element-branch"
+          var branchText = document.createElement("div")
+          branchText.className += ' resource-element-branch-text display8'
+          branchText.innerHTML = file.name.split('.')[0]
 
-          branchtext = setScroll(branchText, file.name.split(".")[0]);
+          // branchtext = setScroll(branchText, file.name.split(".")[0]);
           branch.append(branchText);
 
           // Encapsulate Mainfrome and its branch in Resource-Capsule
@@ -343,12 +343,13 @@ $(document).ready(function() {
 
           // Add Thumbnail to the mainframe
           elem.append(thumbnail);
-
+          
           // Append branch to Capsule
-          capsule.append(branch);
+          capsule.append(branch)
+          
           // Preppend Mainframe to the Capsule
-          capsule.prepend(elem);
-
+          capsule.prepend(elem)
+          
           // Create an internal Js Reference Object and store it in files list
           newFile = {};
           newFile.elem = capsule;
@@ -449,10 +450,10 @@ $(document).ready(function() {
                 var branch = document.createElement("div")
                 branch.className += " resource-element-branch"
                 var branchText = document.createElement("div")
-                branchText.className += " display9"
-                branchText.innerHTML = file.name.split(".")[0]
+                branchText.className += ' resource-element-branch-text display8'
+                branchText.innerHTML = file.name.split('.')[0]
 
-                branchtext = setScroll(branchText, file.name.split(".")[0]);
+                // branchtext = setScroll(branchText, file.name.split(".")[0]);
                 branch.append(branchText);
 
                 // Encapsulate Mainfrome and its branch in Resource-Capsule
@@ -661,25 +662,25 @@ var setElementClicker = function() {
   });
 };
 
-var setScroll = function(elem, elemText) {
-  if (elemText.length > 25) {
-    console.log("overflow");
-    var branchText = elem.innerHTML;
-    elem.innerHTML = "";
-    var marqueeChild = document.createElement("marquee");
-    marqueeChild.className += " display9";
-    marqueeChild.style.width = $(parent).width();
-    marqueeChild.innerHTML = branchText;
-    elem.append(marqueeChild);
-    elem.style.color = "white";
-    marqueeChild.style.color = "white";
-    marqueeChild.scrollAmount = 5;
-    return elem;
-  } else {
-    elem.style.color = "white";
-    return elem;
-  }
-};
+// var setScroll = function(elem, elemText) {
+//   if (elemText.length > 25) {
+//     console.log("overflow");
+//     var branchText = elem.innerHTML;
+//     elem.innerHTML = "";
+//     var marqueeChild = document.createElement("marquee");
+//     marqueeChild.className += " display9";
+//     marqueeChild.style.width = $(parent).width();
+//     marqueeChild.innerHTML = branchText;
+//     elem.append(marqueeChild);
+//     elem.style.color = "white";
+//     marqueeChild.style.color = "white";
+//     marqueeChild.scrollAmount = 5;
+//     return elem;
+//   } else {
+//     elem.style.color = "white";
+//     return elem;
+//   }
+// };
 
 // Utility Function to add Ads [Spacer: Width of the Ad] [AAA: Spacer == 2 posibility]
 var insertAdTile = function(spacer, branchText) {

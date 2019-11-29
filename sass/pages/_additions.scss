@@ -1,0 +1,30 @@
+#additions-body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#updates {
+    &-header {
+        flex: 1;
+        padding: 5vh 7.5vw 5vh;
+        &-frame {
+            height: 100%;
+            width: 100%;
+            background-color: greenyellow;
+            border-radius: 2rem;
+        }
+    }
+}
+
+#additions {
+    flex: 1.5;
+    // background-color: blue;
+    padding: 0vh 7.5vw 5vh;
+    &-list {
+        height: 100%;
+        width: 100%;
+        background-image: url('../../img/vectors/4x/Artboard\ 1@4x-8.png');
+    }
+}
