@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>News & Announcements</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16" />
+    <script
+      data-ad-client="ca-pub-4625423558686989"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="../css/main.css"
+      rel="icon"
+      href="./../img/myherupa-144x144.png"
+      type="image/gif"
+      sizes="16x16"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="myHerupa" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <script src="../js/script.js"></script>
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="myHerupa" />
+    <script src="../js/news.js"></script>
     <link
       rel="apple-touch-icon"
       href="/img/myherupa-1280x1280.jpeg"
@@ -42,73 +45,150 @@
       href="/img/myherupa-192x192.jpeg"
       sizes="192x192"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <title>Content Updates</title>
   </head>
-
-  <body>
-    <h3 class="display4 bold">
-      News & Updates
-    </h3>
-    <h4 class="display6 thin">
-      All news, be it academic or non-academic, at one place.
-    </h4>
-    <div class="news_sort col-lg-2 col-md-2 col-xs-12 col-sm-12 display6">
-      <h6 class="col-lg-12 col-md-12 display6 bold">
-        Academic
-      </h6>
-      <a class="col-lg-12 col-md-12 display6">
-        First Year
-      </a>
-      <a class="col-lg-12 col-md-12 display6">
-        Second Year
-      </a>
-      <a class="col-lg-12 col-md-12 display6">
-        Third Year
-      </a>
-      <!-- 
-        <a class="col-lg-12 col-md-12 display6 bold">
-            Societies
-        </a>
-
-        <a class="col-lg-12 col-md-12 display6 bold">
-            Internships
-        </a> -->
-    </div>
-    <div class="news_section col-lg-10 col-md-10 col-xs-12 col-sm-12 display6">
-      <div class="news_article-1 academic">
-        <div class="news_article--date display6 col-lg-5">
-          29th November 2019
-        </div>
-        <div class="news_article--title display6 col-lg-7">
-          Material Added
-        </div>
-        <div class="news_article--data display7">
-          <ul>
-            <li class="display7 centre-text">Maths 1 : Tutorial 8</li>
-          </ul>
-        </div>
+  <body class="news__body">
+    <div class="news__jumbrotron-cover">
+      <div class="news__jumbotron">
+        <div class="display3 color-white bold" style="width:100%">Updates</div>
+        <!-- <div class="display6 color-white"> -->
+        <!-- Every time we update our Drive, we'll let you know -->
+        <!-- </div> -->
       </div>
-      <hr />
-      <div class="news_article-1 academic first-year">
-        <div class="news_article--date display6 col-lg-2">
-          04/04
-        </div>
-        <div class="news_article--title display6 col-lg-10">
-          Super Awesome Person Born
-        </div>
-        <div class="news_article--data display7">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-          debitis eius voluptas nesciunt nisi aspernatur velit vitae sint
-          veniam, temporibus architecto provident, aliquid dolore ab ex. Commodi
-          odio ducimus ea! Lorem ipsum dolor, sit amet consectetur adipisicing
-          elit. Excepturi debitis eius voluptas nesciunt nisi aspernatur velit
-          vitae sint veniam, temporibus architecto provident, aliquid dolore ab
-          ex. Commodi odio ducimus ea! Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Excepturi debitis eius voluptas nesciunt nisi
-          aspernatur velit vitae sint veniam, temporibus architecto provident,
-          aliquid dolore ab ex. Commodi odio ducimus ea!
-        </div>
-      </div>
-      <hr />
     </div>
+    <div class="news__selector-cover">
+      <div class="news__selector-group">
+        <button class="display7 news__selector news__selector-first ">
+          First Year
+        </button>
+        <button class="display7 news__selector news__selector-second">
+          Second Year
+        </button>
+        <button class="display7 news__selector news__selector-third">
+          Third Year
+        </button>
+      </div>
+    </div>
+    <div class="news__article-cover">
+      <div class="news__article news__article-first">
+        <h1 class="news__article-badge news__article-badge-1 display8">
+          First Year
+        </h1>
+        <h1 class="news__article-title display6 ">
+          CSBS : Electrical & Electronics
+          <p class="thin display7">Click the links below to explore</p>
+
+        </h1>
+        <ul class="news__article-body display6">
+          <li class="news__article-item ">
+            <a href="#" class="display7 bold">Notes</a>
+          </li>
+          <li class="news__article-item ">
+              <a href="#" class="display7 bold">Tutorial Sheets</a>
+            </li>
+            <li class="news__article-item ">
+                <a href="#" class="display7 bold">Tutorial Solutions</a>
+              </li>
+               
+      </div>
+      <div class="news__article news__article-second">
+          <h1 class="news__article-badge news__article-badge-2 display8">
+            Second Year
+          </h1>
+          <h1 class="news__article-title display6 ">
+            ENC : Analog Electronics
+            <p class="thin display7">Click the links below to explore</p>
+
+          </h1>
+          <ul class="news__article-body display6">
+            <li class="news__article-item ">
+              <a href="#" class="display7 bold">Notes</a>
+            </li>
+            <li class="news__article-item ">
+                <a href="#" class="display7 bold">Tutorial Sheets</a>
+              </li>         
+        </div>
+     
+    </div>
+    <div class="news__article-cover">
+        <div class="news__article news__article-second">
+          <h1 class="news__article-badge news__article-badge-2 display8">
+            Second Year
+          </h1>
+          <h1 class="news__article-title display6 ">
+            CSBS : Electrical & Electronics
+            <p class="thin display7">Click the links below to explore</p>
+
+          </h1>
+          <ul class="news__article-body display6">
+            <li class="news__article-item ">
+              <a href="#" class="display7 bold">Notes</a>
+            </li>
+            <li class="news__article-item ">
+                <a href="#" class="display7 bold">Tutorial Sheets</a>
+              </li>
+                 
+        </div>
+        <div class="news__article news__article-third">
+            <h1 class="news__article-badge news__article-badge-3 display8">
+              Third Year
+            </h1>
+            <h1 class="news__article-title display6 ">
+              COE : Professional Practices
+              <p class="thin display7">Click the links below to explore</p>
+
+            </h1>
+            <ul class="news__article-body display6">
+              <li class="news__article-item ">
+                <a href="#" class="display7 bold">Notes</a>
+              </li>
+          </div>
+       
+      </div><div class="news__article-cover">
+          <div class="news__article news__article-first">
+            <h1 class="news__article-badge news__article-badge-1 display8">
+              First Year
+            </h1>
+            <h1 class="news__article-title display6 ">
+              CSBS : Electrical & Electronics
+              <p class="thin display7">Click the links below to explore</p>
+            </h1>
+            <ul class="news__article-body display6">
+              <li class="news__article-item ">
+                <a href="#" class="display7 bold">Notes</a>
+              </li>
+              <li class="news__article-item ">
+                  <a href="#" class="display7 bold">Tutorial Sheets</a>
+                </li>
+                <li class="news__article-item ">
+                    <a href="#" class="display7 bold">Tutorial Solutions</a>
+                  </li>
+                   
+          </div>
+          <div class="news__article news__article-second">
+              <h1 class="news__article-badge news__article-badge-2 display8">
+                Second Year
+              </h1>
+              <h1 class="news__article-title display6 ">
+                ENC : Analog Electronics
+                <p class="thin display7">Click the links below to explore</p>
+
+              </h1>
+              <ul class="news__article-body display6">
+                <li class="news__article-item ">
+                  <a href="#" class="display7 bold">Notes</a>
+                </li>
+                <li class="news__article-item ">
+                    <a href="#" class="display7 bold">Tutorial Sheets</a>
+                  </li>         
+            </div>
+         
+        </div>
   </body>
 </html>
