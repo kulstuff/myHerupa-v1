@@ -462,7 +462,6 @@ $(document).ready(function(){
         $("li:not(.btn__society)").css('color','white');
     });
     $(".btn__academic").click(function (){
-
         $(".btn__academic").css('background-color','white');
         $(".btn__academic").css('color','black');
         $(".news__academic").css('display','block');
