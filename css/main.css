@@ -3974,7 +3974,7 @@ body {
     text-align: center; }
   @media screen and (max-width: 700px) {
     #updates-upload-panel {
-      top: 95vh;
+      top: calc(var(--vh, 1vh) * 95);
       left: 75vw;
       width: 21vw;
       height: 10vh; } }
