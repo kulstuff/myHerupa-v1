@@ -4554,9 +4554,8 @@ html {
 .resource-element-ad {
   background-size: 100% 100%;
   background-image: url("../../img/450_200-Web.png");
-  width: 95%;
+  width: 100%;
   position: absolute;
-  margin-left: 1.25rem;
   margin-right: 1.25rem;
   cursor: pointer;
   color: black;
