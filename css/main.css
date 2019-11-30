@@ -3975,7 +3975,7 @@ body {
   @media screen and (max-width: 700px) {
     #updates-upload-panel {
       top: unset;
-      bottom: 1vh !important;
+      bottom: 0.25vh !important;
       left: 75vw;
       width: 21vw;
       height: 10vh; } }
