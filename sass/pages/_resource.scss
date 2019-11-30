@@ -13,6 +13,12 @@
 }
 
 .resource {
+  &-show-in-drive {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    font-weight: 900;
+  }
   &-down-chevron {
     & > img {
       height: 1vh;
@@ -145,6 +151,10 @@
         left: 0;
       }
       &-two {
+        left: 85vw;
+        height: 100%;
+        width: 15vw;
+        background-color: #34004e;
       }
     }
     &-document {
@@ -417,7 +427,7 @@
         // top: 100%;
         bottom: -10vh;
         left: 0;
-        background-color: #34004E;
+        background-color: #34004e;
         z-index: 2;
       }
       &-goback {
@@ -531,11 +541,11 @@
     }
     &-document {
       position: relative;
-      height: 100%; 
-      width: 90vw;
+      height: 100%;
+      width: 85vw;
       @media screen and (max-width: 700px) {
         height: calc(var(--vh, 1vh) * 90);
-        width:100vw;
+        width: 100vw;
       }
     }
   }
@@ -835,9 +845,9 @@ html {
 
 .resource-element-ad {
   background-size: 100% 100%;
-  background-image: url('../../img/450_200-Web.png');
+  background-image: url("../../img/450_200-Web.png");
   @media screen and (max-width: 700px) {
-    background-image: url('../../img/180_85-Mobile.png');
+    background-image: url("../../img/180_85-Mobile.png");
   }
   @media screen and (max-width: 700px) {
     height: 10vh;

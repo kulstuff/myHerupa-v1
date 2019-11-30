@@ -3952,6 +3952,12 @@ body {
 * {
   box-sizing: border-box !important; }
 
+.resource-show-in-drive {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  font-weight: 900; }
+
 .resource-down-chevron > img {
   height: 1vh; }
 
@@ -4059,6 +4065,11 @@ body {
   background-color: rgba(255, 255, 255, 0.4); }
   .resource-hub-ad-one {
     left: 0; }
+  .resource-hub-ad-two {
+    left: 85vw;
+    height: 100%;
+    width: 15vw;
+    background-color: #34004e; }
   .resource-hub-document-main {
     flex: 5;
     position: relative;
@@ -4250,7 +4261,7 @@ body {
       position: absolute;
       bottom: -10vh;
       left: 0;
-      background-color: #34004E;
+      background-color: #34004e;
       z-index: 2; }
       #resource-sidebar-mobile-ad-inlet {
         width: 100%;
@@ -5563,9 +5574,21 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff,
+ 0 0 15px  #fff,
+ 0 0 25px  #fff,
+ 0 0 40px  #FF9900,
+ 0 0 70px  #FF9900,
+ 0 0 90px  #FF9900,
+ 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff,
+ 0 0 10px #fff,
+ 0 0 15px #fff,
+ 0 0 20px #FF9900,
+ 0 0 35px #FF9900,
+ 0 0 40px #FF9900,
+ 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5576,7 +5599,13 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent,
+ 0 0 15px  transparent,
+ 0 0 25px  transparent,
+ 0 0 40px  transparent,
+ 0 0 70px  transparent,
+ 0 0 90px  transparent,
+ 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
