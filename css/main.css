@@ -3952,6 +3952,12 @@ body {
 * {
   box-sizing: border-box !important; }
 
+.resource-show-in-drive {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  font-weight: 900; }
+
 .resource-down-chevron > img {
   height: 1vh; }
 
@@ -4063,7 +4069,7 @@ body {
     left: 85vw;
     height: 100%;
     width: 15vw;
-    background-color: #34004E; }
+    background-color: #34004e; }
   .resource-hub-document-main {
     flex: 5;
     position: relative;
@@ -4256,7 +4262,7 @@ body {
       position: absolute;
       bottom: -10vh;
       left: 0;
-      background-color: #34004E;
+      background-color: #34004e;
       z-index: 2; }
       #resource-sidebar-mobile-ad-inlet {
         width: 100%;
