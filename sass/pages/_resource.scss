@@ -145,10 +145,6 @@
         left: 0;
       }
       &-two {
-        left: 90vw;
-        height: 100%;
-        width: 10vw;
-        background-color: white;
       }
     }
     &-document {
@@ -441,10 +437,8 @@
     }
     &-ad {
       &-test {
-        height: 100%;
         width: 10vw;
         &-img {
-          height: 100%;
           width: 10vw;
           // background-color: #fff;
           background-image: url("../../img/1080_300-Web.png");
@@ -523,13 +517,15 @@
       width: 100%;
       height: calc(var(--vh, 1vh) * 100);
     }
-    &-ad {
+    &-left-panel {
       @media screen and (max-width: 700px) {
         display: none;
       }
       position: absolute;
-      top: 15%;
-      width: 15vw;
+      left: 90vw;
+      background-color: white;
+      top: 0;
+      width: 10vw;
       height: 100vh;
       z-index: 1;
     }
@@ -545,7 +541,18 @@
   }
   &-display-ad-two {
     width: 10vw;
-    height: 100%;
+  }
+  &-lightdarkmode {
+    &-panel {
+      // display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #dedede;
+      height: 90%;
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
   }
 }
 
