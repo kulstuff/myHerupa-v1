@@ -3947,7 +3947,8 @@ body {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); }
 
 :root {
-  --main-color: #ff3868; }
+  --main-color: #ff3868;
+  --main-color: #369eff; }
 
 * {
   box-sizing: border-box !important; }
@@ -4361,7 +4362,7 @@ body {
     #resource-hub-document {
       position: relative;
       height: 100%;
-      width: 90vw; }
+      width: 85vw; }
       @media screen and (max-width: 700px) {
         #resource-hub-document {
           height: calc(var(--vh, 1vh) * 90);
@@ -5574,21 +5575,9 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff,
- 0 0 15px  #fff,
- 0 0 25px  #fff,
- 0 0 40px  #FF9900,
- 0 0 70px  #FF9900,
- 0 0 90px  #FF9900,
- 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff,
- 0 0 10px #fff,
- 0 0 15px #fff,
- 0 0 20px #FF9900,
- 0 0 35px #FF9900,
- 0 0 40px #FF9900,
- 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5599,13 +5588,7 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent,
- 0 0 15px  transparent,
- 0 0 25px  transparent,
- 0 0 40px  transparent,
- 0 0 70px  transparent,
- 0 0 90px  transparent,
- 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
