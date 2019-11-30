@@ -4246,8 +4246,7 @@ body {
       #resource-sidebar-toggle-static {
         position: absolute;
         padding-top: 2rem;
-        left: 44%;
-        transform: translateX(-50%);
+        left: 2%;
         width: 5rem;
         cursor: pointer;
         z-index: 2; }
@@ -4282,13 +4281,12 @@ body {
       color: white;
       z-index: 7; }
     #resource-sidebar-ad-test {
-      height: 100%;
-      width: 100%; }
+      width: 10vw; }
       #resource-sidebar-ad-test-img {
-        height: 100%;
-        width: 100%;
+        width: 10vw;
         background-image: url("../../img/1080_300-Web.png");
-        background-size: 100% 100%; }
+        background-size: 100% auto;
+        background-repeat: no-repeat; }
   #resource-grid {
     flex: 5;
     display: grid;
@@ -4349,26 +4347,35 @@ body {
         margin-left: 0;
         width: 100%;
         height: calc(var(--vh, 1vh) * 100); } }
-    #resource-hub-ad {
+    #resource-hub-left-panel {
       position: absolute;
+      left: 90vw;
+      background-color: white;
       top: 0;
-      width: 15vw;
+      width: 10vw;
       height: 100vh;
       z-index: 1; }
       @media screen and (max-width: 700px) {
-        #resource-hub-ad {
+        #resource-hub-left-panel {
           display: none; } }
     #resource-hub-document {
       position: relative;
       height: 100%;
-      width: 85vw; }
+      width: 90vw; }
       @media screen and (max-width: 700px) {
         #resource-hub-document {
           height: calc(var(--vh, 1vh) * 90);
           width: 100vw; } }
   #resource-display-ad-two {
-    width: 15vw;
-    height: 100%; }
+    width: 10vw; }
+  #resource-lightdarkmode-panel {
+    justify-content: center;
+    align-items: center;
+    background-color: #dedede;
+    height: 90%; }
+    @media screen and (max-width: 700px) {
+      #resource-lightdarkmode-panel {
+        display: none; } }
 
 #resource-body {
   max-height: calc(var(--vh, 1vh) * 100) !important;
@@ -5567,9 +5574,21 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff,
+ 0 0 15px  #fff,
+ 0 0 25px  #fff,
+ 0 0 40px  #FF9900,
+ 0 0 70px  #FF9900,
+ 0 0 90px  #FF9900,
+ 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff,
+ 0 0 10px #fff,
+ 0 0 15px #fff,
+ 0 0 20px #FF9900,
+ 0 0 35px #FF9900,
+ 0 0 40px #FF9900,
+ 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5580,7 +5599,13 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent,
+ 0 0 15px  transparent,
+ 0 0 25px  transparent,
+ 0 0 40px  transparent,
+ 0 0 70px  transparent,
+ 0 0 90px  transparent,
+ 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
