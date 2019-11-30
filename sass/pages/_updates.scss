@@ -1,6 +1,8 @@
 .news {
   &__body {
     padding-bottom: 50px;
+    position: relative;
+    width: 100%;
   }
   &__jumbotron {
     &-cover {
@@ -66,6 +68,8 @@
   }
 
   &__article {
+    background-color: #fafafa;
+    padding-top: 1vh;
     &-cover {
       display: flex;
       justify-content: center;
@@ -116,6 +120,43 @@
       box-shadow: 0 15px 20px rgba(black, 0.2);
     }
   }
+}
+
+#updates{
+  &-upload {
+    &-panel {
+      position: fixed;
+      top: 90vh;
+      left: 90vw;
+      height: 10vh;
+      width: 9vw;
+      &-btn {
+        text-align: center;
+        color: white;
+        background-color: #7f00ff;
+        border-radius: 20rem;
+        padding: 0.5vh 0.25vw;
+        transition: 0.2s;
+        box-shadow: 0 7.5px 10px rgba(black, 0.2);
+        &:hover {
+          box-shadow: 0 15px 20px rgba(black, 0.2);
+        }
+        @media screen and (max-width: 700px) {
+          padding: 1vh 0.25vw;
+          font-size: 1rem;
+        }
+      }
+      &-tag {
+        text-align: center;
+      }
+      @media screen and (max-width: 700px) {
+        top: 95vh;
+        left: 75vw;
+        width: 21vw;
+        height: 10vh;
+      }
+    }
+    }
 }
 // .news_sort {
 //   margin-top: 1rem;

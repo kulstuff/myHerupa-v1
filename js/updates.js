@@ -40,4 +40,9 @@ $(document).ready(function() {
     $(".news__article-third").css("display", "block");
     console.log("3");
   });
+
+  $('#updates-upload-panel-btn').click(function () {
+    window.open('http://bit.ly/volunteermh', '_blank')
+  })
+
 });

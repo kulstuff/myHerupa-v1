@@ -3858,7 +3858,9 @@ body {
   transform: translate(-50%, -50%); }
 
 .news__body {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  position: relative;
+  width: 100%; }
 
 .news__jumbotron {
   display: flex;
@@ -3907,6 +3909,8 @@ body {
     cursor: pointer; }
 
 .news__article {
+  background-color: #fafafa;
+  padding-top: 1vh;
   padding-bottom: 20px;
   margin: 10px;
   width: 37%;
@@ -3945,6 +3949,35 @@ body {
       width: auto; } }
   .news__article:hover {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); }
+
+#updates-upload-panel {
+  position: fixed;
+  top: 90vh;
+  left: 90vw;
+  height: 10vh;
+  width: 9vw; }
+  #updates-upload-panel-btn {
+    text-align: center;
+    color: white;
+    background-color: #7f00ff;
+    border-radius: 20rem;
+    padding: 0.5vh 0.25vw;
+    transition: 0.2s;
+    box-shadow: 0 7.5px 10px rgba(0, 0, 0, 0.2); }
+    #updates-upload-panel-btn:hover {
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); }
+    @media screen and (max-width: 700px) {
+      #updates-upload-panel-btn {
+        padding: 1vh 0.25vw;
+        font-size: 1rem; } }
+  #updates-upload-panel-tag {
+    text-align: center; }
+  @media screen and (max-width: 700px) {
+    #updates-upload-panel {
+      top: 95vh;
+      left: 75vw;
+      width: 21vw;
+      height: 10vh; } }
 
 :root {
   --main-color: #ff3868;
