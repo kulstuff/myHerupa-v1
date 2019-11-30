@@ -4235,8 +4235,7 @@ body {
       #resource-sidebar-toggle-static {
         position: absolute;
         padding-top: 2rem;
-        left: 44%;
-        transform: translateX(-50%);
+        left: 2%;
         width: 5rem;
         cursor: pointer;
         z-index: 2; }
