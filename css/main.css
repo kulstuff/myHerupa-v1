@@ -3954,6 +3954,7 @@ body {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); }
 
 #updates-upload-panel {
+  display: none;
   position: fixed;
   top: 90vh;
   left: 90vw;
