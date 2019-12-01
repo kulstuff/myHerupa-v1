@@ -3985,7 +3985,6 @@ body {
       height: 10vh; } }
 
 :root {
-  --main-color: #ff3868;
   --main-color: #369eff; }
 
 * {
@@ -4006,9 +4005,10 @@ body {
 
 .resource-sidebar-close {
   background-color: white;
-  font-size: 48px;
+  font-size: 36px;
   border-radius: 50%;
-  color: var(--main-color); }
+  color: var(--main-color);
+  border: 5px solid var(--main-color); }
 
 .resource-sidebar__footer {
   width: 100%;
@@ -5612,9 +5612,9 @@ Neon toggle
 ====================================================== */
 @keyframes neon {
   0% {
-    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
+    text-shadow: 0 0 10px #fff, 0 0 15px  #fff, 0 0 25px  #fff, 0 0 40px  #FF9900, 0 0 70px  #FF9900, 0 0 90px  #FF9900, 0 0 90px  #FF9900; }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900; } }
 
 .toggle--neon {
   background-color: #222;
@@ -5625,7 +5625,7 @@ Neon toggle
     text-transform: uppercase;
     font-size: 6.2em;
     color: #333;
-    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
+    text-shadow: 0 0 10px transparent, 0 0 15px  transparent, 0 0 25px  transparent, 0 0 40px  transparent, 0 0 70px  transparent, 0 0 90px  transparent, 0 0 90px  transparent; }
     .toggle--neon .toggle--btn:before, .toggle--neon .toggle--btn:after {
       display: inline-block;
       margin: 0 20px;
