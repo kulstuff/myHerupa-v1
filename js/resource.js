@@ -540,6 +540,32 @@ $(document).ready(function() {
   xmlHttp.send();
 });
 
+$('#resource-sidebar-header-heading').click(function () {
+  let query = {
+    query: `mutation {
+      createAction (
+        name: "Opened in Drive",
+        device: "${window.innerWidth > 700 ? 'DR-DESKTOP' : 'DR-MOBILE'}"
+      )
+    }`
+  }
+  var actionHttp = new XMLHttpRequest();
+  actionHttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log("sent")
+    } else {
+      console.log("Error")
+    }
+  }
+  actionHttp.open(
+    "POST",
+    "https://infographicserver.herokuapp.com/graphql",
+    true
+  ) // false for synchronous request
+  actionHttp.setRequestHeader("Content-Type", "application/json")
+  actionHttp.send(JSON.stringify(query))
+})
+
 // Bouncy Animation for Resource-Elements moving in and out
 $("#resource-grid").scroll(function() {
   function checkTop(elem) {
