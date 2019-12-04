@@ -566,6 +566,12 @@ $('#resource-sidebar-header-heading').click(function () {
   actionHttp.send(JSON.stringify(query))
 })
 
+
+// Contribute Option
+$('#updates-upload-panel-btn').click(function () {
+  window.open('http://bit.ly/volunteermh', '_blank')
+})
+
 // Bouncy Animation for Resource-Elements moving in and out
 $("#resource-grid").scroll(function() {
   function checkTop(elem) {

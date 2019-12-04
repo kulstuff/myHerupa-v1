@@ -129,22 +129,32 @@
 #updates{
   &-upload {
     &-panel {
-      display: none;
-      position: fixed;
-      top: 90vh;
-      left: 90vw;
+      margin-right: 2vw;
+      padding-top: 2vh;
+      padding-right: 1vw;
+      display: block;
+      // display: none;
+      // position: fixed;
+      // top: 90vh;
+      // left: 90vw;
       height: 10vh;
       width: 9vw;
+      @media screen and (max-width: 700px) {
+        // display: none;000
+        margin-left: 2vw;
+      }
       &-btn {
+        cursor: pointer;
         text-align: center;
         color: white;
-        background-color: #7f00ff;
+        background-color: var(--main-color);
         border-radius: 20rem;
         padding: 0.5vh 0.25vw;
         transition: 0.2s;
-        box-shadow: 0 7.5px 10px rgba(black, 0.2);
+        box-shadow: 0 2px 5px rgba(black, 0.2);
         &:hover {
-          box-shadow: 0 15px 20px rgba(black, 0.2);
+          transform: translateY(-2%);
+          box-shadow: 0 4px 7px rgba(black, 0.2);
         }
         @media screen and (max-width: 700px) {
           padding: 1vh 0.25vw;
@@ -155,9 +165,10 @@
         text-align: center;
       }
       @media screen and (max-width: 700px) {
-        top: unset;
-        bottom: 0.25vh !important;
-        left: 75vw;
+        // top: unset;
+        // bottom: 0.25vh !important;
+        // left: 75vw;
+        padding-top: 3.5vh;
         width: 21vw;
         height: 10vh;
       }
