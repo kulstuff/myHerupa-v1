@@ -130,14 +130,15 @@
   &-upload {
     &-panel {
       margin-right: 2vw;
-      padding-top: 2vh;
-      padding-right: 1vw;
+      padding-top: 0.25vh;
+      // padding-right: 1vw;
+      // display: none;
       display: block;
       // display: none;
       // position: fixed;
       // top: 90vh;
       // left: 90vw;
-      height: 10vh;
+      height: 100%;
       width: 9vw;
       @media screen and (max-width: 700px) {
         // display: none;000

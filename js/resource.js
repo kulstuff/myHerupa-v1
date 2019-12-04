@@ -566,7 +566,6 @@ $('#resource-sidebar-header-heading').click(function () {
   actionHttp.send(JSON.stringify(query))
 })
 
-
 // Contribute Option
 $('#updates-upload-panel-btn').click(function () {
   window.open('http://bit.ly/volunteermh', '_blank')

@@ -3955,10 +3955,9 @@ body {
 
 #updates-upload-panel {
   margin-right: 2vw;
-  padding-top: 2vh;
-  padding-right: 1vw;
+  padding-top: 0.25vh;
   display: block;
-  height: 10vh;
+  height: 100%;
   width: 9vw; }
   @media screen and (max-width: 700px) {
     #updates-upload-panel {
