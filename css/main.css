@@ -3959,6 +3959,13 @@ body {
   display: block;
   height: 100%;
   width: 9vw; }
+  @media screen and (min-width: 700px) {
+    #updates-upload-panel {
+      position: absolute;
+      height: 10vh;
+      width: 9vw;
+      top: 1.5vh;
+      left: 90vw; } }
   @media screen and (max-width: 700px) {
     #updates-upload-panel {
       margin-left: 2vw; } }
