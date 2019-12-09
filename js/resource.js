@@ -273,6 +273,7 @@ $("#resource-sidebar-controls-right").click(function() {
 $("#resource-sidebar-search-input").on("input", function(e) {
   $(".resource-element-capsule").remove();
   // console.log(files)
+
   files.map((file, index) => {
     if (file.name.toUpperCase().includes(e.target.value.toUpperCase())) {
       $("#resource-grid").append(file.elem);
@@ -304,6 +305,9 @@ $(document).ready(function() {
       console.log(JSON.parse(this.responseText));
       // $('#resource-list-loader').css({'display': 'none'})
       // For each element in the GDrive Directory
+
+console.log( files.sort((a, b) => (a.name>b.name) ? true : false));
+console.log(files);
       JSON.parse(this.responseText).files.forEach(file => {
         // Check if not Folder
         if (file.mimeType != "application/vnd.google-apps.folder") {
@@ -358,6 +362,8 @@ $(document).ready(function() {
           newFile.name = file.name;
           newFile.thumbnail = thumbnail;
           files.push(newFile);
+          files.sort((a, b) => (a.name>b.name) ? true : false)
+console.log(files);
         } else {
           // We encounter a subfolder
           // Create a Generic Folder Chip as Resource-Sidebar-FolderChip
