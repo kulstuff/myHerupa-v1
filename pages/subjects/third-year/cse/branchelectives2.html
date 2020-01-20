@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="myHerupa" />
+    <link
+      rel="apple-touch-icon"
+      href="/img/myherupa-1280x1280.jpeg"
+      sizes="1280x1280"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/myherupa-512x512.jpeg"
+      sizes="512x512"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/img/myherupa-192x192.jpeg"
+      sizes="192x192"
+    />
+    <title>Branch Electives</title>
+  </head>
+
+  <body>
+     <section class="stream scr__panel">
+      <h1 class="display3 centre-text stream-heading">
+        Computer<span class="thin"><br class="break-mobile" />Engineering</span>
+      </h1>
+      <h2 class="display12 centre-text stream__pun">
+        Sixth Semester
+      </h2>
+      <div class="semester__btn-wrap">
+        <a
+          href="../subjects/second-year/common/ed-2.html"
+          class="btn__stream btn__stream--green display6 col col-xs-12 col-sm-4 col-md-4 col-lg-4"
+          >Embedded Systems
+        </a>
+        <a
+          href="../subjects/second-year/common/thermofluids.html"
+          class="btn__stream btn__stream--blue-dark display6 col col-xs-12 col-sm-4 col-md-4 col-lg-4"
+          >Image Processing
+        </a>
+        <a
+          href="../subjects/second-year/common/manufacture.html"
+          class="btn__stream btn__stream--violet display6 col col-xs-12 col-sm-4 col-md-4 col-lg-4"
+          >Microprocessors
+        </a>
+        <a
+          href="../subjects/second-year/common/optimizationtech.html"
+          class="btn__stream btn__stream--red-dark display6 col col-xs-12 col-sm-12 col-md-5 col-lg-5"
+          >Data Analytics (Elective)
+        </a>
+        <a
+          href="../subjects/second-year/cse/dbms.html"
+          class="btn__stream btn__stream--yellow display6 col col-xs-12 col-sm-12 col-md-7 col-lg-7"
+          >Natural Language Processing (Elective)</a
+        >
+      </div>
+    </section>
+
+  
+    <section class="stream scr__panel">
+      <!-- <div
+        class="down-arrow centre-text hide-small-desktop"
+        onclick="scrollifyClick()"
+      >
+        <h4 class="display8 thin">Fourth Semester</h4>
+        <i class="fas fa-chevron-down display5"></i>
+      </div> -->
+      <h1 class="display3 centre-text stream-heading">
+        Branch<span class="thin"><br class="break-mobile" />Electives</span>
+      </h1>
+      <h2 class="display4 centre-text stream__pun">
+        Fifth Semester
+      </h2>
+
+      
+      <div class="semester__btn-wrap">
+        
+        <a
+        href="../cse/Branch Electives/mathematicalmodelling.html"
+        class="btn__stream btn__stream--violet display6 col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+        >Mathematical Modelling & Simulation
+        </a>
+        
+        <a
+          href="../cse/Branch Electives/pdc.html"
+          class="btn__stream btn__stream--yellow display6 col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+          >Parallel & Distributed Computing
+        </a>
+
+        <a
+          href="../cse/Branch Electives/machinelearning.html"
+          class="btn__stream btn__stream--red display6 col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+          >Machine Learning
+        </a>
+        <!-- <a
+          href="../../subjects/third-year/cse/softeng.html"
+          class="btn__stream btn__stream--violet-dark display6 col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+          >Parallel & Distributed Computing
+        </a>
+        <a
+          href="../../subjects/third-year/cse/professionalpractices.html"
+          class="btn__stream btn__stream--yellow  display6 col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+          >Computer Vision
+        </a>
+        <a
+          href="../../subjects/third-year/cse/softeng.html"
+          class="btn__stream btn__stream--red-dark display6 col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+          >Computer Network & Security
+        </a>
+        <a
+          href="../../subjects/third-year/cse/comparchorg.html"
+          class="btn__stream btn__stream--blue-light display6 col col-xs-12 col-sm-12 col-md-12 col-lg-12"
+          >Engineering Software as a Service
+        </a>-->
+      </div>
+    </section>
+  
+    <!-- jQuery and Scrollify APIs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script
+    >>
+    <script src="../../../js/Scrollify-master/jquery.scrollify.js"></script>
+    <script src="/promise.js"></script>
+    <script src="/fetch.js"></script>
+    <!-- Fixes Mobo scr__panel for services -->
+    <script>
+      console.log("Loaded: " + window.innerWidth);
+      if (window.innerWidth < 800) {
+        $(".services").toggleClass("scr__panel");
+      }
+    </script>
+    <!-- Implements Scrollify -->
+    <script>
+      $(function() {
+        $.scrollify({
+          section: ".scr__panel"
+        });
+      });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-12580305-1");
+    </script>
+  </body>
+</html>
+
