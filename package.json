@@ -10,8 +10,8 @@
   "author": "KulStuff",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.2",
-    "http-server": "^0.10.0"
+    "http-server": "^0.10.0",
+    "node-sass": "^4.13.0"
   },
   "dependencies": {},
   "repository": {
