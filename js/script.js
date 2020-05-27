@@ -1766,6 +1766,31 @@ $(".societies__cards--adv-club").click(function (){
     $(".societies__modal--bg").css("z-index","100");
  });
 
+ $(".societies__cards--taas").click(function (){
+    $(".div1-logo").css('background-image',"url('../img/societies/taas.png')");
+    $(".div1-pic-img").css('background-image',"url('../img/societies/taas/two.jpg')");
+    $(".div1-pic-text").html('<hr style="margin:1rem;">Frosh Week<hr style="margin:1rem;">');
+    $(".div2-pic-img-1").css('background-image',"url('../img/societies/taas/three.jpg')");
+    $(".div2-pic-text-1").html('Workshop');
+    $(".div2-pic-img-2").css('background-image',"url('../img/societies/taas/four.jpg')");
+    $(".div2-pic-text-2").html('AkashGanga 3.0');
+   $(".div3-events").css('display','flex');
+   $(".div3-title").html('Thapar Amateur Astronomers Society (TAAS)');
+    $(".div3-events-1").html('');
+    // $(".div3-events-2").html('Even Semester : Inspirus');
+    // $(".div3-events-3").html('28th August: Techmeet 18');
+    // $(".div3-events-4").html('29-30th August: Recruitments');
+    $(".div3-about").css('height','50%');
+    $(".div3-about").html("Thapar Amateur Astronomers Society (TAAS) is the institute's sole student-run Astronomy and Astrophysics interest group. It organises excursions, field trips, star gazing eves, lectures and various other activities, throughout the academic session, pertaining to its members' interests. Anyone with a passion for science and love for 'the great beyond' is welcome amongst them. No matter how much (or how little) one knows, there is always more that they can learn about black holes and Uranus.</span>");
+    $(".div3-contact-1").html('Abhishek Verma: 9899678702');
+    $(".div3-contact-2").html('');
+    $(".div3-contact-link").html('http://mytaas.wordpress.com');
+    $(".div3-contact-link").attr('href','http://mytaas.wordpress.com');
+    $(".societies__modal--bg").animate({opacity : "1"});
+           $(".dont-go").css('display','block');
+    $(".societies__modal--bg").css("z-index","100");
+ });
+
  $(".societies__cards--mudra").click(function (){
     $(".div1-logo").css('background-image',"url('../img/societies/mudra/one.jpg')");
     $(".div1-pic-img").css('background-image',"url('../img/societies/mudra/two.jpg')");
