@@ -1732,7 +1732,7 @@ $(".societies__cards--adv-club").click(function (){
     $(".div3-events-4").html('');
     $(".div3-about").css('height','50%');
     $(".div3-about").html('Literary Society is a blend of writers, quizzers, actors, poets, speakers and artists who excel in the arena of literature, frame the ladder of intellectualism step by step and guide everyone to zenith.');
-    $(".div3-contact-1").html('Pranav Koshal : 07837180898');
+    $(".div3-contact-1").html('Anchit Mathur : +919810086901');
     $(".div3-contact-2").html('');
     $(".div3-contact-link").html('FB/LitSoc.TU');
     $(".div3-contact-link").attr('href','https://facebook.com/LitSoc.TU');
