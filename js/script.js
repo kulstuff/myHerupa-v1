@@ -116,7 +116,7 @@ $(document).ready(function(){
                             "4|Operating Systems",
                             "6|Engineering Design Project-2",
                             "3.5|Manufacturing Processes",
-                            "3.5|Otimization Techniques",
+                            "3.5|Optimization Methods",
                             "4.5|Solids and Strcutures",
                             "4.5|Thermo-Fluids",
                             "4|Database Management Systems",
