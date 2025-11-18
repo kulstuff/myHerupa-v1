@@ -45,56 +45,107 @@
     </div>
 
     <div class="wifi__passwords clearfix">
-        <table class="passwords-table centre-text">
-            <tr class="display5">
-                <td>Network Name</td>
-                <td>Passwords</td>
-            </tr>
-            <tr class="display5">
-                <td>Audi</td>
-                <td>audi@net</td>
-            </tr>
-            <tr class="display5">
-                <td>CSED</td>
-                <td>csed@123#</td>
-            </tr>
-            <tr class="display5">
-                <td>CSED_LAB</td>
-                <td>hecllab768</td>
-            </tr>
-            <tr class="display5">
-                <td>Directorate</td>
-                <td>dir@tu&98765</td>
-            </tr>
-            <tr class="display5">
-                <td>EACCESS</td>
-                <td>hostelnet</td>
-            </tr>
-            <tr class="display5">
-                <td>Hostel J</td>
-                <td>LetMeC@@nnectViaCISH2010@Thapar</td>
-            </tr>
-            <tr class="display5">
-                <td>Machine Tool</td>
-                <td>workshop@54321</td>
-            </tr>
-            <tr class="display5">
-                <td>Placement Cell</td>
-                <td>Cilp@98765</td>
-            </tr>
-            <tr class="display5">
-                <td>THights</td>
-                <td>abcd1234</td>
-            </tr>
-            <tr class="display5">
-                <td>TU</td>
-                <td>tu@inet1</td>
-            </tr>
-            <tr class="display5">
-                <td>LC</td>
-                <td>lc@tiet1</td>
-            </tr>
-
+        <table class="passwords-table centre-text" role="table" aria-label="WiFi networks and passwords">
+            <thead>
+                <tr class="display5">
+                    <th scope="col">Network Name</th>
+                    <th scope="col">Password <small>(click "Copy" to copy)</small></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="display5">
+                    <td>Audi</td>
+                    <td><code class="password" data-password="audi@net">audi@net</code> <button type="button" class="copy-btn" aria-label="Copy Audi password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>CSED</td>
+                    <td><code class="password" data-password="csed@123#">csed@123#</code> <button type="button" class="copy-btn" aria-label="Copy CSED password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>CSED_LAB</td>
+                    <td><code class="password" data-password="hecllab768">hecllab768</code> <button type="button" class="copy-btn" aria-label="Copy CSED_LAB password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>Directorate</td>
+                    <td><code class="password" data-password="dir@tu&amp;98765">dir@tu&amp;98765</code> <button type="button" class="copy-btn" aria-label="Copy Directorate password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>Hostel J</td>
+                    <td><code class="password" data-password="LetMeC@@nnectViaCISH2010@Thapar">LetMeC@@nnectViaCISH2010@Thapar</code> <button type="button" class="copy-btn" aria-label="Copy Hostel J password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>Machine Tool</td>
+                    <td><code class="password" data-password="workshop@54321">workshop@54321</code> <button type="button" class="copy-btn" aria-label="Copy Machine Tool password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>Placement Cell</td>
+                    <td><code class="password" data-password="Cilp@98765">Cilp@98765</code> <button type="button" class="copy-btn" aria-label="Copy Placement Cell password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>THights</td>
+                    <td><code class="password" data-password="abcd1234">abcd1234</code> <button type="button" class="copy-btn" aria-label="Copy THights password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>TU</td>
+                    <td><code class="password" data-password="tu@inet1">tu@inet1</code> <button type="button" class="copy-btn" aria-label="Copy TU password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>LC</td>
+                    <td><code class="password" data-password="lc@tiet1">lc@tiet1</code> <button type="button" class="copy-btn" aria-label="Copy LC password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>C-Hall</td>
+                    <td><code class="password" data-password="chall@ti25">chall@ti25</code> <button type="button" class="copy-btn" aria-label="Copy C-Hall password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>Hostel-E</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy Hostel-E password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>Hostel-G</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy Hostel-G password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>HostelB</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy HostelB password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>HostelQ</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy HostelQ password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>Food-Court</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy Food-Court password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>F-Block</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy F-Block password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>EACCESS</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy EACCESS password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>EACCESS-M1</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy EACCESS-M1 password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>EACCESS-M2</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy EACCESS-M2 password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>EACCESS-M3</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy EACCESS-M3 password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>EACCESS-M4</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy EACCESS-M4 password">Copy</button></td>
+                </tr>
+                <tr class="display5">
+                    <td>EACCESS-M5</td>
+                    <td><code class="password" data-password="hostelnet">hostelnet</code> <button type="button" class="copy-btn" aria-label="Copy EACCESS-M5 password">Copy</button></td>
+                </tr>
+            </tbody>
         </table>
     </div>
     <div class="sophos sophos__mobile">
@@ -168,6 +219,57 @@
         <li class="display7 connectu__content">Automatically swap between IDs in case of Max Login limit/ Data Limit reached.</li>
         <li class="display7 connectu__content">No additional Certificates required.</li>
       </div>
+
+<!-- Styles and small script for copy buttons (keeps changes local to this file) -->
+<style>
+        .passwords-table code.password{white-space:pre;word-break:break-all}
+        .passwords-table td{vertical-align:middle}
+        .copy-btn{margin-left:8px;padding:4px 8px;font-size:0.85rem;cursor:pointer}
+        .copy-btn.copied{background:#4caf50;color:#fff;border:none}
+        @media(max-width:640px){
+                .passwords-table td{display:block;text-align:left;padding:8px 0}
+                .passwords-table thead{display:none}
+                .copy-btn{display:inline-block;margin-top:6px}
+        }
+</style>
+<script>
+// Lightweight copy-to-clipboard for password table (no external changes)
+(function(){
+    function copyText(text){
+        if(navigator.clipboard && navigator.clipboard.writeText){
+            return navigator.clipboard.writeText(text);
+        }
+        return new Promise(function(resolve, reject){
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed'; ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try{ document.execCommand('copy'); resolve(); }catch(e){ reject(e);} 
+            document.body.removeChild(ta);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+        var buttons = document.querySelectorAll('.copy-btn');
+        buttons.forEach(function(btn){
+            btn.addEventListener('click', function(){
+                var code = btn.previousElementSibling;
+                var pw = code && code.dataset && code.dataset.password ? code.dataset.password : (code ? code.textContent : '');
+                if(!pw) return;
+                copyText(pw).then(function(){
+                    var prev = btn.textContent;
+                    btn.textContent = 'Copied!';
+                    btn.classList.add('copied');
+                    setTimeout(function(){ btn.textContent = prev; btn.classList.remove('copied'); }, 1200);
+                }).catch(function(){
+                    // ignore failures silently
+                });
+            });
+        });
+    });
+})();
+</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122580305-1"></script>
